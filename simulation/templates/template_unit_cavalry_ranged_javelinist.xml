@@ -3,17 +3,18 @@
   <Armour>
     <Hack>1</Hack>
     <Pierce>2</Pierce>
-    <Crush>1</Crush>
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
-      <Pierce>15.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>40</MaxRange>
-      <ProjectileSpeed>50.0</ProjectileSpeed>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
+      <Hack>0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0</Crush>
+      <MaxRange>40.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <Projectile>
+        <Speed>40.0</Speed>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Support</PreferredClasses>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Support</Classes>
@@ -32,7 +33,8 @@
   </Attack>
   <Cost>
     <Resources>
-      <wood>40</wood>
+      <food>60</food>
+	  <wood>60</wood>
     </Resources>
   </Cost>
   <Health>
@@ -40,10 +42,11 @@
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Javelin</VisibleClasses>
-    <GenericName>Cavalry Skirmisher</GenericName>
+    <GenericName>Javelin Cavalry</GenericName>
     <History>The javelins thrown from a horse's back were probably 3 at most. The idea was to quickly advance with 3 in hand, then throw them all. After you had done that it was time to switch to your secondary weapon which was usually a spear or a sword. However, in the game - these units will only have ranged attack.</History>
-    <Tooltip>Counters: 1.5x vs. Support Units.
-Countered by: Javelin Infantry, Cavalry Swordsmen, and Elephants.</Tooltip>
+    <Tooltip>Traits: Fast Speed, Light Armor, Raider.
+Strong Against: Citizens (1.5x), Slaves (1.5x), Healers (1.5x), Traders (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
   </Identity>
   <Loot>
     <xp>130</xp>
@@ -52,10 +55,4 @@ Countered by: Javelin Infantry, Cavalry Swordsmen, and Elephants.</Tooltip>
     <stone>0</stone>
     <metal>0</metal>
   </Loot>
-  <UnitMotion>
-    <WalkSpeed>14.0</WalkSpeed>
-    <Run>
-      <Speed>28.0</Speed>
-    </Run>
-  </UnitMotion>
 </Entity>

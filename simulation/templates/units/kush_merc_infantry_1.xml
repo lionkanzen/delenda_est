@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>3.0</Hack>
+      <Crush>5.0</Crush>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusAllInfantry>
+		<BonusElephant>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusElephant>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+	  <wood>50</wood>
+	  <metal>50</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>kush</Civ>
+	<SelectionGroupName>units/kush_merc_infantry_1</SelectionGroupName>
+    <GenericName>Nuba Clubman</GenericName>
+    <SpecificName>nhw Noba</SpecificName>
+    <History>?</History>
+    <Icon>units/kush_merc_infantry_1.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/nuba_clubman.xml</Actor>
+  </VisualActor>
+</Entity>

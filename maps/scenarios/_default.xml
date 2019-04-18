@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Terrain patches="16" texture="desert_sand_ripples" priority="0" height="2048"/>
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<TerrainAmbientColor r="0.294118" g="0.337255" b="0.356863"/>
+		<UnitsAmbientColor r="0.356863" g="0.356863" b="0.356863"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="300" y="300" z="-100"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.523599"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+	{
+		"Name": "Unnamed map",
+		"Description": "Give an interesting description of your map.",
+		"PlayerData":
+		[
+			{
+				"Civ": "athen"
+			},
+			{
+				"Civ": "brit"
+			},
+			{
+				"Civ": "cart"
+			},
+			{
+				"Civ": "epir"
+			},
+			{
+				"Civ": "gaul"
+			},
+			{
+				"Civ": "han"
+			},
+			{
+				"Civ": "iber"
+			},
+			{
+				"Civ": "kush"
+			}
+		],
+		"CircularMap": true,
+		"VictoryConditions": [
+			"conquest_structures"
+		]
+	}
+	]]></ScriptSettings>
+</Scenario>

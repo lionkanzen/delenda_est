@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>50</Radius>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Attack.Melee.Hack> <Add>2</Add> </Attack.Melee.Hack>
-        <Attack.Ranged.Pierce> <Add>3</Add> </Attack.Ranged.Pierce>
-      </Modifications>
-	  <AuraName>"Homeland Defense" Aura</AuraName>
-      <AuraDescription>Units +2 melee and +2 ranged attack within 50 meters of a Revered Monument.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    iber_monument
   </Auras>
   <BuildRestrictions>
-    <Category>Monument</Category>
+    <Territory>own neutral</Territory>
+	<Category>Monument</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>120</BuildTime>
@@ -26,26 +17,36 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="10.0" depth="10.0"/>
+    <Square width="60.0" depth="60.0"/>
     <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder disable=""/>
   <Health>
     <Max>1200</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>iber</Civ>
     <GenericName>Revered Monument</GenericName>
     <SpecificName>Gur Oroigarri</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Monument</VisibleClasses>
     <Icon>structures/iberian_bull.png</Icon>
-    <Tooltip>All units within vision of this monument will fight harder. Effect Range: 50 meters.</Tooltip>
+    <Tooltip>All units within vision of this monument will fight harder. Effective Range: 30 meters.</Tooltip>
     <History>The Iberians were a religious people who built small monuments to their various gods. These monuments could also serve as family tombs.</History>
   </Identity>
   <Obstruction>
     <Static width="10.0" depth="10.0"/>
   </Obstruction>
   <RallyPoint disable=""/>
+  <Selectable>
+    <Overlay replace="">
+      <Texture>
+        <MainTexture>auras/test/1024x1024_aura_celt.png</MainTexture>
+        <MainTextureMask>auras/test/1024x1024_aura_celt_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_iber_monument.xml</select>
@@ -53,9 +54,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>true</Root>
-  </TerritoryInfluence>
+  <TerritoryInfluence disable=""/>
   <Vision>
     <Range>60</Range>
   </Vision>

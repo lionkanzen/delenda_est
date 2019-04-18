@@ -2,17 +2,16 @@
 <Entity parent="template_unit_cavalry_ranged_javelinist">
   <Identity>
     <Civ>sele</Civ>
-	<SelectionGroupName>units/pers_cavalry_javelinist_b</SelectionGroupName>
-	<GenericName>Median Light Cavalry</GenericName>
+	<SelectionGroupName>units/sele_cavalry_javelinist_b</SelectionGroupName>
+	<GenericName>Persian Light Cavalry</GenericName>
     <SpecificName>Hippeus Medikos</SpecificName>
     <History>.</History>
-    <Icon>units/pers_cavalry_javelinist.png</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Icon>units/sele_cavalry_javelinist.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/sele_cavalry_javelinist_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/persians/cavalry_javelinist_b.xml</Actor>
+    <Actor>units/seleucids/cavalry_javelinist_b_m.xml</Actor>
   </VisualActor>
 </Entity>

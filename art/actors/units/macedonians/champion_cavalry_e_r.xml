@@ -2,29 +2,36 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Base">
-      <animations>
-        <animation file="biped/cavalryidle.psa" name="Idle" speed="50"/>
-        <animation file="biped/cavalryidle.psa" name="Walk" speed="17"/>
-        <animation file="biped/rider_gallop.psa" name="Run" speed="8"/>
-        <animation event="0.5" file="cavalry/spear/attack/rider_spear_shield_atk_a.psa" name="attack_melee" speed="400"/>
-        <animation file="biped/rider_sword_death_a.psa" name="death" speed="225"/>
-      </animations>
-      <mesh>skeletal/m_tunic_short.dae</mesh>
+    <variant file="biped/base_cavalry_spearman_ready.xml" frequency="100" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/mace_hetairoi.xml" attachpoint="helmet"/>
-        <prop actor="props/units/weapons/spear_lance.xml" attachpoint="r_hand"/>
-        <prop actor="props/units/cape_m_med.xml" attachpoint="shoulders"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/mace_hetairoi.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spear_long.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/capes/rider/spearman_ready.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="armor-bronze cuirass">
+    <variant frequency="1" name="armor-linothorax-1">
       <textures>
         <texture file="skeletal/hele_hetairoi_c.dds" name="baseTex"/>
       </textures>
     </variant>
+    <variant frequency="1" name="armor-linothorax-2">
+      <textures>
+        <texture file="skeletal/greekthorax9.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armor-linothorax-3">
+      <textures>
+        <texture file="skeletal/greekthorax10.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

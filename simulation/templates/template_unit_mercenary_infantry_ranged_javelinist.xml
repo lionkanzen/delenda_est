@@ -2,20 +2,24 @@
 <Entity parent="template_unit_infantry_ranged_javelinist">
   <Cost>
     <Population>0</Population>
+	<BuildTime>5</BuildTime>
     <Resources>
       <food>0</food>
-	  <wood>60</wood>
-	  <metal>40</metal>
+	  <wood>70</wood>
+	  <metal>60</metal>
     </Resources>
   </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
+	<Rank>Advanced</Rank>
+	<RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Looter disable=""/>
+  <Promotion disable=""/>
   <ResourceGatherer>
-    <BaseSpeed>0.5</BaseSpeed>
+    <BaseSpeed>0.75</BaseSpeed>
   </ResourceGatherer>
   <TrainingRestrictions>
-    <Category>Mercenary20</Category>
+    <Category>Mercenary</Category>
   </TrainingRestrictions>
 </Entity>

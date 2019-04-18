@@ -1,48 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion">
-  <Attack>
-    <Melee>
-      <Hack>35.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.8</MaxRange>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
-    <Charge>
-      <Hack>105.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.8</MaxRange>
-      <MinRange>0.0</MinRange>
-    </Charge>
-  </Attack>
   <Cost>
-    <Population>1</Population>
-    <BuildTime>15</BuildTime>
+    <Population>3</Population>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>90</food>
+      <food>100</food>
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="2.5"/>
+  <Footprint replace="">
+    <Square width="4" depth="6.75"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>180</Max>
+    <Max>220</Max>
   </Health>
   <Identity>
     <GenericName>Champion Cavalry</GenericName>
-    <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
+    <VisibleClasses datatype="tokens">Cavalry Horse</VisibleClasses>
     <Formations datatype="tokens">
-      formations/wedge
+      special/formations/wedge
     </Formations>
   </Identity>
-  <Obstruction>
-    <Unit radius="1.0"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
@@ -56,32 +37,25 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <walk>actor/mounted/movement/walk.xml</walk>
-      <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
-	</SoundGroups>
+    </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>2500</Max>
-  </Stamina>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed>13.0</WalkSpeed>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
     <Run>
-      <Speed>26.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>10.0</RangeMin>
+      <Speed op="mul">1.5</Speed>
     </Run>
   </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>32</Range>
   </Vision>
 </Entity>

@@ -4,9 +4,9 @@
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
-      <wood>300</wood>
+      <stone>300</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -17,38 +17,45 @@
     <Max>10</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Infantry Cavalry</List>
+    <List datatype="tokens">Infantry+Melee Minister</List>
     <BuffHeal>0</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Barracks</GenericName>
-    <Tooltip>Train citizen-soldiers. Research training improvements. Garrison: 10.</Tooltip>
+    <Tooltip>Train melee citizen-infantry. Research training improvements for melee infantry.</Tooltip>
     <VisibleClasses datatype="tokens">
 	  Village
 	  Barracks
 	</VisibleClasses>
-    <Icon>structures/barracks.png</Icon>
+    <Icon>structures/pers_barracks.png</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
-    <xp>100</xp>
+    <xp>300</xp>
     <food>0</food>
-    <wood>30</wood>
-    <stone>10</stone>
+    <wood>0</wood>
+    <stone>100</stone>
     <metal>0</metal>
+    <glory>300</glory>
   </Loot>
   <Obstruction>
     <Static width="17.0" depth="17.0"/>
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+	<Entities datatype="tokens">
+	  units/{civ}_infantry_spearman_b
+	  units/{civ}_infantry_hoplite_b
+	  units/{civ}_infantry_pikeman_b
+	  units/{civ}_infantry_swordsman_b
+	</Entities>
     <Technologies datatype="tokens">
-	  pair_levy_01
+	  training_levy_infantry_barracks
 	  training_mobilization
 	  training_total_war
     </Technologies>
@@ -62,13 +69,14 @@
   </Sound>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>50</Radius>
-    <Weight>40000</Weight>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
   <Vision>
     <Range>30</Range>
   </Vision>
   <VisualActor>
+    <Actor>structures/spartans/barracks.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
   </VisualActor>
 </Entity>

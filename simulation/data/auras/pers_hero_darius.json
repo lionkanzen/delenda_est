@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Trader"],
+	"affectedPlayers": ["Player"],
+	"modifications": [
+	  {"value": "Trader/GainMultiplier", "multiply": 2}
+	],
+	"auraName": "Merchant of the Empire",
+	"auraDescription": "Traders and Merchant Ships +100% profit per trip while Darius lives."
+}

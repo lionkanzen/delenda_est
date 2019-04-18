@@ -17,9 +17,10 @@
 	  successors/pair_cav_03_sele
 	  hellenes/pair_inf_armor_04
 	  successors/pair_armor_01
+	  attack_tusk_spikes
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/hellenes/blacksmith.xml</Actor>
+    <Actor>structures/seleucids/blacksmith.xml</Actor>
   </VisualActor>
 </Entity>

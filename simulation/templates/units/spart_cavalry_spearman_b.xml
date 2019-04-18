@@ -2,6 +2,7 @@
 <Entity parent="template_unit_cavalry_melee_spearman">
   <Identity>
     <Civ>spart</Civ>
+	<Lang>greek</Lang>
     <SelectionGroupName>units/spart_cavalry_spearman_b</SelectionGroupName>
     <GenericName>Allied Greek Cavalry</GenericName>
     <SpecificName>Hippeús Symmakhikós</SpecificName>
@@ -12,6 +13,6 @@
     <Entity>units/spart_cavalry_spearman_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/spartans/cavalry_spearman_b.xml</Actor>
+    <Actor>units/spartans/cavalry_spearman_b_m.xml</Actor>
   </VisualActor>
 </Entity>

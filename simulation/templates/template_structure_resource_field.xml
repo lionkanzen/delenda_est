@@ -6,11 +6,15 @@
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>Field</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>50</MinDistance>
+    </Distance>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>100</BuildTime>
+    <BuildTime>200</BuildTime>
     <Resources>
-      <wood>100</wood>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -18,14 +22,14 @@
     <Height>2.0</Height>
   </Footprint>
   <Health>
-    <Max>100</Max>
-    <SpawnEntityOnDeath>rubble/rubble_field</SpawnEntityOnDeath>
+    <Max>50</Max>
+	<SpawnEntityOnDeath>decay|decay|rubble/rubble_field</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Farm Field</GenericName>
-	<VisibleClasses datatype="tokens">Field</VisibleClasses>
+	<VisibleClasses datatype="tokens">Field DiminishingReturns</VisibleClasses>
 	<Classes datatype="tokens">-NotField</Classes>
-    <Tooltip>Build in neutral or own territory to harvest vegetables for food. Build on farmland terrain to gain a farming boost. Max gatherers: 5.</Tooltip>
+    <Tooltip>Build in neutral or own territory to harvest vegetables for food. Build on farmland terrain to gain a +100% farming boost. Max gatherers: 5. There is a diminishing return effect where it is more efficient to use fewer gatherers per field.</Tooltip>
     <History>Farming originated around 9500 BC in India and the Middle East. The history of agriculture is a central element of human history, as agricultural progress has been a crucial factor in worldwide socio-economic change. Wealth-building and militaristic specializations rarely seen in hunter-gatherer cultures are commonplace in agricultural and agro-industrial societies - when farmers became capable of producing food beyond the needs of their own families, others in the tribe/nation/empire were freed to devote themselves to projects other than food acquisition.</History>
     <Icon>structures/field.png</Icon>
   </Identity>
@@ -35,25 +39,35 @@
     <wood>0</wood>
     <stone>0</stone>
     <metal>0</metal>
+    <glory>10</glory>
   </Loot>
   <Minimap>
-    <Colour r="119" g="82" b="46"/>
+    <Color r="119" g="82" b="46"/>
   </Minimap>
   <Obstruction>
     <Static width="22.0" depth="22.0"/>
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
   </Obstruction>
+  <ProductionQueue disable=""/>
   <RallyPoint disable=""/>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Amount>Infinity</Amount>
     <Type>food.grain</Type>
     <MaxGatherers>5</MaxGatherers>
-	<!-- Note to people looking to change this: see the comments
-		 around line 260 in simulation/components/ResourceGatherer.js -->
-    <DiminishingReturns>14</DiminishingReturns>
+	<DiminishingReturns>0.90</DiminishingReturns> 
   </ResourceSupply>
+  <ResourceTrickle>
+    <Rates> 
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <glory>0.0</glory>
+    </Rates> 
+    <Interval>6000</Interval> 
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_field.xml</select>
@@ -69,7 +83,7 @@
     <Range>0</Range>
   </Vision>
   <VisualActor>
-    <Actor>structures/plot_field_3D_8x8.xml</Actor>
+    <Actor>structures/plot_field_temp.xml</Actor>
     <FoundationActor>structures/plot_field_found.xml</FoundationActor>
     <SelectionShape>
       <Footprint/>

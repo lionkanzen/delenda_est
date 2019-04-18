@@ -1,96 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
-  <Builder>
-    <Rate>0.5</Rate>
-    <Entities datatype="tokens">
-      structures/{civ}_house
-      structures/{civ}_storehouse
-      structures/{civ}_farmstead
-      structures/{civ}_field
-      structures/{civ}_corral
-      structures/{civ}_outpost
-      other/wallset_palisade
-      structures/{civ}_dock
-      structures/{civ}_barracks
-      structures/{civ}_blacksmith
-      structures/{civ}_temple
-      structures/{civ}_market
-      structures/{civ}_defense_tower
-      structures/{civ}_wallset_stone
-      structures/{civ}_fortress
-    </Entities>
-  </Builder>
+  <Armour>
+    <Hack>0</Hack>
+    <Pierce>0</Pierce>
+    <Crush>0</Crush>
+  </Armour>
+  <Capturable>
+    <CapturePoints>25</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+  </Capturable>
   <Cost>
-    <Population>0</Population>
-    <BuildTime>20</BuildTime>
+    <Population>1</Population>
     <Resources>
-      <food>0</food>
+      <food>25</food>
       <wood>0</wood>
       <stone>0</stone>
-      <metal>50</metal>
+      <metal>25</metal>
     </Resources>
   </Cost>
   <Health>
-    <RegenRate>-0.25</RegenRate>
+    <Max>50</Max>
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Slave Builder Gatherer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
+	<Classes datatype="tokens">Worker</Classes>
+	<Gender>female</Gender>
     <GenericName>Slave</GenericName>
+	<SelectionGroupName>units/{civ}_support_slave</SelectionGroupName>
+    <History>Slavery played a major role in ancient civilization.</History>
+	<Tooltip>A cheap and very good gatherer unit who cannot build buildings. 
+Traits: Low Cost, Low Health, Slow Speed, Capturable, No Attack.
+Good at: Gathering Resources and Defecting.
+Bad at: Defense and Loyalty.</Tooltip>
     <Icon>units/global_slave.png</Icon>
-	<Tooltip>Gatherer with a finite life span. Bonused at mining and lumbering.</Tooltip>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+	<Formations disable=""/>
   </Identity>
   <Loot>
-    <xp>1</xp>
+    <xp>10</xp>
     <food>0</food>
     <wood>1</wood>
     <stone>1</stone>
     <metal>1</metal>
   </Loot>
-  <Looter/>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
+    <BaseSpeed>1.5</BaseSpeed>
     <Rates>
-      <food.fish>0.5</food.fish>
       <food.fruit>0.5</food.fruit>
-      <food.grain>0.35</food.grain>
-      <food.meat>1</food.meat>
-	  <wood.tree>1.0</wood.tree>
-	  <wood.ruins>5</wood.ruins>
-      <stone.rock>1.0</stone.rock>
-	  <stone.ruins>5</stone.ruins>
-      <metal.ore>1.0</metal.ore>
-	  <treasure disable=""/>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
     </Rates>
   </ResourceGatherer>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <order_repair>voice/hellenes/civ/civ_male_ack.xml</order_repair>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
-      <death>actor/human/death/death.xml</death>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{gender}_death.xml</death>
       <build>resource/construction/con_wood.xml</build>
       <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
       <gather_grain>resource/farming/farm.xml</gather_grain>
-      <gather_wood>resource/lumbering/lumbering.xml</gather_wood>
-      <gather_stone>resource/mining/pickaxe.xml</gather_stone>
-      <gather_metal>resource/mining/mining.xml</gather_metal>
-      <trained>actor/singlesteps/steps_gravel.xml</trained>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
     </SoundGroups>
   </Sound>
   <TrainingRestrictions>
-    <Category>Slave30</Category>
+    <Category>Slave</Category>
   </TrainingRestrictions>
   <UnitMotion>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed op="mul">0.7</WalkSpeed>
     <Run>
-      <Speed>15.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>8.0</RangeMin>
+      <Speed op="mul">0.6</Speed>
     </Run>
   </UnitMotion>
+  <Upgrade>
+    <ForcedLabor>
+      <Entity>units/{civ}_support_slave_forced_labor</Entity>
+      <Tooltip>Slaves under forced labor gather resources much faster, but die quickly from overwork.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </ForcedLabor>
+  </Upgrade>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
 </Entity>

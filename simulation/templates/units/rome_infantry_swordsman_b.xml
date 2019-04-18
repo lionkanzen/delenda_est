@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_swordsman">
-  <Builder>
-    <Entities datatype="tokens">
-	  -other/wallset_palisade
-	  structures/rome_temple_vesta
-      structures/rome_army_camp
-      structures/rome_wallset_siege
-      structures/{civ}_wonder
-    </Entities>
-  </Builder>
   <Identity>
     <Civ>rome</Civ>
+	<Lang>latin</Lang>
 	<SelectionGroupName>units/rome_infantry_swordsman_b</SelectionGroupName>
 	<GenericName>Roman Swordsman</GenericName>
     <SpecificName>Hastatus</SpecificName>

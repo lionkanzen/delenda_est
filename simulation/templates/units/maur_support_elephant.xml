@@ -5,14 +5,18 @@
     <Pierce>8</Pierce>
     <Crush>10</Crush>
   </Armour>
+  <Auras datatype="tokens">
+    elephant_fear
+	elephant_trample
+  </Auras>
   <Builder>
-    <Rate>3.0</Rate>
+    <Rate>1.0</Rate>
     <Entities datatype="tokens"/>
   </Builder>
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>150</food>
+      <food>100</food>
     </Resources>
   </Cost>
   <Footprint>
@@ -38,15 +42,34 @@
     <wood>10</wood>
     <stone>10</stone>
     <metal>10</metal>
+    <glory>10</glory>
   </Loot>
-  <Obstruction>
-    <Unit radius="3.0"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      pair_gather_01
+      pair_gather_02
+      pair_gather_03
+	  gather_lumbering_bowsaw
+	  gather_lumbering_twomansaw
+	  gather_capacity_wheelbarrow
+	  gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
+	<Sharable>false</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>
@@ -60,22 +83,23 @@
     <SoundGroups>
       <select>actor/fauna/animal/elephant_select.xml</select>
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
-      <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
+      <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
       <attack>actor/fauna/animal/elephant_attack.xml</attack>
       <death>actor/fauna/animal/elephant_death.xml</death>
       <trained>actor/fauna/animal/elephant_trained.xml</trained>
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>4.0</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+	<WalkSpeed>6.0</WalkSpeed>
     <Run>
       <Speed>10.0</Speed>
     </Run>
   </UnitMotion>
   <Vision>
-    <Range>50</Range>
+    <Range>40</Range>
   </Vision>
   <VisualActor>
-    <Actor>units/mauryans/support_elephant.xml</Actor>
+    <Actor>units/mauryas/support_elephant.xml</Actor>
   </VisualActor>
 </Entity>

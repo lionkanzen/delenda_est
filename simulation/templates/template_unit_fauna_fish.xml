@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna">
+  <Armour disable=""/>
   <Footprint>
     <Circle radius="10.0"/>
     <Height>2.5</Height>
@@ -11,13 +12,14 @@
 	<VisibleClasses datatype="tokens">Fish</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Unit radius="4.0"/>
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
+	<DeleteUponConstruction>true</DeleteUponConstruction>
   </Obstruction>
   <Position>
     <Altitude>-2.0</Altitude>
     <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
   </Position>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
@@ -42,4 +44,9 @@
   </StatusBars>
   <UnitAI disable=""/>
   <UnitMotion disable=""/>
+  <VisualActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
 </Entity>

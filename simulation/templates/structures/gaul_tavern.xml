@@ -3,9 +3,14 @@
   <BuildRestrictions>
     <Category>Tavern</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Cost>
     <PopulationBonus>10</PopulationBonus>
-    <BuildTime>200</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
       <food>0</food>
       <wood>100</wood>
@@ -18,8 +23,8 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>gaul</Civ>
@@ -31,7 +36,7 @@
 	  Tavern
 	</VisibleClasses>
     <History>Taverns are where Celtic warriors go for a tall glass of mead after a hard-won battle. Some might even find rest in one of the back rooms for rent in this seedy establishment.</History>
-    <Tooltip>Add +10 to Population Cap. Recruit Naked Fanatics.</Tooltip>
+    <Tooltip>Add +10 to Population Cap. Celtic mercenaries.</Tooltip>
     <Icon>structures/celtic_embassy.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
@@ -39,20 +44,16 @@
     <Static width="17.0" depth="17.0"/>
   </Obstruction>
   <RallyPoint/>
-  <TerritoryInfluence>
-    <Radius>32</Radius>
-    <Weight>65536</Weight>
-  </TerritoryInfluence>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/gaul_champion_fanatic
+      units/{civ}_merc_infantry_1
+      units/{civ}_merc_infantry_2
+	  -units/{civ}_infantry_spearman_b
+	  -units/{civ}_infantry_pikeman_b
+	  -units/{civ}_infantry_swordsman_b
     </Entities>
     <Technologies datatype="tokens">
-	  -pair_levy_01
-	  -training_mobilization
-	  -training_total_war
-	  celts/special_woad_warriors
     </Technologies>
   </ProductionQueue>
   <Sound>

@@ -9,7 +9,7 @@
   </Footprint>
   <Identity>
     <GenericName>Fauna</GenericName>
-    <Classes datatype="tokens">Organic -ConquestCritical</Classes>
+    <Classes datatype="tokens">Organic Fauna -ConquestCritical</Classes>
 	<VisibleClasses datatype="tokens">Animal</VisibleClasses>
     <Icon>gaia/fauna_generic.png</Icon>
     <Formations disable=""/>
@@ -19,12 +19,12 @@
   </Loot>
   <Minimap>
     <Type>food</Type>
-    <Colour b="30" g="70" r="115"/>
+    <Color b="30" g="70" r="115"/>
   </Minimap>
   <ResourceGatherer disable=""/>
   <UnitAI>
-    <AlertReactiveLevel>99</AlertReactiveLevel>
     <CanGuard>false</CanGuard>
+	<CanPatrol>false</CanPatrol>
     <RoamDistance>8.0</RoamDistance>
     <FleeDistance>24.0</FleeDistance>
     <RoamTimeMin>2000</RoamTimeMin>
@@ -34,16 +34,16 @@
   </UnitAI>
   <Guard disable=""/>
   <UnitMotion>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed op="mul">0.5</WalkSpeed>
     <Run>
-      <Speed>15.0</Speed>
+      <Speed op="mul">0.5</Speed>
     </Run>
   </UnitMotion>
   <Visibility>
     <RetainInFog>true</RetainInFog>
   </Visibility>
   <Vision>
-    <Range>0</Range>
+    <Range>5</Range>
   </Vision>
   <VisualActor>
     <SilhouetteDisplay>false</SilhouetteDisplay>

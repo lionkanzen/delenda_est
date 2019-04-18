@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_short">
+<Entity parent="template_structure_defensive_wall_short">
   <Footprint>
-    <Square width="14.0" depth="7.0"/>
+    <Square width="15.0" depth="8.0"/>
     <Height>9.0</Height>
   </Footprint>
   <Identity>
@@ -17,6 +17,6 @@
     <Actor>structures/hellenes/wall_short.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>13.0</Length>
+    <Length>12.3</Length>
   </WallPiece>
 </Entity>

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Category>CarthaginianBarracks</Category>
+  </BuildRestrictions>
   <Footprint>
     <Square width="24.0" depth="25.0"/>
     <Height>15.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>cart</Civ>
+    <GenericName>Citizen Barracks</GenericName>
     <SpecificName>Maḥanēt</SpecificName>
     <History>The Carthaginians incorporated stables and barracks into their city walls.</History>
     <Tooltip>Train North African citizen-soldiers. Research improvements for North African units.</Tooltip>
@@ -18,14 +22,12 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/cart_infantry_spearman_b
-	  units/cart_infantry_javelinist_2_b
-      units/cart_infantry_archer_b
-	  units/cart_cavalry_spearman_2_b
-      units/cart_cavalry_javelinist_b
+	  units/{civ}_infantry_javelinist_b
+	  units/{civ}_cavalry_scout
+	  units/{civ}_cavalry_spearman_b
+	  -units/{civ}_infantry_spearman_b
     </Entities>
-    <Technologies datatype="tokens">
-	  
+    <Technologies datatype="tokens">  
     </Technologies>
   </ProductionQueue>
   <VisualActor>

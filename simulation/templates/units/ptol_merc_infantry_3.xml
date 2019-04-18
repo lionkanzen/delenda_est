@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_archer">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Cost>
+	<BuildTime>0</BuildTime>
+  </Cost>
+  <Identity>
+    <Civ>ptol</Civ>
+	<SelectionGroupName>units/ptol_merc_infantry_3</SelectionGroupName>
+    <GenericName>Nubian Mercenary Archer</GenericName>
+	<Rank>Advanced</Rank>
+    <SpecificName>Kousít Misthophóros Toxóti̱s</SpecificName>
+    <History>?</History>
+    <Icon>units/ptol_merc_archer_nubian.png</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.2</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/nubian_archer.xml</Actor>
+  </VisualActor>
+</Entity>

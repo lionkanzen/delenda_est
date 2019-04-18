@@ -4,7 +4,10 @@
     <SpecificName>Oak Tree</SpecificName>
     <History>A deciduous tree of the genus Quercus; has acorns and lobed leaves.</History>
   </Identity>
+  <ResourceSupply>
+    <Amount>300</Amount>
+  </ResourceSupply>
   <VisualActor>
-    <Actor>flora/trees/oak_aut.xml</Actor>
+    <Actor>flora/trees/oak_new_aut.xml</Actor>
   </VisualActor>
 </Entity>

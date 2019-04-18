@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_elephant_melee">
+<Entity parent="template_unit_champion_elephant_melee_small">
   <Identity>
     <Civ>mace</Civ>
 	<GenericName>War Elephant</GenericName>
     <SpecificName>Polémou Eléphantos</SpecificName>
 	<Classes datatype="tokens">MaceElephant</Classes>
-    <Icon>units/cart_champion_cavalry.png</Icon>
+    <Icon>units/cart_champion_elephant.png</Icon>
     <History>.</History>
-	<RequiredTechnology>hellenes/unlock_elephants</RequiredTechnology>
+	<RequiredTechnology>phase_imperial</RequiredTechnology>
   </Identity>
   <TrainingRestrictions>
     <Category>MaceElephant</Category>
   </TrainingRestrictions>
   <VisualActor>
-    <Actor>units/carthaginians/champion_unit_2.xml</Actor>
+    <Actor>units/macedonians/champion_elephant.xml</Actor>
   </VisualActor>
 </Entity>

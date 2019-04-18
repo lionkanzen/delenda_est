@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Footprint>
+    <Square width="22.0" depth="20.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Marābit̤</SpecificName>
+    <History>Cavalry was primarily used as an elite assault force by the Persians.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="18.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{civ}_cavalry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  persians/training_levy_cavalry
+	  persians/training_conscription_cavalry
+	  persians/upgrade_rank_advanced_cavalry
+	  persians/upgrade_rank_elite_cavalry
+	  successors/special_war_horses
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/stables.xml</Actor>
+  </VisualActor>
+</Entity>

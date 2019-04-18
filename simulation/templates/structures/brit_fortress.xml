@@ -1,55 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
-  <Cost>
-
-  </Cost>
-  <Cost>
-    <PopulationBonus>12</PopulationBonus>
-    <Resources>
-      <stone>550</stone>
-    </Resources>
-  </Cost>
+  <Attack>
+    <Ranged>
+      <MinRange>24.0</MinRange>
+    </Ranged>
+  </Attack>
   <Footprint replace="">
     <Circle radius="17.0"/>
     <Height>18.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>11</X><Y>11.4</Y><Z>11</Z>
+      </Archer1>
+      <Archer2>
+        <X>-11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer2>
+      <Archer3>
+        <X>-11</X><Y>11.4</Y><Z>11</Z>
+      </Archer3>
+      <Archer4>
+        <X>11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer4>
+      <Archer5>
+        <X>3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer5>
+      <Archer6>
+        <X>-3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer6>
+      <Archer7>
+        <X>8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer7>
+      <Archer8>
+        <X>-8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer8>
+      <Archer9>
+        <X>-3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer9>
+      <Archer10>
+        <X>3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer10>
+      <Archer11>
+        <X>-8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer11>
+      <Archer12>
+        <X>8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer12>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>brit</Civ>
-    <SpecificName>Brythonic Broch</SpecificName>
+    <SpecificName>Broch</SpecificName>
     <Tooltip>Train Brythonic heroes and champions. Construct siege rams.</Tooltip>
     <History>The Broch is an Iron Age round tower fortification type unique to Scotland.  The origin of brochs remains a mystery. Some archaeologists believed the brochs were built by an influx of broch builders who had been displaced and pushed northward during the Roman invasion of Britain. However, this theory has been largely disproven and current thought is that they were built by itinerant (travelling) craftsmen since so many were built to almost the same exact design. </History>
   </Identity>
   <Obstruction>
     <Static width="29.0" depth="29.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_broch.xml</select>
-      <constructed>interface/complete/building/complete_broch.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/brit_hero_boudicca
-      units/brit_hero_caratacos
-      units/brit_hero_cynvelin
-      units/brit_champion_cavalry
-      units/brit_champion_infantry
-      units/brit_mechanical_siege_ram
+      units/{civ}_champion_infantry
+      units/{civ}_hero_boudicca
+      units/{civ}_hero_caratacos
+      units/{civ}_hero_cynvelin
     </Entities>
     <Technologies datatype="tokens">
-      pair_siege_rams_01
-	  pair_siege_build_armor
-	  celts/special_woad_warriors
+      attack_capture_siege_ladders
 	  celts/fortress_great_tower
+	  unlock_spies
+	  spy_counter
     </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/britons/fortress_briton.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
+  <WallPiece>
+   <Length>28.0</Length>
+  </WallPiece>
 </Entity>

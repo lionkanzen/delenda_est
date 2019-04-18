@@ -4,52 +4,42 @@
     <Hack>15</Hack>
     <Pierce>10</Pierce>
     <Crush>10</Crush>
-  </Armour>
+  </Armour> 
   <Attack>
     <Melee>
-      <Hack>15.0</Hack>
+      <Hack>30.0</Hack>
       <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
       <MaxRange>8.0</MaxRange>
+	  <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
 	  <Bonuses>
 		<BonusCavMelee>
 		  <Classes>Cavalry</Classes>
-		  <Multiplier>4.0</Multiplier>
+		  <Multiplier>2.0</Multiplier>
 		</BonusCavMelee>
 	  </Bonuses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Melee>
-    <Charge>
-      <Hack>30.0</Hack>
-      <Pierce>0.0</Pierce>
-      <MaxRange>8.0</MaxRange>
-	  <Bonuses>
-		<BonusCharge>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>4.0</Multiplier>
-		</BonusCharge>
-	  </Bonuses>
-    </Charge>
   </Attack>
+  <Auras datatype="tokens">
+    massed_pikes
+  </Auras>
   <Identity>
     <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
     <GenericName>Hero Pikeman</GenericName>
-    <Tooltip>Counters: 4x vs. All Cavalry.
-Countered by: Ranged Units and Sword Infantry.</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <Formations datatype="tokens">
-      formations/phalanx
-      formations/syntagma
+      special/formations/syntagma
     </Formations>
   </Identity>
-  <Loot>
-    <wood>100</wood>
-    <metal>100</metal>
-  </Loot>
-  <Stamina>
-    <Max>1200</Max>
-  </Stamina>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
     <Run>
-      <Speed>13</Speed>
+      <Speed op="mul">0.75</Speed>
     </Run>
   </UnitMotion>
 </Entity>

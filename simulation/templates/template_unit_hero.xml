@@ -5,22 +5,34 @@
     <Pierce>20.0</Pierce>
     <Crush>15.0</Crush>
   </Armour>
+  <Attack> 
+    <Capture>
+      <Value>20</Value> 
+      <MaxRange>4</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture> 
+  </Attack>
+  <Auras datatype="tokens">
+    hero_garrison
+  </Auras>
   <Cost>
-    <Population>2</Population>
-    <BuildTime>40</BuildTime>
+    <Population>0</Population>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <food>100</food>
-      <metal>250</metal>
+      <metal>500</metal>
+      <glory>500</glory>
     </Resources>
   </Cost>
   <Health>
     <Max>600</Max>
+    <IdleRegenRate>1</IdleRegenRate>
   </Health>
   <Identity>
     <GenericName>Hero</GenericName>
-    <Classes datatype="tokens">Organic</Classes>
+    <Classes datatype="tokens">Organic Human</Classes>
     <VisibleClasses datatype="tokens">Hero Soldier</VisibleClasses>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <RequiredTechnology>phase_imperial</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>400</xp>
@@ -28,10 +40,16 @@
     <wood>100</wood>
     <stone>100</stone>
     <metal>100</metal>
+    <glory>500</glory>
   </Loot>
   <Minimap>
     <Type>hero</Type>
   </Minimap>
+  <ResourceGatherer>
+    <Rates>
+      <glory.praise>1</glory.praise>
+    </Rates>
+  </ResourceGatherer>
   <Selectable>
     <Overlay>
       <AlwaysVisible/>
@@ -43,20 +61,16 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/death.xml</death>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>actor/human/death/{gender}_death.xml</death>
     </SoundGroups>
   </Sound>
   <TrainingRestrictions>
     <Category>Hero</Category>
   </TrainingRestrictions>
-  <UnitMotion>
-    <WalkSpeed>9.0</WalkSpeed>
-    <Run>
-      <Speed>22.5</Speed>
-    </Run>
-  </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>40</Range>
   </Vision>
 </Entity>

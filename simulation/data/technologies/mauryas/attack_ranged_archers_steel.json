@@ -1,0 +1,17 @@
+{
+	"pair": "mauryas/pair_03_ranged",	
+	"genericName": "Steel Arrows",
+	"description": "Add something here.",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 400},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "accuracy_bolt.png",
+	"researchTime": 60,
+	"tooltip": "All Archer units +15% attack bonus vs. Cavalry and Elephants.",
+	"modifications": [
+		{"value": "Attack/Ranged/Bonuses/BonusCavalry/Multiplier", "multiply": 1.15},
+		{"value": "Attack/Ranged/Bonuses/BonusElephant/Multiplier", "multiply": 1.15}
+		],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

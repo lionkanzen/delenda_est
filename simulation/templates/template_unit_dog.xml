@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
   <Armour>
-    <Hack>2</Hack>
+    <Hack>3</Hack>
     <Pierce>1</Pierce>
-    <Crush>1</Crush>
+    <Crush>4</Crush>
   </Armour>
   <Attack>
     <Slaughter>
@@ -17,6 +17,7 @@
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>3.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
 	  <Bonuses>
 		<BonusSupport>
@@ -32,33 +33,12 @@
 		  <Multiplier>1.5</Multiplier>
 		</BonusHunt>
 	  </Bonuses>
-      <RestrictedClasses datatype="tokens">Structure</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Structure Ship Siege</RestrictedClasses>
     </Melee>
-    <Charge>
-      <Hack>20.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>3.0</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<BonusSupport>
-		  <Classes>Support</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusSupport>
-		<BonusCav>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusCav>
-		<BonusHunt>
-		  <Classes>Animal</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusHunt>
-	  </Bonuses>
-      <RestrictedClasses datatype="tokens">Structure</RestrictedClasses>
-    </Charge>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>10</BuildTime>
     <Population>0</Population>
     <Resources>
       <food>100</food>
@@ -68,18 +48,22 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="3.0"/>
-    <Height>3.0</Height>
+    <Circle radius="1.75"/>
+    <Height>2.5</Height>
   </Footprint>
   <Health>
-    <Max>80</Max>
+    <Max>120</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
-    <VisibleClasses datatype="tokens">Dog</VisibleClasses>
+    <VisibleClasses datatype="tokens">Dog Melee</VisibleClasses>
     <GenericName>War Dog</GenericName>
     <Rank>Basic</Rank>
-    <Tooltip>Counters: 1.5x vs. Cavalry, Support Units, and Animals. Cannot attack structures.</Tooltip>
+    <Tooltip>Traits: Fast Speed, Low Armor, Raider, Cannot Attack Buildings.
+Strong Against: Support Units (1.5x), Cavalry (1.5x), Animals (1.5x).
+Weak Against: Ranged Units, Elephants.</Tooltip>
+	<RequiredTechnology>phase_town</RequiredTechnology>
+	<Formations disable=""/>
   </Identity>
   <Loot>
     <xp>130</xp>
@@ -87,10 +71,8 @@
     <wood>0</wood>
     <stone>0</stone>
     <metal>0</metal>
+    <glory>3</glory>
   </Loot>
-  <Obstruction>
-    <Unit radius="1.0"/>
-  </Obstruction>
   <Promotion>
     <RequiredXp>100</RequiredXp>
   </Promotion>
@@ -112,7 +94,7 @@
       <order_repair>voice/global/civ_dog_move.xml</order_repair>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
       <death>actor/fauna/death/death_animal_gen.xml</death>
       <trained>interface/complete/building/complete_kennel.xml</trained>
     </SoundGroups>
@@ -124,11 +106,9 @@
     <Category>WarDog</Category>
   </TrainingRestrictions>
   <UnitMotion>
-    <WalkSpeed>13.0</WalkSpeed>
+    <WalkSpeed op="mul">1.25</WalkSpeed>
     <Run>
-      <Speed>26.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
+      <Speed op="mul">1.25</Speed>
     </Run>
   </UnitMotion>
   <Vision>

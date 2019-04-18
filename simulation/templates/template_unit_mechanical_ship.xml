@@ -9,7 +9,7 @@
     <Population>1</Population>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>0</food>
+      <food>50</food>
       <wood>50</wood>
       <stone>0</stone>
       <metal>0</metal>
@@ -24,6 +24,7 @@
   <Footprint replace="">
     <Square width="6.0" depth="30.0"/>
     <Height>8.0</Height>
+	<MaxSpawnDistance>10</MaxSpawnDistance>
   </Footprint>
   <Health>
     <Max>100</Max>
@@ -32,11 +33,9 @@
     <GenericName>Ship</GenericName>
     <VisibleClasses datatype="tokens">Ship</VisibleClasses>
   </Identity>
-  <Obstruction>
-    <Unit radius="8.0"/>
-  </Obstruction>
   <Position>
     <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
     <TurnRate>3.0</TurnRate>
   </Position>
   <ResourceGatherer>
@@ -71,6 +70,6 @@
     <PassabilityClass>ship</PassabilityClass>
   </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>48</Range>
   </Vision>
 </Entity>

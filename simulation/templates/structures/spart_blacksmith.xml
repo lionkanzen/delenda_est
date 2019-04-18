@@ -13,11 +13,12 @@
 	  hellenes/pair_inf_armor_02
 	  hellenes/pair_inf_armor_03
 	  hellenes/pair_cav_01
-	  hellenes/pair_inf_armor_04
+	  hellenes/spartans_armor_infantry_hack_04
+	  hellenes/spartans_armor_infantryspearmen_pierce_04
 	  armor_hero_01
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/hellenes/blacksmith.xml</Actor>
+    <Actor>structures/spartans/blacksmith.xml</Actor>
   </VisualActor>
 </Entity>

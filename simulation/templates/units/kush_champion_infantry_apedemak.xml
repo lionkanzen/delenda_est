@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Guardian of Apedemak</GenericName>
+    <SpecificName>rs ‘Iprmk</SpecificName>
+    <VisibleClasses datatype="tokens">Axe</VisibleClasses>
+    <History>?</History>
+    <Icon>units/kush_champion_apedemak.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/kushites/champion_infantry_apedemak.xml</Actor>
+  </VisualActor>
+</Entity>

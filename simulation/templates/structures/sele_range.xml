@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_range">
+  <Footprint>
+    <Square width="27.0" depth="27.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>sele</Civ>
+    <SpecificName>Toxobolía</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+	<Entities datatype="tokens">
+	</Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/seleucids/range.xml</Actor>
+  </VisualActor>
+</Entity>

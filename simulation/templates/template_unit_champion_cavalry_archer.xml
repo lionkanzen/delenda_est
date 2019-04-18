@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_cavalry">
   <Armour>
-    <Hack>4</Hack>
-    <Pierce>5</Pierce>
-    <Crush>6</Crush>
+    <Hack>5</Hack>
+    <Pierce>10</Pierce>
+    <Crush>5</Crush>
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>20.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>60</MaxRange>
+      <Crush>0</Crush>
+      <MaxRange>76.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>60.0</ProjectileSpeed>
-      <PrepareTime>1200</PrepareTime>
+      <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>1.5</Spread>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Infantry Melee</Classes>
@@ -30,40 +37,21 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
 	  </Bonuses>
-      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
     <Resources>
-      <food>100</food>
       <wood>80</wood>
     </Resources>
   </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Ranged Archer</VisibleClasses>
-    <GenericName>Champion Cavalry Archer.</GenericName>
-    <Tooltip>Counters: 1.5x vs. Melee Infantry.
-Countered by: Javelin Infantry, Sword Cavalry, and Elephants.</Tooltip>
-    <Formations datatype="tokens">
-      formations/skirmish
-    </Formations>
+    <GenericName>Champion Archer Cavalry.</GenericName>
+    <Tooltip>Traits: Long Range, Fast Speed, Light Armor, Harassment.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
   </Identity>
-  <Obstruction>
-    <Unit radius="1.0"/>
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <death>actor/fauna/death/death_horse.xml</death>
-      <attack_impact>attack/impact/impact_arrow_all.xml</attack_impact>
-      <attack>attack/weapon/arrowfly.xml</attack>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <WalkSpeed>14.0</WalkSpeed>
-    <Run>
-      <Speed>28.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>10.0</RangeMin>
-    </Run>
-  </UnitMotion>
 </Entity>

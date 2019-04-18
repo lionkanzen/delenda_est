@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_tower">
+<Entity parent="template_structure_defensive_wall_tower">
   <Footprint replace="">
     <Circle radius="6.2"/>
     <Height>15.0</Height>
@@ -21,6 +21,6 @@
     <Actor>structures/iberians/wall_tower.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>10</Length>
+    <Length>10.0</Length>
   </WallPiece>
 </Entity>

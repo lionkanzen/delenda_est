@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_short">
+<Entity parent="template_structure_defensive_wall_short">
   <Footprint>
     <Square width="14.0" depth="7.0"/>
     <Height>9.0</Height>
   </Footprint>
   <Identity>
     <Civ>theb</Civ>
-	<SelectionGroupName>structures/athen_wallset_stone</SelectionGroupName>
+	<SelectionGroupName>structures/theb_wallset_stone</SelectionGroupName>
     <SpecificName>Teîkhos</SpecificName>
     <History>Thebes was surrounded by stone walls for protection against marauding enemy armies.</History>
   </Identity>
@@ -17,6 +17,6 @@
     <Actor>structures/hellenes/wall_short.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>13.0</Length>
+    <Length>12.3</Length>
   </WallPiece>
 </Entity>

@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Structure", "Unit"],
+	"modifications": [
+	  {"value": "Capturable/CapturePoints", "multiply": 2}
+	],
+	"auraName": "Eternal Fire",
+	"auraDescription": "Capturable structures and units +100% capture points when near the Temple of Vesta."
+}

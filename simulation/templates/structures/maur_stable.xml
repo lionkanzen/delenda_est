@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Ghudashaal</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="21.0" depth="21.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/mauryas/stable.xml</Actor>
+  </VisualActor>
+</Entity>

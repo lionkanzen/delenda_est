@@ -1,17 +1,18 @@
 {
 	"genericName": "Sewage System",
 	"specificName": {
-		"rome": "Cloaca Maxima"
+		"rome": "Cloaca Maxima",
+		"imp": "Cloaca Maxima"
 	},
 	"description": "Channelling effluence and waste away from a human settlement helps prevent the outbreak and spread of disease.",
-	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 100},
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 100},
 	"requirements": {"tech": "phase_town"},
-	"requirementsTooltip": "Unlocked by Indoor Plumbing.",
+	"requirementsTooltip": "Unlocked by Clay Water Pipes.",
 	"supersedes": "health_units_02",
-	"icon": "siege_rations.png",
+	"icon": "sewer.png",
 	"researchTime": 40,
-	"tooltip": "All organic units +5 Health.",
-	"modifications": [{"value": "Health/Max", "add": 5}],
+	"tooltip": "All organic units +5% Health.",
+	"modifications": [{"value": "Health/Max", "multiply": 1.05}],
 	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

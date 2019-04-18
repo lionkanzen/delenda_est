@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive">
+  <Auras datatype="tokens">
+    wall_battlements
+  </Auras>
+  <BuildRestrictions>
+	<PlacementType>land-shore</PlacementType>
+    <Category>Walls</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>50</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Capturable disable=""/>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <stone>15</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="6.0" depth="6.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_wall</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+	<VisibleClasses datatype="tokens">Wall StoneWall</VisibleClasses>
+    <Classes datatype="tokens">-ConquestCritical -NotField</Classes>
+    <GenericName>Stone Wall</GenericName>
+    <Tooltip>Wall off your town for a stout defense.</Tooltip>
+    <Icon>structures/wall.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>5</wood>
+    <stone>10</stone>
+    <metal>0</metal>
+    <glory>10</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="6.0" depth="6.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_wall.xml</select>
+      <constructed>interface/complete/building/complete_wall.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>20</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+</Entity>

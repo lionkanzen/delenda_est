@@ -2,6 +2,7 @@
 <Entity parent="template_unit_cavalry_melee_spearman">
   <Identity>
     <Civ>theb</Civ>
+	<Lang>greek</Lang>
     <SelectionGroupName>units/theb_cavalry_spearman_b</SelectionGroupName>
     <GenericName>Theban Cavalry</GenericName>
     <SpecificName>Hippeús Thebaïkós</SpecificName>
@@ -12,6 +13,6 @@
     <Entity>units/theb_cavalry_spearman_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/spartans/cavalry_spearman_b.xml</Actor>
+    <Actor>units/spartans/cavalry_spearman_b_m.xml</Actor>
   </VisualActor>
 </Entity>

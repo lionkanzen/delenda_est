@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable_elephant">
+  <Footprint>
+    <Square width="33.0" depth="33.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>kush</Civ>
+    <SpecificName>Ỉ﻿ḥ Abore</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="30.0" depth="28.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  kushites/pair_elephants_01
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/kushites/elephant_stable.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -37,10 +37,10 @@
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/spart_hero_leonidas
+      units/{civ}_hero_leonidas
     </Entities>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/hellenes/tholos.xml</Actor>
+    <Actor>structures/spartans/gerousia.xml</Actor>
   </VisualActor>
 </Entity>

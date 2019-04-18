@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_gastraphetes">
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Athenian Gastraphetes</SpecificName>
+    <Icon>units/athen_champion_infantry_ranged_gastraphetes.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/champion_unit_gastraphetes.xml</Actor>
+  </VisualActor>
+</Entity>

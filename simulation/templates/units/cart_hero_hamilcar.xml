@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_cavalry_swordsman">
-  <Auras>
-	<Aura1>
-      <Type>global</Type>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <UnitMotion.WalkSpeed> <Multiply>1.15</Multiply> </UnitMotion.WalkSpeed>
-      </Modifications>
-      <AuraName>"Lightning" Aura</AuraName>
-      <AuraDescription>All Units +15% Speed.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    cart_hero_hamilcar
   </Auras>
   <Identity>
     <Civ>cart</Civ>
@@ -19,6 +11,6 @@
     <Icon>units/cart_hero_hamilcar.png</Icon>
   </Identity>
   <VisualActor>
-    <Actor>units/carthaginians/hero_hamilcar_horse.xml</Actor>
+    <Actor>units/carthaginians/hero_cavalry_swordsman_hamilcar_m.xml</Actor>
   </VisualActor>
 </Entity>

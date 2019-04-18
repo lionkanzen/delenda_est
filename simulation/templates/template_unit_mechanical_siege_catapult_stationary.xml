@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_catapult">
+  <Armour>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
+  <BuildRestrictions>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral enemy ally</Territory>
+	<Category>Catapult</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>300</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>80</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <wood>200</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="10.0" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Onager</SpecificName>
+	<GenericName>Catapult</GenericName>
+    <History>.</History>
+  </Identity>
+  <Obstruction>
+    <Unit disable=""/>
+    <Active>true</Active>
+    <BlockMovement>true</BlockMovement>
+    <BlockPathfinding>true</BlockPathfinding>
+    <BlockFoundation>true</BlockFoundation>
+    <BlockConstruction>true</BlockConstruction>
+    <DisableBlockMovement>false</DisableBlockMovement>
+    <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <Static width="6.0" depth="8.0"/>
+  </Obstruction>
+  <Pack>
+    <State>unpacked</State>
+  </Pack>
+  <UnitMotion>
+    <WalkSpeed>0.001</WalkSpeed>
+    <Run>
+      <Speed>0.001</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <ConstructionPreview/>
+    <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
+  </VisualActor>
+</Entity>

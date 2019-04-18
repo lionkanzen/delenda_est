@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource_corral">
   <Footprint>
-    <Square width="14.0" depth="24.0"/>
-    <Height>5.0</Height>
+    <Square width="13.0" depth="22.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <Identity>
     <Civ>gaul</Civ>
-    <SpecificName>Cavalidos</SpecificName>
-    <History>A place for a farmer to pen his animals. Garrison a sheep, goat, or cow here to gain a trickle of the food resource. Garrisoning an animal here also "fattens" them so that they may be slaughtered and gathered for a quick burst of food.</History>
+    <SpecificName>Cagion</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="10.0" depth="20.0"/>
+    <Static width="10.0" depth="19.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      gaia/fauna_sheep
+    </Entities>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/celts/plot_corral.xml</Actor>
+    <FoundationActor>structures/fndn_2x4.xml</FoundationActor>
   </VisualActor>
 </Entity>

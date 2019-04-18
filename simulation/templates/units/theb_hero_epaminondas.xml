@@ -1,48 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_spearman">
+<Entity parent="template_unit_hero_infantry_hoplite">
   <Attack>
     <Melee>
-      <MaxRange>6.0</MaxRange>
 	  <Bonuses>
 		<BonusSpartans>
 		  <Civ>spart</Civ>
 		  <Classes></Classes>
-		  <Multiplier>1.2</Multiplier>
+		  <Multiplier>1.25</Multiplier>
 		</BonusSpartans>
 	  </Bonuses>
     </Melee>
-    <Charge>
-      <MaxRange>6.0</MaxRange>
-	  <Bonuses>
-		<BonusSpartans>
-		  <Civ>spart</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.2</Multiplier>
-		</BonusSpartans>
-	  </Bonuses>
-    </Charge>
   </Attack>
-  <Auras>
-	<Aura1>
-      <Type>global</Type>
-	  <AffectedPlayers>Ally</AffectedPlayers>
-      <Affects>Structure</Affects>
-      <Modifications>
-        <Cost.BuildTime><Multiply>0.75</Multiply></Cost.BuildTime>
-      </Modifications>
-      <AuraName>"Alliance Builder" Aura</AuraName>
-      <AuraDescription>Allied buildings construct +25% faster while he lives.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    theb_hero_epaminondas
   </Auras>
   <Identity>
     <Civ>theb</Civ>
+	<Lang>greek</Lang>
 	<GenericName>Epaminondas</GenericName>
     <SpecificName>Epameinondas</SpecificName>
 	<History>Leader, statesman, and general of the Boeotian city-state Thebes during its moment of ascendency during the middle decades of the 4th century BC.</History>
-    <Tooltip>Counters: 2x vs. All Cavalry.
-Countered by: Ranged Units and Sword Infantry.
-Special: +20% attack vs. Spartans.</Tooltip>
-    <Icon>units/athen_hero_pericles.png</Icon>
+    <Tooltip>Traits: Medium Speed, Heavy Armor, Strong Attack, Shield Wall.
+Strong Against: All Cavalry (1.25x), Spartans (1.25x)
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Icon>units/theb_hero_epaminondas.png</Icon>
   </Identity>
   <VisualActor>
     <Actor>units/thebans/hero_epaminondas.xml</Actor>

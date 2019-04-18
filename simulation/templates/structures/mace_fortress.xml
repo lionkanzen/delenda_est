@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <Attack>
+    <Ranged>
+      <MinRange>21.0</MinRange>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <stone>600</stone>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="26.0" depth="28.0"/>
     <Height>8.0</Height>
@@ -15,20 +26,24 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/mace_hero_philip
-      units/mace_hero_alexander
-      units/mace_hero_demetrius
-      units/mace_champion_infantry_a
-      units/mace_champion_cavalry
-	  units/mace_champion_elephant
+      units/{civ}_champion_infantry_hoplite
+      units/{civ}_champion_cavalry
+      units/{civ}_champion_ranged_gastraphetes
+      units/{civ}_hero_philip
+      units/{civ}_hero_alexander
+      units/{civ}_hero_craterus
+      units/{civ}_hero_demetrius
     </Entities>
     <Technologies datatype="tokens">
-	  hellenes/pair_champions_01
-	  successors/pair_mace_champions
-	  hellenes/unlock_elephants
+	  unlock_spies
+	  spy_counter
     </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/macedonians/fortress_up.xml</Actor>
   </VisualActor>
+  <WallPiece>
+   <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
 </Entity>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Scenario version="5">
+<Scenario version="6">
 	<Environment>
 		<SkySet>cumulus</SkySet>
-		<SunColour r="0.866667" g="0.776471" b="0.486275"/>
+		<SunColor r="0.866667" g="0.776471" b="0.486275"/>
 		<SunElevation angle="0.671884"/>
 		<SunRotation angle="-0.582913"/>
-		<TerrainAmbientColour r="0.392157" g="0.47451" b="0.654902"/>
-		<UnitsAmbientColour r="0.447059" g="0.509804" b="0.54902"/>
+		<TerrainAmbientColor r="0.392157" g="0.47451" b="0.654902"/>
+		<UnitsAmbientColor r="0.447059" g="0.509804" b="0.54902"/>
 		<Fog>
 			<FogFactor>0.00203125</FogFactor>
 			<FogThickness>0.151367</FogThickness>
-			<FogColour r="0.8" g="0.8" b="0.894118"/>
+			<FogColor r="0.8" g="0.8" b="0.894118"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Colour r="0.215686" g="0.356863" b="0.615686"/>
+				<Color r="0.211765" g="0.356863" b="0.611765"/>
 				<Tint r="0" g="1" b="1"/>
 				<Height>33.0492</Height>
 				<Waviness>3</Waviness>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="736.026" y="131.26" z="1165.4"/>
+		<Position x="1431.19" y="93.2921" z="1018.59"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -45,16 +45,16 @@
   ],
   "CircularMap": true,
   "Description": "A \"small island\"-style map set in the Aegean Sea.\n\nMap size: Very Large",
-  "GameType": "conquest",
   "Keywords": [
     "naval"
   ],
   "LockTeams": false,
-  "MapType": "conquest",
+  "MapType": "conquest_civic_centers",
   "Name": "Cycladic Archipelago (3)",
   "PlayerData": [
+    null,
     {
-      "Colour": {
+      "Color": {
         "b": 200,
         "g": 46,
         "r": 46
@@ -62,7 +62,7 @@
       "Name": "Samos"
     },
     {
-      "Colour": {
+      "Color": {
         "b": 13,
         "g": 13,
         "r": 223
@@ -70,7 +70,7 @@
       "Name": "Lesbos"
     },
     {
-      "Colour": {
+      "Color": {
         "b": 64,
         "g": 255,
         "r": 0
@@ -80,6 +80,9 @@
   ],
   "Preview": "cycladic_archipelago_skirm_3.png",
   "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ],
   "Seed": 0,
   "Size": 384
 }
@@ -2961,7 +2964,7 @@
 		<Entity uid="570">
 			<Template>gaia/flora_tree_cypress</Template>
 			<Player>0</Player>
-			<Position x="417.58506" z="378.94498"/>
+			<Position x="409.51435" z="386.05384"/>
 			<Orientation y="0.67664"/>
 		</Entity>
 		<Entity uid="571">
@@ -6427,37 +6430,37 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1257">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="737.08082" z="684.9015"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1258">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="670.48945" z="678.0511"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1259">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="737.20215" z="677.26539"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1260">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="733.26844" z="684.44501"/>
 			<Orientation y="0.1618"/>
 		</Entity>
 		<Entity uid="1261">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>0</Player>
 			<Position x="740.86384" z="681.86438"/>
 			<Orientation y="-2.1271"/>
 		</Entity>
 		<Entity uid="1262">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>0</Player>
 			<Position x="741.42157" z="684.45374"/>
 			<Orientation y="2.35621"/>
@@ -7034,49 +7037,49 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1375">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="587.02698" z="684.34375"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1376">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="595.76362" z="687.39966"/>
 			<Orientation y="-2.39231"/>
 		</Entity>
 		<Entity uid="1377">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="592.3642" z="674.72095"/>
 			<Orientation y="0.27788"/>
 		</Entity>
 		<Entity uid="1378">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="883.47278" z="407.95542"/>
 			<Orientation y="0.86902"/>
 		</Entity>
 		<Entity uid="1379">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1090.98914" z="289.23664"/>
 			<Orientation y="0.6189"/>
 		</Entity>
 		<Entity uid="1380">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="744.91877" z="609.71949"/>
 			<Orientation y="-2.22619"/>
 		</Entity>
 		<Entity uid="1381">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="954.03187" z="749.5094"/>
 			<Orientation y="0.56691"/>
 		</Entity>
 		<Entity uid="1382">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="384.10557" z="865.80097"/>
 			<Orientation y="0.07082"/>
@@ -8120,25 +8123,25 @@
 			<Orientation y="-2.41445"/>
 		</Entity>
 		<Entity uid="1558">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="623.91498" z="124.2452"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1559">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="685.33936" z="108.72007"/>
 			<Orientation y="-2.48221"/>
 		</Entity>
 		<Entity uid="1560">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1316.70813" z="996.50843"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1561">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1605.30274" z="799.8484"/>
 			<Orientation y="0.46933"/>
@@ -8792,49 +8795,49 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1670">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1136.2859" z="272.8863"/>
 			<Orientation y="-2.87996"/>
 		</Entity>
 		<Entity uid="1671">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1133.71583" z="274.32139"/>
 			<Orientation y="0.91955"/>
 		</Entity>
 		<Entity uid="1672">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="1137.23768" z="276.46235"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1673">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="1140.35682" z="273.0092"/>
 			<Orientation y="-1.62855"/>
 		</Entity>
 		<Entity uid="1674">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="359.20173" z="1243.61768"/>
 			<Orientation y="-0.47077"/>
 		</Entity>
 		<Entity uid="1675">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="285.3154" z="1180.38025"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1676">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="729.97852" z="1072.36146"/>
 			<Orientation y="-2.06179"/>
 		</Entity>
 		<Entity uid="1677">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="1123.7959" z="257.26853"/>
 			<Orientation y="2.35621"/>
@@ -10916,61 +10919,61 @@
 			<Orientation y="-1.58507"/>
 		</Entity>
 		<Entity uid="2030">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1033.68287" z="1128.44068"/>
 			<Orientation y="1.13003"/>
 		</Entity>
 		<Entity uid="2031">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1065.2002" z="1117.72388"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="2032">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="1046.54188" z="1124.78187"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="2033">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="685.02405" z="1198.15882"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="2034">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="689.77155" z="1180.55262"/>
 			<Orientation y="1.0892"/>
 		</Entity>
 		<Entity uid="2035">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1380.56739" z="877.33741"/>
 			<Orientation y="1.38758"/>
 		</Entity>
 		<Entity uid="2036">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="71.01655" z="814.63093"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="2037">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1282.16785" z="239.78025"/>
 			<Orientation y="0.31022"/>
 		</Entity>
 		<Entity uid="2038">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="425.48563" z="953.40357"/>
 			<Orientation y="-1.95913"/>
 		</Entity>
 		<Entity uid="2039">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="419.39152" z="950.36695"/>
 			<Orientation y="0.7752"/>
@@ -15406,7 +15409,7 @@
 		<Entity uid="2924">
 			<Template>gaia/flora_tree_cypress</Template>
 			<Player>0</Player>
-			<Position x="1464.49134" z="1108.62635"/>
+			<Position x="1485.81543" z="1108.55005"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="2925">
@@ -17800,19 +17803,19 @@
 			<Orientation y="0.30796"/>
 		</Entity>
 		<Entity uid="3406">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1611.64625" z="810.27771"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="3407">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="1328.88111" z="1305.03162"/>
 			<Orientation y="1.9453"/>
 		</Entity>
 		<Entity uid="3408">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="1091.04542" z="178.40392"/>
 			<Orientation y="-0.28254"/>
@@ -18913,31 +18916,31 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="3621">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="1363.11414" z="699.45838"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="3622">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1369.5271" z="675.05628"/>
 			<Orientation y="-2.89"/>
 		</Entity>
 		<Entity uid="3623">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1366.64551" z="715.70398"/>
 			<Orientation y="0.6613"/>
 		</Entity>
 		<Entity uid="3624">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="1402.07422" z="1300.97803"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="3625">
-			<Template>other/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="937.6261" z="1634.79468"/>
 			<Orientation y="1.90447"/>
@@ -19089,8 +19092,8 @@
 		<Entity uid="3663">
 			<Template>gaia/flora_tree_cretan_date_palm_patch</Template>
 			<Player>0</Player>
-			<Position x="432.40171" z="374.2909"/>
-			<Orientation y="0.47092"/>
+			<Position x="434.59256" z="359.11246"/>
+			<Orientation y="1.73693"/>
 		</Entity>
 		<Entity uid="3664">
 			<Template>gaia/flora_tree_cretan_date_palm_patch</Template>
@@ -20638,28 +20641,28 @@
 			<Actor seed="37576"/>
 		</Entity>
 		<Entity uid="3977">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="622.49256" z="1459.16822"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10706"/>
 		</Entity>
 		<Entity uid="3978">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="626.21674" z="1462.5746"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60422"/>
 		</Entity>
 		<Entity uid="3979">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="630.78199" z="1466.53272"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43562"/>
 		</Entity>
 		<Entity uid="3980">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="635.10883" z="1469.95826"/>
 			<Orientation y="2.35621"/>
@@ -20708,28 +20711,28 @@
 			<Actor seed="4550"/>
 		</Entity>
 		<Entity uid="3987">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="1430.55274" z="1073.23633"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49860"/>
 		</Entity>
 		<Entity uid="3988">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="1434.77503" z="1076.6587"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60624"/>
 		</Entity>
 		<Entity uid="3989">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="1438.20289" z="1080.17127"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18314"/>
 		</Entity>
 		<Entity uid="3990">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="1441.51075" z="1082.61365"/>
 			<Orientation y="2.35621"/>
@@ -20799,28 +20802,28 @@
 			<Actor seed="5432"/>
 		</Entity>
 		<Entity uid="4000">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>3</Player>
 			<Position x="457.0384" z="387.83896"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4142"/>
 		</Entity>
 		<Entity uid="4001">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>3</Player>
 			<Position x="461.17438" z="392.41657"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51130"/>
 		</Entity>
 		<Entity uid="4002">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>3</Player>
 			<Position x="465.4582" z="396.18595"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23502"/>
 		</Entity>
 		<Entity uid="4003">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>3</Player>
 			<Position x="469.00956" z="399.58536"/>
 			<Orientation y="2.35621"/>
@@ -21067,6 +21070,27 @@
 			<Position x="683.96821" z="1452.6626"/>
 			<Orientation y="-1.31324"/>
 			<Actor seed="31238"/>
+		</Entity>
+		<Entity uid="4040">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>1</Player>
+			<Position x="646.54822" z="1518.10584"/>
+			<Orientation y="-2.32061"/>
+			<Actor seed="7384"/>
+		</Entity>
+		<Entity uid="4041">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>3</Player>
+			<Position x="418.98752" z="369.01172"/>
+			<Orientation y="0.71244"/>
+			<Actor seed="54842"/>
+		</Entity>
+		<Entity uid="4042">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>2</Player>
+			<Position x="1474.0608" z="1121.44385"/>
+			<Orientation y="-2.26114"/>
+			<Actor seed="37072"/>
 		</Entity>
 	</Entities>
 	<Paths/>

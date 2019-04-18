@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_ranged_javelinist">
-  <Builder>
-    <Entities datatype="tokens">
-      structures/pers_stables
-      structures/pers_apadana
-      structures/{civ}_wonder
-    </Entities>
-  </Builder>
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
   <Identity>
     <Civ>pers</Civ>
+	<Lang>persian</Lang>
 	<SelectionGroupName>units/pers_infantry_javelinist_b</SelectionGroupName>
 	<GenericName>Anatolian Auxiliary</GenericName>
     <SpecificName>Spardiya Takabara</SpecificName>

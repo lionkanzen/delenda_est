@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_wonder">
   <Footprint>
-    <Square width="24.0" depth="44.0"/>
+    <Square width="46.0" depth="54.0"/>
     <Height>12.0</Height>
   </Footprint>
-  <GarrisonHolder>
-    <Max>30</Max>
-    <EjectHealth>0.1</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry</List>
-    <BuffHeal>3</BuffHeal>
-    <LoadingRange>2</LoadingRange>
-  </GarrisonHolder>
   <Identity>
     <Civ>rome</Civ>
     <SpecificName>Aedes Iovis Optimi Maximi</SpecificName>
     <History>.</History>
   </Identity>
   <Obstruction>
-    <Static width="20.0" depth="40.0"/>
+    <Static width="42.0" depth="50.0"/>
   </Obstruction>
-  <RallyPoint/>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  health_state_religion
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
-    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
-    <Actor>structures/romans/temple_mars.xml</Actor>
+    <Actor>structures/romans/capitoline.xml</Actor>
   </VisualActor>
 </Entity>

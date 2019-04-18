@@ -1,8 +1,6 @@
 RESOURCE GATHERING
-- Use Citizen-Soldiers and Female Citizens to gather resources.
-
-- Female Citizens are bonused with Farming and Foraging.
-
-- Citizen-Soldiers are bonused with Mining.
-
-- The higher the level of Citizen-Soldier (Advanced, Elite), the better he fights, but the less efficient he is at gathering.
+Citizens can gather, but are best at building. Slaves are good gatherers, but cannot build anything.
+Foraging from berry bushes or berry trees is the fastest way to gather food, while farming is the slowest. Food is required for most units.
+Mine stone from quarries to build military and defensive structures.
+Mine metal from metal mines to research improvements and train strong soldiers.
+Use the "Town Bell" at a Storehouse or Farmstead to hide nearby Slaves from an attack.

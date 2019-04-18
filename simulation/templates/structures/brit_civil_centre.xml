@@ -6,29 +6,25 @@
   </Footprint>
   <Identity>
     <Civ>brit</Civ>
-    <SpecificName>Caer</SpecificName>
-    <History>This was be the center of the town, a great hall where the clan leader resided. All political matters were probably performed inside such a structure.</History>
+    <SpecificName>Tigernotreba</SpecificName>
+    <History>This was be the center of the town, a great hall where the clan leader resided. All political matters were probably decided inside such a structure.</History>
   </Identity>
-<Health>
-  <SpawnEntityOnDeath>rubble/rubble_celt_cc</SpawnEntityOnDeath>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_brit_cc</SpawnEntityOnDeath>
   </Health>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/brit_infantry_spearman_b
     </Entities>
     <Technologies datatype="tokens">
-      phase_town_generic
-      phase_city_generic
-	  phase_imperial_generic
 	  health_units_01
 	  health_units_02
 	  celts/health_units_03
 	  pair_structures_01
 	  pair_structures_02
-	  vision_treason
+	  successors/health_heroes
     </Technologies>
   </ProductionQueue>
   <VisualActor>

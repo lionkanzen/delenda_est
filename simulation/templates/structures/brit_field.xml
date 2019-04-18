@@ -2,7 +2,10 @@
 <Entity parent="template_structure_resource_field">
   <Identity>
     <Civ>brit</Civ>
-    <SpecificName>Varmo</SpecificName>
+    <SpecificName>Olca</SpecificName>
     <History>A farmer's field. The Celts were good farmers.</History>
   </Identity>
+  <VisualActor>
+    <Actor>structures/plot_field_temp.xml</Actor>
+  </VisualActor>
 </Entity>

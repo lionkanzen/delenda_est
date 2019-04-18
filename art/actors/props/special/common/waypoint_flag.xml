@@ -41,6 +41,11 @@
         <texture file="props/banner_romans.png" name="baseTex"/>
       </textures>
     </variant>
+    <variant name="imp">
+      <textures>
+        <texture file="props/banner_romans.png" name="baseTex"/>
+      </textures>
+    </variant>
     <variant name="spart">
       <textures>
         <texture file="props/banner_spartans.png" name="baseTex"/>
@@ -68,7 +73,7 @@
     </variant>
     <variant name="maur">
       <textures>
-        <texture file="props/banner_mauryans.png" name="baseTex"/>
+        <texture file="props/banner_mauryas.png" name="baseTex"/>
       </textures>
     </variant>
     <variant name="ptol">
@@ -85,6 +90,21 @@
       <textures>
         <texture file="props/banner_thebans.png" name="baseTex"/>
       </textures>
+    </variant>
+    <variant name="epir">
+      <textures>
+        <texture file="props/banner_epirotes.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="han">
+      <textures>
+	    <texture file="props/banner_chinese.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="kush">
+      <textures>
+	    <texture file="props/banner_kushites.png" name="baseTex"/>
+	  </textures>
     </variant>
   </group>
   <material>basic_trans.xml</material>

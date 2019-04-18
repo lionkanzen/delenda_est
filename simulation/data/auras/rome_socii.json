@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Soldier"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+	  {"value": "Attack/Ranged/Pierce", "add": 1},
+	  {"value": "Attack/Melee/Hack", "add": 1},
+	  {"value": "Attack/Capture/Value", "add": 1}
+	],
+	"auraName": "Socii Allies",
+	"auraDescription": "Allied soldiers +10% attack and +10% capture within range of a Roman Civic Center or Army Camp.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

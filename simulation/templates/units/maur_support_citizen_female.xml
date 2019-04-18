@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_citizen_female">
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Naari</SpecificName>
+    <GenericName>Indian Woman</GenericName>
+    <History>Mauryan Female Citizen</History>
+    <Icon>units/maur_support_female_citizen.png</Icon>
+	<SelectionGroupName>units/maur_support_female_citizen</SelectionGroupName>
+    <RequiredTechnology>mauryans/unlock_females_house</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mauryas/citizen_female.xml</Actor>
+  </VisualActor>
+</Entity>

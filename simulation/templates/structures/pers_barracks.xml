@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
-  <Cost>
-    <BuildTime>120</BuildTime>
-    <Resources>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
   <Identity>
     <Civ>pers</Civ>
     <SpecificName>Padgan</SpecificName>
@@ -14,19 +8,13 @@
     <Icon>structures/pers_barracks.png</Icon>
   </Identity>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/pers_infantry_spearman_b
-      units/pers_infantry_javelinist_b
-      units/pers_infantry_archer_b
-    </Entities>
+	<Entities datatype="tokens">
+	</Entities>
     <Technologies datatype="tokens">
 	  persians/training_levy_infantry
 	  persians/training_mobilization_infantry
 	  persians/training_kings_levy
-	  persians/special_archery_tradition
-	  persians/upgrade_rank_advanced_archers
-	  persians/upgrade_rank_elite_archers
-	  -pair_levy_01
+	  -training_levy_infantry_barracks
 	  -training_mobilization
 	  -training_total_war
     </Technologies>

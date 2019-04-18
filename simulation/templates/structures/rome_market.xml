@@ -5,7 +5,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>rome</Civ>
@@ -17,7 +17,6 @@
   </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
-	  -speed_trader_02
 	  romans/speed_trader_02
     </Technologies>
   </ProductionQueue>

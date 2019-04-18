@@ -5,7 +5,7 @@
     <Height>12.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>sele</Civ>
@@ -15,21 +15,16 @@
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/sele_infantry_spearman_b
-      units/sele_infantry_javelinist_b
-	  units/sele_cavalry_spearman_b
-      units/sele_cavalry_javelinist_b
-      units/sele_cavalry_archer_b
-    </Entities>
+	<Entities datatype="tokens">
+	  -units/{civ}_infantry_swordsman_b
+	</Entities>
     <Technologies datatype="tokens">
-	  hellenes/health_inf_martial_arts
 	  hellenes/attack_inf_spearfighting
-	  successors/special_war_horses
+	  hellenes/health_inf_martial_arts
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/macedonians/barracks.xml</Actor>
+    <Actor>structures/seleucids/barracks.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

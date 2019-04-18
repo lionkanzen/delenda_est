@@ -12,12 +12,9 @@
   <Identity>
     <Civ>gaia</Civ>
     <Classes datatype="tokens">Elephant</Classes>
-    <SpecificName>African Elephant (Infant)</SpecificName>
+    <SpecificName>African Elephant Calf</SpecificName>
     <Icon>gaia/fauna_elephant_african_infant.png</Icon>
   </Identity>
-  <Obstruction>
-    <Unit radius="1.5"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>

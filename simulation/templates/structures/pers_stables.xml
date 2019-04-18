@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
   <Cost>
-    <BuildTime>120</BuildTime>
     <Resources>
       <wood>0</wood>
       <stone>200</stone>
@@ -12,17 +11,13 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>pers</Civ>
     <GenericName>Cavalry Stables</GenericName>
     <SpecificName>Paraspa</SpecificName>
-    <VisibleClasses datatype="tokens">
-	  -Barracks
-	  Stables
-	</VisibleClasses>
-    <History>Cavalry was primarily used as an elite assault force by the Persians.</History>
+    <VisibleClasses datatype="tokens">-Barracks Stables</VisibleClasses>
     <Tooltip>Train citizen-cavalry units.</Tooltip>
     <Icon>structures/pers_stable.png</Icon>
   </Identity>
@@ -31,22 +26,14 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/pers_cavalry_spearman_b
-      units/pers_cavalry_swordsman_b
-      units/pers_cavalry_javelinist_b
-      units/pers_cavalry_archer_b
+      -units/{civ}_infantry_spearman_b
+      -units/{civ}_infantry_pikeman_b
+      -units/{civ}_infantry_swordsman_b
     </Entities>
     <Technologies datatype="tokens">
-	  -pair_levy_01
-	  -training_mobilization
-	  -training_total_war
-	  persians/training_levy_cavalry
-	  persians/training_conscription_cavalry
-	  persians/upgrade_rank_advanced_cavalry
-	  persians/upgrade_rank_elite_cavalry
-	  successors/special_war_horses
-	  persians/upgrade_rank_medium_chariot
-	  persians/upgrade_rank_heavy_chariot
+      persians/training_levy_cavalry
+      persians/training_conscription_cavalry
+      successors/special_war_horses
     </Technologies>
   </ProductionQueue>
   <Sound>

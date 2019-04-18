@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship_warship_medium">
+  <Identity>
+    <Civ>epir</Civ>
+	<Lang>greek</Lang>
+    <SpecificName>Trihemiolos</SpecificName>
+    <History>.</History>
+    <Icon>units/hele_ship_trireme.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/hellenes/trireme.xml</Actor>
+  </VisualActor>
+</Entity>

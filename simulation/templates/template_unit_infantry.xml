@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
   <Attack>
+    <Capture>
+      <Value>5</Value>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
     <Slaughter>
       <Hack>50.0</Hack>
       <Pierce>0.0</Pierce>
@@ -8,32 +14,49 @@
       <MaxRange>4.0</MaxRange>
     </Slaughter>
   </Attack>
+  <Auras datatype="tokens">
+    slave_ownership
+  </Auras>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
-      structures/{civ}_house
-      structures/{civ}_storehouse
-      structures/{civ}_farmstead
-      structures/{civ}_field
-      structures/{civ}_corral
-      structures/{civ}_outpost
-      other/wallset_palisade
-      structures/{civ}_dock
-      structures/{civ}_defense_tower
-      structures/{civ}_barracks
-      structures/{civ}_blacksmith
-      structures/{civ}_temple
-      structures/{civ}_market
-      structures/{civ}_shipyard
-      structures/{civ}_wallset_stone
       structures/{civ}_civil_centre
+      structures/{civ}_government_center
+      structures/{civ}_pyramid_1
+      structures/{civ}_pyramid_2
+      structures/{civ}_arch
+      structures/{civ}_military_colony
+      structures/{civ}_barracks
+      structures/{civ}_barracks_aux
+      structures/{civ}_range
+      structures/{civ}_stable
+      structures/{civ}_embassy_celtic
+      structures/{civ}_embassy_iberian
+      structures/{civ}_embassy_italiote
+      structures/{civ}_outpost
+      structures/{civ}_defense_tower
+      structures/{civ}_shipyard
+      structures/{civ}_kennel
+      structures/{civ}_blacksmith
+      other/wallset_palisade
+      structures/{civ}_wallset_palisade
+      structures/{civ}_wallset_siege
+      structures/{civ}_wallset_stone
+      structures/{civ}_elephant_stables
+      structures/{civ}_apadana
+      structures/{civ}_prytaneion
+      structures/{civ}_workshop
+      units/{civ}_mechanical_siege_catapult_unpacked
+      structures/{civ}_army_camp
       structures/{civ}_fortress
+      structures/{civ}_wonder
     </Entities>
   </Builder>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <Population>2</Population>
+	<BuildTime>15</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>60</food>
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
@@ -48,8 +71,8 @@
   </Health>
   <Identity>
     <GenericName>Infantry</GenericName>
-    <Classes datatype="tokens">CitizenSoldier Organic Worker</Classes>
-    <VisibleClasses datatype="tokens">Builder Gatherer Infantry Citizen Soldier</VisibleClasses>
+    <Classes datatype="tokens">CitizenSoldier Organic Worker Human</Classes>
+    <VisibleClasses datatype="tokens">Builder Infantry Citizen Soldier</VisibleClasses>
     <Rank>Basic</Rank>
   </Identity>
   <Loot>
@@ -58,25 +81,35 @@
     <wood>0</wood>
     <stone>0</stone>
     <metal>0</metal>
+    <glory>5</glory>
   </Loot>
   <Looter/>
   <Promotion>
     <RequiredXp>100</RequiredXp>
   </Promotion>
+  <RangeVisualization disable=""/>
   <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>0.5</food.fruit>
-      <food.grain>0.1</food.grain>
-      <food.meat>1</food.meat>
-	  <wood.tree>0.7</wood.tree>
-	  <wood.ruins>5</wood.ruins>
-      <stone.rock>0.7</stone.rock>
-	  <stone.ruins>2</stone.ruins>
-      <metal.ore>0.7</metal.ore>
+      <food.fruit disable=""/>
+      <food.grain disable=""/>
+      <food.meat disable=""/>
+	  <wood.tree disable=""/>
+	  <wood.ruins disable=""/>
+      <stone.rock disable=""/>
+	  <stone.ruins disable=""/>
+      <metal.ore disable=""/>
     </Rates>
   </ResourceGatherer>
+  <ResourceTrickle>
+    <Rates>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <glory>0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
   <Selectable>
     <Overlay>
       <Texture>
@@ -87,15 +120,18 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <order_repair>voice/hellenes/civ/civ_male_ack.xml</order_repair>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/death.xml</death>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>actor/human/death/{gender}_death.xml</death>
       <build>resource/construction/con_wood.xml</build>
       <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
       <gather_grain>resource/farming/farm.xml</gather_grain>
@@ -106,17 +142,10 @@
       <trained>interface/alarm/alarm_create_infantry.xml</trained>
     </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>1000</Max>
-  </Stamina>
-  <UnitMotion>
-    <WalkSpeed>7.5</WalkSpeed>
-    <Run>
-      <Speed>18.75</Speed>
-    </Run>
-    <CostClass>infantry</CostClass>
-  </UnitMotion>
   <Vision>
-    <Range>50</Range>
+    <Range>40</Range>
   </Vision>
+  <VisionSharing> 
+    <Bribable>true</Bribable> 
+  </VisionSharing> 
 </Entity>

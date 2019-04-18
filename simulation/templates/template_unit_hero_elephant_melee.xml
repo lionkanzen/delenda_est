@@ -5,13 +5,14 @@
     <Pierce>10</Pierce>
     <Crush>12</Crush>
   </Armour>
-  <Attack>
+  <Attack replace="">
     <Melee>
-      <Hack>25.0</Hack>
+      <Hack>50.0</Hack>
       <Pierce>0.0</Pierce>
-      <Crush>25.0</Crush>
+      <Crush>20.0</Crush>
       <MaxRange>8.0</MaxRange>
-      <RepeatTime>1000</RepeatTime>
+	  <PrepareTime>750</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
 	  <Bonuses>
 		<BonusStructures>
 		  <Classes>Structure</Classes>
@@ -26,14 +27,18 @@
 		  <Multiplier>1.5</Multiplier>
 		</BonusGates>
 	  </Bonuses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
     </Melee>
   </Attack>
+  <Auras datatype="tokens">
+    elephant_fear
+	elephant_trample
+  </Auras>
   <Cost>
-    <Population>3</Population>
-    <BuildTime>60</BuildTime>
+    <BuildTime>45</BuildTime>
     <Resources>
-      <food>500</food>
-      <metal>500</metal>
+      <food>1000</food>
     </Resources>
   </Cost>
   <Footprint>
@@ -45,9 +50,9 @@
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
-    <Tooltip>
-Counters: 2x vs. All Cavalry, 1.5x vs. All Structures. Extra 1.5x vs. Gates.
-Countered by: Javelin Infantry and Sword Sword Infantry. Can run amok.</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Run Amok.
+Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
   </Identity>
   <Sound>
     <SoundGroups>
@@ -55,7 +60,7 @@ Countered by: Javelin Infantry and Sword Sword Infantry. Can run amok.</Tooltip>
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
       <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
       <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
       <death>actor/fauna/animal/elephant_death.xml</death>
@@ -63,14 +68,9 @@ Countered by: Javelin Infantry and Sword Sword Infantry. Can run amok.</Tooltip>
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
     <Run>
-      <Speed>14.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>10.0</RangeMin>
+      <Speed op="mul">0.75</Speed>
     </Run>
   </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
 </Entity>

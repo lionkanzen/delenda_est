@@ -14,9 +14,9 @@
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "flood_control.png",
-	"researchTime": 40,
-	"tooltip": "Farm Fields +200% Health.",
-	"modifications": [{"value": "Health/Max", "multiply": 3}],
+	"researchTime": 20,
+	"tooltip": "Farm Fields +500% Health.",
+	"modifications": [{"value": "Health/Max", "multiply": 6}],
 	"affects": ["Field"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

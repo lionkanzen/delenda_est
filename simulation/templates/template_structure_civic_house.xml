@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
   <BuildRestrictions>
-    <Category>House</Category>
+    <Category>HouseSmall</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>100</CapturePoints> 
+  </Capturable>
   <Cost>
     <PopulationBonus>5</PopulationBonus>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <wood>75</wood>
     </Resources>
@@ -19,17 +22,17 @@
     <BuffHeal>0</BuffHeal>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support</List>
+    <List datatype="tokens">Support+!Elephant Minister</List>
     <LoadingRange>1</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>600</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+    <Max>200</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>House</GenericName>
     <Tooltip>Increase the population limit.</Tooltip>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <Classes datatype="tokens">-ConquestCritical CaptureResistant</Classes>
     <VisibleClasses datatype="tokens">Village House</VisibleClasses>
     <Icon>structures/house.png</Icon>
   </Identity>
@@ -37,8 +40,9 @@
     <xp>100</xp>
     <food>0</food>
     <wood>10</wood>
-    <stone>10</stone>
+    <stone>0</stone>
     <metal>0</metal>
+    <glory>50</glory>
   </Loot>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
@@ -46,14 +50,22 @@
   <ProductionQueue>
     <BatchTimeModifier>0.9</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}_support_female_citizen_house
+      units/{civ}_support_citizen_house
     </Entities>
     <Technologies datatype="tokens">
-      unlock_females_house
-	  health_females_01
-	  pair_house_01
+      unlock_citizens_house_small
+	  mauryas/unlock_citizens_house
+	  kushites/unlock_citizens_house
+	  health_citizens_01
+	  pop_house_01
     </Technologies>
   </ProductionQueue>
+  <ResourceTrickle>
+    <Rates>
+      <glory>0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_house.xml</select>
@@ -66,10 +78,13 @@
     <BarHeight>0.6</BarHeight>
     <HeightOffset>8.0</HeightOffset>
   </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>300</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>20</Radius>
-    <Weight>40000</Weight>
+    <Radius>12</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
   <Vision>
     <Range>20</Range>

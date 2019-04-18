@@ -11,6 +11,7 @@
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>5.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
 	  <Bonuses>
 		<BonusPrimary>
@@ -34,39 +35,24 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
 	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+      <PreferredClasses datatype="tokens">Ranged+Unit Siege</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
     </Melee>
-    <Charge>
-      <Hack>50.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>5.0</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<BonusPrimary>
-		  <Classes>Infantry Ranged</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusPrimary>
-		<BonusSecondary>
-		  <Classes>Cavalry Ranged</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusSecondary>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
-	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
-    </Charge>
   </Attack>
+  <Auras datatype="tokens">
+    cavalry_trample_10
+  </Auras>
   <Identity>
     <VisibleClasses datatype="tokens">Melee Sword</VisibleClasses>
-    <GenericName>Hero Cavalry Swordsman</GenericName>
-    <Tooltip>Counters: 2x vs. Siege Weapons, 1.5x vs. Ranged Infantry and Ranged Cavalry.
-Countered by: Spear Infantry, Elephants, and Camels.</Tooltip>
+    <GenericName>Hero Sword Cavalry</GenericName>
+    <Tooltip>Traits: Fast Speed, Charge, Trample.
+Strong Against: Ranged Infantry (1.5x), Ranged Cavalry (1.5x), Siege Weapons (2x).
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Camels.</Tooltip>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.1</Speed>
+    </Run>
+  </UnitMotion>
 </Entity>

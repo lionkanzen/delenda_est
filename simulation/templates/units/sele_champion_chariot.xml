@@ -8,31 +8,35 @@
       <Pierce>35.0</Pierce>
     </Ranged>
   </Attack>
+  <Auras datatype="tokens">
+	chariot_trample_e
+  </Auras>
   <Cost>
-    <Population>3</Population>
-    <BuildTime>18</BuildTime>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>200</food>
-      <wood>200</wood>
+      <food>150</food>
+      <wood>150</wood>
       <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint replace="">
-    <Square width="7.5" depth="15.0"/>
+    <Square width="9" depth="15.0"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>200</Max>
+    <Max>280</Max>
   </Health>
   <Identity>
     <Civ>sele</Civ>
     <VisibleClasses datatype="tokens">Chariot Trample</VisibleClasses>
 	<GenericName>Scythed Chariot</GenericName>
     <SpecificName>Drepanèphoros</SpecificName>
-    <History>
-Expensive "suicide" unit. Mostly used to rush into infantry and cavalry formations to slaughter a bunch of enemies with scythes ("Trample Damage" aura) before getting destroyed themselves.
-Countered by: Javelin Infantry and Elephants.</History>
-	<Icon>units/pers_cavalry_archer.png</Icon>
+    <History>Expensive "suicide" unit. Mostly used to rush into infantry and cavalry formations to slaughter a bunch of enemies with scythes ("Trample Damage" aura) before getting destroyed themselves.</History>
+	<Icon>units/sele_champion_chariot.png</Icon>
+    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample, Heavy Charge.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
     <RequiredTechnology>successors/unlock_traditional_army</RequiredTechnology>
   </Identity>
   <Loot>
@@ -42,16 +46,14 @@ Countered by: Javelin Infantry and Elephants.</History>
     <stone>0</stone>
     <metal>20</metal>
   </Loot>
-  <Obstruction>
-    <Unit radius="2.0"/>
-  </Obstruction>
   <UnitMotion>
-    <WalkSpeed>11.0</WalkSpeed>
+    <WalkSpeed>16.0</WalkSpeed>
     <Run>
-      <Speed>33.0</Speed>
+      <Speed>36.0</Speed>
     </Run>
+	<PassabilityClass>large</PassabilityClass> 
   </UnitMotion>
   <VisualActor>
-    <Actor>units/persians/cavalry_archer_e.xml</Actor>
+    <Actor>units/seleucids/chariot_archer_c_m.xml</Actor>
   </VisualActor>
 </Entity>

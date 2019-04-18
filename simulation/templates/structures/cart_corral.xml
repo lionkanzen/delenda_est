@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource_corral">
   <Footprint>
-    <Square width="18.0" depth="16.5"/>
-    <Height>5.0</Height>
+    <Square width="19.0" depth="17.5"/>
+    <Height>8.0</Height>
   </Footprint>
-  <GarrisonHolder>
-    <VisibleGarrisonPoints>
-      <Animal1>
-        <X>0</X><Y>0</Y><Z>2</Z>
-      </Animal1>
-      <Animal2>
-        <X>2</X><Y>0</Y><Z>4</Z>
-      </Animal2>
-      <Animal3>
-        <X>-2</X><Y>0</Y><Z>2.75</Z>
-      </Animal3>
-      <Animal4>
-        <X>-5</X><Y>0</Y><Z>2.5</Z>
-      </Animal4>
-      <Animal5>
-        <X>5</X><Y>0</Y><Z>0</Z>
-      </Animal5>
-    </VisibleGarrisonPoints>
-  </GarrisonHolder>
-  <Health>
-    <SpawnEntityOnDeath>rubble/rubble_3x3</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>cart</Civ>
     <SpecificName>Rēfet</SpecificName>
@@ -35,12 +13,13 @@
     <Static width="16.0" depth="14.5"/>
   </Obstruction>
   <ProductionQueue>
+    <Entities datatype="tokens">
+      gaia/fauna_goat
+    </Entities>
     <Technologies datatype="tokens">
-	  training_animals_elephants
     </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/carthaginians/corral.xml</Actor>
-    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
 </Entity>

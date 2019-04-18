@@ -7,9 +7,6 @@
     <Melee>
       <Hack>7.0</Hack>
     </Melee>
-    <Charge>
-      <Hack>16.0</Hack>
-    </Charge>
   </Attack>
   <Cost>
     <BuildTime>10</BuildTime>
@@ -19,7 +16,6 @@
   </Cost>
   <Builder>
     <Entities datatype="tokens">
-      -other/wallset_palisade
 	  structures/rome_temple_vesta
       structures/rome_army_camp
       structures/rome_wallset_siege
@@ -28,6 +24,7 @@
   </Builder>
   <Identity>
     <Civ>rome</Civ>
+	<Lang>latin</Lang>
     <SelectionGroupName>units/rome_infantry_spearman</SelectionGroupName>
     <GenericName>Militia Spearman</GenericName>
     <SpecificName>Rorarius</SpecificName>
@@ -36,7 +33,7 @@
   </Identity>
   <Promotion disable=""/>
   <TrainingRestrictions>
-    <Category>MercTarantines</Category>
+    <Category>Rorarius</Category>
   </TrainingRestrictions>
   <VisualActor>
     <Actor>units/romans/infantry_spearman.xml</Actor>

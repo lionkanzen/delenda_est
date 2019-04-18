@@ -2,20 +2,24 @@
 <Entity parent="template_unit_infantry_melee_swordsman">
   <Cost>
     <Population>0</Population>
+	<BuildTime>5</BuildTime>
     <Resources>
       <food>0</food>
 	  <wood>0</wood>
-	  <metal>80</metal>
+	  <metal>90</metal>
     </Resources>
   </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
+	<Rank>Advanced</Rank>
+	<RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Looter disable=""/>
+  <Promotion disable=""/>
   <ResourceGatherer>
-    <BaseSpeed>0.5</BaseSpeed>
+    <BaseSpeed>0.75</BaseSpeed>
   </ResourceGatherer>
   <TrainingRestrictions>
-    <Category>Mercenary20</Category>
+    <Category>Mercenary</Category>
   </TrainingRestrictions>
 </Entity>

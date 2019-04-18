@@ -5,15 +5,23 @@
 		"hele": "Komópolis",
 		"mace": "Komópolis",
 		"spart": "Komópolis",
-		"theb": "Komópolis"
+		"theb": "Komópolis",
+		"epir": "Komópolis",
+		"chin": "Zhèn"
 	},
-	"description": "Advances from a small village to a bustling town, ready to expand rapidly.",
-	"cost": { "food": 1000, "wood": 500, "stone": 0, "metal": 0 },
-	"requirements": { "class": "Village", "number": 8 },
-	"requirementsTooltip": "Requires 8 Village Phase structures (except Palisades and Farm Fields).",
 	"supersedes": "phase_village",
-	"icon": "town_phase.png",
+	"replaces": ["phase_town"],
+	"icon": "phase_town.png",
+	"description": "Advances from a small village to a bustling town, ready to expand rapidly.",
+	"cost": { "food": 800, "wood": 400, "stone": 0, "metal": 0 , "glory": 0 },
+	"requirements": {"entity": {"class": "NotField", "number": 10 }},
+	"requirementsTooltip": "Requires 10 total Buildings (except Fields).",
 	"researchTime": 60,
-	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers increased by +33%",
+	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by +25%.",
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
+	],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

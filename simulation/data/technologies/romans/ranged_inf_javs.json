@@ -1,17 +1,18 @@
 {
 	"pair": "romans/pair_inf_01",
-	"genericName": "Velites Javelins",
+	"genericName": "Roman Javelins",
 	"specificName": {
-		"rome": "Veruta"
+		"rome": "Veruta",
+		"imp": "Lancea"
 	},
 	"description": "The verutum (plural: veruta) was a javelin used by the Roman velite skirmisher corps, adopted from the Samnites and Volsci.",
 	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
-	"requirements": {"all": [{"tech": "phase_town"},{"civ": "rome"}]},
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
 	"icon": "arrow_accuracy.png",
-	"researchTime": 40,
-	"tooltip": "Ranged infantry +2 pierce attack.",
-	"modifications": [{"value": "Attack/Ranged/Pierce", "add": 2.0}],
+	"researchTime": 60,
+	"tooltip": "Ranged infantry +20% pierce attack.",
+	"modifications": [{"value": "Attack/Ranged/Pierce", "multiply": 1.2}],
 	"affects": ["Infantry Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

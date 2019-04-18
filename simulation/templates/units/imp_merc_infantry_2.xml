@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_archer">
+  <Builder>
+	<Entities datatype="tokens">
+	  -structures/{civ}_range
+	  -structures/{civ}_stable
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>1</Population>
+  </Cost>
+  <Identity>
+	<Civ>imp</Civ>
+	<Lang>latin</Lang>
+	<Rank>Elite</Rank>
+    <GenericName>Syrian Auxiliary Archer</GenericName>
+    <SpecificName>Syrus Auxiliaris Sagittarius</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Auxiliary
+	</VisibleClasses>
+    <Icon>units/imp_merc_archer.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Auxilia</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/romans_imperial/infantry_archer.xml</Actor>
+  </VisualActor>
+</Entity>

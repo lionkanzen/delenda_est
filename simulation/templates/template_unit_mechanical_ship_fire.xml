@@ -6,51 +6,48 @@
       <Pierce>5</Pierce>
       <Crush>5</Crush>
       <MaxRange>8</MaxRange>
+      <PrepareTime>100</PrepareTime>
       <RepeatTime>100</RepeatTime>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+	  <PreferredClasses datatype="tokens">Ship</PreferredClasses>
     </Melee>
-    <Charge>
-      <Hack>10</Hack>
-      <Pierce>10</Pierce>
-      <Crush>10</Crush>
-      <MaxRange>8.0</MaxRange>
-      <MinRange>0.0</MinRange>
-    </Charge>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <wood>200</wood>
+      <wood>250</wood>
     </Resources>
   </Cost>
-  <Footprint replace="">
+  <Footprint>
     <Square width="8.0" depth="24.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Health>
     <Max>500</Max>
-    <RegenRate>-3</RegenRate>
+    <RegenRate>-5</RegenRate>
+    <DamageVariants>
+      <lightdamage>0.85</lightdamage> 
+      <mediumdamage>0.65</mediumdamage> 
+      <heavydamage>0.35</heavydamage> 
+    </DamageVariants>
   </Health>
   <Identity>
     <GenericName>Fire Ship</GenericName>
     <VisibleClasses datatype="tokens">Warship Fireship Melee</VisibleClasses>
-    <Tooltip>Rapidly drain the health of enemy ships. Slowly loses health due to being on fire, so use the Fire Ship quickly.</Tooltip>
+    <Tooltip>Rapidly drain the health of enemy ships and docks. Slowly loses health due to being on fire, so use the Fire Ship quickly.</Tooltip>
   </Identity>
-  <Obstruction>
-    <Unit radius="6.0"/>
-  </Obstruction>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.5</BarHeight>
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
+  <Repairable disable=""/>
   <ResourceGatherer disable=""/>
   <UnitMotion>
-    <WalkSpeed>16.0</WalkSpeed>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
     <Run>
-      <Speed>22.0</Speed>
+      <Speed op="mul">1.5</Speed>
     </Run>
   </UnitMotion>
-  <Vision>
-    <Range>60</Range>
-  </Vision>
 </Entity>

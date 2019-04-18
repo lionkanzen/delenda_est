@@ -12,7 +12,7 @@
   </Identity>
   <Minimap>
     <Type>stone</Type>
-    <Colour r="128" g="128" b="128"/>
+    <Color r="128" g="128" b="128"/>
   </Minimap>
   <Obstruction>
     <Static width="7.0" depth="7.0"/>
@@ -21,7 +21,7 @@
     <KillBeforeGather>false</KillBeforeGather>
     <Amount>500</Amount>
     <Type>stone.ruins</Type>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>5</MaxGatherers>
   </ResourceSupply>
   <Selectable>
     <EditorOnly disable=""/>

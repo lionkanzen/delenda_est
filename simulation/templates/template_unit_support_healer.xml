@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
+  <Attack>
+    <Capture>
+      <Value>10</Value>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
+  </Attack>
   <Heal>
-    <Range>12</Range>
+    <Range>8</Range>
     <HP>5</HP>
     <Rate>2000</Rate>
     <UnhealableClasses datatype="tokens">Animal</UnhealableClasses>
@@ -9,40 +17,68 @@
   </Heal>
   <Cost>
     <Resources>
-      <metal>100</metal>
+	  <food>100</food>
+      <glory>100</glory>
     </Resources>
   </Cost>
   <Health>
-    <Max>85</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Healer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Citizen Healer</VisibleClasses>
     <GenericName>Healer</GenericName>
-    <Tooltip>Heal units.</Tooltip>
+    <Tooltip>Heal nearby units. Gather Glory at Cult Statues.</Tooltip>
     <Rank>Basic</Rank>
   </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+	  pair_heal_01
+      pair_heal_02
+    </Technologies>
+  </ProductionQueue>
   <Promotion>
     <RequiredXp>200</RequiredXp>
   </Promotion>
+  <ResourceGatherer>
+    <Rates>
+      <glory.praise>0.4</glory.praise>
+    </Rates>
+  </ResourceGatherer>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>plus/128x128.png</MainTexture>
+        <MainTextureMask>plus/128x128_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
+	  <select>voice/{lang}/civ/civ_{gender}_select.xml</select> 
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk> 
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack> 
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather> 
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair> 
+      <order_heal>voice/{lang}/civ/civ_{gender}_heal.xml</order_heal> 
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
-      <death>actor/human/death/death.xml</death>
+      <death>actor/human/death/{gender}_death.xml</death>
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>7.5</WalkSpeed>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
     <Run>
-      <Speed>12.0</Speed>
-      <Range>200.0</Range>
-      <RangeMin>0.0</RangeMin>
+      <Speed op="mul">0.8</Speed>
     </Run>
   </UnitMotion>
-  <Vision>
-    <Range>30</Range>
-  </Vision>
 </Entity>

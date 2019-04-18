@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_ranged_slinger">
-  <Builder>
-    <Entities datatype="tokens">
-      structures/theb_siege_workshop
-	  structures/theb_theatron
-      structures/{civ}_wonder
-    </Entities>
-  </Builder>
   <Identity>
     <Civ>theb</Civ>
+	<Lang>greek</Lang>
     <SelectionGroupName>units/theb_infantry_slinger_b</SelectionGroupName>
-    <GenericName>Theban Militia</GenericName>
+    <GenericName>Theban Light Militia</GenericName>
     <SpecificName>Gymnites Thebaïkós</SpecificName>
     <History></History>
-    <Icon>units/hele_infantry_slinger.png</Icon>
+    <Icon>units/athen_infantry_slinger.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/theb_infantry_slinger_a</Entity>

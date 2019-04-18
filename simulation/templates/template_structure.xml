@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_entity_full">
+<Entity>
+  <AIProxy/>
   <Armour>
     <Hack>1</Hack>
     <Pierce>1</Pierce>
@@ -15,7 +16,6 @@
     <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
     <GarrisonArrowClasses>Ranged Infantry</GarrisonArrowClasses>
   </BuildingAI>
-  <Guard/>
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own</Territory>
@@ -29,6 +29,7 @@
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
+      <glory>0</glory>
     </Resources>
   </Cost>
   <Decay>
@@ -39,16 +40,25 @@
     <SinkAccel>9.8</SinkAccel>
   </Decay>
   <Fogging/>
+  <Guard/>
   <Health>
+    <DamageVariants> 
+      <lightdamage>0.85</lightdamage>  
+      <mediumdamage>0.65</mediumdamage>  
+      <heavydamage>0.35</heavydamage>  
+    </DamageVariants>
     <DeathType>corpse</DeathType>
     <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>true</Unhealable>
-    <Repairable>true</Repairable>
   </Health>
   <Identity>
     <GenericName>Structure</GenericName>
+	<Civ>gaia</Civ>
     <Classes datatype="tokens">Structure ConquestCritical NotField</Classes>
+    <Undeletable>false</Undeletable>
   </Identity>
+  <Looter/>
   <Minimap>
     <Type>structure</Type>
   </Minimap>
@@ -57,24 +67,47 @@
     <BlockMovement>true</BlockMovement>
     <BlockPathfinding>true</BlockPathfinding>
     <BlockFoundation>true</BlockFoundation>
-    <BlockConstruction>true</BlockConstruction>
+    <BlockConstruction>false</BlockConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <OverlayRenderer/>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+	<FloatDepth>0.0</FloatDepth>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </ProductionQueue>
   <RallyPoint/>
   <RallyPointRenderer>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
     <LineTexture>art/textures/misc/rallypoint_line.png</LineTexture>
     <LineTextureMask>art/textures/misc/rallypoint_line_mask.png</LineTextureMask>
-    <LineThickness>0.2</LineThickness>
-    <LineColour r="35" g="86" b="188"/>
-    <LineDashColour r="158" g="11" b="15"/>
+    <LineThickness>0.25</LineThickness>
+    <LineDashColor r="100" g="100" b="100"/>
     <LineStartCap>square</LineStartCap>
     <LineEndCap>round</LineEndCap>
-    <LineCostClass>default</LineCostClass>
     <LinePassabilityClass>default</LinePassabilityClass>
   </RallyPointRenderer>
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
+  <Repairable>
+    <RepairTimeRatio>2.0</RepairTimeRatio>
+  </Repairable>
   <Selectable>
     <Overlay>
       <Outline>
@@ -90,8 +123,8 @@
       <constructed>interface/complete/building/complete_universal.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
       <attacked>interface/alarm/alarm_attackplayer.xml</attacked>
-      <attack>attack/weapon/arrowfly.xml</attack>
-      <attack_impact>attack/impact/arrow_metal.xml</attack_impact>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <attack_ranged_impact>attack/impact/impact_arrow_all.xml</attack_ranged_impact>
     </SoundGroups>
   </Sound>
   <StatusBars>
@@ -100,16 +133,20 @@
     <HeightOffset>12.0</HeightOffset>
   </StatusBars>
   <TerritoryDecay>
-    <HealthDecayRate>5</HealthDecayRate>
+    <DecayRate>5</DecayRate>
   </TerritoryDecay>
   <Visibility>
-	<RetainInFog>true</RetainInFog>
-	<AlwaysVisible>false</AlwaysVisible>
-	<Preview>false</Preview>
+    <RetainInFog>true</RetainInFog>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
   </Visibility>
   <Vision>
     <Range>40</Range>
   </Vision>
+  <VisionSharing> 
+    <Bribable>false</Bribable> 
+  </VisionSharing> 
   <VisualActor>
     <ConstructionPreview/>
     <SilhouetteDisplay>false</SilhouetteDisplay>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_statue">
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Athena Promachos</SpecificName>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/athenians/cult_statue.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic_storehouse">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
   <Identity>
     <Civ>maur</Civ>
     <SpecificName>Khalla</SpecificName>
-    <History>storehouse.</History>
+    <History>Yep, it's a storehouse.</History>
   </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -pair_gather_01
+      -pair_gather_02
+      -pair_gather_03
+	  -gather_lumbering_bowsaw
+	  -gather_lumbering_twomansaw
+	  -gather_capacity_wheelbarrow
+	  -gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
-    <Actor>structures/mauryans/storehouse.xml</Actor>
+    <Actor>structures/mauryas/storehouse.xml</Actor>
   </VisualActor>
 </Entity>

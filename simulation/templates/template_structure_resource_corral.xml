@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource">
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Domestic</Affects>
-      <Modifications>
-        <ResourceTrickle.FoodRate>
-		  <Add>1</Add>
-		</ResourceTrickle.FoodRate>
-      </Modifications>
-      <AuraName>Ranching and Corralling</AuraName>
-      <AuraDescription>Garrison Domestic Animals within the Corral to enable a slow trickle of Food.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    corral_garrison
+	slaughterhouse
   </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+	<Category>Corral</Category>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
@@ -20,8 +15,8 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="12.0" depth="22.0"/>
-    <Height>5.0</Height>
+    <Square width="19.0" depth="18.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>5</Max>
@@ -32,37 +27,39 @@
     <LoadingRange>4</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_2x4</SpawnEntityOnDeath>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Corral</GenericName>
+    <GenericName>Animal Corral</GenericName>
     <Tooltip>Raise herd animals for food. Task domestic animals here to gain a trickle of food or other bonus (Not yet implemented).</Tooltip>
     <VisibleClasses datatype="tokens">
 	  Village
 	  Corral
 	</VisibleClasses>
+    <History>A place for a farmer to pen his animals. Garrison a sheep, goat, or cow here to gain a trickle of the food resource. Garrisoning an animal here also "fattens" them so that they may be slaughtered and gathered for a quick burst of food.</History>
     <Icon>structures/corral.png</Icon>
   </Identity>
   <Loot>
     <xp>100</xp>
-    <food>0</food>
+    <food>20</food>
     <wood>10</wood>
     <stone>0</stone>
     <metal>0</metal>
+    <glory>10</glory>
   </Loot>
   <Obstruction>
-    <Static width="9.5" depth="19.75"/>
+    <Static width="16.0" depth="15.0"/>
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      gaia/fauna_sheep
+	  gaia/fauna_pig
     </Entities>
     <Technologies datatype="tokens">
-      training_animals_stockbreeding
 	  training_animals_husbandry
 	  gather_draft_animals
+      training_animals_stockbreeding
     </Technologies>
   </ProductionQueue>
   <Sound>
@@ -72,10 +69,11 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay disable=""/>
   <Vision>
     <Range>20</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_2x4.xml</FoundationActor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
 </Entity>

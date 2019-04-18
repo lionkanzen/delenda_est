@@ -1,0 +1,183 @@
+{
+	"Name": "Scythians",
+	"Code": "scyth",
+	"Culture":[ "nomadic" ],
+	"Region":[ "asia", "steppes" ],
+	
+	"Emblem": "session/portraits/emblems/scythians.png",
+	
+	"History": "The Scythians are a nomadic faction which can build its buildings anywhere on the map. Their buildings cost -50% resources and build time, but have -50% health and capture resistance. They have limited infantry, but a full roster of light and heavy cavalry. They have a raiding and looting bonus, and are excellent herders and hunters.",
+	"Music":[
+			{"File":"Eastern_Thought.ogg", "Type":"peace"},
+			{"File":"Asian_Drums.ogg", "Type":"peace"},
+			{"File":"Opium.ogg", "Type":"peace"},
+			{"File":"Ripples.ogg", "Type":"peace"}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Nomadism",
+			"History": "The Scythians were a nomadic pastoral people.",
+			"Description": "Scythian structures have no territory bonus and are weak, but are very cheap and quick to build."
+		},
+		{
+			"Name": "Plunderers",
+			"History": "The Scythians sustained their economy through plunder.",
+			"Description": "Every enemy unit killed or building destroyed gives additional resources to the Huns' treasury."
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "",
+			"History": ".",
+			"Description": "." 
+		}
+	],
+	"Factions":
+	[
+		{
+			"Name": "Scythian Nomads",
+			"Description": "The nomadic tribal confederation of central Asia.",
+			"Technologies":
+			[
+				{
+					"Name": "Falconry",
+					"History": "Falconry is a steppe tradition.",
+					"Description": "All Structures and Cavalry +25% vision range. Cavalry +25% meat gathering rate."
+				},
+				{
+					"Name": "Great Settlement",
+					"History": "The Scythians eventually conquered and settled cities along the Black Sea coast, founding powerful kingdoms on the Bosporus.",
+					"Description": "Stone Walls and Fortresses are unlocked for the Scythians, and their structures can no longer pack and move, consequently gaining +50% health and +50% cost. "
+				},
+				{
+					"Name": "Parthian Tactics",
+					"History": "The Scythians practiced \"Parthian Shot\" tactics.",
+					"Description": "Ranged cavalry will automatically run away when enemies are near and turn to shoot them once minimum range has been met."
+				},
+				{
+					"Name": "",
+					"History": ".",
+					"Description": "." 
+				},
+				{
+					"Name": "",
+					"History": ".",
+					"Description": "." 
+				} 
+			],
+			"Heroes":
+			[
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "." 
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "." 
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "."
+				} 
+			] 
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"WallSets":
+	[
+		"structures/scyth_wallset_palisade"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/scyth_civil_centre" 
+		},
+		{
+			"Template": "units/scyth_support_citizen_female",
+			"Count": 4
+		},
+		{
+			"Template": "units/scyth_infantry_swordsman_b",
+			"Count": 2 
+		},		
+		{
+			"Template": "units/scyth_infantry_archer_b",
+			"Count": 2 
+		},		
+		{
+			"Template": "units/scyth_champion_cavalry_archer",
+			"Count": 1
+		},
+		{
+			"Template": "units/scyth_support_wagon",
+			"Count": 1
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/line_closed",
+		"special/formations/line_open",
+		"special/formations/column_closed",
+		"special/formations/wedge"
+	],
+	"AINames":
+	[
+		"Akrosas",
+		"Anacharsis",
+		"Arimaz",
+		"Orix",
+		"Gnur",
+		"Idantemis",
+		"Kanites",
+		"Carthasis",
+		"Kobos",
+		"Lipoksai",
+		"Madius",
+		"Oktomasad",
+		"Satrakis"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_support_citizen" : "units/scyth_support_citizen_female",
+		"skirmish/units/default_infantry_ranged_b": "units/scyth_infantry_archer_b",
+		"skirmish/units/default_cavalry": "units/{civ}_cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/scyth_infantry_swordsman_b",
+		"skirmish/units/special_starting_unit": "units/scyth_support_wagon",
+		"skirmish/structures/default_corral": "structures/scyth_stable",
+		"skirmish/structures/default_defense_tower": "structures/scyth_outpost",
+		"skirmish/structures/default_house_5": "structures/{civ}_house"
+	},
+	"SelectableInGameSetup": true
+}

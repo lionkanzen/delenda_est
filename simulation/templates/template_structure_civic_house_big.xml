@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <BuildRestrictions>
+    <Category>HouseBig</Category>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>10</PopulationBonus>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>6</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Loot>
+    <xp>150</xp>
+    <food>0</food>
+    <wood>15</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>75</glory>
+  </Loot>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -unlock_citizens_house_small
+      unlock_citizens_house_big
+	  health_citizens_01
+	  pop_house_01
+    </Technologies>
+  </ProductionQueue>
+</Entity>

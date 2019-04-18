@@ -6,12 +6,10 @@
     <Crush>8</Crush>
   </Armour>
   <Cost>
-    <BuildTime>50</BuildTime>
+	<BuildTime>40</BuildTime>
     <Resources>
-      <food>100</food>
-	  <wood>0</wood>
-	  <stone>0</stone>
-      <metal>250</metal>
+      <food>500</food>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -25,7 +23,7 @@
     <GenericName>Hero Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
     <Formations datatype="tokens">
-      formations/wedge
+      special/formations/wedge
     </Formations>
   </Identity>
   <Position>
@@ -33,32 +31,25 @@
   </Position>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <walk>actor/mounted/movement/walk.xml</walk>
-      <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
-	</SoundGroups>
+    </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>2500</Max>
-  </Stamina>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed>13.0</WalkSpeed>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
     <Run>
-      <Speed>26.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>16.0</RangeMin>
+      <Speed op="mul">1.5</Speed>
     </Run>
   </UnitMotion>
   <Vision>
-    <Range>70</Range>
+    <Range>50</Range>
   </Vision>
 </Entity>

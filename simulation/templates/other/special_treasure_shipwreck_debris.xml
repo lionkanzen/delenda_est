@@ -8,7 +8,7 @@
     <Civ>gaia</Civ>
     <GenericName>Treasure</GenericName>
     <SpecificName>Shipwreck Cargo</SpecificName>
-    <Icon>gaia/special_treasure.png</Icon>
+    <Icon>gaia/special_treasure_food.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="7.0" depth="7.0"/>
@@ -16,6 +16,7 @@
   <Position>
 	<Altitude>-0.1</Altitude>
     <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
   </Position>
   <ResourceSupply>
     <Amount>200</Amount>

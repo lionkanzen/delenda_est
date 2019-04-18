@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Soldier"],
+	"modifications": [
+	  {"value": "Attack/Ranged/Pierce", "multiply": 1.2},
+	  {"value": "Attack/melee/Hack", "multiply": 1.2},
+	  {"value": "Attack/Capture/Value", "multiply": 1.2}
+	],
+	"auraName": "Sword of Rome",
+	"auraDescription": "Soldiers +20% attack and +20% capture within 40 meters.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

@@ -8,7 +8,6 @@
     <Max>200</Max>
     <DeathType>remain</DeathType>
     <Unhealable>true</Unhealable>
-    <Repairable>false</Repairable>
   </Health>
   <Identity>
     <Classes datatype="tokens">SeaCreature</Classes>
@@ -17,15 +16,13 @@
 	<Tooltip>Kill, then collect food from this bountiful oceanic resource.</Tooltip>
     <Icon>gaia/fauna_fish.png</Icon>
   </Identity>
-  <Obstruction>
-    <Unit radius="4.0"/>
-  </Obstruction>
   <Position>
 	<Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
   </Position>
   <ResourceSupply>
     <KillBeforeGather>true</KillBeforeGather>
-    <Amount>2000</Amount>
+    <Amount>5000</Amount>
     <Type>food.fish</Type>
 	<MaxGatherers>5</MaxGatherers>
   </ResourceSupply>
@@ -52,10 +49,10 @@
     <FeedTimeMax>2</FeedTimeMax>
   </UnitAI>
   <UnitMotion>
-    <PassabilityClass>ship</PassabilityClass>
-    <WalkSpeed>11.5</WalkSpeed>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed>1.6</WalkSpeed>
     <Run>
-      <Speed>15.0</Speed>
+      <Speed>1.6</Speed>
     </Run>
   </UnitMotion>
 </Entity>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
-  <Cost>
-    <Resources>
-      <stone>650</stone>
-    </Resources>
-  </Cost>
+  <Attack>
+    <Ranged>
+      <MinRange>20.0</MinRange>
+    </Ranged>
+  </Attack>
   <Identity>
     <Civ>rome</Civ>
     <SpecificName>Castellum</SpecificName>
@@ -12,24 +12,22 @@
   </Identity>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/rome_hero_marcellus
-      units/rome_hero_maximus
-      units/rome_hero_scipio
-      units/rome_champion_infantry
-      units/rome_champion_cavalry
-      units/rome_mechanical_siege_ballista_packed
-      units/rome_mechanical_siege_scorpio_packed
-      units/rome_mechanical_siege_ram
+      units/{civ}_champion_infantry
+      units/{civ}_champion_cavalry
+      units/{civ}_hero_marcellus
+      units/{civ}_hero_maximus
+      units/{civ}_hero_scipio
     </Entities>
     <Technologies datatype="tokens">
-      unlock_siege_ballistics
-      pair_siege_ranged_01
-	  pair_siege_rams_01
-	  pair_siege_build_armor
-	  siege_packing
+	  unlock_spies
+	  spy_counter
     </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/romans/fortress.xml</Actor>
   </VisualActor>
+  <WallPiece>
+   <Length>25.0</Length>
+    <Indent>8.4</Indent>
+  </WallPiece>
 </Entity>

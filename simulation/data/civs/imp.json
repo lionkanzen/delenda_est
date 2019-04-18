@@ -1,0 +1,226 @@
+{
+	"Name": "Romans (Principates)",
+	"Code": "imp",
+	"Culture":[ "italian", "roman" ],
+	"Region":[ "mediterranean", "europe", "italy" ],
+	
+	"Emblem": "session/portraits/emblems/principates.png",
+	
+	"History": "The Principate Romans have a strong army, divided between Legions and Auxiliaries. They have a large technology tree and their wonder, the Flavian Aphitheater, aka The Colosseum, grants a large territory bonus while in the Empire phase. They have access to the Army Camp and Siege Walls, which can be built in enemy territory. They also receive a free Temple of Vesta at the start of a match, which increases capture resistance of nearby buildings, and the Triumphal Arch, which boosts their soldiers. Lastly, their navy is weak, but their siege weapons are very strong.",
+	"Music":[
+			{"File":"Calm_Before_the_Storm.ogg", "Type":"peace"},
+			{"File":"The_Governor.ogg", "Type":"peace"},
+			{"File":"Elysian_Fields.ogg", "Type":"peace"},
+			{"File":"Juno_Protect_You.ogg", "Type":"peace"}
+		],
+	"Factions":
+	[
+		{
+			"Name": "Principate Romans",
+			"Description": "The Romans controlled one of the largest empires of the ancient world, stretching at its peak from southern Scotland to the Sahara Desert, and containing between 60 million and 80 million inhabitants, one quarter of the Earth's population at that time. Rome also remained one of the strongest nations on earth for almost 800 years. The Romans were the supreme builders of the ancient world, excelled at siege warfare, and had an exquisite army and navy.",
+			"Technologies":
+			[
+				{
+					"Name": "Brick-Faced Concrete",
+					"History": ".",
+					"Description": "Structures -20% cost."
+				},
+				{
+					"Name": "City Watchmen",
+					"History": ".",
+					"Description": "The Cohortes Vigilum automatically repair buildings +1hp/sec."
+				},
+				{
+					"Name": "Urban Cohort",
+					"History": ".",
+					"Description": "Unlock training Legionaries from the Civic Center."
+				},
+				{
+					"Name": "Hadrian's Wall",
+					"History": ".",
+					"Description": "Upgrade Siege Walls to Stone Walls, with shooting towers and double health."
+				},
+				{
+					"Name": "Wild Ass",
+					"History": "The word 'Onager' actually translates to 'Wild Ass', referencing the way the catapult would buck when fired.",
+					"Description": "Onager catapults +20% attack and range, but also -25% health."
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Emperor Augustus",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "The first Roman emperor, though he always pretended to 'restore the Republic' even unto his death. Octavian, or 'Augustus', put an end to 50 years of civil war and ushered in an era today we call 'Pax Romana,' or 'The Roman Peace', which lasted for over a century."
+				},
+				{
+					"Name": "Emperor Titus",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "Titus (Latin: Titus Flavius Caesar Vespasianus Augustus; 30 December 39 – 13 September 81) was Roman Emperor from 79 to 81. A member of the Flavian dynasty, Titus succeeded his father Vespasian upon his death, thus becoming the first Roman Emperor to come to the throne after his own biological father. Prior to becoming Emperor, Titus gained renown as a military commander, serving under his father in Judaea during the First Jewish-Roman War. The campaign came to a brief halt with the death of emperor Nero in 68, launching Vespasian's bid for the imperial power during the Year of the Four Emperors. When Vespasian was declared Emperor on 1 July 69, Titus was left in charge of ending the Jewish rebellion. In 70, he besieged and captured Jerusalem, and destroyed the city and the Second Temple. For this achievement Titus was awarded a triumph: the Arch of Titus commemorates his victory to this day. Under the rule of his father, Titus gained notoriety in Rome serving as prefect of the Praetorian Guard, and for carrying on a controversial relationship with the Jewish queen Berenice. Despite concerns over his character, Titus ruled to great acclaim following the death of Vespasian in 79, and was considered a good emperor by Suetonius and other contemporary historians. As emperor, he is best known for completing the Colosseum and for his generosity in relieving the suffering caused by two disasters, the eruption of Mount Vesuvius in AD 79 and a fire in Rome in 80. After barely two years in office, Titus died of a fever on 13 September 81. He was deified by the Roman Senate and succeeded by his younger brother Domitian. (Wikipedia)"
+				},
+				{
+					"Name": "Emperor Trajan",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "The greatest expansionist emperor of the Roman Empire. Trajan conquered the Dacians, beat back the Germans, and nearly conquered all of the Parthian Empire before having to turn back due to old age and infirmity."
+				}
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Testudo Formation",
+			"History": "The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries were formed into hollow squares with twelve men on each side, standing so close together that their shields overlapped like fish scales.",
+			"Description": "Roman infantry can form a Testudo."
+		},
+		{
+			"Name": "Imperial Superpower",
+			"History": ".",
+			"Description": "Empire Phase grants +50% Civic Center radius increase instead of the usual +25% increase for other factions."
+		},
+		{
+			"Name": "Centurio",
+			"History": ".",
+			"Description": "Roman Legionary Swordsmen gain an extra 4th rank, that of Centurion, with champion-level stats and abilities."
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Client-States",
+			"History": ".",
+			"Description": "Allies gain the protection of Rome by giving a +10% attack bonus to allied Roman units within their territory."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Temple of Vesta",
+			"Class": "Temple",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "Village",
+			"Special": "Build one to unlock the Town Phase technology."
+		},
+		{
+			"Name": "Triumphal Arch",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "Town",
+			"Special": "Build one to unlock the City Phase technology."
+		},
+		{
+			"Name": "Insula",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "Village",
+			"Special": "The Insula (tenement) replaces the Domus (house) from the Republican era. It is larger and gives 25 population instead of 10 and has double health. Consequently, it also almost costs twice as much and takes longer to build."
+		},
+		{
+			"Name": "Army Camp",
+			"Class": "",
+			"Emblem": "",
+			"History": "Sometimes it was a temporary camp built facing the route by which the army is to march, other times a defensive or offensive (for sieges) structure. Within the Praetorian gate, which should either front the east or the enemy, the tents of the first centuries or cohorts are pitched, and the dracos (ensigns of cohorts) and other ensigns planted. The Decumane gate is directly opposite to the Praetorian in the rear of the camp, and through this the soldiers are conducted to the place appointed for punishment or execution. It has a turf wall, and it's surrounded by a canal filled with water whenever possible for extra defense. Many towns started up as bigger military camps to evolve to more complicated cities.",
+			"Requirements": "",
+			"Phase": "City",
+			"Special": "Train soldiers and siege weapons from neutral or enemy territory."
+		},
+		{
+			"Name": "Siege Walls",
+			"Class": "",
+			"Emblem": "",
+			"History": "Turf walls built by legionaries during sieges.",
+			"Requirements": "",
+			"Phase": "City",
+			"Special": "Turf and wood walls built by legionaries during sieges. Can be built in neutral and enemy territory to strangle enemy towns."
+		}
+	],
+	"WallSets":
+	[
+		"structures/imp_wallset_siege",
+		"structures/imp_wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/imp_civil_centre"
+		},
+		{
+			"Template": "units/imp_support_citizen_female",
+			"Count": 4
+		},
+		{
+			"Template": "units/imp_infantry_swordsman_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/imp_infantry_swordsman_centurion",
+			"Count": 1
+		},
+		{
+			"Template": "units/imp_infantry_javelinist_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/imp_cavalry_scout"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/line_closed",
+		"special/formations/line_open",
+		"special/formations/column_closed",
+		"special/formations/wedge",
+		"special/formations/testudo"
+	],
+	"AINames":
+	[
+		"Marcus Vipsanius Agrippa",
+		"Tiberius",
+		"Claudius",
+		"Nero",
+		"Agrippa",
+		"Galba",
+		"Gela",
+		"Vespasian",
+		"Domitian",
+		"Commodus",
+		"Aurelius",
+		"Decimus Meridias Maximus",
+		"Lucius Verus",
+		"Septimius Severus",
+		"Caracalla",
+		"Titus Pullo",
+		"Lucius Vorennus",
+		"Tacitus",
+		"Pliny the Elder",
+		"Pliny the Younger",
+		"Agricola",
+		"Josephus",
+		"Pescennius Niger",
+		"Cassius Dio",
+		"Pertinax"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_infantry_ranged_b": "units/imp_infantry_javelinist_e",
+		"skirmish/units/default_infantry_melee_b": "units/imp_infantry_swordsman_b",
+		"skirmish/units/special_starting_unit": "units/imp_infantry_swordsman_centurion",
+		"skirmish/structures/default_house_10" : "structures/{civ}_house",
+		"skirmish/structures/default_stoa": "structures/imp_temple_vesta",
+		"skirmish/structures/default_defense_tower": "structures/{civ}_defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

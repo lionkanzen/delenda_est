@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mechanical_siege">
   <Armour>
-    <Hack>4</Hack>
+    <Hack>5</Hack>
     <Pierce>30</Pierce>
     <Crush>10</Crush>
   </Armour>
@@ -11,38 +11,25 @@
       <Pierce>0.0</Pierce>
       <Crush>80.0</Crush>
       <MaxRange>6.5</MaxRange>
-      <RepeatTime>1500</RepeatTime>
+	  <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
 	  <Bonuses>
 		<BonusGates>
 		  <Classes>Gates</Classes>
 		  <Multiplier>1.5</Multiplier>
 		</BonusGates>
 	  </Bonuses>
-      <RestrictedClasses datatype="tokens">Organic</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">Organic MercenaryCamp</RestrictedClasses>
       <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
     </Melee>
-    <Charge>
-      <Hack>0.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>120.0</Crush>
-      <MaxRange>6.5</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<BonusGates>
-		  <Classes>Gates</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusGates>
-	  </Bonuses>
-      <RestrictedClasses datatype="tokens">Organic</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
-    </Charge>
   </Attack>
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>20</BuildTime>
-    <Population>5</Population>
+    <Population>3</Population>
     <Resources>
       <wood>200</wood>
-      <metal>100</metal>
+      <metal>200</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
@@ -54,34 +41,28 @@
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>250</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
     <GenericName>Battering Ram</GenericName>
     <VisibleClasses datatype="tokens">Melee Ram</VisibleClasses>
-    <Tooltip>Counters: 1.5x vs. Gates. Generally good vs. Buildings.
-Countered by: Melee Cavalry. Cannot attack organic units (but can attack other siege and ships).</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Garrison Units.
+Strong Against: Buildings, Gates (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
   </Identity>
   <Sound>
     <SoundGroups>
       <select>attack/siege/siege_select.xml</select>
       <order_walk>attack/siege/ram_move.xml</order_walk>
       <order_attack>attack/siege/ram_attack_order.xml</order_attack>
-	  <trained>attack/siege/ram_move.xml</trained>
-	  <attack>attack/siege/ram_attack.xml</attack>
+	  <trained>attack/siege/ram_trained.xml</trained>
     </SoundGroups>
   </Sound>
   <StatusBars>
     <BarWidth>4.0</BarWidth>
     <BarHeight>0.5</BarHeight>
   </StatusBars>
-  <UnitMotion>
-    <WalkSpeed>6.5</WalkSpeed>
-    <Run>
-      <Speed>11.0</Speed>
-    </Run>
-  </UnitMotion>
   <Vision>
-    <Range>48</Range>
+    <Range>40</Range>
   </Vision>
 </Entity>

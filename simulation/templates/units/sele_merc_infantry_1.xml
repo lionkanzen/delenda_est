@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Hack op="mul">1.2</Hack>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <metal>120</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>sele</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Thracian Mercenary Swordsman</GenericName>
+    <SpecificName>Rhomphaiaphoros Thrakikós</SpecificName>
+    <VisibleClasses datatype="tokens">Thracian Guerilla</VisibleClasses>
+	<Rank>Elite</Rank>
+    <History>Thracian tribesmen who wield the fiercesome rhomphaia polearm weapon in combat. They were ubiquitous mercenaries throughout Hellenistic times, sometimes even serving in two opposing armies.</History>
+    <Icon>units/sele_merc_swordsman.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>10.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/thrace_infantry_swordsman.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>60</Radius>
-      <Affects>Structure</Affects>
-      <Modifications>
-        <Health.Max>
-		  <Multiply>1.25</Multiply>
-		</Health.Max>
-      </Modifications>
-      <AuraName>"Eternal Fire" Aura</AuraName>
-      <AuraDescription>Structures +25% Health within 60 meters of the Temple of Vesta.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    eternal_fire
   </Auras>
   <BuildRestrictions>
     <Category>Vesta</Category>
   </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>700</food>
+	  <wood>500</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
   <Footprint replace="">
-    <Circle radius="60.0"/>
+    <Circle radius="12.0"/>
     <Height>12.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">-Support -Infantry -Cavalry Support+Citizen</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>rome</Civ>
@@ -30,11 +36,13 @@
     <SpecificName>Aedes Vestae</SpecificName>
 	<VisibleClasses datatype="tokens">
 	  -Town
-	  City
+	  Village
+	  Vesta
 	</VisibleClasses>
     <History>(Insert History)</History>
-    <Tooltip>Build this temple to greatly increase the Health of nearby structures and units.</Tooltip>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Build 1 to auto-research Town Phase, and also greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Icon>structures/vesta.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="19.0" depth="19.0"/>
@@ -45,23 +53,17 @@
       -units/{civ}_support_healer_b
     </Entities>
     <Technologies datatype="tokens">
-      -pair_heal_01
-      -pair_heal_02
-      -pair_heal_03
+	  -health_regen_units
+      -heal_temple
+	  -attack_military_cult
+	  -health_state_religion
+	  romans/vestal_virgins
     </Technologies>
   </ProductionQueue>
-  <Selectable>
-    <Overlay replace="">
-      <Texture>
-        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
-        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>
-      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
     </SoundGroups>
   </Sound>
   <VisualActor>

@@ -1,18 +1,15 @@
 {
-	"genericName": "Commerce Taxes",
+	"genericName": "Tax Collection",
 	"description": ".",
-	"cost": {"food": 200, "wood": 200, "stone": 100, "metal": 100},
+	"cost": {"food": 200, "wood": 200, "stone": 100, "metal": 100, "glory": 0},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "weights_measures.png",
+	"icon": "coins.png",
 	"researchTime": 40,
-	"tooltip": "Each Market building gives the player a trickle of 100 of each resource per minute.",
+	"tooltip": "Each Market building adds a trickle of 200 metal per minute to the player's treasury.",
 	"modifications": [
-		{"value": "ResourceTrickle/FoodRate", "add": 10},
-		{"value": "ResourceTrickle/WoodRate", "add": 10},
-		{"value": "ResourceTrickle/StoneRate", "add": 10},
-		{"value": "ResourceTrickle/MetalRate", "add": 10}
+		{"value": "ResourceTrickle/Rates/metal", "add": 20}
 	],
-	"affects": ["Market"],
+	"affects": ["LandTrade"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

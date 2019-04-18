@@ -11,7 +11,7 @@
   </Attack>
   <Footprint replace="">
     <Square width="5" depth="8"/>
-    <Height>7.5</Height>
+    <Height>1.0</Height>
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
@@ -19,9 +19,6 @@
 	<GenericName>Nile Crocodile</GenericName>
     <Icon>gaia/fauna_crocodile.png</Icon>
   </Identity>
-  <Obstruction>
-	  <Unit radius="2.4"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch-roll</Anchor>
   </Position>
@@ -36,19 +33,16 @@
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/lion_select.xml</select>
-      <attack>actor/fauna/animal/lion_attack.xml</attack>
-      <death>actor/fauna/animal/lion_select.xml</death>
+      <attack_melee>actor/fauna/animal/lion_attack.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
     </SoundGroups>
   </Sound>
   <UnitMotion>
     <WalkSpeed>2.0</WalkSpeed>
     <Run>
-      <Speed>18.0</Speed>
+      <Speed>15.0</Speed>
     </Run>
   </UnitMotion>
-  <Vision>
-	  <Range>20</Range>
-  </Vision>
   <VisualActor>
     <Actor>fauna/crocodile.xml</Actor>
   </VisualActor>

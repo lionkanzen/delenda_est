@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Scenario version="5">
+<Scenario version="6">
 	<Environment>
-		<SkySet>cloudless</SkySet>
-		<SunColour r="1.12305" g="0.924862" b="0.352328"/>
-		<SunElevation angle="0.469398"/>
-		<SunRotation angle="-1.42353"/>
-		<TerrainAmbientColour r="0.329412" g="0.419608" b="0.501961"/>
-		<UnitsAmbientColour r="0.501961" g="0.501961" b="0.501961"/>
+		<SkySet>sunset</SkySet>
+		<SunColor r="1.19773" g="1.05212" b="0.568335"/>
+		<SunElevation angle="0.456484"/>
+		<SunRotation angle="2.57669"/>
+		<TerrainAmbientColor r="0.227451" g="0.286275" b="0.337255"/>
+		<UnitsAmbientColor r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.00150391</FogFactor>
+			<FogFactor>0.0021875</FogFactor>
 			<FogThickness>0.00195313</FogThickness>
-			<FogColour r="0.866667" g="0.776471" b="0.486275"/>
+			<FogColor r="0.866667" g="0.776471" b="0.486275"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Colour r="0.34902" g="0.294118" b="0.239216"/>
+				<Color r="0.356863" g="0.356863" b="0.356863"/>
 				<Tint r="0.866667" g="0.776471" b="0.486275"/>
 				<Height>26.3344</Height>
-				<Waviness>4.98047</Waviness>
-				<Murkiness>0.800781</Murkiness>
-				<WindAngle>0</WindAngle>
+				<Waviness>8.96484</Waviness>
+				<Murkiness>0.899414</Murkiness>
+				<WindAngle>0.625864</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
-			<Brightness>0</Brightness>
-			<Contrast>0.967773</Contrast>
-			<Saturation>0.953125</Saturation>
+			<Brightness>0.03125</Brightness>
+			<Contrast>1.10645</Contrast>
+			<Saturation>0.785156</Saturation>
 			<Bloom>0.135742</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="528.701" y="103.816" z="442.149"/>
+		<Position x="536.447" y="91.3414" z="515.036"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -41,14 +41,17 @@
 {
   "CircularMap": true,
   "Description": "A sandbox scenario to test out the Achaemenid Persian civilization.",
-  "GameType": "conquest",
-  "Keywords": [],
+  "Keywords": [
+    "demo",
+	"new"
+  ],
   "LockTeams": false,
   "Name": "Sandbox - The Persians",
   "PlayerData": [
+    "",
     {
       "Civ": "pers",
-      "Colour": {
+      "Color": {
         "b": 200,
         "g": 46,
         "r": 46
@@ -67,8 +70,11 @@
       "Name": "Spartans"
     }
   ],
-  "Preview": "siwa_oasis_2.png",
-  "RevealMap": false
+  "Preview": "sandbox-thepersians.png",
+  "RevealMap": false,
+  "VictoryConditions": [
+    "conquest"
+  ]
 }
 ]]></ScriptSettings>
 	<Entities>
@@ -4827,7 +4833,7 @@
 		<Entity uid="1552">
 			<Template>gaia/geology_stonemine_desert_quarry</Template>
 			<Player>0</Player>
-			<Position x="630.0594" z="500.61622"/>
+			<Position x="620.11152" z="512.69898"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26034"/>
 		</Entity>
@@ -4853,140 +4859,140 @@
 			<Actor seed="14540"/>
 		</Entity>
 		<Entity uid="1556">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>0</Player>
 			<Position x="701.09144" z="1505.90455"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28098"/>
 		</Entity>
 		<Entity uid="1557">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>0</Player>
 			<Position x="716.79371" z="1505.1084"/>
 			<Orientation y="-2.66028"/>
 			<Actor seed="55852"/>
 		</Entity>
 		<Entity uid="1558">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>0</Player>
 			<Position x="961.71222" z="70.64675"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41766"/>
 		</Entity>
 		<Entity uid="1559">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>0</Player>
 			<Position x="966.62678" z="86.4483"/>
 			<Orientation y="-1.25196"/>
 			<Actor seed="22536"/>
 		</Entity>
 		<Entity uid="1560">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="619.3285" z="190.28335"/>
 			<Orientation y="-1.49936"/>
 			<Actor seed="44970"/>
 		</Entity>
 		<Entity uid="1561">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>0</Player>
 			<Position x="629.01081" z="184.76783"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43182"/>
 		</Entity>
 		<Entity uid="1562">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>0</Player>
 			<Position x="1084.22596" z="1460.34913"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21442"/>
 		</Entity>
 		<Entity uid="1563">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="1081.05994" z="1467.46106"/>
 			<Orientation y="-0.58062"/>
 			<Actor seed="57782"/>
 		</Entity>
 		<Entity uid="1564">
-			<Template>other/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="479.51603" z="972.31464"/>
 			<Orientation y="-0.14982"/>
 			<Actor seed="63876"/>
 		</Entity>
 		<Entity uid="1565">
-			<Template>other/special_treasure_shipwreck_sail_boat</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat</Template>
 			<Player>0</Player>
 			<Position x="1091.542" z="694.47834"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41006"/>
 		</Entity>
 		<Entity uid="1566">
-			<Template>other/special_treasure_shipwreck_ram_bow</Template>
+			<Template>gaia/treasure/shipwreck_ram_bow</Template>
 			<Player>0</Player>
 			<Position x="1279.13184" z="817.25403"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53258"/>
 		</Entity>
 		<Entity uid="1567">
-			<Template>other/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
-			<Position x="297.30301" z="853.65943"/>
+			<Position x="339.2736" z="878.98298"/>
 			<Orientation y="2.59247"/>
 			<Actor seed="10276"/>
 		</Entity>
 		<Entity uid="1568">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="793.27472" z="862.22193"/>
 			<Orientation y="2.92904"/>
 			<Actor seed="9396"/>
 		</Entity>
 		<Entity uid="1569">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="873.45453" z="780.83106"/>
 			<Orientation y="-1.3988"/>
 			<Actor seed="63348"/>
 		</Entity>
 		<Entity uid="1570">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="845.0218" z="792.28364"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3274"/>
 		</Entity>
 		<Entity uid="1571">
-			<Template>gaia/special_treasure_food_barrels_buried</Template>
+			<Template>gaia/treasure/food_barrels_buried</Template>
 			<Player>0</Player>
 			<Position x="864.9463" z="855.04969"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26498"/>
 		</Entity>
 		<Entity uid="1572">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>0</Player>
 			<Position x="779.48945" z="785.25611"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2280"/>
 		</Entity>
 		<Entity uid="1573">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>0</Player>
 			<Position x="868.13447" z="880.7508"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46804"/>
 		</Entity>
 		<Entity uid="1574">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>0</Player>
 			<Position x="770.53425" z="878.21442"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12628"/>
 		</Entity>
 		<Entity uid="1575">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="893.33033" z="772.30207"/>
 			<Orientation y="-2.55617"/>
@@ -7524,7 +7530,7 @@
 		</Entity>
 		<Entity uid="1998">
 			<Template>actor|props/flora/bush_medit_sm_dry.xml</Template>
-			<Position x="583.89527" z="520.47437"/>
+			<Position x="582.88331" z="508.16358"/>
 			<Orientation y="3.12647"/>
 			<Actor seed="36512"/>
 		</Entity>
@@ -12327,7 +12333,7 @@
 		<Entity uid="2818">
 			<Template>gaia/flora_tree_dead</Template>
 			<Player>0</Player>
-			<Position x="605.91871" z="510.15986"/>
+			<Position x="602.45173" z="517.13758"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62044"/>
 		</Entity>
@@ -13363,7 +13369,7 @@
 		<Entity uid="3055">
 			<Template>structures/pers_house</Template>
 			<Player>1</Player>
-			<Position x="644.865" z="602.53803"/>
+			<Position x="649.52796" z="601.6186"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25730"/>
 		</Entity>
@@ -13371,7 +13377,7 @@
 			<Template>structures/pers_shipyard</Template>
 			<Player>1</Player>
 			<Position x="451.11377" z="705.52051"/>
-			<Orientation y="-2.52213"/>
+			<Orientation y="0.68703"/>
 			<Actor seed="64730"/>
 		</Entity>
 		<Entity uid="3057">
@@ -13391,14 +13397,14 @@
 		<Entity uid="3059">
 			<Template>structures/pers_stables</Template>
 			<Player>1</Player>
-			<Position x="588.68207" z="577.02753"/>
-			<Orientation y="-2.35515"/>
+			<Position x="559.01758" z="621.95978"/>
+			<Orientation y="0.76784"/>
 			<Actor seed="9364"/>
 		</Entity>
 		<Entity uid="3060">
 			<Template>structures/pers_blacksmith</Template>
 			<Player>1</Player>
-			<Position x="535.91639" z="528.90552"/>
+			<Position x="540.05103" z="525.16547"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15064"/>
 		</Entity>
@@ -13412,14 +13418,14 @@
 		<Entity uid="3062">
 			<Template>structures/pers_barracks</Template>
 			<Player>1</Player>
-			<Position x="563.13428" z="620.81995"/>
-			<Orientation y="-2.32544"/>
+			<Position x="570.6485" z="604.01673"/>
+			<Orientation y="-5.46055"/>
 			<Actor seed="5164"/>
 		</Entity>
 		<Entity uid="3063">
 			<Template>structures/pers_barracks</Template>
 			<Player>1</Player>
-			<Position x="576.97333" z="633.71485"/>
+			<Position x="583.2928" z="594.05652"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39696"/>
 		</Entity>
@@ -13517,9 +13523,8 @@
 		<Entity uid="3077">
 			<Template>structures/pers_apadana</Template>
 			<Player>1</Player>
-			<Position x="509.75852" z="575.90638"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="2918"/>
+			<Position x="508.37607" z="582.01001"/>
+			<Orientation y="3.93699"/>
 		</Entity>
 		<Entity uid="3082">
 			<Template>structures/pers_wall_tower</Template>
@@ -13538,7 +13543,7 @@
 		<Entity uid="3084">
 			<Template>structures/pers_storehouse</Template>
 			<Player>1</Player>
-			<Position x="614.01478" z="485.81104"/>
+			<Position x="607.46589" z="495.84916"/>
 			<Orientation y="0.73205"/>
 			<Actor seed="30486"/>
 		</Entity>
@@ -13580,7 +13585,7 @@
 		<Entity uid="3090">
 			<Template>structures/pers_defense_tower</Template>
 			<Player>1</Player>
-			<Position x="344.63376" z="645.37415"/>
+			<Position x="344.62848" z="645.91205"/>
 			<Orientation y="1.90243"/>
 			<Actor seed="45006"/>
 		</Entity>
@@ -13692,37 +13697,33 @@
 		<Entity uid="3106">
 			<Template>structures/pers_fortress</Template>
 			<Player>1</Player>
-			<Position x="568.95142" z="543.52234"/>
+			<Position x="724.5976" z="529.09241"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16736"/>
 		</Entity>
 		<Entity uid="3107">
 			<Template>units/pers_arstibara</Template>
 			<Player>1</Player>
-			<Position x="533.85737" z="565.68183"/>
+			<Position x="556.75214" z="587.43195"/>
 			<Orientation y="-2.46341"/>
-			<Actor seed="226"/>
 		</Entity>
 		<Entity uid="3108">
 			<Template>units/pers_arstibara</Template>
 			<Player>1</Player>
-			<Position x="530.89075" z="568.76917"/>
+			<Position x="553.78553" z="590.5193"/>
 			<Orientation y="-2.3337"/>
-			<Actor seed="33012"/>
 		</Entity>
 		<Entity uid="3109">
 			<Template>units/pers_arstibara</Template>
 			<Player>1</Player>
-			<Position x="517.15156" z="555.08954"/>
+			<Position x="540.04633" z="576.83967"/>
 			<Orientation y="0.72846"/>
-			<Actor seed="24720"/>
 		</Entity>
 		<Entity uid="3110">
 			<Template>units/pers_arstibara</Template>
 			<Player>1</Player>
-			<Position x="520.2345" z="552.40888"/>
+			<Position x="543.12928" z="574.159"/>
 			<Orientation y="0.99878"/>
-			<Actor seed="13856"/>
 		</Entity>
 		<Entity uid="3111">
 			<Template>structures/pers_field</Template>
@@ -13755,7 +13756,7 @@
 		<Entity uid="3115">
 			<Template>structures/pers_field</Template>
 			<Player>1</Player>
-			<Position x="994.9355" z="669.63062"/>
+			<Position x="994.78272" z="669.6247"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="6444"/>
 		</Entity>
@@ -13919,6 +13920,195 @@
 			<Position x="1171.85389" z="1140.90137"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="876"/>
+		</Entity>
+		<Entity uid="3140">
+			<Template>units/pers_ship_trireme</Template>
+			<Player>1</Player>
+			<Position x="440.17878" z="803.628"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32302"/>
+		</Entity>
+		<Entity uid="3141">
+			<Template>units/pers_ship_trireme</Template>
+			<Player>1</Player>
+			<Position x="452.8454" z="833.52735"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23696"/>
+		</Entity>
+		<Entity uid="3142">
+			<Template>units/pers_ship_bireme</Template>
+			<Player>1</Player>
+			<Position x="396.11271" z="786.021"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31180"/>
+		</Entity>
+		<Entity uid="3143">
+			<Template>units/pers_ship_bireme</Template>
+			<Player>1</Player>
+			<Position x="375.39777" z="774.32544"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32518"/>
+		</Entity>
+		<Entity uid="3144">
+			<Template>units/pers_ship_fishing</Template>
+			<Player>1</Player>
+			<Position x="529.18769" z="739.25586"/>
+			<Orientation y="-2.34778"/>
+			<Actor seed="32508"/>
+		</Entity>
+		<Entity uid="3145">
+			<Template>units/pers_ship_fishing</Template>
+			<Player>1</Player>
+			<Position x="509.65281" z="736.50904"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16860"/>
+		</Entity>
+		<Entity uid="3146">
+			<Template>units/pers_ship_merchant</Template>
+			<Player>1</Player>
+			<Position x="524.22461" z="710.23316"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17524"/>
+		</Entity>
+		<Entity uid="3147">
+			<Template>units/pers_ship_merchant</Template>
+			<Player>1</Player>
+			<Position x="549.29865" z="733.09125"/>
+			<Orientation y="-2.4341"/>
+			<Actor seed="24110"/>
+		</Entity>
+		<Entity uid="3148">
+			<Template>structures/pers_dock</Template>
+			<Player>1</Player>
+			<Position x="511.31727" z="987.06397"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61612"/>
+		</Entity>
+		<Entity uid="3149">
+			<Template>structures/pers_dock</Template>
+			<Player>1</Player>
+			<Position x="693.00416" z="902.22284"/>
+			<Orientation y="-2.49589"/>
+			<Actor seed="51448"/>
+		</Entity>
+		<Entity uid="3150">
+			<Template>structures/pers_dock</Template>
+			<Player>1</Player>
+			<Position x="281.62916" z="834.4167"/>
+			<Orientation y="0.79972"/>
+			<Actor seed="15090"/>
+		</Entity>
+		<Entity uid="3151">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="548.99817" z="568.79047"/>
+			<Orientation y="0.99878"/>
+			<Actor seed="3110"/>
+		</Entity>
+		<Entity uid="3152">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="545.91523" z="571.47114"/>
+			<Orientation y="0.72846"/>
+			<Actor seed="3109"/>
+		</Entity>
+		<Entity uid="3153">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="559.65442" z="585.15076"/>
+			<Orientation y="-2.3337"/>
+			<Actor seed="3108"/>
+		</Entity>
+		<Entity uid="3154">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="562.62104" z="582.06342"/>
+			<Orientation y="-2.46341"/>
+			<Actor seed="3107"/>
+		</Entity>
+		<Entity uid="3155">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="555.9687" z="563.25025"/>
+			<Orientation y="0.99878"/>
+			<Actor seed="3110"/>
+		</Entity>
+		<Entity uid="3156">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="552.88575" z="565.93091"/>
+			<Orientation y="0.72846"/>
+			<Actor seed="3109"/>
+		</Entity>
+		<Entity uid="3157">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="566.62494" z="579.61054"/>
+			<Orientation y="-2.3337"/>
+			<Actor seed="3108"/>
+		</Entity>
+		<Entity uid="3158">
+			<Template>units/pers_arstibara</Template>
+			<Player>1</Player>
+			<Position x="569.59156" z="576.5232"/>
+			<Orientation y="-2.46341"/>
+			<Actor seed="3107"/>
+		</Entity>
+		<Entity uid="3159">
+			<Template>units/pers_hero_xerxes</Template>
+			<Player>1</Player>
+			<Position x="552.71705" z="578.64045"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24076"/>
+		</Entity>
+		<Entity uid="3160">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="545.33515" z="553.99665"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57110"/>
+		</Entity>
+		<Entity uid="3161">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="539.85138" z="559.14881"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11360"/>
+		</Entity>
+		<Entity uid="3162">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="507.57917" z="536.51984"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22728"/>
+		</Entity>
+		<Entity uid="3163">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="532.0456" z="566.97053"/>
+			<Orientation y="-2.43181"/>
+			<Actor seed="30742"/>
+		</Entity>
+		<Entity uid="3164">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="559.53077" z="594.51697"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2172"/>
+		</Entity>
+		<Entity uid="3165">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="563.55158" z="587.70289"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30910"/>
+		</Entity>
+		<Entity uid="3166">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>1</Player>
+			<Position x="569.7602" z="583.25965"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32384"/>
 		</Entity>
 	</Entities>
 	<Paths/>

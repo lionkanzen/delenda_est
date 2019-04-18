@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_skittish">
-  <Footprint>
-    <Circle radius="0.75"/>
+  <Footprint replace="">
+    <Square width="1.2" depth="2"/>
     <Height>1.0</Height>
   </Footprint>
+  <Health>
+    <Max>10</Max>
+  </Health>
   <Identity>
     <Civ>gaia</Civ>
 	<GenericName>European Hare</GenericName>
     <SpecificName>Lepus europaeus</SpecificName>
     <Icon>gaia/fauna_rabbit.png</Icon>
   </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>

@@ -26,7 +26,7 @@
     <SpecificName>Propylaea</SpecificName>
     <History>A Propylaea was used as a gate into a sacred precinct. The most famous of these is the monumental gate at the top of the Acropolis in Athens.</History>
 	<Tooltip>Add +10 to Population Cap.</Tooltip>
-    <Icon>structures/tholos.png</Icon>
+    <Icon>technologies/ionic_column.png</Icon>
   </Identity>
   <Loot>
     <xp>10</xp>
@@ -38,10 +38,11 @@
   <Obstruction>
     <Static width="26.0" depth="30.0"/>
   </Obstruction>
+  <ProductionQueue disable=""/>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>40</Radius>
-    <Weight>65536</Weight>
+    <Weight>65535</Weight>
   </TerritoryInfluence>
   <Vision>
     <Range>20</Range>

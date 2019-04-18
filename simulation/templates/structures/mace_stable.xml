@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Stábloi Alógon</SpecificName>
+  </Identity>
+  <Upgrade>
+    <RoyalBarracks>
+      <Entity>structures/mace_stable_royal</Entity>
+      <Tooltip>The Royal Stable trains only Hetairoi champion cavalry and gives access to more technologies. The Royal Stable also has greater health and territory influence than a standard stable.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>300</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>45</Time>
+    </RoyalBarracks>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/hellenes/stable.xml</Actor>
+  </VisualActor>
+</Entity>

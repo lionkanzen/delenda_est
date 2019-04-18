@@ -8,18 +8,19 @@
 		"athen": "Dynamis",
 		"ptol": "Dynamis",
 		"sele": "Dynamis",
-		"theb": "Dynamis"
+		"theb": "Dynamis",
+		"imp": "Donativum"
 	},
-	"description": "The will to fight is crucial to victory.",
-	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
+	"description": "The will to fight is crucial to victory. Sometimes the army's enthusiasm is sweetened with regularized pay or promises of loot for the taking (as after winning a battle or sacking a city).",
+	"cost": {"food": 1000, "wood": 0, "stone": 0, "metal": 1000, "glory": 0},
 	"requirements": {"tech": "phase_imperial"},
-	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "payment.png",
 	"researchTime": 40,
-	"tooltip": "All citizen-Soldiers +2 attack.",
+	"tooltip": "All citizen-soldiers +20% attack.",
 	"modifications": [
-		{"value": "Attack/Melee/Hack", "add": 2.0, "affects": "CitizenSoldier Melee"},
-		{"value": "Attack/Ranged/Pierce", "add": 2.0, "affects": "CitizenSoldier Ranged"}
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "CitizenSoldier Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "CitizenSoldier Ranged"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

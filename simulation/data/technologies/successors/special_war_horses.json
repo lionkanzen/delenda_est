@@ -12,7 +12,7 @@
 	"tooltip": "All cavalry +20% health, but also +10% train time.",
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.20},
-		{"value": "Cost/BuildTime", "multiply": 1.1}
+		{"value": "Cost/BuildTime", "multiply": 1.10}
 	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

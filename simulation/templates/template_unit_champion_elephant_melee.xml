@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_elephant">
-  <Attack>
+  <Attack replace="">
     <Melee>
-      <Hack>20.0</Hack>
+      <Hack>40.0</Hack>
       <Pierce>0.0</Pierce>
-      <Crush>20.0</Crush>
+      <Crush>0.0</Crush>
       <MaxRange>8.0</MaxRange>
-      <RepeatTime>1000</RepeatTime>
+	  <PrepareTime>750</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+      <PreferredClasses datatype="tokens">Soldier Gates</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
 	  <Bonuses>
 		<BonusStructures>
 		  <Classes>Structure</Classes>
@@ -22,31 +25,23 @@
 		</BonusGates>
 	  </Bonuses>
     </Melee>
-    <Charge>
-      <Hack>60.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>60.0</Crush>
-      <MaxRange>8.0</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<BonusStructures>
-		  <Classes>Structure</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusStructures>
-		<BonusCav>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusCav>
-		<BonusGates>
-		  <Classes>Gates</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusGates>
-	  </Bonuses>
-    </Charge>
   </Attack>
   <Identity>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-    <Tooltip>Counters: 2x vs. All Cavalry, 1.5x vs. All Structures. Extra 1.5x vs. Gates. "Stench" aura vs. Cavalry.
-Countered by: Javelin Infantry and Sword Infantry. Can run amok.</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Berserk.
+Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
   </Identity>
+  <Upgrade>
+    <BerserkerElephants>
+      <Entity>units/{civ}_champion_elephant_berserker</Entity>
+      <Tooltip>Sending elephants into Berserker mode gives them +150% attack, stronger trample, and greater speed, but less armor and they continuously lose health (they die quicker). Warning: Once sent into Berserker mode, you cannot calm them.</Tooltip>
+	  <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <Cost>
+        <food>100</food>
+        <glory>100</glory>
+      </Cost>
+      <Time>10</Time>
+    </BerserkerElephants>
+  </Upgrade>
 </Entity>

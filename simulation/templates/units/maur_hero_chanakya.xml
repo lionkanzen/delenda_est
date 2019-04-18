@@ -5,41 +5,68 @@
     <Pierce>8.0</Pierce>
     <Crush>4.0</Crush>
   </Armour>
-  <Heal>
-    <Range>20</Range>
-    <HP>12</HP>
-    <Rate>2000</Rate>
-    <UnhealableClasses datatype="tokens"/>
-    <HealableClasses datatype="tokens">Organic</HealableClasses>
-  </Heal>
+  <Attack> 
+    <Capture>
+      <Value>20</Value> 
+      <MaxRange>4</MaxRange>
+      <RepeatTime>1000</RepeatTime> 
+    </Capture> 
+  </Attack>
+  <Auras datatype="tokens">
+	maur_hero_chanakya
+	hero_garrison
+  </Auras>  
   <Cost>
     <Population>2</Population>
     <BuildTime>60</BuildTime>
     <Resources>
-      <food>100</food>
-      <metal>250</metal>
+      <food>500</food>
+      <glory>500</glory>
     </Resources>
   </Cost>
+  <Heal>
+    <Range>20</Range>
+    <HP>10</HP>
+    <Rate>2000</Rate>
+    <UnhealableClasses datatype="tokens"/>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+  </Heal>
   <Health>
     <Max>600</Max>
   </Health>
   <Identity>
     <Civ>maur</Civ>
-    <Classes datatype="tokens">Hero Healer Organic</Classes>
-	<GenericName>Acharya Chanakya</GenericName>
-    <SpecificName>Acharya Chāṇakya</SpecificName>
+    <Classes datatype="tokens">Organic Human</Classes>
+	<GenericName>Chanakya</GenericName>
+    <SpecificName>Cāṇakya</SpecificName>
     <Icon>units/maur_hero_chanakya.png</Icon>
-    <VisibleClasses datatype="tokens">Healer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Healer Teacher Support</VisibleClasses>
 	<Tooltip>
 Hero Special: "Healer" - Heal units at a fast rate.
-Hero Special: "Teacher" - Empower a building to research and train +50% faster.
-Hero Special: "Philosopher" - Research 4 special technologies only available to Chanakya.</Tooltip>
-    <History>TBD.</History>
+Hero Special: "Arthashastra" - Research 4 special technologies only available to Chanakya.</Tooltip>
+    <History>Originally a professor of economics and political science at the ancient university of Taxila, Chanakya managed the first Mauryan emperor Chandragupta's rise to power at a young age. He is widely credited for having played an important role in the establishment of the Maurya Empire, which was the first empire in archaeologically recorded history to rule most of the Indian subcontinent. Chanakya served as the chief advisor to both Chandragupta and his son Bindusara.</History>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Minimap>
     <Type>hero</Type>
   </Minimap>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      mauryas/chanakya_economy
+	  mauryas/chanakya_kingship
+	  mauryas/chanakya_law
+	  mauryas/chanakya_animals
+    </Technologies>
+  </ProductionQueue>
   <Selectable>
     <Overlay>
       <AlwaysVisible/>
@@ -51,16 +78,28 @@ Hero Special: "Philosopher" - Research 4 special technologies only available to 
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
-      <death>actor/human/death/death.xml</death>
-      <trained>actor/singlesteps/steps_gravel.xml</trained>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{gender}_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
     </SoundGroups>
   </Sound>
   <TrainingRestrictions>
-    <Category>Hero</Category>
+    <Category>Chanakya</Category>
   </TrainingRestrictions>
   <UnitMotion>
     <WalkSpeed>7.5</WalkSpeed>
@@ -71,9 +110,9 @@ Hero Special: "Philosopher" - Research 4 special technologies only available to 
     </Run>
   </UnitMotion>
   <Vision>
-    <Range>30</Range>
+    <Range>60</Range>
   </Vision>
   <VisualActor>
-    <Actor>units/mauryans/hero_chanakya.xml</Actor>
+    <Actor>units/mauryas/hero_healer_chanakya.xml</Actor>
   </VisualActor>
 </Entity>

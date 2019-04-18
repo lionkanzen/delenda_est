@@ -3,20 +3,26 @@
   <Armour>
     <Hack>1</Hack>
     <Pierce>3</Pierce>
-    <Crush>1</Crush>
+    <Crush>4</Crush>
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>10.0</Pierce>
-      <Crush>0.0</Crush>
+      <Crush>0</Crush>
       <MaxRange>16.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>25.0</ProjectileSpeed>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
-      <Spread>1.75</Spread>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>25.0</Speed>
+        <Spread>1.75</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
       <Bonuses>
         <Hunting>
           <Classes>Animal</Classes>
@@ -33,20 +39,20 @@
       </Bonuses>
     </Ranged>
   </Attack>
+  <Health>
+    <Max>160</Max>
+  </Health>
   <Identity>
     <GenericName>Ranged Cavalry</GenericName>
 	<VisibleClasses datatype="tokens">Ranged</VisibleClasses>
-    <Formations datatype="tokens">
-      formations/skirmish
-    </Formations>
   </Identity>
   <Promotion>
-    <RequiredXp>200</RequiredXp>
+    <RequiredXp>150</RequiredXp>
   </Promotion>
-  <Sound>
-    <SoundGroups>
-      <attack_impact>attack/impact/impact_arrow_all.xml</attack_impact>
-      <attack>attack/weapon/arrowfly.xml</attack>
-    </SoundGroups>
-  </Sound>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.6</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.6</Speed>
+    </Run>
+  </UnitMotion>
 </Entity>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_spearman">
+  <Auras datatype="tokens">
+    epir_hero_alexander_II
+  </Auras>
+  <Identity>
+    <Civ>epir</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Alexander II of Epirus</GenericName>
+    <SpecificName>Aléxandros B' ho Epeiros</SpecificName>
+    <History>.</History>
+    <Icon>units/mace_hero_philip.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/macedonians/hero_cavalry_spearman_philip_m.xml</Actor>
+  </VisualActor>
+</Entity>

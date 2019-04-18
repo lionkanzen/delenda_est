@@ -2,6 +2,7 @@
 <Entity parent="template_unit_cavalry_melee_spearman">
   <Identity>
     <Civ>ptol</Civ>
+	<Lang>greek</Lang>
     <SelectionGroupName>units/ptol_cavalry_spearman_b</SelectionGroupName>
     <GenericName>Macedonian Settler Cavalry</GenericName>
     <SpecificName>Hippeus Makedonikós</SpecificName>
@@ -12,6 +13,6 @@
     <Entity>units/ptol_cavalry_spearman_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/ptolemies/cavalry_spearman_b.xml</Actor>
+    <Actor>units/ptolemies/cavalry_spearman_b_m.xml</Actor>
   </VisualActor>
 </Entity>

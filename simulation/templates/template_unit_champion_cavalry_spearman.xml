@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_cavalry">
   <Armour>
-    <Hack>4</Hack>
-    <Pierce>7</Pierce>
-    <Crush>6</Crush>
+    <Hack>5</Hack>
+    <Pierce>10</Pierce>
+    <Crush>5</Crush>
   </Armour>
   <Attack>
     <Melee>
@@ -11,6 +11,7 @@
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>5.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
 	  <Bonuses>
 		<BonusPrimary>
@@ -30,39 +31,28 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
 	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+      <PreferredClasses datatype="tokens">Ranged+Unit Siege</PreferredClasses>
     </Melee>
-    <Charge>
-      <Hack>48.0</Hack>
-	  <Bonuses>
-		<BonusPrimary>
-		  <Classes>Infantry Ranged</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusPrimary>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
-	  </Bonuses>
-    </Charge>
   </Attack>
+  <Auras datatype="tokens">
+    cavalry_trample_10
+  </Auras>
   <Cost>
-    <BuildTime>15</BuildTime>
     <Resources>
       <metal>80</metal>
     </Resources>
   </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Melee Spear</VisibleClasses>
-    <GenericName>Champion Cavalry Spearman</GenericName>
-    <Tooltip>Counters: 2x vs. Siege Weapons and Ranged Infantry.
-Countered by: Spear Infantry, Elephants, and Camels.</Tooltip>
+    <GenericName>Champion Spear Cavalry</GenericName>
+    <Tooltip>Traits: Fast Speed, Heavy Charge, Heavy Armor, Trample.
+Strong Against: Ranged Infantry (2x), Siege Weapons (2x).
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Camels.</Tooltip>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="add">0.8</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.8</Speed>
+    </Run>
+  </UnitMotion>
 </Entity>

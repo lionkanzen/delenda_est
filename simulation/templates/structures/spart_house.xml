@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_house">
-  <Cost>
-    <PopulationBonus>10</PopulationBonus>
-    <BuildTime>45</BuildTime>
-    <Resources>
-      <wood>150</wood>
-    </Resources>
-  </Cost>
-  <GarrisonHolder>
-    <Max>6</Max>
-  </GarrisonHolder>
-  <Health>
-    <Max>1000</Max>
-  </Health>
+<Entity parent="template_structure_civic_house_big">
   <Identity>
     <Civ>spart</Civ>
     <SpecificName>Oîkos</SpecificName>
     <History>Spartan houses were known to be particularly simple because of two laws of Lycurgus. The first enforced that the roofs only be crafted with an axe, and the second made doors only constructed with saws as tools. (Plutarch 13) These generally made Spartans more likely to furnish their homes with plain furniture to match their homes. This helped give rise to the term 'spartan' which means 'sparse.'</History>
   </Identity>
   <ProductionQueue>
+    <Entities>
+      units/{civ}_support_citizen_female_house
+    </Entities>
     <Technologies datatype="tokens">
       hellenes/health_females_sparta
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/hellenes/house_new.xml</Actor>
+    <Actor>structures/spartans/house.xml</Actor>
   </VisualActor>
 </Entity>

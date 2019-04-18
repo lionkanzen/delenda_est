@@ -6,16 +6,12 @@
     <History>Carthiginian's History</History>
   </Identity>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_kart_cc</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_kart_cc</SpawnEntityOnDeath>
   </Health>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/cart_infantry_spearman_b
     </Entities>
     <Technologies datatype="tokens">
-      phase_town_generic
-      phase_city_generic
-	  phase_imperial_generic
 	  health_units_01
 	  health_units_02
 	  pair_structures_01
@@ -26,7 +22,8 @@
 	  pair_structures_03
 	  pair_structures_04
       carthaginians/special_colonisation
-	  vision_treason
+	  carthaginians/special_triple_walls
+	  successors/health_heroes
     </Technologies>
   </ProductionQueue>
   <VisualActor>

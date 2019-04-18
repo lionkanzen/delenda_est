@@ -2,6 +2,7 @@
 <Entity parent="template_unit_cavalry_melee_spearman">
   <Cost>
     <Population>0</Population>
+	<BuildTime>5</BuildTime>
     <Resources>
       <food>0</food>
 	  <wood>50</wood>
@@ -10,12 +11,14 @@
   </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
+	<Rank>Advanced</Rank>
   </Identity>
   <Looter disable=""/>
+  <Promotion disable=""/>
   <ResourceGatherer>
-    <BaseSpeed>0.5</BaseSpeed>
+    <BaseSpeed>0.75</BaseSpeed>
   </ResourceGatherer>
   <TrainingRestrictions>
-    <Category>Mercenary20</Category>
+    <Category>Mercenary</Category>
   </TrainingRestrictions>
 </Entity>

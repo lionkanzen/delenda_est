@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <Attack>
+    <Ranged>
+      <MinRange>21.0</MinRange>
+    </Ranged>
+  </Attack>
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>11</X><Y>11.4</Y><Z>11</Z>
+      </Archer1>
+      <Archer2>
+        <X>-11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer2>
+      <Archer3>
+        <X>-11</X><Y>11.4</Y><Z>11</Z>
+      </Archer3>
+      <Archer4>
+        <X>11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer4>
+      <Archer5>
+        <X>3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer5>
+      <Archer6>
+        <X>-3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer6>
+      <Archer7>
+        <X>8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer7>
+      <Archer8>
+        <X>-8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer8>
+      <Archer9>
+        <X>-3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer9>
+      <Archer10>
+        <X>3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer10>
+      <Archer11>
+        <X>-8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer11>
+      <Archer12>
+        <X>8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer12>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
   <Cost>
     <Resources>
-      <stone>550</stone>
+      <stone>600</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -12,7 +57,7 @@
   <Identity>
     <Civ>athen</Civ>
     <SpecificName>Epiteíchisma</SpecificName>
-    <Tooltip>Build siege engines. Garrison up to 20 soldiers inside for stout defense.</Tooltip>
+    <Tooltip>Train Scythian Mercenary Archers. Garrison up to 20 soldiers inside for stout defense.</Tooltip>
     <History>Fortresses (also called a "phrourion") were built to guard passes and atop hills in order to command plains and valleys below. One such Athenian fortress, Gyphtokastro, guarded the pass from Attica into Boeotia.</History>
   </Identity>
   <Obstruction>
@@ -20,19 +65,17 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/athen_champion_ranged
-	  units/athen_mechanical_siege_oxybeles_packed
-      units/athen_mechanical_siege_lithobolos_packed
+      units/{civ}_champion_ranged_archer
+      units/{civ}_champion_ranged_gastraphetes
     </Entities>
     <Technologies datatype="tokens">
-      -pair_champ_02
-	  unlock_siege_ballistics
-      pair_siege_ranged_01
-	  hellenes/pair_siege_01
-	  hellenes/siege_buildtime_athen
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/athenians/fortress_up.xml</Actor>
+    <Actor>structures/athenians/fortress.xml</Actor>
   </VisualActor>
+  <WallPiece>
+   <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
 </Entity>

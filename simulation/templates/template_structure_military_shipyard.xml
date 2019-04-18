@@ -6,18 +6,26 @@
     <Category>Dock</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
-      <wood>300</wood>
+      <stone>200</stone>
     </Resources>
   </Cost>
   <Footprint>
     <Square width="18.0" depth="18.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>2</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Ship</EjectClassesOnDestroy>
+    <List datatype="tokens">Ship</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
-    <Max>2500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_4x4_dock</SpawnEntityOnDeath>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Shipyard</GenericName>
@@ -28,17 +36,19 @@
     <Icon>structures/shipyard.png</Icon>
   </Identity>
   <Loot>
-    <xp>100</xp>
+    <xp>200</xp>
     <food>0</food>
     <wood>30</wood>
     <stone>0</stone>
-    <metal>30</metal>
+    <metal>0</metal>
+    <glory>200</glory>
   </Loot>
   <Obstruction>
     <Static width="18.0" depth="18.0"/>
   </Obstruction>
   <Position>
     <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
   </Position>
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
@@ -50,9 +60,13 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryDecay disable=""/>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_ship_bireme
+      units/{civ}_ship_trireme
+	  units/{civ}_ship_quinquereme
+    </Entities>
     <Technologies datatype="tokens">
       training_naval_construction
 	  naval_cost_01

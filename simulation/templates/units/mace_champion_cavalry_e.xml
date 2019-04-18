@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/mace_champion_cavalry">
   <Armour>
-    <Hack>5</Hack>
-    <Pierce>8</Pierce>
-    <Crush>6</Crush>
+    <Hack op="add">1</Hack>
+    <Pierce op="add">2</Pierce>
+    <Crush op="add">2</Crush>
   </Armour>
   <Attack>
     <Melee>
-      <Hack>19.0</Hack>
+      <Hack op="mul">1.1</Hack>
     </Melee>
-    <Charge>
-      <Hack>48</Hack>
-    </Charge>
-  </Attack>
-  <Attack>
-    <Melee>
-      <MaxRange>6.0</MaxRange>
-    </Melee>
-    <Charge>
-      <MaxRange>6.0</MaxRange>
-    </Charge>
   </Attack>
   <Health>
-    <Max>220</Max>
+    <Max op="mul">1.1</Max>
   </Health>
   <Identity>
 	<GenericName>Royal Bodyguard Cavalry</GenericName>
     <SpecificName>So̱matophýlax</SpecificName>
     <History>The Royal Bodyguards, or Somatophylakes, were the most trusted of Alexander's companions and generals in his army.</History>
-    <Icon>units/hele_champion_cavalry_mace.png</Icon>
+    <Icon>units/mace_champion_cavalry_e.png</Icon>
   </Identity>
-  <Promotion disable=""/>
+  <Upgrade disable=""/>
   <VisualActor>
     <Actor>units/macedonians/champion_cavalry_e.xml</Actor>
   </VisualActor>

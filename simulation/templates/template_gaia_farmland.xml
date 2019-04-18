@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Footprint>
+    <Square width="40" depth="40"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Farmland</GenericName>
+    <Classes datatype="tokens">Farmland</Classes>
+	<Civ>gaia</Civ>
+    <Icon>structures/field.png</Icon>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <Selectable>
+    <EditorOnly/>
+	<Overlay>
+	  <Texture>
+        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
+        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Visibility>
+	<RetainInFog>false</RetainInFog>
+	<AlwaysVisible>false</AlwaysVisible>
+	<Corpse>false</Corpse>
+	<Preview>false</Preview>
+  </Visibility>
+  <VisualActor>
+    <SilhouetteDisplay>false</SilhouetteDisplay>
+    <SilhouetteOccluder>true</SilhouetteOccluder>
+    <Actor>props/special/common/aura_farmland_20.xml</Actor>
+    <VisibleInAtlasOnly>true</VisibleInAtlasOnly>
+  </VisualActor>
+</Entity>

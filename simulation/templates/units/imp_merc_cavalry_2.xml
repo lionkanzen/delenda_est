@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_ranged_javelinist">
+  <Cost>
+    <Population>1</Population>
+  </Cost>
+  <Identity>
+    <Civ>imp</Civ>
+	<Lang>latin</Lang>
+    <GenericName>Auxiliary Light Cavalry</GenericName>
+    <SpecificName>Eques Auxiliaris</SpecificName>
+    <History>.</History>
+    <Icon>units/imp_merc_cav_javelinist.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Auxilia</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/romans_imperial/cavalry_javelinist.xml</Actor>
+  </VisualActor>
+</Entity>

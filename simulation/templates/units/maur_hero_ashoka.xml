@@ -11,6 +11,10 @@
       <MaxRange>64.0</MaxRange>
     </Ranged>
   </Attack>
+  <Auras datatype="tokens">
+	maur_hero_ashoka
+	chariot_trample_e
+  </Auras>
   <Cost>
     <Population>4</Population>
     <BuildTime>50</BuildTime>
@@ -34,14 +38,12 @@
     <Classes datatype="tokens">Ashoka</Classes>
 	<VisibleClasses datatype="tokens">Chariot</VisibleClasses>
     <Icon>units/maur_hero_ashoka.png</Icon>
-    <Tooltip>Hero Special: "Edicts of Ashoka" - Edict Pillars of Ashoka can be built during Ashoka's lifetime.
-Counters: 1.5x vs. Melee Infantry.
-Countered by: Javelin Infantry, Sword Cavalry, and Elephants.</Tooltip>
+    <Tooltip>Traits: Fast Speed, Trample, Charge.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.
+Hero Special: "Edicts of Ashoka" - Edict Pillars of Ashoka can be built during Ashoka's lifetime.</Tooltip>
     <History>TBD.</History>
   </Identity>
-  <Obstruction>
-    <Unit radius="2.0"/>
-  </Obstruction>
   <UnitMotion>
     <WalkSpeed>18.0</WalkSpeed>
     <Run>
@@ -49,6 +51,6 @@ Countered by: Javelin Infantry, Sword Cavalry, and Elephants.</Tooltip>
     </Run>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/mauryans/hero_chariot.xml</Actor>
+    <Actor>units/mauryas/hero_chariot_archer_ashoka_m.xml</Actor>
   </VisualActor>
 </Entity>

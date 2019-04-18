@@ -2,6 +2,7 @@
 <Entity parent="template_unit_champion_infantry_swordsman">
   <Identity>
     <Civ>rome</Civ>
+	<Lang>latin</Lang>
     <GenericName>Marian Legionaire</GenericName>
     <SpecificName>Marian Legionarius</SpecificName>
     <History>The Marian Legionnaire.</History>
@@ -13,6 +14,6 @@
     <RequiredXp>150</RequiredXp>
   </Promotion>
   <VisualActor>
-    <Actor>units/romans/champion_unit_3.xml</Actor>
+    <Actor>units/romans/champion_infantry_marian.xml</Actor>
   </VisualActor>
 </Entity>

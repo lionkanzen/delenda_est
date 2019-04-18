@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_entity_full">
+<Entity>
+  <AIProxy/>
   <Armour>
     <Hack>1</Hack>
     <Pierce>1</Pierce>
@@ -14,46 +15,46 @@
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
+      <glory>0</glory>
     </Resources>
   </Cost>
   <Decay>
     <Active>false</Active>
 	<SinkingAnim>false</SinkingAnim>
-    <DelayTime>80.0</DelayTime>
-    <SinkRate>0.01</SinkRate>
+    <DelayTime>60.0</DelayTime>
+    <SinkRate>0.02</SinkRate>
     <SinkAccel>0.0</SinkAccel>
   </Decay>
   <Footprint>
     <Circle radius="1.5"/>
     <Height>2.5</Height>
   </Footprint>
+  <Garrisonable/>
   <Health>
     <DeathType>corpse</DeathType>
     <Max>100</Max>
     <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>false</Unhealable>
-    <Repairable>false</Repairable>
   </Health>
   <Identity>
+    <Civ>gaia</Civ>
     <GenericName>Unit</GenericName>
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
     <Formations datatype="tokens">
-      formations/null
-      formations/box
-      formations/column_closed
-      formations/line_closed
-      formations/column_open
-      formations/line_open
-      formations/flank
-      formations/battle_line
+	  special/formations/null
+	  special/formations/line_closed
+	  special/formations/line_open
+	  special/formations/column_closed
     </Formations>
+    <Undeletable>false</Undeletable>
   </Identity>
   <Looter/>
   <Minimap>
     <Type>unit</Type>
   </Minimap>
   <Obstruction>
-    <Unit radius="0.8"/>
+    <Unit/>
     <Active>true</Active>
     <BlockMovement>true</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
@@ -61,19 +62,31 @@
     <BlockConstruction>true</BlockConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <OverlayRenderer/>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+	<FloatDepth>0.0</FloatDepth>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <RangeOverlayManager/>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
       <treasure>1</treasure>
+      <glory.praise>0.2</glory.praise>
     </Rates>
     <Capacities>
       <food>20</food>
       <wood>20</wood>
       <stone>20</stone>
       <metal>20</metal>
+      <glory>1</glory>
     </Capacities>
   </ResourceGatherer>
   <Selectable>
@@ -87,6 +100,7 @@
   <Sound>
     <SoundGroups>
       <attacked>interface/alarm/alarm_attackplayer.xml</attacked>
+	  <attack_slaughter>attack/weapon/sword.xml</attack_slaughter>
     </SoundGroups>
   </Sound>
   <StatusBars>
@@ -95,34 +109,37 @@
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
   <UnitAI>
-    <AlertReactiveLevel>2</AlertReactiveLevel>
     <DefaultStance>aggressive</DefaultStance>
     <FleeDistance>12.0</FleeDistance>
     <FormationController>false</FormationController>
     <CanGuard>true</CanGuard>
+	<CanPatrol>true</CanPatrol>
   </UnitAI>
   <Guard/>
   <UnitMotion>
     <FormationController>false</FormationController>
-    <WalkSpeed>7.5</WalkSpeed>
+    <WalkSpeed>10.0</WalkSpeed>
     <Run>
-      <Speed>15.0</Speed>
+      <Speed>20.0</Speed>
       <Range>50.0</Range>
       <RangeMin>0.0</RangeMin>
       <RegenTime>0.1</RegenTime>
       <DecayTime>0.2</DecayTime>
     </Run>
     <PassabilityClass>default</PassabilityClass>
-    <CostClass>default</CostClass>
   </UnitMotion>
   <Visibility>
 	<RetainInFog>false</RetainInFog>
 	<AlwaysVisible>false</AlwaysVisible>
+	<Corpse>false</Corpse>
 	<Preview>false</Preview>
   </Visibility>
   <Vision>
     <Range>10</Range>
   </Vision>
+  <VisionSharing> 
+    <Bribable>false</Bribable> 
+  </VisionSharing> 
   <VisualActor>
     <SilhouetteDisplay>true</SilhouetteDisplay>
     <SilhouetteOccluder>false</SilhouetteOccluder>

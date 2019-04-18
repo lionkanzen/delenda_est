@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
   <Armour>
-    <Hack>1</Hack>
-    <Pierce>5</Pierce>
-    <Crush>2</Crush>
+    <Hack>2</Hack>
+    <Pierce>6</Pierce>
+    <Crush>5</Crush>
   </Armour>
   <Attack>
+    <Capture>
+      <Value>5</Value>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
     <Slaughter>
       <Hack>100.0</Hack>
       <Pierce>0.0</Pierce>
@@ -13,28 +19,29 @@
       <MaxRange>4.0</MaxRange>
     </Slaughter>
   </Attack>
+  <Auras datatype="tokens">
+    slave_ownership
+  </Auras>
   <Cost>
-    <Population>1</Population>
-    <BuildTime>15</BuildTime>
+    <Population>3</Population>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>80</food>
+      <food>70</food>
     </Resources>
   </Cost>
   <Footprint replace="">
-    <Square width="3" depth="5"/>
+    <Square width="3.5" depth="6"/>
     <Height>7.5</Height>
   </Footprint>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
-    <Classes datatype="tokens">CitizenSoldier Organic</Classes>
-    <VisibleClasses datatype="tokens">Gatherer Cavalry Citizen Soldier</VisibleClasses>
+    <Classes datatype="tokens">CitizenSoldier Organic Human</Classes>
+    <VisibleClasses datatype="tokens">Gatherer Cavalry Horse Citizen Soldier</VisibleClasses>
     <GenericName>Cavalry</GenericName>
     <Rank>Basic</Rank>
     <Formations datatype="tokens">
-      formations/wedge
+      special/formations/wedge
     </Formations>
+	<RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>130</xp>
@@ -42,29 +49,37 @@
     <wood>0</wood>
     <stone>0</stone>
     <metal>0</metal>
+    <glory>5</glory>
   </Loot>
-  <Obstruction>
-    <Unit radius="1.0"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
   <Promotion>
-    <RequiredXp>150</RequiredXp>
+    <RequiredXp>100</RequiredXp>
   </Promotion>
+  <RangeVisualization disable=""/>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.meat>2</food.meat>
+      <food.meat>1.5</food.meat>
     </Rates>
     <Capacities>
-      <food>30</food>
-      <wood>30</wood>
-      <stone>30</stone>
-      <metal>30</metal>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
     </Capacities>
   </ResourceGatherer>
+  <ResourceTrickle>
+    <Rates> 
+      <food>0</food> 
+      <wood>0</wood> 
+      <stone>0</stone> 
+      <metal>0</metal> 
+    </Rates> 
+    <Interval>10000</Interval> 
+  </ResourceTrickle>
   <Selectable>
     <Overlay>
       <Texture>
@@ -77,32 +92,28 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <walk>actor/mounted/movement/walk.xml</walk>
-      <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
+	  <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+	  <attack_melee>attack/weapon/sword.xml</attack_melee>
+	  <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
     </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>2000</Max>
-  </Stamina>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
-  <UnitMotion>
-    <WalkSpeed>13.0</WalkSpeed>
-    <Run>
-      <Speed>26.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
-    </Run>
-  </UnitMotion>
+  <TrainingRestrictions>
+    <Category>Cavalry</Category>
+  </TrainingRestrictions>
   <Vision>
-    <Range>60</Range>
+    <Range>50</Range>
   </Vision>
+  <VisionSharing> 
+    <Bribable>true</Bribable> 
+  </VisionSharing> 
 </Entity>

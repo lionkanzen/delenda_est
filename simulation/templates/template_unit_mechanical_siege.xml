@@ -5,6 +5,11 @@
     <Pierce>5</Pierce>
     <Crush>5</Crush>
   </Armour>
+  <Capturable>
+    <CapturePoints>400</CapturePoints>
+    <RegenRate>0.5</RegenRate>
+    <GarrisonRegenRate>1.5</GarrisonRegenRate>
+  </Capturable>
   <Cost>
     <Population>5</Population>
   </Cost>
@@ -19,12 +24,23 @@
   <Position>
     <Anchor>pitch-roll</Anchor>
   </Position>
+  <ResourceGatherer disable=""/>
   <Sound>
     <SoundGroups>
       <select>attack/siege/siege_select.xml</select>
       <order_walk>attack/siege/ram_move.xml</order_walk>
-      <order_attack>attack/siege/ram_attack.xml</order_attack>
-	  <trained>attack/siege/ram_move.xml</trained>
+      <order_attack>attack/siege/ram_move.xml</order_attack>
+      <trained>attack/siege/ram_trained.xml</trained>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
     </SoundGroups>
   </Sound>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.6</Speed>
+    </Run>
+  </UnitMotion>
 </Entity>

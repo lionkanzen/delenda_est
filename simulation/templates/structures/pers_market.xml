@@ -5,7 +5,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>pers</Civ>
@@ -17,7 +17,6 @@
   </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
-	  -gather_slave_markets
 	  persians/speed_royal_road_03
     </Technologies>
   </ProductionQueue>

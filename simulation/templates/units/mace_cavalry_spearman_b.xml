@@ -2,6 +2,7 @@
 <Entity parent="template_unit_cavalry_melee_spearman">
   <Identity>
     <Civ>mace</Civ>
+	<Lang>greek</Lang>
     <SelectionGroupName>units/mace_cavalry_spearman_b</SelectionGroupName>
     <GenericName>Thessalian Lancer</GenericName>
     <SpecificName>Xystophoros Thessalikos</SpecificName>
@@ -12,6 +13,6 @@
     <Entity>units/mace_cavalry_spearman_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/macedonians/cavalry_spearman_b.xml</Actor>
+    <Actor>units/macedonians/cavalry_spearman_b_m.xml</Actor>
   </VisualActor>
 </Entity>

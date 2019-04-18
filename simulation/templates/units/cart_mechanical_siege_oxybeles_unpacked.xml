@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="special_units/cart_mechanical_siege_oxybeles_common">
+<Entity parent="units/cart_mechanical_siege_oxybeles_packed">
   <Identity>
     <Icon>units/cart_mechanical_siege_oxybeles.png</Icon>
   </Identity>
   <Pack>
     <Entity>units/cart_mechanical_siege_oxybeles_packed</Entity>
-    <Time>10000</Time>
     <State>unpacked</State>
   </Pack>
   <UnitMotion>
@@ -15,6 +14,6 @@
     </Run>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/carthaginians/siege_spear.xml</Actor>
+    <Actor>units/carthaginians/siege_spear_pivot.xml</Actor>
   </VisualActor>
 </Entity>

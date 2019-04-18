@@ -5,7 +5,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>mace</Civ>
@@ -15,15 +15,8 @@
   <Obstruction>
     <Static width="18.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-      -successors/special_water_wheel
-	  -successors/special_well_sweep
-	  -farms_crop_rotation
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
-    <Actor>structures/hellenes/farmstead_new.xml</Actor>
+    <Actor>structures/hellenes/farmstead.xml</Actor>
     <FoundationActor>structures/fndn_4x2.xml</FoundationActor>
   </VisualActor>
 </Entity>

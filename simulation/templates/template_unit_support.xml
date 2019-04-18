@@ -10,8 +10,8 @@
   </Cost>
   <Identity>
     <GenericName>Support</GenericName>
-    <Classes datatype="tokens">Organic</Classes>
-	<VisibleClasses datatype="tokens">Support</VisibleClasses>
+    <Classes datatype="tokens">Organic Human</Classes>
+	<VisibleClasses datatype="tokens">Civilian Support Bribable</VisibleClasses>
   </Identity>
   <Loot>
     <xp>10</xp>
@@ -19,6 +19,7 @@
     <wood>1</wood>
     <stone>1</stone>
     <metal>1</metal>
+    <glory>1</glory>
   </Loot>
   <Minimap>
     <Type>support</Type>
@@ -26,9 +27,18 @@
   <Sound>
     <SoundGroups>
       <trained>interface/alarm/alarm_create_worker.xml</trained>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
     </SoundGroups>
   </Sound>
   <UnitAI>
     <DefaultStance>passive</DefaultStance>
   </UnitAI>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisionSharing> 
+    <Bribable>true</Bribable> 
+  </VisionSharing> 
 </Entity>

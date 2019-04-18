@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    imp_hero_trajan
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+	<Lang>latin</Lang>
+	<GenericName>Emperor Trajan</GenericName>
+    <SpecificName>Marcus Ulpius Trajanus</SpecificName>
+    <Icon>units/rome_hero_scipio.png</Icon>
+    <History>The greatest expansionist emperor of the Roman Empire. Trajan conquered the Dacians, beat back the Germans, and nearly conquered all of the Parthian Empire before having to turn back due to infirmity.</History>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/hero_cavalry_swordsman_scipio_m.xml</Actor>
+  </VisualActor>
+</Entity>

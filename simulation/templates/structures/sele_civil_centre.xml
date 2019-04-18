@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
-  <Health>
-    <SpawnEntityOnDeath>rubble/rubble_hele_cc</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>sele</Civ>
     <SpecificName>Agorā́</SpecificName>
@@ -10,24 +7,17 @@
   </Identity>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/sele_infantry_spearman_2_b
-      units/sele_hero_seleucus_victor
-      units/sele_hero_antiochus_great
-      units/sele_hero_antiochus_righteous
     </Entities>
     <Technologies datatype="tokens">
-	  phase_town_generic
-      phase_city_generic
-	  phase_imperial_generic
 	  health_units_01
 	  health_units_02
-	  pair_structures_01
-	  pair_structures_02
 	  health_units_03
 	  health_units_04
+	  pair_structures_01
+	  pair_structures_02
 	  pair_structures_03
 	  pair_structures_04
-	  vision_treason
+	  successors/health_heroes
     </Technologies>
   </ProductionQueue>
   <VisualActor>

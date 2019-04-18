@@ -31,7 +31,7 @@
     <SpecificName>Hellenic Royal Stoa</SpecificName>
     <History>A structure built for civic purposes. Stoas eventually became meeting places for philosophy and commerce. They were usually built within the Agora, or city center, of a Greek city.</History>
     <Tooltip>Add +10 to Population Cap. Recruit special units.</Tooltip>
-    <Icon>gaia/special_stoa.png</Icon>
+    <Icon>structures/tholos.png</Icon>
   </Identity>
   <Loot>
     <xp>10</xp>
@@ -46,7 +46,7 @@
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>40</Radius>
-    <Weight>65536</Weight>
+    <Weight>65535</Weight>
   </TerritoryInfluence>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
@@ -61,6 +61,6 @@
   </Vision>
   <VisualActor>
     <Actor>special/greek_stoa_great.xml</Actor>
-    <FoundationActor>structures/fndn_wall.xml</FoundationActor>
+    <FoundationActor>structures/fndn_6x4.xml</FoundationActor>
   </VisualActor>
 </Entity>

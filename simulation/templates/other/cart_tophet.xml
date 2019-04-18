@@ -9,10 +9,6 @@
       <metal>100</metal>
     </Resources>
   </Cost>
-  <Footprint>
-    <Square width="24.0" depth="26.0"/>
-    <Height>8.0</Height>
-  </Footprint>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>

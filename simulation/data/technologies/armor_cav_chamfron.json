@@ -15,8 +15,8 @@
 	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "chamfron.png",
-	"researchTime": 40,
-	"tooltip": "All Cavalry +2 Hack armor levels.",
+	"researchTime": 60,
+	"tooltip": "All Cavalry +2 hack armor levels.",
 	"modifications": [{"value": "Armour/Hack", "add": 2.0}],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

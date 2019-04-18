@@ -5,7 +5,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>maur</Civ>
@@ -15,14 +15,8 @@
   <Obstruction>
     <Static width="18.0" depth="18.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-      -successors/special_water_wheel
-	  -successors/special_well_sweep
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
-    <Actor>structures/mauryans/farmstead.xml</Actor>
+    <Actor>structures/mauryas/farmstead.xml</Actor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
 </Entity>

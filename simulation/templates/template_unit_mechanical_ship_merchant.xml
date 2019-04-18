@@ -7,16 +7,17 @@
   </Armour>
   <Cost>
     <Resources>
-      <wood>0</wood>
+      <food>0</food>
+      <wood>100</wood>
       <metal>100</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
     <Max>15</Max>
     <EjectHealth>0</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry</List>
-    <BuffHeal>1</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Dog</List>
+    <BuffHeal>0</BuffHeal>
     <LoadingRange>10</LoadingRange>
     <Pickup>true</Pickup>
   </GarrisonHolder>
@@ -27,7 +28,7 @@
     <GenericName>Merchantman</GenericName>
     <Tooltip>
 Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
-    <VisibleClasses datatype="tokens">Trader MerchantShip</VisibleClasses>
+    <VisibleClasses datatype="tokens">Trader MerchantShip Bribable</VisibleClasses>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Formations disable=""/>
   </Identity>
@@ -51,11 +52,13 @@ Trade between docks. Garrison a Trader aboard for additional profit (+20% for ea
   <UnitAI>
 	<DefaultStance>passive</DefaultStance>
     <CanGuard>false</CanGuard>
+	<CanPatrol>false</CanPatrol>
   </UnitAI>
   <UnitMotion>
-    <WalkSpeed>12</WalkSpeed>
+    <PassabilityClass>ship-small</PassabilityClass>
+	<WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>50</Range>
-  </Vision>
+  <VisionSharing> 
+    <Bribable>true</Bribable> 
+  </VisionSharing> 
 </Entity>

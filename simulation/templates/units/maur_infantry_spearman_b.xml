@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_spearman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>7.0</Hack>
+    </Melee>
+    <Capture>
+      <RepeatTime>3500</RepeatTime>
+    </Capture>
+  </Attack>
   <Builder>
-    <Rate>1.0</Rate>
-    <Entities datatype="tokens">
-      structures/maur_elephant_stables
-      structures/maur_pillar_ashoka
-      structures/{civ}_wonder
-    </Entities>
+    <Rate>0.5</Rate>
   </Builder>
   <Cost>
-    <BuildTime>8</BuildTime>
+    <Population>1</Population>
+	<BuildTime>8</BuildTime>
     <Resources>
-      <wood>40</wood>
+      <food>30</food>
+      <wood>30</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>80</Max>
+    <Max>70</Max>
   </Health>
   <Identity>
     <Civ>maur</Civ>
@@ -23,12 +31,16 @@
     <GenericName>Bamboo Spearman</GenericName>
     <SpecificName>Kauntika</SpecificName>
     <Icon>units/maur_infantry_spearman.png</Icon>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <History>Bamboo Spearman.</History>
+    <Tooltip>Traits: Low Cost, Low Health, Slow Builder, Medium Speed, Medium Armor, Low Attack, Massable.
+Strong Against: All Cavalry (1.5x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
   </Identity>
   <Promotion>
     <Entity>units/maur_infantry_spearman_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/mauryans/infantry_spearman_b.xml</Actor>
+    <Actor>units/mauryas/infantry_spearman_b.xml</Actor>
   </VisualActor>
 </Entity>

@@ -3,23 +3,23 @@
   <Armour>
     <Hack>1</Hack>
     <Pierce>1</Pierce>
-    <Crush>1</Crush>
+    <Crush>3</Crush>
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
       <Pierce>10.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>40.0</MaxRange>
+      <MaxRange>30.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>60.0</ProjectileSpeed>
-      <PrepareTime>900</PrepareTime>
+      <PrepareTime>750</PrepareTime>
       <RepeatTime>1500</RepeatTime>
-      <Spread>1.5</Spread>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>1.0</Spread>
+      </Projectile>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Infantry Ranged</Classes>
-		  <Multiplier>1.5</Multiplier>
+		  <Multiplier>1.25</Multiplier>
 		</BonusPrimary>
 		<BonusSecondary>
 		  <Classes>Sword Infantry</Classes>
@@ -30,23 +30,24 @@
   </Attack>
   <Cost>
     <Resources>
-      <stone>40</stone>
+      <stone>50</stone>
     </Resources>
   </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">Sling</VisibleClasses>
     <GenericName>Slinger</GenericName>
-    <Tooltip>Counters: 1.5x vs. Ranged Infantry, 1.25x vs. Sword Infantry.
-Countered by: Melee Cavalry.</Tooltip>
+    <Tooltip>Traits: High Speed, Low Armor, High Accuracy, Rapid Firing.
+Strong Against: Ranged Infantry (1.25x), Sword Infantry (1.25x).
+Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
   </Identity>
   <Loot>
     <xp>75</xp>
     <stone>4</stone>
   </Loot>
   <UnitMotion>
-    <WalkSpeed>9.0</WalkSpeed>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
     <Run>
-      <Speed>18.0</Speed>
+      <Speed op="mul">1.1</Speed>
     </Run>
   </UnitMotion>
 </Entity>

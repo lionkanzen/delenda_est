@@ -1,5 +1,9 @@
 {
 	"genericName": "Public Latrines",
+	"specificName": {
+		"rome": "Latrinae Publica",
+		"imp": "Latrinae Publica"
+	},
 	"description": ".",
 	"cost": {"food": 0, "wood": 300, "stone": 300, "metal": 0},
 	"requirements": {"tech": "phase_city"},
@@ -7,8 +11,8 @@
 	"supersedes": "health_units_03",
 	"icon": "latrines.png",
 	"researchTime": 40,
-	"tooltip": "All organic units +5 Health.",
-	"modifications": [{"value": "Health/Max", "add": 5}],
+	"tooltip": "All organic units +5% Health.",
+	"modifications": [{"value": "Health/Max", "multiply": 1.05}],
 	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

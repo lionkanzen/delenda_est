@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Scenario version="5">
+<Scenario version="6">
 	<Environment>
 		<SkySet>sunset</SkySet>
-		<SunColour r="1.21512" g="0.991157" b="0.319267"/>
+		<SunColor r="1.36751" g="1.20663" b="0.595269"/>
 		<SunElevation angle="0.392699"/>
-		<SunRotation angle="2.25802"/>
-		<TerrainAmbientColour r="0.247059" g="0.411765" b="0.584314"/>
-		<UnitsAmbientColour r="0.329412" g="0.419608" b="0.501961"/>
+		<SunRotation angle="0.981748"/>
+		<TerrainAmbientColor r="0.247059" g="0.411765" b="0.584314"/>
+		<UnitsAmbientColor r="0.329412" g="0.419608" b="0.501961"/>
 		<Fog>
 			<FogFactor>0.00298828</FogFactor>
 			<FogThickness>0.149414</FogThickness>
-			<FogColour r="0.866667" g="0.776471" b="0.486275"/>
+			<FogColor r="0.866667" g="0.776471" b="0.486275"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>clap</Type>
-				<Colour r="0.501961" g="0.501961" b="0.247059"/>
+				<Color r="0.501961" g="0.501961" b="0.247059"/>
 				<Tint r="0.866667" g="0.737255" b="0.466667"/>
 				<Height>19.9</Height>
 				<Waviness>1</Waviness>
-				<Murkiness>0.900391</Murkiness>
+				<Murkiness>0.945313</Murkiness>
 				<WindAngle>0</WindAngle>
 			</WaterBody>
 		</Water>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="552.143" y="98.9999" z="44.0712"/>
+		<Position x="269.738" y="135.088" z="293.502"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -47,14 +47,13 @@
   ],
   "CircularMap": true,
   "Description": "Players start around a small oasis in the center of the map which holds much of the available wood on the map.\n\nElsewhere, in the hinterlands, lies great riches, in the form of large deposits of gold and other metals.",
-  "GameType": "conquest",
   "Keywords": [],
   "LockTeams": false,
   "Name": "Gold Oasis (2)",
   "PlayerData": [
     null,
     {
-      "Colour": {
+      "Color": {
         "b": 200,
         "g": 46,
         "r": 46
@@ -62,7 +61,7 @@
       "Name": "Player 1"
     },
     {
-      "Colour": {
+      "Color": {
         "b": 20,
         "g": 20,
         "r": 150
@@ -72,6 +71,9 @@
   ],
   "Preview": "gold_oasis_1.png",
   "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ],
   "Script": "oasis.js",
   "Seed": 4278,
   "Size": 256,
@@ -2356,7 +2358,7 @@
 		</Entity>
 		<Entity uid="1212">
 			<Template>actor|particle/blowing_sand.xml</Template>
-			<Position x="362.56298" z="466.57218"/>
+			<Position x="302.13141" z="448.56727"/>
 			<Orientation y="3.82087"/>
 		</Entity>
 		<Entity uid="1213">
@@ -4201,7 +4203,7 @@
 		</Entity>
 		<Entity uid="1581">
 			<Template>actor|particle/blowing_sand.xml</Template>
-			<Position x="581.98298" z="577.74976"/>
+			<Position x="616.167" z="680.88776"/>
 			<Orientation y="5.6781"/>
 		</Entity>
 		<Entity uid="1582">
@@ -4916,8 +4918,8 @@
 		</Entity>
 		<Entity uid="1712">
 			<Template>actor|props/flora/plant_desert_a.xml</Template>
-			<Position x="331.52112" z="466.83674"/>
-			<Orientation y="2.35621"/>
+			<Position x="343.77347" z="455.64261"/>
+			<Orientation y="1.33973"/>
 		</Entity>
 		<Entity uid="1713">
 			<Template>actor|props/flora/plant_desert_a.xml</Template>
@@ -8082,28 +8084,28 @@
 			<Actor seed="25754"/>
 		</Entity>
 		<Entity uid="2349">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="557.92676" z="137.4502"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62936"/>
 		</Entity>
 		<Entity uid="2350">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="561.89448" z="141.92959"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43984"/>
 		</Entity>
 		<Entity uid="2351">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="566.00232" z="146.50287"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29816"/>
 		</Entity>
 		<Entity uid="2352">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="570.13453" z="151.33342"/>
 			<Orientation y="2.35621"/>
@@ -8152,28 +8154,28 @@
 			<Actor seed="62812"/>
 		</Entity>
 		<Entity uid="2359">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="443.6804" z="858.37751"/>
 			<Orientation y="-2.88254"/>
 			<Actor seed="10486"/>
 		</Entity>
 		<Entity uid="2360">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="448.33808" z="853.13135"/>
 			<Orientation y="-2.94782"/>
 			<Actor seed="57922"/>
 		</Entity>
 		<Entity uid="2361">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="451.93573" z="848.85065"/>
 			<Orientation y="-2.71242"/>
 			<Actor seed="27988"/>
 		</Entity>
 		<Entity uid="2362">
-			<Template>skirmish/units/default_support_female_citizen</Template>
+			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="455.71497" z="845.48206"/>
 			<Orientation y="-2.47924"/>
@@ -8633,8 +8635,8 @@
 		<Entity uid="2438">
 			<Template>gaia/flora_grove_palm_desert_01</Template>
 			<Player>0</Player>
-			<Position x="369.96573" z="496.61432"/>
-			<Orientation y="-1.73383"/>
+			<Position x="371.44385" z="487.66028"/>
+			<Orientation y="-6.0432"/>
 			<Actor seed="59388"/>
 		</Entity>
 		<Entity uid="2439">
@@ -8870,6 +8872,283 @@
 			<Position x="601.9217" z="660.02601"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19514"/>
+		</Entity>
+		<Entity uid="2473">
+			<Template>other/farmland_60</Template>
+			<Player>0</Player>
+			<Position x="672.88483" z="365.48682"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2848"/>
+		</Entity>
+		<Entity uid="2474">
+			<Template>other/farmland_60</Template>
+			<Player>0</Player>
+			<Position x="414.18378" z="652.46558"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52950"/>
+		</Entity>
+		<Entity uid="2475">
+			<Template>other/farmland_20</Template>
+			<Player>0</Player>
+			<Position x="486.58521" z="677.20588"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58286"/>
+		</Entity>
+		<Entity uid="2476">
+			<Template>other/farmland_10</Template>
+			<Player>0</Player>
+			<Position x="465.46009" z="696.97535"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38824"/>
+		</Entity>
+		<Entity uid="2477">
+			<Template>other/farmland_10</Template>
+			<Player>0</Player>
+			<Position x="722.13892" z="411.09305"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11168"/>
+		</Entity>
+		<Entity uid="2478">
+			<Template>other/farmland_10</Template>
+			<Player>0</Player>
+			<Position x="708.97321" z="426.14972"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31834"/>
+		</Entity>
+		<Entity uid="2479">
+			<Template>other/farmland_10</Template>
+			<Player>0</Player>
+			<Position x="689.349" z="429.25815"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54444"/>
+		</Entity>
+		<Entity uid="2480">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="349.19428" z="165.94172"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7380"/>
+		</Entity>
+		<Entity uid="2481">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="678.02631" z="803.23816"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19344"/>
+		</Entity>
+		<Entity uid="2482">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="691.20832" z="498.26075"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34104"/>
+		</Entity>
+		<Entity uid="2483">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="329.3668" z="485.30646"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6928"/>
+		</Entity>
+		<Entity uid="2484">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>1</Player>
+			<Position x="583.54139" z="185.16745"/>
+			<Orientation y="-2.335"/>
+			<Actor seed="2140"/>
+		</Entity>
+		<Entity uid="2486">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>2</Player>
+			<Position x="420.89893" z="851.23829"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63886"/>
+		</Entity>
+		<Entity uid="2487">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="545.62885" z="104.49831"/>
+			<Orientation y="2.35621"/>
+			<Obstruction group="2388"/>
+			<Actor seed="62576"/>
+		</Entity>
+		<Entity uid="2488">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="486.24671" z="164.3549"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41012"/>
+		</Entity>
+		<Entity uid="2489">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="544.61261" z="223.93049"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47974"/>
+		</Entity>
+		<Entity uid="2490">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="609.64051" z="164.79978"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32832"/>
+		</Entity>
+		<Entity uid="2491">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="468.40976" z="932.93793"/>
+			<Orientation y="2.35622"/>
+			<Obstruction group="2418"/>
+			<Actor seed="32832"/>
+		</Entity>
+		<Entity uid="2492">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="404.39811" z="872.63648"/>
+			<Orientation y="2.35622"/>
+			<Obstruction group="2417"/>
+			<Actor seed="62576"/>
+		</Entity>
+		<Entity uid="2493">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="532.34803" z="865.66334"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="32832"/>
+		</Entity>
+		<Entity uid="2494">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="468.33637" z="805.36188"/>
+			<Orientation y="2.35622"/>
+			<Obstruction group="2412"/>
+			<Actor seed="62576"/>
+		</Entity>
+		<Entity uid="2503">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="178.08756" z="504.22526"/>
+			<Orientation y="-2.55146"/>
+			<Actor seed="10482"/>
+		</Entity>
+		<Entity uid="2504">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="173.80344" z="494.97391"/>
+			<Orientation y="1.07178"/>
+			<Actor seed="63672"/>
+		</Entity>
+		<Entity uid="2505">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="178.7906" z="492.15961"/>
+			<Orientation y="0.76084"/>
+			<Actor seed="39806"/>
+		</Entity>
+		<Entity uid="2506">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="184.82029" z="497.69822"/>
+			<Orientation y="-2.08916"/>
+			<Actor seed="51260"/>
+		</Entity>
+		<Entity uid="2507">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="184.28174" z="490.84675"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41144"/>
+		</Entity>
+		<Entity uid="2508">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="805.60877" z="510.36658"/>
+			<Orientation y="-3.81514"/>
+			<Actor seed="41144"/>
+		</Entity>
+		<Entity uid="2509">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="801.87775" z="504.59495"/>
+			<Orientation y="-2.37786"/>
+			<Actor seed="51260"/>
+		</Entity>
+		<Entity uid="2510">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="809.8155" z="506.60111"/>
+			<Orientation y="0.18114"/>
+			<Actor seed="39806"/>
+		</Entity>
+		<Entity uid="2511">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="811.70771" z="500.92823"/>
+			<Orientation y="-1.51388"/>
+			<Actor seed="63672"/>
+		</Entity>
+		<Entity uid="2512">
+			<Template>units/ptol_camelry_archer_b</Template>
+			<Player>0</Player>
+			<Position x="804.69806" z="495.65186"/>
+			<Orientation y="-6.89794"/>
+			<Actor seed="10482"/>
+		</Entity>
+		<Entity uid="2539">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="316.24503" z="499.84833"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7078"/>
+		</Entity>
+		<Entity uid="2540">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="318.29218" z="502.03141"/>
+			<Orientation y="-1.02358"/>
+			<Actor seed="12934"/>
+		</Entity>
+		<Entity uid="2541">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="339.3462" z="473.03714"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26732"/>
+		</Entity>
+		<Entity uid="2542">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="341.29923" z="475.24424"/>
+			<Orientation y="2.93094"/>
+			<Actor seed="25098"/>
+		</Entity>
+		<Entity uid="2543">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="679.97669" z="513.41083"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="672"/>
+		</Entity>
+		<Entity uid="2544">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="683.086" z="516.88495"/>
+			<Orientation y="-0.19173"/>
+			<Actor seed="55922"/>
+		</Entity>
+		<Entity uid="2545">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="701.17542" z="484.9115"/>
+			<Orientation y="-2.59061"/>
+			<Actor seed="32928"/>
+		</Entity>
+		<Entity uid="2546">
+			<Template>units/sele_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="703.56586" z="487.40473"/>
+			<Orientation y="-2.45798"/>
+			<Actor seed="30212"/>
 		</Entity>
 	</Entities>
 	<Paths/>

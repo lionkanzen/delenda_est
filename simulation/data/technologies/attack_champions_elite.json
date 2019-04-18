@@ -9,20 +9,21 @@
 		"ptol": "Andreia",
 		"sele": "Andreia",
 		"rome": "Fortitudo",
+		"imp": "Fortitudo",
 		"sele": "Andreia"
 	},
 	"description": "True leaders and their guard units have uncommon bravery and valor in battle.",
-	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
+	"cost": {"food": 1000, "wood": 0, "stone": 0, "metal": 0, "glory": 1000},
 	"requirements": {"tech": "phase_imperial"},
-	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "helmet_hero_side.png",
 	"researchTime": 40,
-	"tooltip": "Heroes and Champions +2 attack.",
+	"tooltip": "Heroes and Champions +20% attack.",
 	"modifications": [
-		{"value": "Attack/Melee/Hack", "add": 2.0, "affects": "Hero Melee"},
-		{"value": "Attack/Ranged/Pierce", "add": 2.0, "affects": "Hero Ranged"},
-		{"value": "Attack/Melee/Hack", "add": 2.0, "affects": "Champion Melee"},
-		{"value": "Attack/Ranged/Pierce", "add": 2.0, "affects": "Champion Ranged"}
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "Hero Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "Hero Ranged"},
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "Champion Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "Champion Ranged"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

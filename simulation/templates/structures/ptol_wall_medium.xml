@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_medium">
+<Entity parent="template_structure_defensive_wall_medium">
   <Footprint>
     <Square width="28.0" depth="10.0"/>
     <Height>9.0</Height>
@@ -19,7 +19,7 @@
   </GarrisonHolder>
   <Identity>
     <Civ>ptol</Civ>
-	<SelectionGroupName>structures/mace_wallset_stone</SelectionGroupName>
+	<SelectionGroupName>structures/ptol_wallset_stone</SelectionGroupName>
     <SpecificName>h-n-njwt</SpecificName>
     <History>?</History>
   </Identity>
@@ -30,6 +30,6 @@
     <Actor>structures/ptolemies/wall_medium.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>26.0</Length>
+    <Length>25.0</Length>
   </WallPiece>
 </Entity>

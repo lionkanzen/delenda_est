@@ -3,6 +3,11 @@
   <BuildRestrictions>
     <Territory>own neutral enemy</Territory>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>25</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>5</GarrisonRegenRate>
+  </Capturable>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
@@ -43,7 +48,7 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay>
-    <HealthDecayRate>1</HealthDecayRate>
+    <DecayRate>5</DecayRate>
   </TerritoryDecay>
   <TerritoryInfluence disable=""/>
   <VisualActor>

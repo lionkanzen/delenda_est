@@ -3,7 +3,7 @@
   <Armour>
     <Hack>1</Hack>
     <Pierce>4</Pierce>
-    <Crush>2</Crush>
+    <Crush>5</Crush>
   </Armour>
   <Attack>
     <Melee>
@@ -11,6 +11,7 @@
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>6.0</MaxRange>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
 	  <Bonuses>
 		<ElephantStench>
@@ -26,32 +27,24 @@
 		  <Multiplier>2.0</Multiplier>
 		</BonusSiege>
 	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+      <PreferredClasses datatype="tokens">Ranged+Unit Siege</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
     </Melee>
-    <Charge>
-      <Hack>30.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>6.0</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
-	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
-    </Charge>
   </Attack>
+  <Auras datatype="tokens">
+    cavalry_trample_5
+  </Auras>
+  <Health>
+    <Max>180</Max>
+  </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
     <GenericName>Melee Cavalry</GenericName>
   </Identity>
-  <Vision>
-    <Range>50</Range>
-  </Vision>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.5</Speed>
+    </Run>
+  </UnitMotion>
 </Entity>

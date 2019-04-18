@@ -5,7 +5,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>iber</Civ>
@@ -15,10 +15,6 @@
   <Obstruction>
     <Static width="10.0" depth="10.0"/>
   </Obstruction>
-  <TerritoryInfluence>
-    <Radius>16</Radius>
-    <Weight>65536</Weight>
-  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/iberians/house.xml</Actor>
     <FoundationActor>structures/fndn_2x2.xml</FoundationActor>

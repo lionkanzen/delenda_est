@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
-  <Cost>
-    <Resources>
-      <stone>600</stone>
-    </Resources>
-  </Cost>
+  <Attack>
+    <Ranged>
+      <MinRange>21.0</MinRange>
+    </Ranged>
+  </Attack>
   <Footprint>
     <Square width="26.0" depth="28.0"/>
     <Height>8.0</Height>
@@ -19,18 +19,24 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/theb_hero_gorgidas
-      units/theb_hero_pelopidas
-	  units/theb_hero_epaminondas
-	  units/theb_champion_spearman
-	  units/theb_champion_swordsman
+	  units/{civ}_champion_infantry_hoplite
+	  units/{civ}_champion_infantry_swordsman
+      units/{civ}_hero_gorgidas
+      units/{civ}_hero_pelopidas
+	  units/{civ}_hero_epaminondas
     </Entities>
     <Technologies datatype="tokens">
+	  hellenes/health_inf_martial_arts
 	  hellenes/pair_champions_01
-	  hellenes/special_theb_boeotarch
+	  unlock_spies
+	  spy_counter
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/athenians/fortress_up.xml</Actor>
+    <Actor>structures/athenians/fortress.xml</Actor>
   </VisualActor>
+  <WallPiece>
+   <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
 </Entity>

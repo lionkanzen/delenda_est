@@ -1,9 +1,5 @@
 {
 	"genericName": "Town Phase",
-	"requirements": {"any": [{"tech":"phase_town_generic"}, {"tech":"phase_town_defensive"}, {"tech":"phase_town_expansionism"}]},
-	"autoResearch": true,
-	"icon": "town_phase.png",
-	"modifications": [{"value": "TerritoryInfluence/Radius", "multiply": 1.33}],
-	"affects": ["CivCentre"],
-	"soundComplete": "interface/alarm/alarm_phase.xml"
+	"description": "Dummy technology for use in templates requirements, replaced by phase_town_generic or phase_town_{civ}.",
+	"icon": "town_phase.png"
 }

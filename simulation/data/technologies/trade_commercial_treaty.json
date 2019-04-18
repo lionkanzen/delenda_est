@@ -1,0 +1,14 @@
+{
+	"pair": "pair_market_01",
+	"genericName": "Commercial Treaty",
+	"description": "Improve the international trading profit.",
+	"cost": { "food": 300, "wood": 0, "stone": 0, "metal": 100 },
+	"requirements": { "tech": "unlock_shared_los" },
+	"requirementsTooltip": "Requires Cartography.",
+	"icon": "friendship.png",
+	"researchTime": 40,
+	"tooltip": "Trading +15% profit for allies when using international routes.",
+	"modifications": [{ "value": "Market/InternationalBonus", "add": 0.15 }],
+	"affects": ["Market"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

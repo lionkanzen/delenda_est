@@ -13,24 +13,25 @@
   </Cost>
   <Identity>
     <Civ>maur</Civ>
-    <GenericName>Maiden Guard</GenericName>
-    <SpecificName>Visha Kanya</SpecificName>
+    <GenericName>Poison Maiden Swordsman</GenericName>
+    <SpecificName>Vishakanya</SpecificName>
+	<Gender>female</Gender>
 	<SelectionGroupName>units/maur_champion_maiden</SelectionGroupName>
-    <History>Ancient Indian monarchs employed female body guards who were fierce warriors.</History>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <History>Ancient Indian monarchs employed female body guards who were fierce warriors. It is said that they were trained from birth and gradually introduced to poisons as they aged in order to become immune to their effects. The maidens who did not die from this training became great assets to the Mauryan kings.</History>
     <Icon>units/maur_champion_maiden.png</Icon>
   </Identity>
-  <Sound>
-    <SoundGroups>
-      <trained>interface/alarm/alarm_create_female.xml</trained>
-      <select>voice/hellenes/civ/female/civ_female_select.xml</select>
-      <order_walk>voice/hellenes/civ/female/civ_female_walk.xml</order_walk>
-      <order_attack>voice/hellenes/civ/female/civ_female_go_out_against.xml</order_attack>
-      <order_garrison>voice/hellenes/civ/female/civ_female_garrison.xml</order_garrison>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/female_death.xml</death>
-    </SoundGroups>
-  </Sound>
+  <Upgrade>
+    <SwitchToBow>
+      <Entity>units/maur_champion_maiden_archer</Entity>
+      <Tooltip>Switch weapon from sword (melee) to longbow (ranged).</Tooltip>
+      <Cost>
+        <wood>5</wood>
+      </Cost>
+      <Time>5</Time>
+    </SwitchToBow>
+  </Upgrade>
   <VisualActor>
-    <Actor>units/mauryans/champion_maiden_guard.xml</Actor>
+    <Actor>units/mauryas/champion_maiden_guard.xml</Actor>
   </VisualActor>
 </Entity>

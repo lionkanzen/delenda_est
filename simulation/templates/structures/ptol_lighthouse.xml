@@ -3,30 +3,45 @@
   <BuildRestrictions>
     <Territory>own ally neutral</Territory>
     <PlacementType>shore</PlacementType>
-    <Category>Dock</Category>
+    <Category>Lighthouse</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>500</stone>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
   <Footprint replace="">
     <Circle radius="14.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Lighthouse</GenericName>
     <SpecificName>Pharos</SpecificName>
-    <Classes datatype="tokens">Lighthouse Town -City</Classes>
-    <Tooltip>Build along the shore to reveal the shorelines over the entire map (Not implemented). Very large vision range: 180 meters.</Tooltip>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Lighthouse Town -City</VisibleClasses>
+    <Tooltip>Build upon the shoreline to see a vast area of the map. Vision range: 200 meters.</Tooltip>
     <History>The Ptolemaic dynasty in Egypt built the magnificent Lighthouse of Alexandria near the harbor mouth of that Nile Delta city. This structure could be seen for many kilometers out to sea and was one of the Seven Wonders of the World.</History>
     <Icon>structures/lighthouse.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="20.0" depth="25.0"/>
   </Obstruction>
   <Position>
     <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
   </Position>
   <Sound>
     <SoundGroups>
@@ -35,11 +50,10 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
-  <TerritoryInfluence>
-    <Radius>0</Radius>
-  </TerritoryInfluence>
+  <TerritoryInfluence disable=""/>
   <Vision>
-    <Range>180</Range>
+    <Range>200</Range>
+	<RevealShore>false</RevealShore>
   </Vision>
   <VisualActor>
     <Actor>structures/ptolemies/lighthouse.xml</Actor>
