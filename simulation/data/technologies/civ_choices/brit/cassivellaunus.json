@@ -1,0 +1,16 @@
+{
+	"genericName": "Cassivellaunus",
+	"description": "Cassivellaunus.",
+	"icon": "civ_choices/brit_hero_cassivellaunus.png",
+	"tooltip": "Select Cassivellaunus to lead your civilization.",
+	"requirements": {
+		"civ": "brit"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_boudicca_infantry -units/{civ}/hero_caratacos_infantry -units/{civ}/hero_cunobelin_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/brit_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>sueb</Civ>
+    <GenericName>Suebian Germans</GenericName>
+    <History>The Suebians were a broad confederation of Germanic peoples living mainly east of the Rhine and north of the Danube. Renowned for mobile warfare and strong tribal identities, they fought Romans and neighboring peoples. Some Suebian groups crossed into Gaul and Iberia during Late Antiquity, founding a kingdom in northwestern Spain. Others remained in central Europe and contributed to later Germanic populations and political formations.</History>
+    <Icon>emblems/512x512/suebians.png</Icon>
+  </Identity>
+</Entity>

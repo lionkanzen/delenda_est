@@ -2,34 +2,28 @@
 <Entity parent="template_unit_infantry">
   <Attack>
     <Melee>
-      <Hack>1.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.0</MaxRange>
+      <Damage>
+        <Hack>10.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
     </Melee>
-    <Charge>
-      <Hack>2.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.0</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
-    </Charge>
   </Attack>
   <Health>
-    <Max>100</Max>
+    <Max>120</Max>
   </Health>
   <Identity>
     <GenericName>Melee Infantry</GenericName>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-    <Formations datatype="tokens">
-      formations/phalanx
-      formations/testudo
-    </Formations>
   </Identity>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </UnitAI>
 </Entity>

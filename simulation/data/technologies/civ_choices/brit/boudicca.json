@@ -1,0 +1,16 @@
+{
+	"genericName": "Boudicca",
+	"description": "Boudicca.",
+	"icon": "civ_choices/brit_hero_boudicca.png",
+	"tooltip": "Select Boudicca Queen of the Iceni to lead your civilization.",
+	"requirements": {
+		"civ": "brit"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_caratacos_infantry -units/{civ}/hero_cassivellaunus_infantry -units/{civ}/hero_cunobelin_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

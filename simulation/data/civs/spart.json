@@ -1,0 +1,120 @@
+{
+	"Code": "spart",
+	"Culture": "Greek",
+	"Region": [ "Mediterranean", "Europe", "Greece" ],
+	"Music": [
+		{
+			"File": "Helen_Leaves_Sparta.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Othismos",
+			"History": "In Greek phalanx warfare, othismos (“pushing”) described the close, violent phase when opposing shield walls pressed together after contact. Spartan hoplites, renowned for discipline and cohesion, were especially effective at maintaining formation under this pressure. Rather than a simple mass shove, othismos likely involved sustained shield-to-shield fighting, spear work, and coordinated forward pressure intended to break the enemy line.",
+			"Description": "Spartans can use the powerful Phalanx formation."
+		},
+		{
+			"Name": "Helot Economy",
+			"History": "In classical Sparta, helots were an unfree population, chiefly Laconian and Messenian, who farmed land controlled by Spartan citizens and supplied much of Sparta’s agricultural wealth. Their labor allowed Spartiates to devote themselves to military life. Far more numerous than their masters, helots were harshly controlled and sometimes subjected to violence, but they also served Spartan armies as attendants and soldiers, with some earning freedom through military service.",
+			"Description": "Helot Javelineers and Slingers can gather resources, but their military prowess is reduced."
+		},
+		{
+			"Name": "Hellenization",
+			"History": "The Greeks were highly successful in Hellenising various foreigners. During the Hellenistic Age, Greek was the lingua franca of the Ancient World, spoken widely from Spain to India.",
+			"Description": "Buildings +20% territory influence while the Theatron stands."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/spart/leonidas",
+		"civ_choices/spart/brasidas",
+		"civ_choices/spart/lysander",
+		"civ_choices/spart/cleomenes"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/spart/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/spart/civil_centre"
+		},
+		{
+			"Template": "units/spart/support_citizen_female_spartan",
+			"Count": 4
+		},
+		{
+			"Template": "units/spart/infantry_hoplite_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/spart/infantry_javelineer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/spart/champion_infantry_hoplite"
+		},
+		{
+			"Template": "units/spart/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Agesilaus",
+		"Agesipolis",
+		"Agesistrata",
+		"Agis I",
+		"Agis II",
+		"Agis III",
+		"Agis IV",
+		"Amompharetus",
+		"Anaxandridas",
+		"Archidamia",
+		"Archidamus",
+		"Cynisca",
+		"Cleombrotus",
+		"Demaratus",
+		"Dienekes",
+		"Dorieus",
+		"Echestratus",
+		"Eucleidas",
+		"Eudamidas II",
+		"Eurycrates",
+		"Lycurgus",
+		"Nabis",
+		"Pausanias",
+		"Pleistarchus"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/spart/hero_leonidas",
+		"skirmish/units/default_hero_2": "units/spart/hero_brasidas",
+		"skirmish/units/default_hero_3": "units/spart/hero_lysander",
+		"skirmish/units/default_hero_4": "units/spart/hero_cleomenes",
+		"skirmish/units/default_hero_5": "units/spart/hero_gorgo",
+		"skirmish/units/default_champion_infantry_1": "units/spart/champion_infantry_hoplite",
+		"skirmish/units/default_champion_infantry_2": "units/spart/champion_infantry_runner",
+		"skirmish/units/default_champion_infantry_3": "units/spart/champion_infantry_hoplite",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "",
+		"skirmish/units/default_champion_cavalry_2": "",
+		"skirmish/structures/default_house_10" : "structures/{civ}/house",
+		"skirmish/units/special_starting_unit": "units/spart/champion_infantry_hoplite",
+		"skirmish/units/default_infantry_melee_b": "units/spart/infantry_hoplite_e",
+		"skirmish/units/default_support_citizen": "units/spart/support_citizen_female_spartan",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

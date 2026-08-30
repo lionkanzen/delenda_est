@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_trader">
+  <Identity>
+    <Civ>xion</Civ>
+    <Lang>mandarin</Lang>
+    <SpecificName>Silk Road Trader</SpecificName>
+    <Icon>units/han/support_trader.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/xiongnu/trader.xml</Actor>
+  </VisualActor>
+</Entity>

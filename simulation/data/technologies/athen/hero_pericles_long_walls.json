@@ -1,0 +1,20 @@
+{
+	"genericName": "Athenian Long Walls",
+	"description": "The Long Walls of Athens extended 6 km from the city to the port of Piraeus. This secured the city's sea supply routes and prevented an enemy from starving out the city during a siege.",
+	"cost": {
+		"stone": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase after choosing the hero Pericles.",
+	"icon": "long_walls.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Build Stone Walls in neutral territory.[/font]",
+	"modifications": [
+		{ "value": "BuildRestrictions/Territory", "replace": "own neutral" }
+	],
+	"affects": ["StoneWall"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

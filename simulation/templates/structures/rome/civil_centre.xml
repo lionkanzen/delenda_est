@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Auras datatype="tokens">
+    structures/rome_citizenship
+    structures/rome_roads
+    teambonuses/rome_player_teambonus_2
+  </Auras>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Forum</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="37.0" depth="37.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/hero_marcellus_infantry
+      units/{civ}/hero_maximus_infantry
+      units/{civ}/hero_gracchus_gaius
+      units/{civ}/hero_gracchus_tiberius
+      units/{civ}/hero_scipio_infantry
+      units/{civ}/hero_marius_infantry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/romans/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

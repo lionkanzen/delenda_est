@@ -1,18 +1,49 @@
 {
 	"genericName": "City Phase",
 	"specificName": {
-		"hele": "Megalopolis",
+		"athen": "Megalopolis",
+		"brit": "Dūnon",
+		"cart": "Qart",
+		"cimb": "Burgz",
+		"epir": "Megalopolis",
+		"gaul": "Dūnon",
+		"han": "Jùn",
+		"iber": "Iltir",
+		"imp": "Urbs",
+		"kush": "Ri",
 		"mace": "Megalopolis",
+		"maur": "Pura",
+		"achae": "Vazaraka Vardana",
+		"ptol": "Megalopolis",
+		"rome": "Urbs",
+		"scyth": "Сахар",
+		"sele": "Megalopolis",
 		"spart": "Megalopolis",
-		"athen": "Megalopolis"
+		"sueb": "Burgz",
+		"syrac": "Megalopolis",
+		"theb": "Megalopolis",
+		"xion": "Tom Khot"
 	},
-	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
-	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 1000},
-	"requirements": { "class": "Structure", "number": 20 },
-	"requirementsTooltip": "Requires 20 total Structures (except Walls and Palisades).",
 	"supersedes": "phase_town_generic",
-	"icon": "city_phase.png",
+	"replaces": ["phase_city"],
+	"icon": "phase_city.png",
+	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
+	"cost": {
+		"stone": 800,
+		"metal": 800
+	},
+	"requirements": { "entity": { "class": "NotField", "number": 25 }},
+	"requirementsTooltip": "Requires 25 total Buildings (except Walls and Fields).",
 	"researchTime": 60,
-	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers increased by another +33%",
+	"tooltip": "[font=\"sans-bold-14\"]Expand your settlement and promote civilization.\n• Advance to City Phase.\n• Unlocks more Structures and Units.\n• Civic Centers +25% territory radius.\n• Heroes +200 health.\n• Units +10 meters vision range.[/font]",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "multiply": 1.2, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "add": 10, "affects": "Unit !Fauna" },
+		{ "value": "Health/Max", "add": 200, "affects": "Hero !Scout" },
+		{ "value": "Cost/BuildTime", "add": 10, "affects": "Hero !Scout" },
+		{ "value": "Cost/Resources/coin", "add": 200, "affects": "Hero !Scout" },
+		{ "value": "Cost/Resources/glory", "add": 200, "affects": "Hero !Scout" }
+	],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

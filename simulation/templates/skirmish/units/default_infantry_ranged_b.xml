@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_infantry_ranged">
+<Entity parent="template_unit_infantry_ranged_archer">
   <Identity>
     <Civ>skirm</Civ>
+    <Icon>emblems/emblem_gaia.png</Icon>
   </Identity>
   <Promotion disable=""/>
   <SkirmishReplacer>
-    <general>units/{civ}_infantry_javelinist_b</general>
+    <general>units/{civ}/infantry_javelineer_e</general>
   </SkirmishReplacer>
   <VisualActor>
-    <Actor>units/athenians/infantry_slinger_b.xml</Actor>
+    <Actor>units/romans_imperial/infantry_javelinist_e.xml</Actor>
   </VisualActor>
 </Entity>

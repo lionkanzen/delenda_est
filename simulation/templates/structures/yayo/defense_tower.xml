@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_defense_tower">
+  <Footprint>
+    <Square width="14" depth="14"/>
+    <Height>22</Height>
+  </Footprint>
+  <Identity>
+    <Civ>yayo</Civ>
+    <SpecificName>Yagura</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="12" depth="12"/>
+  </Obstruction>
+  <Upgrade>
+    <Tower>
+      <Tooltip>Fortified Towers have +50% health, +50% territory influence, +25% vision, +25% attack range, and additional technologies.</Tooltip>
+      <Cost>
+        <stone>0</stone>
+        <wood>100</wood>
+        <glory>100</glory>
+      </Cost>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/yayoi/scout_tower.xml</Actor>
+  </VisualActor>
+</Entity>

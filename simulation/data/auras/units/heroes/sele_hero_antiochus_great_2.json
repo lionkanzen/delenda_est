@@ -1,0 +1,13 @@
+{
+	"auraName": "Restoring the Empire",
+	"auraDescription": "\n• Civic Centers and Military Colonies +25% capture resistance.",
+	"type": "global",
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"affects": ["CivilCentre"],
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.25 }
+	],
+	"overlayIcon": "art/textures/ui/session/auras/laurel.png"
+}

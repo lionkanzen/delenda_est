@@ -1,0 +1,60 @@
+{
+	"genericName": "Advanced Citizen Archer Infantry",
+	"specificName": {
+		"hele": "Metikoi",
+		"mace": "Metikoi",
+		"spart": "Metikoi",
+		"athen": "Metikoi"
+	},
+	"description": "Upgrade all of your citizen archers to Advanced rank.",
+	"cost": {
+		"wood": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp"  },
+					{ "notciv": "mace" },
+					{ "notciv": "noba" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "spart"},
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac"},
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "maya" },
+					{ "notciv": "parth"},
+					{ "notciv": "sasa" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Archer Infantry auto-promote to Advanced Rank:\n• Archer Infantry +10% health.\n• Archer Infantry +20% attack range.\n• Archer Infantry +10% accuracy and capture power.\n• [color=\"orange\"]Archer Infantry +10% train time and +5 food and wood costs.[/color]\n• Unlocks “Elite Citizen Archer Infantry.”[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Archer Infantry Basic"],
+	"placeBelow": "Archer !Crossbow",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,21 @@
+{
+	"genericName": "Marcus Claudius Marcellus",
+	"description": "Marcus Claudius Marcellus.",
+	"icon": "civ_choices/rome_hero_marcellus.png",
+	"tooltip": "Select Marcus Claudius Marcellus to lead your civilization.",
+	"requirements": {
+		"civ": "rome"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_maximus_infantry -units/{civ}/hero_scipio_infantry -units/{civ}/hero_marius_infantry -units/{civ}/hero_gracchus_gaius -units/{civ}/hero_gracchus_tiberius",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "romans/hero_attack_marcellus",
+			"affects": "CivilCentre"
+		}
+	]
+}

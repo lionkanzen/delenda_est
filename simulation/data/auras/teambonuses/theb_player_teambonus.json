@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Structure"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.90 }
+	],
+	"auraName": "Boeotian Confederacy",
+	"auraDescription": "\n• All Buildings −10% build time."
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>200</food>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="2.5" depth="5"/>
+    <Height>3</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Cattle</GenericName>
+    <VisibleClasses datatype="tokens">Cattle</VisibleClasses>
+  </Identity>
+  <Position>
+    <TurnRate>2</TurnRate>
+  </Position>
+  <ResourceSupply>
+    <Initial>200</Initial>
+    <Max>400</Max>
+    <Change>
+      <Regrowth>
+        <Value>2</Value>
+      </Regrowth>
+    </Change>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Interval>4000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/cattle_select.xml</select>
+      <order_attack>actor/fauna/animal/cattle_attack_order.xml</order_attack>
+      <order_walk>actor/fauna/animal/cattle_order.xml</order_walk>
+      <order_garrison>actor/fauna/animal/cattle_order.xml</order_garrison>
+      <attack_melee>actor/fauna/animal/cattle_attack.xml</attack_melee>
+      <death>actor/fauna/animal/cattle_death.xml</death>
+      <trained>actor/fauna/animal/cattle_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>2.5</WalkSpeed>
+    <RunMultiplier>2</RunMultiplier>
+    <Weight op="mul">2</Weight>
+  </UnitMotion>
+</Entity>

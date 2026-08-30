@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Pierce>10.0</Pierce>
+      </Damage>
+      <MaxRange>50.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Bonuses>
+        <BonusShips>
+          <Classes>Ship</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusShips>
+      </Bonuses>
+      <Projectile>
+        <Count>2</Count>
+        <Speed>45.0</Speed>
+        <Spread>3.0</Spread>
+        <Gravity>28.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship
+      </PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Capturable>
+    <CapturePoints>200</CapturePoints>
+  </Capturable>
+  <Cost>
+    <Population>1</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>80</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="8.0" depth="34.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <List datatype="tokens">!Siege !Elephant</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <GenericName>Scout Ship</GenericName>
+    <VisibleClasses datatype="tokens">ScoutShip Ranged Bow</VisibleClasses>
+    <Tooltip>Traits: Fast Speed, Light Armor.
+Strong Against: Fishing Boats.
+Weak Against: Everything.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>10</wood>
+  </Loot>
+  <Position>
+    <TurnRate>1</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>2</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+</Entity>

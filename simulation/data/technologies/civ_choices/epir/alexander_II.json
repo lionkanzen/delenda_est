@@ -1,0 +1,16 @@
+{
+	"genericName": "Alexander II of Epirus",
+	"description": "Alexander II of Epirus.",
+	"icon": "civ_choices/epir_hero_alexander_epirus.png",
+	"tooltip": "Select Alexander II of Epirus to lead your civilization.",
+	"requirements": {
+		"civ": "epir"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_alexander_I_infantry -units/{civ}/hero_pyrrhus_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

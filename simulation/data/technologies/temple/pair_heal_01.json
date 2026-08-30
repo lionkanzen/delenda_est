@@ -1,0 +1,4 @@
+{
+	"genericName": "Heal Range and Rate",
+	"pair": ["temple/healer_heal_range", "temple/healer_heal_rate"]
+}

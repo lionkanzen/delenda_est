@@ -1,0 +1,18 @@
+{
+	"Title": "Barbarians",
+	"Code": "barb",
+	"GUIOrder": 1,
+	"Tooltip": "Tribespeople at the fringes of the Greco-Roman World. Includes Steppe nomads.",
+	"Weights": {
+		"brit": 2,
+		"cimb": 2,
+		"gala": 2,
+		"gaul": 2,
+		"goth": 2,
+		"iber": 2,
+		"parth": 2,
+		"scyth": 1,
+		"sueb": 2,
+		"xion": 1
+	}
+}

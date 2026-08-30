@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="38.0" depth="28.0"/>
+    <Height>12.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>goth</Civ>
+    <SpecificName>das Stadtzentrum</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="36.0" depth="26.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/goths/civic_center.xml</Actor>
+  </VisualActor>
+</Entity>

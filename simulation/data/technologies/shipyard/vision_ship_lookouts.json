@@ -1,0 +1,30 @@
+{
+	"genericName": "Lookouts",
+	"specificName": {
+		"hele": "Prōratēs",
+		"athen": "Prōratēs",
+		"mace": "Prōratēs",
+		"ptol": "Prōratēs",
+		"sele": "Prōratēs",
+		"spart": "Prōratēs",
+		"syrac": "Prōratēs",
+		"theb": "Prōratēs"
+	},
+	"description": "Lookouts aboard ship were important for sighting land, spotting navigational hazards, and directing fire in battle.",
+	"cost": {
+		"food": 50,
+		"coin": 200
+	},
+	"requirements": { "tech": "phase_village" },
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "sentries.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Ships and Boats +10% vision range.\n• Scout Ships an additional +25% vision range.\n• Unlocks “Exploration” for the Carthaginians and Han Chinese.[/font]",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.25, "affects": "ScoutShip" }
+	],
+	"affects": ["Ship"],
+	"placeBelow": "ScoutShip",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

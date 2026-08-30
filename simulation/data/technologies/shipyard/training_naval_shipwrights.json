@@ -1,0 +1,31 @@
+{
+	"genericName": "Shipwrights",
+	"specificName": {
+		"hele": "Naupēgoi",
+		"mace": "Naupēgoi",
+		"spart": "Naupēgoi",
+		"athen": "Naupēgoi",
+		"sele": "Naupēgoi",
+		"ptol": "Naupēgoi",
+		"rome": "Naupegi",
+		"imp": "Faber Navalis"
+	},
+	"description": "Shipwrights helped to build and maintain ancient warships.",
+	"cost": {
+		"food": 300,
+		"coin": 300
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "calipers.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Warships −20% build time.\n• Naval Shipyards −20% build time.\n• Naval Technologies −20% research time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Warship" },
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Shipyard" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.8, "affects": "Shipyard" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

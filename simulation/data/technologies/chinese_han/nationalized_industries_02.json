@@ -1,0 +1,26 @@
+{
+	"genericName": "Nationalized Industries - Level 2",
+	"specificName": {
+		"han": "Guóyǒu Huà Chǎnyè"
+	},
+	"supersedes": "chinese_han/nationalized_industries_01",
+	"cost": {
+		"coin": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_nationalized_02.png",
+	"researchTime": 90,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +20% gathering rate for all resources.\n• Trading −20% profit.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.2, "affects": "Gatherer" },
+		{ "value": "Trader/GainMultiplier", "multiply": 0.8, "affects": "Trader" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

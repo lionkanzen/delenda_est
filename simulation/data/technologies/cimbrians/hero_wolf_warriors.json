@@ -1,0 +1,24 @@
+{
+	"genericName": "Wolf Warriors",
+	"description": "",
+	"cost": {
+		"food": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "cimb" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "wolf.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Champion Infantry +10% speed.\n• Champion Infantry +1 health regeneration per second when idle.[/font]",
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Champion Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

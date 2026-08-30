@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 0.95, "affects": "Hero" },
+		{ "value": "Health/Max", "multiply": 1.5, "affects": "Healer" }
+	],
+	"auraName": "Powerful Priesthood",
+	"auraDescription": "Strengthen the Priesthood of Amun and undermine your monarch's influence.\n• Heroes −5% health per temple built.",
+	"stackable": true
+}

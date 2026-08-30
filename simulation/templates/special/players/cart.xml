@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/cart_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Carthaginians</GenericName>
+    <History>Carthage began as a Phoenician colony on the North African coast and grew into the greatest maritime and commercial power of the western Mediterranean. Its wealth rested on trade, agriculture, naval strength, and territories stretching across North Africa, Iberia, Sicily, and nearby islands. Rivalry with Rome produced the Punic Wars, including Hannibal’s famous invasion of Italy. After three bitter conflicts, Rome captured and destroyed Carthage in 146 BC.</History>
+    <Icon>emblems/512x512/carthaginians.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Player>
+</Entity>

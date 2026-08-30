@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/han_liu_bang|template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_liu_bang_1
+    units/heroes/han_hero_liu_bang_2
+  </Auras>
+  <Identity>
+    <Civ>han</Civ>
+    <Lang>mandarin</Lang>
+    <SpecificName>Liu Bang</SpecificName>
+    <Icon>units/han/hero_liu_bang.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/han/hero_cavalry_swordsman_liu_bang_m.xml</Actor>
+  </VisualActor>
+</Entity>

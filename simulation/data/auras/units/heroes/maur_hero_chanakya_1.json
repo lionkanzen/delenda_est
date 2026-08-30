@@ -1,0 +1,10 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.5 }
+	],
+	"auraDescription": "\n• Empower a building with −50% research time when garrisoned within it.",
+	"auraName": "Prime Minister",
+	"overlayIcon": "art/textures/ui/session/auras/build_bonus.png"
+}

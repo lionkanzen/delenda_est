@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack op="add">5.0</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_caratacos_1
+    units/heroes/brit_hero_caratacos_2
+  </Auras>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Caratacos</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/brit/hero_caratacos.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Upgrade>
+    <SwitchToHorse>
+      <Entity>units/brit/hero_caratacos_mounted</Entity>
+      <Tooltip>This gives Caratacos his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </SwitchToHorse>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/britons/hero_infantry_swordsman_caratacos.xml</Actor>
+  </VisualActor>
+</Entity>

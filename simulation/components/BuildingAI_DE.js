@@ -1,0 +1,37 @@
+/**
+ * Called when units enter or leave range.
+ */
+BuildingAI.prototype.OnRangeUpdate = function(msg)
+{
+	var cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
+	if (!cmpAttack)
+		return;
+
+	// Target enemy units except animals.
+	if (msg.tag == this.gaiaUnitsQuery)
+	{
+		msg.added = msg.added.filter(e =>
+		{
+			const cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
+			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // <<<<<< THIS HAS CHANGED. Stops buildings from shooting at random animals that walk into range.
+		});
+	}
+	else if (msg.tag != this.enemyUnitsQuery)
+		return;
+
+	// Add new targets.
+	for (const entity of msg.added)
+		if (!this.targetUnits.includes(entity))
+			this.targetUnits.push(entity);
+
+	// Remove targets out of range.
+	for (const entity of msg.removed)
+	{
+		const index = this.targetUnits.indexOf(entity);
+		if (index > -1)
+			this.targetUnits.splice(index, 1);
+	}
+
+	if (this.targetUnits.length)
+		this.StartTimer();
+};

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_civic_temple">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <GenericName>Shaman's Tent</GenericName>
+    <SpecificName>Šamany Cærænbynat</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="14.0" depth="14.0"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/nomadic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/nomadic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/scythians/temple.xml</Actor>
+    <FoundationActor>structures/scythians/temple_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,21 @@
+{
+	"partOfPair": "storehouse/pair_gather_01",
+	"genericName": "Steel Pickaxes",
+	"description": "Increases mining rate for stone mines and metal mines.",
+	"cost": {
+		"metal": 200,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "phase_village"
+	},
+	"icon": "mining_pickax.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +25% stone gathering rate.\n• Gatherers +25% metal gathering rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.25 },
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

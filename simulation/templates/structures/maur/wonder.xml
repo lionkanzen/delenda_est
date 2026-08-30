@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Footprint replace="">
+    <Circle radius="30.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Great Stupa of Sanchi</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="59.0" depth="59.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/mauryas/big_stupa.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,73 @@
+CONTRIBUTORS
+
+Such a large mod is difficult to create as one man. Others contribute talent and time in order to complete a common vision. Below is a list of contributors to Delenda Est.
+
+CODE/GUI
+
+Langbart
+- New larger Minimap design
+
+
+ARTWORK
+
+stanislas
+- Building and prop models, other work
+
+Lopess
+- Yamatai/ Yayoi models
+
+Duileoga
+- Models
+
+nifa
+- Models
+
+wackyserious
+- Unit textures
+
+hopeless-ponderer
+- Cash Crops actor and idea, from his mod Mare Nostrum
+
+Lion.Kanzen
+- Technology portraits
+
+niektb
+- Technology portraits
+
+LordGood
+- Modeling
+
+
+Madpencil
+- Technology portraits
+
+Shahriar Shahrabi
+- Persian Lamassu model: https://sketchfab.com/3d-models/persian-lamassu-gates-of-all-nations-persepolis-ffc567af93da4c208664194f50b3e71a
+- Edited by Lopess
+
+Wiki Commons
+- https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Corn.svg/1038px-Corn.svg.png
+
+
+AUDIO
+
+Derek & Brandon Fiechter
+- Music
+
+Tyler Cunningham
+- Music
+	- Silver Shields
+	
+'Age of Wonder' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
+
+
+LICENSE
+
+Artwork and Code:
+https://creativecommons.org/licenses/by-sa/3.0/
+https://www.gnu.org/licenses/gpl-3.0.en.html
+
+
+Music:
+Do not edit any of the music. You absolutely ***Must*** give credit to Derek & Brandon Fiechter, Tyler Cunningham, and Scott Buckley if reused.
+

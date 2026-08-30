@@ -1,0 +1,23 @@
+{
+	"Title": "Delenda Est",
+	"Code": "delenda_est",
+	"GUIOrder": 0,
+	"Tooltip": "\"Delenda Est\" civilizations only. No original civilizations.",
+	"Weights": {
+		"epir": 1,
+		"gala": 1,
+		"goth": 1,
+		"gupt": 1,
+		"huns": 1,
+		"imp": 1,
+		"noba": 1,
+		"sasa": 1,
+		"scyth": 1,
+		"sueb": 1,
+		"syrac": 1,
+		"theb": 1,
+		"xion": 1,
+		"yayo": 1,
+		"zapo": 1
+	}
+}

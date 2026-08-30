@@ -1,0 +1,20 @@
+{
+	"genericName": "Battlefield Triage",
+	"description": "Battlefield medicine in ancient societies was usually practical, experience-based, and closely tied to military necessity. Wounded soldiers might be carried from the fighting by comrades or attendants and treated with bandaging, splinting, cauterization, suturing, and the extraction of arrows or other projectiles. Wine, vinegar, honey, oils, and herbal preparations were commonly used to clean or dress wounds, while physicians and specialized healers served some armies, especially those of the Greeks and Romans. Survival depended heavily on the severity of the injury and the risk of infection, but ancient medical writers such as Hippocrates and later Roman authors show that surgeons developed considerable skill in treating fractures, penetrating wounds, and battlefield trauma.",
+	"cost": {
+		"food": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "asclepius_rod.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Wounded Soldiers regenerate 1 health every 2 seconds.[/font]",
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 0.5 }
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

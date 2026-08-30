@@ -1,0 +1,12 @@
+{
+	"Title": "Settled Civilizations",
+	"Code": "settled",
+	"GUIOrder": 1,
+	"Tooltip": "No nomadic civilizations. Only settled civilizations.",
+    "Weights": {
+        "*": 1,
+        "huns": 0,
+        "scyth": 0,
+        "xion": 0
+    }
+}

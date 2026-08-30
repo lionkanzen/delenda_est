@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>4</Hack>
+        <Pierce>5</Pierce>
+        <Crush>6</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Ranged>
+      <AttackName>Javelin</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>25.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>48.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.25</Spread>
+        <Gravity>38.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Permanent</RestrictedClasses>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Infantry Spear</Classes>
+          <Multiplier>1.25</Multiplier>
+        </BonusPrimary>
+        <BonusSecondary>
+          <Classes>Cavalry Ranged</Classes>
+          <Multiplier>1.25</Multiplier>
+        </BonusSecondary>
+        <BonusElephants>
+          <Classes>Elephant</Classes>
+          <Multiplier>1.25</Multiplier>
+        </BonusElephants>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Javelin</VisibleClasses>
+    <GenericName>Champion Javelin Infantry</GenericName>
+    <Tooltip>Traits: Medium Range, Light Armor, Strong Attack.
+Strong Against: Spear Infantry (1.25x), Ranged Cavalry (1.25x), Elephants (1.25x).
+Weak Against: Spear Cavalry, Sword Cavalry, Sword Infantry.</Tooltip>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/javelin_impact.xml</attack_impact_ranged>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+</Entity>

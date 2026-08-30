@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["MerchantShip"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Market/InternationalBonus", "add": 0.3 }
+	],
+	"auraName": "Trademasters",
+	"auraDescription": "\n• Merchant Ships +30% trade income when on “International” trade routes."
+}

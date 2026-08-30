@@ -1,0 +1,54 @@
+{
+	"genericName": "Elite Citizen Archer Cavalry",
+	"description": "Promote all of your Citizen archer cavalrymen to Advanced rank.",
+	"cost": {
+		"coin": 800,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Archer Cavalry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "stable/upgrade_rank_advanced_cavalry_archer",
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Archer Cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Archer Cavalry Advanced"],
+	"placeBelow": "Archer Cavalry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

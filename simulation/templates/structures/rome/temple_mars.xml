@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <BuildRestrictions>
+    <Category>Mars</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>800</stone>
+      <metal>800</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="23.0" depth="43.0"/>
+  </Footprint>
+  <Health>
+    <Max op="mul">1.5</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Temple of Mars</GenericName>
+    <SpecificName>Aedēs Mārtiālis</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Mars
+    </VisibleClasses>
+    <Tooltip>Build 1 to auto-research City Phase. Train Healers. Garrison up to 20 units to heal them at a quick rate (3 health per second). Research healing and religious improvements.</Tooltip>
+    <Icon>structures/temple_phase_III.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="40.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <FoundationActor>structures/fndn_7x9.xml</FoundationActor>
+    <Actor>structures/romans/temple_mars.xml</Actor>
+  </VisualActor>
+</Entity>

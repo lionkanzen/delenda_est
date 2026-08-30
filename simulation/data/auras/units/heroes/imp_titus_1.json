@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Human"],
+	"affectedPlayers": ["Player"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.05 }
+	],
+	"auraName": "Benefaction",
+	"auraDescription": "\n• All Human Units +5% health."
+}

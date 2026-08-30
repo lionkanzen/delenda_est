@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_coin">
+  <Identity>
+    <SpecificName>Valuable Wares</SpecificName>
+  </Identity>
+  <Treasure>
+    <Resources>
+      <coin>300</coin>
+    </Resources>
+  </Treasure>
+  <VisualActor>
+    <Actor>props/special/eyecandy/treasure_achaemenid_metal_big.xml</Actor>
+  </VisualActor>
+</Entity>

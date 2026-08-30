@@ -1,0 +1,22 @@
+{
+	"genericName": "Construction Projects",
+	"cost": {
+		"stone": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "military_engineers.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• All Buildings (except Farm Fields) −20% build time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8}
+	],
+	"affects": ["NotField"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

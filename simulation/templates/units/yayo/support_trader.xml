@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="civ/yayo|template_unit_support_trader">
+  <Identity>
+    <SpecificName>Akinapi</SpecificName>
+    <Icon>units/yayo/support_trader.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/yayoi/trader.xml</Actor>
+  </VisualActor>
+</Entity>

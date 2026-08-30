@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_glory">
+  <Footprint>
+    <Square width="3" depth="4"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Golden Fleece</SpecificName>
+  </Identity>
+  <Treasure>
+    <Resources>
+      <glory>300</glory>
+    </Resources>
+  </Treasure>
+  <Selectable replace="">
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Visibility>
+    <RetainInFog>false</RetainInFog>
+  </Visibility>
+  <VisualActor>
+    <Actor>special/golden_fleece.xml</Actor>
+  </VisualActor>
+</Entity>

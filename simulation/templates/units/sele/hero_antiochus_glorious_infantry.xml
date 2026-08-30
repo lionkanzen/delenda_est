@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/sele_hero_antiochus_righteous
+  </Auras>
+  <Identity>
+    <Civ>sele</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Antiochus IV "God Manifest"</SpecificName>
+    <Icon>units/sele/hero_antiochus_the_righteous.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/sele/hero_antiochus_glorious_mounted</Entity>
+      <Tooltip>This gives Antiochus IV his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/seleucids/hero_infantry_swordsman_antiochus_IV.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/maur_player_teambonus
+  </Auras>
+  <EntityLimits>
+    <LimitRemovers>
+      <Field>
+        <RequiredTechs datatype="tokens">phase_village</RequiredTechs>
+      </Field>
+    </LimitRemovers>
+  </EntityLimits>
+  <Identity>
+    <Civ>maur</Civ>
+    <GenericName>Maurya Indians</GenericName>
+    <History>The Maurya Empire united most of the Indian subcontinent in the 4th and 3rd centuries BC. Founded by Chandragupta Maurya, it expanded through conquest and centralized administration, reaching its height under Ashoka. After the bloody Kalinga War, Ashoka promoted Buddhism and moral governance while maintaining a vast imperial system of roads, taxation, officials, and armies. The empire fragmented within decades of his death.</History>
+    <Icon>emblems/512x512/mauryas.png</Icon>
+  </Identity>
+</Entity>

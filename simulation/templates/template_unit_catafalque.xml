@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Capturable>
+    <CapturePoints>250</CapturePoints>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+    <RegenRate>10</RegenRate>
+  </Capturable>
+  <Cost disable=""/>
+  <Footprint replace="">
+    <Height>2.0</Height>
+    <Square width="5.0" depth="12.0"/>
+  </Footprint>
+  <Health disable=""/>
+  <Identity>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Relic</VisibleClasses>
+    <GenericName>Catafalque</GenericName>
+    <Icon>units/misc/catafalque.png</Icon>
+    <SelectionGroupName>template_unit_catafalque</SelectionGroupName>
+    <Tooltip>A catafalque that holds the remains of a great leader. Garrison inside a Temple for safe-keeping.</Tooltip>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Minimap>
+    <Icon size="16.0">relic.png</Icon>
+  </Minimap>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <Resistance replace=""/>
+  <ResourceGatherer disable=""/>
+  <ResourceTrickle>
+    <Rates>
+      <glory>5.0</glory>
+    </Rates>
+    <Interval>5000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/cartouche.png</MainTexture>
+        <MainTextureMask>128x256/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass_order.xml</order_walk>
+      <order_garrison>attack/siege/siege_select.xml</order_garrison>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TreasureCollector disable=""/>
+  <UnitAI>
+    <DefaultStance>standground</DefaultStance>
+    <CanGuard>false</CanGuard>
+    <Formations disable=""/>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.55</WalkSpeed>
+    <Weight op="mul">10</Weight>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/global/catafalque.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,21 @@
+{
+	"genericName": "Shaman-Queen Himiko",
+	"description": "Shaman-Queen Himiko.",
+	"icon": "civ_choices/yayo_hero_himiko.png",
+	"tooltip": "Select Queen Himiko to lead your civilization.",
+	"requirements": {
+		"civ": "yayo"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_keiko_infantry -units/{civ}/hero_wousu_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "yayoi/hero_traditional_rituals",
+			"affects": "CultStatue"
+		}
+	]
+}

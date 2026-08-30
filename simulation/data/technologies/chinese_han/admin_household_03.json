@@ -1,0 +1,26 @@
+{
+	"genericName": "Household Administration - Level 3",
+	"specificName": {
+		"han": "Jiātíng Guǎnlǐ"
+	},
+	"supersedes": "chinese_han/admin_household_02",
+	"cost": {
+		"food": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "chinese_household_3.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Citizens +100% health.\n• Houses +20% population bonus.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 2.0, "affects": "Civilian Citizen" },
+		{ "value": "Population/Bonus", "multiply": 1.2, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

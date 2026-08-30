@@ -1,0 +1,61 @@
+{
+	"genericName": "Elite Citizen Axe Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen swordsmen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "zapo" },
+					{ "notciv": "yayo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Axe Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_axe",
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Axe Infantry auto-promote to Elite Rank.\n• Elite Axe Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Axe Infantry Advanced"],
+	"placeBelow": "Citizen Infantry Axe",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

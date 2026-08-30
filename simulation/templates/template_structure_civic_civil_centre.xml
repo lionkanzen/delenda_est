@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
-  <Armour>
-    <Foundation>
-      <Hack>5</Hack>
-      <Pierce>15</Pierce>
-      <Crush>1</Crush>
-    </Foundation>
-  </Armour>
+  <AlertRaiser>
+    <List datatype="tokens">Support</List>
+    <RaiseAlertRange>140</RaiseAlertRange>
+    <EndOfAlertRange>160</EndOfAlertRange>
+    <SearchRange>100</SearchRange>
+  </AlertRaiser>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
-      <Pierce>20.0</Pierce>
-      <Crush>0.0</Crush>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
       <MaxRange>60.0</MaxRange>
-      <MinRange>15.0</MinRange>
-      <ProjectileSpeed>60.0</ProjectileSpeed>
-      <PrepareTime>1200</PrepareTime>
+      <MinRange>0.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>10</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>1.5</Spread>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.15</LineThickness>
+      </RangeOverlay>
     </Ranged>
   </Attack>
-  <Auras>
-    <AuraWalls>
-      <Type>range</Type>
-      <Radius>160</Radius>
-      <Affects>StoneWall</Affects>
-      <Modifications>
-        <Health.Max>
-		  <Multiply>2</Multiply>
-		</Health.Max>
-      </Modifications>
-      <AuraName>"Circuit Walls" Aura</AuraName>
-      <AuraDescription>City Walls +100% health within 160 meters of a Civic Center.</AuraDescription>
-    </AuraWalls>
-    <AuraCivic>
-      <Type>range</Type>
-      <Radius>40</Radius>
-      <Affects>Gatherer</Affects>
-      <Modifications>
-        <ResourceGatherer.Rates.food..grain>
-		  <Multiply>0.5</Multiply>
-		</ResourceGatherer.Rates.food..grain>
-      </Modifications>
-      <AuraName>"Civic Spaces" Farming Penalty</AuraName>
-      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Civic Centers and Temples.</AuraDescription>
-    </AuraCivic>
+  <Auras datatype="tokens">
+    structures/civic_spaces
+    structures/public_disorder
   </Auras>
-  <BuildingAI>
-    <DefaultArrowCount>3</DefaultArrowCount>
-    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-  </BuildingAI>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-    <Category>CivilCentre</Category>
+    <Category>CivicCenter</Category>
     <Distance>
-      <FromClass>CivilCentre</FromClass>
-      <MinDistance>260</MinDistance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>280</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+    <MaxArrowCount>10</MaxArrowCount>
+  </BuildingAI>
+  <Capturable>
+    <CapturePoints>5000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Cost>
-    <PopulationBonus>20</PopulationBonus>
-    <BuildTime>500</BuildTime>
+    <BuildTime>400</BuildTime>
     <Resources>
-      <food>0</food>
-      <wood>500</wood>
-      <stone>500</stone>
-      <metal>500</metal>
+      <wood>800</wood>
+      <stone>800</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -76,71 +75,109 @@
     <Max>20</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry</List>
+    <List datatype="tokens">Support Infantry Cavalry Minister Teacher</List>
     <BuffHeal>1</BuffHeal>
     <LoadingRange>1</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>3000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
-    <Identity>
+  <Identity>
+    <SpecificName>Civic Center</SpecificName>
     <GenericName>Civic Center</GenericName>
-    <Tooltip>Build to acquire large tracts of territory. Train citizens. Garrison: 20.</Tooltip>
+    <Tooltip>Build to found new settlements. Train citizens. Garrison: 20.</Tooltip>
+    <History>The center of a settlement is the population's social and civic hub of daily life, around which the entire settlement is built.</History>
     <Classes datatype="tokens">
+      Arrow
       Defensive
-	  Ranged
+      Ranged
       CivCentre
-	</Classes>
-    <VisibleClasses datatype="tokens">City CivilCentre</VisibleClasses>
+      CivilCentre
+    </Classes>
+    <VisibleClasses datatype="tokens">Dropsite City CivicCenter</VisibleClasses>
     <Icon>structures/civic_centre.png</Icon>
+    <Undeletable>true</Undeletable>
   </Identity>
   <Loot>
-    <xp>200</xp>
+    <xp>500</xp>
     <food>0</food>
-    <wood>50</wood>
-    <stone>50</stone>
-    <metal>50</metal>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <coin>0</coin>
+    <glory>500</glory>
   </Loot>
+  <Minimap>
+    <Icon size="16.0">civil_centre.png</Icon>
+  </Minimap>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}_support_female_citizen
-    </Entities>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
+  <Researcher>
     <Technologies datatype="tokens">
-	  
+      phase_town_{civ}
+      phase_city_{civ}
+      phase_empire_{civ}
+      romans_imperial/pair_city_cohorts
+      civic_center/training_citizens_{civ}
+      civic_center/unlock_shared_los
+      civic_center/health_structures_concrete
+      civic_center/health_structures_architecture
+      civic_center/health_units_aqueducts
+      achaemenids/speed_royal_road
+      carthaginians/special_colonisation
+      chinese_han/structures_rammed_earth
+      galatians/training_warbands
+      successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceDropsite>
-    <Types>food wood stone metal</Types>
+    <Types>food wood stone metal coin</Types>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_civ_center.xml</select>
       <constructed>interface/complete/building/complete_civ_center.xml</constructed>
-      <attack>attack/weapon/arrowfly.xml</attack>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <captured>interface/alarm/alarm_defeated.xml</captured>
       <death>attack/destruction/building_collapse_large.xml</death>
-	  <alert0>interface/alarm/alarm_alert_0.xml</alert0>
-	  <alert1>interface/alarm/alarm_alert_1.xml</alert1>
-	  <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
     <Root>true</Root>
-    <Radius>160</Radius>
+    <Radius>140</Radius>
     <Weight>10000</Weight>
   </TerritoryInfluence>
-  <AlertRaiser>
-    <MaximumLevel>2</MaximumLevel>
-    <Range>140</Range>
-  </AlertRaiser>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{native}/support_citizen
+      units/{civ}/support_wagon
+    </Entities>
+  </Trainer>
   <Vision>
-    <Range>64</Range>
+    <Range>60</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
   </VisualActor>
 </Entity>

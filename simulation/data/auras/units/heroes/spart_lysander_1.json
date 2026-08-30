@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 }
+	],
+	"auraName": "Surprise Attacks",
+	"auraDescription": "\n• All Units +10% movement speed."
+}

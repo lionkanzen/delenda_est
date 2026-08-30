@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>5000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Captured Chinese Fortress</GenericName>
+    <SpecificName>Bǎolěi</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -fortress/pair_champ_01
+      defense_tower/range_defensive_loopholes
+      defense_tower/range_defensive_murderholes
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/xion/siege_catapult_packed
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/xiongnu/fortress.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>28.0</Length>
+    <Indent>6.4</Indent>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Diplomacy>
+    <SharedLosTech>unlock_shared_los</SharedLosTech>
+    <SharedDropsitesTech>unlock_shared_dropsites</SharedDropsitesTech>
+  </Diplomacy>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Gaia</GenericName>
+    <Icon>emblems/512x512/gaia.png</Icon>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Player>
+    <SpyCostMultiplier>1.0</SpyCostMultiplier>
+    <BarterMultiplier>
+      <Buy>
+        <food>1.0</food>
+        <wood>1.0</wood>
+        <stone>1.0</stone>
+        <metal>1.0</metal>
+        <coin>1.0</coin>
+        <glory>1000</glory>
+      </Buy>
+      <Sell>
+        <food>1.0</food>
+        <wood>1.0</wood>
+        <stone>1.0</stone>
+        <metal>1.0</metal>
+        <coin>1.0</coin>
+        <glory>0.001</glory>
+      </Sell>
+    </BarterMultiplier>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+      special/formations/syntagma
+      special/formations/testudo
+      special/formations/anti_cavalry
+    </Formations>
+  </Player>
+</Entity>

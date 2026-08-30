@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_merc_camp">
+  <Identity>
+    <SpecificName>Indian Mercenary Camp</SpecificName>
+    <VisibleClasses datatype="tokens">Indian</VisibleClasses>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/mercenaries/indian/support_elephant
+      units/mercenaries/indian/infantry_1
+      units/mercenaries/indian/infantry_2
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/mercenaries/camp_indian.xml</Actor>
+  </VisualActor>
+</Entity>

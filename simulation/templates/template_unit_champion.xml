@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
+  <Attack>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>10</Capture>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
+    <Slaughter>
+      <AttackName>Slaughter</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
+    </Slaughter>
+  </Attack>
   <Identity>
     <GenericName>Champion Unit</GenericName>
     <Classes datatype="tokens">Organic</Classes>
     <VisibleClasses datatype="tokens">Champion Soldier</VisibleClasses>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <xp>150</xp>
-    <food>10</food>
-    <wood>10</wood>
-    <stone>0</stone>
-    <metal>20</metal>
+    <xp>200</xp>
+    <glory>10</glory>
   </Loot>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/arrow.png</MainTexture>
+        <MainTextureMask>256x256/arrow_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_attack_move>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack_move>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
 </Entity>

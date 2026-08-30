@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_javelineer">
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Lusitanian Mercenary Skirmisher</SpecificName>
+    <SelectionGroupName>units/iber/merc_infantry_2</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/iber/merc_infantry_2.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/lusit_skirmisher.xml</Actor>
+  </VisualActor>
+</Entity>

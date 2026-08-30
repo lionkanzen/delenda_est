@@ -1,0 +1,20 @@
+{
+	"partOfPair": "storehouse/pair_gather_03",
+	"genericName": "Shaft Mining",
+	"description": "Ancient societies used shaft mining to reach veins of gold, silver, copper, and other valuable ores buried beneath the surface. Miners dug vertical or inclined shafts into rock and connected them with horizontal galleries, using iron picks, hammers, wedges, and sometimes fire-setting to fracture stubborn stone. Ore was hauled to the surface in baskets or containers, while drainage channels, lifting devices, and ventilation shafts helped keep deeper workings usable. Major mining centers in Greece, Iberia, Egypt, and the Roman world developed increasingly organized underground systems, allowing precious metals to be extracted on a scale large enough to support coinage, warfare, trade, and state revenues.",
+	"cost": {
+		"wood": 500,
+		"glory": 300
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "mining_shaft.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +25% metal gathering rate.\n• Gatherers +10% stone gathering rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25 },
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.1 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

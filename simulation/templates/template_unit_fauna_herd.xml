@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna">
-  <Health>
-    <DeathType>remain</DeathType>
-  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Herd</VisibleClasses>
+  </Identity>
   <ResourceSupply>
     <KillBeforeGather>true</KillBeforeGather>
-    <Amount>100</Amount>
+    <Max>100</Max>
     <Type>food.meat</Type>
-	<MaxGatherers>8</MaxGatherers>
+    <MaxGatherers>8</MaxGatherers>
+    <Change>
+      <Rotting> <!-- Add your new effect, name it however you want -->
+        <Value>-1</Value>
+        <Interval>5000</Interval>
+        <State>dead</State> <!-- Add a state, "dead" or "alive" -->
+      </Rotting>
+    </Change>
   </ResourceSupply>
   <Vision>
-    <Range>20</Range>
+    <Range>6</Range>
   </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+  </VisualActor>
 </Entity>

@@ -1,0 +1,43 @@
+{
+	"supersedes": "forge/resistance_armor_hack_02",
+	"genericName": "Scale Body Armor",
+	"specificName": {
+		"imp": "Lorica Squamata",
+		"rome": "Lorica Squamata"
+	},
+	"description": "Body armor reinforced with bronze scales.",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "celti" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "han" },
+					{ "notciv": "iber" },
+					{ "notciv": "lusi" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cuirass_scale_bronze.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +1 hack armor.\n• Cavalry +1 hack armor.[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

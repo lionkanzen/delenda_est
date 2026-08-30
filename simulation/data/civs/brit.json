@@ -1,0 +1,117 @@
+{
+	"Code": "brit",
+	"Culture": [ "Celtic" ],
+	"Region": [ "Europe", "Albion" ],
+	"Music": [
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Albian_Nocturne.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Celtic_Pride.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Tavern_in_the_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Harvest_Moon.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Canine Breeding",
+			"History": "The Britons bred dogs for war. Two of these breeds were the Wolfhound and Mastiff.",
+			"Description": "Britons can train War Dogs from the Kennel special building. "
+		},
+		{
+			"Name": "Great Harvest",
+			"History": "Represents Celtic farming methods. ",
+			"Description": "When building a Rotary Mill, nearby Gatherers +20% farming rate of grain. "
+		},
+		{
+			"Name": "Deas Celtica",
+			"History": "Celtic religion and druidry inspired their warlike mindset. ",
+			"Description": "Druids increase attack rates of soldiers near them slightly."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/brit/cassivellaunus",
+		"civ_choices/brit/cunobelin",
+		"civ_choices/brit/caratacos",
+		"civ_choices/brit/boudicca"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/brit/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/brit/civil_centre"
+		},
+		{
+			"Template": "units/brit/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/brit/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/brit/infantry_slinger_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/brit/cavalry_scout_starter",
+			"Count": 1
+		},
+		{
+			"Template": "units/brit/war_dog_e"
+		}
+	],
+	"AINames":
+	[
+		"Prasutagus",
+		"Venutius",
+		"Cogidubnus",
+		"Commius",
+		"Comux",
+		"Adminius",
+		"Dubnovellaunus",
+		"Vosenius",
+		"Scavo",
+		"Lugotorix",
+		"Togodumnus",
+		"Calgacus"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/brit/hero_boudicca",
+		"skirmish/units/default_hero_2": "units/brit/hero_caratacos",
+		"skirmish/units/default_hero_3": "units/brit/hero_cynvelin",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/brit/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/brit/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/brit/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/brit/champion_chariot",
+		"skirmish/units/default_champion_cavalry_2": "units/brit/champion_chariot",
+		"skirmish/units/default_infantry_ranged_b": "units/brit/infantry_slinger_e",
+		"skirmish/units/special_starting_unit": "units/brit/war_dog_e",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/structures/special_starting_structure": "structures/brit/kennel",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

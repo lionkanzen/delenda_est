@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": [
+		"CivilCentre"
+	],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }			
+	],
+	"auraName": "Unified China",
+	"auraDescription": "\n• Civic Centers +50% health and capture resistance."
+}

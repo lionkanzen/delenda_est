@@ -1,0 +1,127 @@
+{
+	"Code": "han",
+	"Culture": "Chinese",
+	"Region": [ "Asia", "East Asia" ],
+	"Music": [
+		{
+			"File": "Hill_of_Sorrows.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Red_Dawn.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Bamboo_Village.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Confucius.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[],
+	"CivChoices":
+	[
+		"civ_choices/han/liu_bang",
+		"civ_choices/han/han_xin",
+		"civ_choices/han/wei_qing",
+		"civ_choices/han/wu_han"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/han/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/han/civil_centre"
+		},
+		{
+			"Template": "units/han/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/han/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/han/infantry_archer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/han/cavalry_scout_starter"
+		},
+		{
+			"Template": "units/han/support_minister"
+		}
+	],
+	"CivicCenterNames":
+	[
+		"Chang'an",
+		"Chengdu",
+		"Guangling",
+		"Handan",
+		"Jinyang",
+		"Linzi",
+		"Luoyang",
+		"Panyu",
+		"Wancheng",
+		"Xiangyang"
+	],
+	"AINames":
+	[
+		"Liu Ying",
+		"Liu Gong",
+		"Liu Hong",
+		"Liu Heng",
+		"Liu Qi",
+		"Liu Che",
+		"Liu Fuling",
+		"Liu He",
+		"Liu Bingyi",
+		"Liu Shi",
+		"Liu Ao",
+		"Liu Xin",
+		"Liu Kan",
+		"Liu Xuan",
+		"Liu Xiu",
+		"Liu Zhuang",
+		"Liu Da",
+		"Liu Zhao",
+		"Liu Long",
+		"Liu Hu",
+		"Liu Yi",
+		"Liu Bao",
+		"Liu Bing",
+		"Liu Zuan",
+		"Liu Zhi",
+		"Liu Hong",
+		"Liu Bian",
+		"Liu Xie",
+		"Egg Shen",
+		"Wang Chi",
+		"Lo Pan"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/han/hero_liu_bang_infantry",
+		"skirmish/units/default_hero_2": "units/han/hero_han_xin_infantry",
+		"skirmish/units/default_hero_3": "units/han/hero_wei_qing_infantry",
+		"skirmish/units/default_hero_4": "units/han/hero_wu_han_infantry",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/han/champion_infantry_spearman",
+		"skirmish/units/default_champion_infantry_2": "units/han/champion_infantry_archer",
+		"skirmish/units/default_champion_infantry_3": "units/han/champion_infantry_crossbowman",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/han/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/han/champion_chariot",
+		"skirmish/units/default_infantry_ranged_b": "units/han/infantry_archer_e",
+		"skirmish/units/special_starting_unit": "units/han/support_minister",
+		"skirmish/structures/special_starting_structure": "structures/han/gate",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

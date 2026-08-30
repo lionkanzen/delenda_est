@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/quinquereme|template_unit_ship_warship_siege">
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Hexērēs</SpecificName>
+    <Icon>units/mace/ship_siege.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -shipyard/training_naval_shipwrights
+        shipyard/unlock_hexeres
+      </Techs>
+      <Tooltip>Requires “Naval Arms Race.”</Tooltip>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/macedonians/quinquereme.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,23 @@
+{
+	"genericName": "The Loom",
+	"specificName": {
+		"imp": "Textrinum"
+	},
+	"description": "The Loom allowed the creation of finer clothing to clothe citizens in the settlement. Women of the household were taught from a young age how to weave on the loom, and subsequently spent a large  share of their lives working with it.",
+	"cost": {
+		"wood": 100,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "loom.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Civilian Citizens +25% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": ["CivisRomanum"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

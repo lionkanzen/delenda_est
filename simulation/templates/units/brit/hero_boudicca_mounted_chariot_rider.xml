@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Health>
+    <Max>500</Max>
+    <RegenRate>-5</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Boudicca</SpecificName>
+    <Phenotype>female</Phenotype>
+    <VisibleClasses datatype="tokens">Female Guerilla</VisibleClasses>
+    <Icon>units/brit/hero_boudicca_1.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.3</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/britons/hero_infantry_swordsman_boudicca_dying.xml</Actor>
+  </VisualActor>
+</Entity>

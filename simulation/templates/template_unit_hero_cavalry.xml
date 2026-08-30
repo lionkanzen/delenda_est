@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
-  <Armour>
-    <Hack>6</Hack>
-    <Pierce>8</Pierce>
-    <Crush>8</Crush>
-  </Armour>
   <Cost>
-    <BuildTime>50</BuildTime>
-    <Resources>
-      <food>100</food>
-	  <wood>0</wood>
-	  <stone>0</stone>
-      <metal>250</metal>
-    </Resources>
+    <BuildTime>25</BuildTime>
   </Cost>
   <Footprint>
     <Circle radius="2.0"/>
@@ -24,41 +13,41 @@
   <Identity>
     <GenericName>Hero Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
-    <Formations datatype="tokens">
-      formations/wedge
-    </Formations>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
   </Position>
-  <Sound>
-    <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <walk>actor/mounted/movement/walk.xml</walk>
-      <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/fauna/death/death_horse.xml</death>
-      <trained>interface/alarm/alarm_create_cav.xml</trained>
-	</SoundGroups>
-  </Sound>
-  <Stamina>
-    <Max>2500</Max>
-  </Stamina>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>8</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Shape>
+        <Circle radius="3"/>
+      </Shape>
+    </Overlay>
+  </Selectable>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
+  <UnitAI>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
+  </UnitAI>
   <UnitMotion>
-    <WalkSpeed>13.0</WalkSpeed>
-    <Run>
-      <Speed>26.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>16.0</RangeMin>
-    </Run>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <Weight op="mul">2</Weight>
   </UnitMotion>
   <Vision>
-    <Range>70</Range>
+    <Range>50</Range>
   </Vision>
 </Entity>

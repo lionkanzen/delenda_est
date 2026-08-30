@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <BuildRestrictions>
+    <Category>NubaVillage</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>200</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="20.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>noba</Civ>
+    <SpecificName>Pr-nsw</SpecificName>
+    <Classes datatype="tokens">Barter</Classes>
+    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+  </Identity>
+  <Obstruction>
+    <Static width="32.0" depth="32.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -phase_empire_{civ}
+      -civic_center/unlock_shared_los
+      noba/unlock_shared_los
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>72</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/noba/infantry_clubman
+      units/noba/infantry_javelineer
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/noba/civic_center.xml</Actor>
+  </VisualActor>
+</Entity>

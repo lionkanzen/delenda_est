@@ -1,0 +1,5 @@
+WAR ELEPHANTS
+Powerful combat units available in City Phase to: Carthage, Epirus, Kush, Macedon, Maurya, Persia, Egypt, and Seleucia.
+Train at the Elephant Stable for a significant cost.
+Effective against Soldiers on the battlefield, but vulnerable to Javelin Infantry and Sword Infantry to a lesser extent. Flaming Pigs can be used to frighten elephants and reduce their effectiveness.
+“Terror” aura: Elephants reduce nearby enemy units' attack rate and movement speeds by −25%.

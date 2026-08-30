@@ -4,9 +4,9 @@
     <Civ>skirm</Civ>
   </Identity>
   <SkirmishReplacer>
-    <general>structures/{civ}_storehouse</general>
+    <general>structures/{civ}/storehouse</general>
   </SkirmishReplacer>
   <VisualActor>
-    <Actor>structures/athenians/storehouse.xml</Actor>
+    <Actor>structures/skirmish/storehouse.xml</Actor>
   </VisualActor>
 </Entity>

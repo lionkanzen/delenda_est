@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_javelineer">
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>Bedouin Skirmisher</SpecificName>
+    <SelectionGroupName>units/mercenaries/bedouin_infantry_2</SelectionGroupName>
+    <Icon>units/merc/arab_skirmisher.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/bedouin_javelineer.xml</Actor>
+  </VisualActor>
+</Entity>

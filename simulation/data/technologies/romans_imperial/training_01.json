@@ -1,0 +1,23 @@
+{
+	"genericName": "Levy Legionnaires",
+	"description": "Calling up infantry levies in time of war helps bolster the ranks of an emperor's army.",
+	"cost": {
+		"food": 200,
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "imp" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "fist.png",
+	"researchTime": 30,
+	"tooltip": "[font=\"sans-bold-14\"]• Legionary Soldiers −10% train time. Unlocks “Mobilize Legions.”[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9 }
+	],
+	"affects": ["Legion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

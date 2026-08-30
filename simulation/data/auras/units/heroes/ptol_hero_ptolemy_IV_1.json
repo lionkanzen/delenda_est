@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Pike"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
+	],
+	"auraName": "Raphia Preparations",
+	"auraDescription": "\n• Egyptian Phalangites +10% health and −25% train time."
+}

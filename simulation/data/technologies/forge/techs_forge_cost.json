@@ -1,0 +1,25 @@
+{
+	"partOfPair": "forge/pair_techs_01",
+	"genericName": "Forging",
+	"description": ".",
+	"cost": {
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_village"
+	},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "metals_casting.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Forge technologies −25% cost.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.75 },
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.75 },
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.75 },
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.75 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.75 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.75 }
+	],
+	"affects": ["Forge"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

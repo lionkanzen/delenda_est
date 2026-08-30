@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_brasidas
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Xanthippus of Sparta</SpecificName>
+    <Icon>units/cart/hero_xanthippus.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_cavalry_spearman_xanthippus_m.xml</Actor>
+  </VisualActor>
+</Entity>

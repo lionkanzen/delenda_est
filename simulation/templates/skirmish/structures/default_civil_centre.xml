@@ -4,10 +4,12 @@
     <Civ>skirm</Civ>
   </Identity>
   <ProductionQueue disable=""/>
+  <Researcher disable=""/>
   <SkirmishReplacer>
-    <general>structures/{civ}_civil_centre</general>
+    <general>structures/{civ}/civil_centre</general>
   </SkirmishReplacer>
+  <Trainer disable=""/>
   <VisualActor>
-    <Actor>structures/athenians/civic_centre_new.xml</Actor>
+    <Actor>structures/skirmish/civic_center.xml</Actor>
   </VisualActor>
 </Entity>

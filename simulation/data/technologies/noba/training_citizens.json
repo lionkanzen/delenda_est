@@ -1,0 +1,32 @@
+{
+	"genericName": "Mating Celebration",
+	"specificName": {
+		"hele": "Thesmophoria",
+		"mace": "Thesmophoria",
+		"spart": "Thesmophoria",
+		"athen": "Panathenaia",
+		"theb": "Thesmophoria",
+		"rome": "Bonae Deae Festivitate"
+	},
+	"icon": "wives_festival_african.png",
+	"description": "Among the Noba peoples of ancient Nubia, courtship and marriage traditions often included communal dancing, music, feasting, and public displays of strength and attractiveness, although customs varied considerably between individual Noba groups. Young men and women could meet at seasonal festivals and dances, where elaborate body decoration, rhythmic movement, singing, and sometimes wrestling or athletic contests provided opportunities for courtship and the formation of relationships. Such celebrations were not simply “mating rituals,” but broader social occasions that reinforced kinship, community identity, fertility, and the transition of young people into adult social roles.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"researchTime": 60,
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "entity": { "class": "House", "number": 5 }},
+			{ "civ": "noba" }
+		]
+	},
+	"tooltip": "[font=\"sans-bold-14\"]• Civilian Citizens −33% training time.[/font]",
+	"requirementsTooltip": "Unlocked in Village Phase. Requires 5 houses to be built.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "add": -5 }
+	],
+	"affects": ["Citizen Support !Healer !Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

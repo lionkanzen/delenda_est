@@ -1,0 +1,27 @@
+{
+	"genericName": "Elite Citizen-Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your Citizen infantrymen to Elite rank.",
+	"cost": {
+		"coin": 1000,
+		"glory": 1000
+	},
+	"requirements": {
+		"tech": "phase_empire"
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen-Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry",
+	"tooltip": "[font=\"sans-bold-14\"]Advanced Infantry auto-promote to Elite Rank:\n• Infantry +10% health.\n• Infantry +10% attack damage and capture power.\n• [color=\"orange\"]Infantry +10% train time and +5 food, wood, and metal costs.[/color][/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Infantry Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

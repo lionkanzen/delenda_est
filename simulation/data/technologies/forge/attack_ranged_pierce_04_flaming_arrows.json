@@ -1,0 +1,24 @@
+{
+	"supersedes": "forge/attack_ranged_pierce_03",
+	"genericName": "Flaming Arrows",
+	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, archers would typically loose flaming arrows over the enemy walls in a bid to set the enemy's buildings on fire.",
+	"cost": {
+		"wood": 1200,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "maur" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "fire_arrows.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks Flaming Arrows option for Maiden Guard Archers.[/font]",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

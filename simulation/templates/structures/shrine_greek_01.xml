@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="shrine|template_structure_civic_temple">
+  <Footprint replace="">
+    <Circle radius="12.0"/>
+    <Height>18.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Asclepeion</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      hellenes/vision_delphi
+      thebans/vision_trophonios
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_e
+      units/hele/hero_hippocrates
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/hellenes/shrine_01.xml</Actor>
+  </VisualActor>
+</Entity>

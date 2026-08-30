@@ -1,0 +1,36 @@
+{
+	"genericName": "Elite Ranged-Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your ranged Citizen infantrymen to Elite rank.",
+	"cost": {
+		"coin": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "yayo" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Ranged Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "range/upgrade_rank_advanced_infantry_ranged",
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen Ranged Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Infantry Advanced Ranged"],
+	"placeBelow": "Ranged Infantry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

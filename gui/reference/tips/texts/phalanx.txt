@@ -1,0 +1,4 @@
+PHALANX FORMATION
+A strong tight formation for Greek "hoplite" style spear infantry.
+This formation helps the hoplites take advantage of their “Shield Wall” feature.
+“Shield Wall” aura: Hoplite infantry give other Hoplite infantry +2 hack, +2 pierce, and +2 crush resistance within range of each other. This does not stack or multiply.

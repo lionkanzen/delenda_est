@@ -6,35 +6,39 @@
       <food>25</food>
     </Resources>
   </Cost>
+  <Health>
+    <Max>10</Max>
+  </Health>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Peacock</GenericName>
+    <GenericName>Peacock</GenericName>
     <SpecificName>Pavo cristatus</SpecificName>
     <Icon>gaia/fauna_peacock.png</Icon>
   </Identity>
   <ResourceSupply>
-    <Amount>50</Amount>
-    <Type>food.meat</Type>
+    <Initial>50</Initial>
+    <Max>50</Max>
     <MaxGatherers>5</MaxGatherers>
+    <Change disable=""/>
   </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
-      <select>actor/fauna/animal/peacock_call.xml</select>
-      <order_walk>actor/fauna/animal/peacock_call.xml</order_walk>
+      <select>actor/fauna/animal/peacock_select.xml</select>
+      <order_walk>actor/fauna/animal/peacock_order.xml</order_walk>
+      <order_garrison>actor/fauna/animal/peacock_order.xml</order_garrison>
       <death>actor/fauna/animal/peacock_call.xml</death>
-      <trained>actor/fauna/animal/peacock_call.xml</trained>
+      <trained>actor/fauna/animal/peacock_trained.xml</trained>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <WalkSpeed>2.0</WalkSpeed>
-    <Run>
-      <Speed>5.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
-    </Run>
-  </UnitMotion>
   <UnitAI>
-	<NaturalBehaviour>domestic</NaturalBehaviour>
     <RoamDistance>4.0</RoamDistance>
     <FleeDistance>12.0</FleeDistance>
     <RoamTimeMin>2000</RoamTimeMin>
@@ -42,6 +46,9 @@
     <FeedTimeMin>10000</FeedTimeMin>
     <FeedTimeMax>40000</FeedTimeMax>
   </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>2.0</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>fauna/peacock.xml</Actor>
   </VisualActor>

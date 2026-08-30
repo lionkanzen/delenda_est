@@ -1,0 +1,32 @@
+{
+	"supersedes": "chinese_han/civil_service_01",
+	"genericName": "Civil Service - Level 2",
+	"specificName": {
+		"han": "Guānliáo"
+	},
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_bureaucracy_2.png",
+	"researchTime": 90,
+	"tooltip": "[font=\"sans-bold-14\"]• Technologies at all Buildings, except the Forge, −10% cost.\n• Technologies at all Buildings, except the Forge, −10% research time.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.9}
+	],
+	"affects": ["Structure !Forge"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

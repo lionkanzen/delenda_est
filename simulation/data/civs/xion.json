@@ -1,0 +1,117 @@
+{
+	"Code": "xion",
+	"Culture": [ "Nomadic", "Mongolian" ],
+	"Region": [ "Asia", "Steppes", "East Asia" ],
+	"Music": [
+		{
+			"File": "Eastern_Thought.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Asian_Drums.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Opium.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Ripples.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[],
+	"CivChoices":
+	[
+		"civ_choices/xion/laoshang",
+		"civ_choices/xion/modu",
+		"civ_choices/xion/touman"
+	],
+	"WallSets":
+	[
+		"structures/xion/wallset_palisade"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/xion/civil_centre",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion/support_wagon",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion/support_citizen_female",
+			"Count": 4
+		},
+		{
+			"Template": "units/xion/champion_cavalry_archer",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion/infantry_archer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/xion/infantry_spearman_e",
+			"Count": 2
+		}
+	],
+	"AINames":
+	[
+		"Junchen",
+		"Yizhixie",
+		"Wuwei",
+		"Er",
+		"Xulihu",
+		"Qiedihou",
+		"Hulugu",
+		"Huyandi",
+		"Xulüquanqu",
+		"Woyanqudi",
+		"Fuzhulei Ruodi"
+	],
+		"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "",
+		"skirmish/units/default_hero_2": "",
+		"skirmish/units/default_hero_3": "",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "",
+		"skirmish/units/default_champion_infantry_2": "",
+		"skirmish/units/default_champion_infantry_3": "",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/xion/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/xion/champion_cavalry_archer",
+		"skirmish/units/default_support_female_citizen" : "units/xion/support_citizen_female",
+		"skirmish/units/default_support_citizen" : "units/xion/support_citizen_female",
+		"skirmish/units/default_cavalry": "units/{civ}/cavalry_scout_starter",
+		"skirmish/units/default_infantry_ranged_b": "units/xion/infantry_archer_e",
+		"skirmish/structures/default_corral": "structures/xion/stable",
+		"skirmish/structures/default_defense_tower": "structures/xion/outpost",
+		"skirmish/structures/default_defense_tower_stone": "structures/xion/outpost",
+		"skirmish/structures/default_fortress": "",
+		"skirmish/structures/default_house_5": "structures/xion/house",
+		"skirmish/structures/special_starting_structure": "structures/xion/house",
+		"skirmish/structures/default_house_10": "",
+		"skirmish/structures/default_wall_tower": "",
+		"skirmish/structures/default_wall_gate": "",
+		"skirmish/structures/default_wall_short": "",
+		"skirmish/structures/default_wall_medium": "",
+		"skirmish/structures/default_wall_long": "",
+		"skirmish/structures/default_field": "",
+		"skirmish/structures/default_farmstead": "structures/xion/market",
+		"skirmish/structures/default_market": "structures/xion/market",
+		"skirmish/structures/default_storehouse": "structures/xion/storehouse",
+		"skirmish/structures/default_dock": "",
+		"skirmish/units/special_starting_unit": "units/xion/support_wagon",
+		"skirmish/structures/default_civil_centre": "structures/xion/civil_centre",
+		"skirmish/structures/default_barracks": "structures/xion/barracks",
+		"skirmish/structures/default_stable": "structures/xion/stable",
+		"skirmish/structures/default_temple": "structures/xion/temple"
+	},
+	"SelectableInGameSetup": true
+}

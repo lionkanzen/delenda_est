@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolt</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>10.0</Pierce>
+        <Crush>10.0</Crush>
+      </Damage>
+      <MaxRange>55.0</MaxRange>
+      <MinRange>12.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Count>5</Count>
+        <Speed>50.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Structure !Permanent</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Permanent</RestrictedClasses>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Structure</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusPrimary>
+      </Bonuses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>10</Capture>
+      <MaxRange>8</MaxRange>
+      <RepeatTime>100</RepeatTime>
+    </Capture>
+  </Attack>
+  <BuildRestrictions>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral enemy ally</Territory>
+    <Category>SiegeTower</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>1.5</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <Population>5</Population>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>400</wood>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="15.0" depth="15.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>20</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Siege Tower</GenericName>
+    <Classes datatype="tokens">
+      CapturableUnit
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Ranged
+      SiegeTower
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Capturable, Garrison up to 20 infantry inside.
+Strong Against: Buildings (2x attack, 10 capture).
+Weak Against: Melee Cavalry, Elephants, Siege Weapons.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_empire
+        -phase_city
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>256x256/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>4.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <ConstructionPreview/>
+    <FoundationActor>structures/fndn_3x3_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>

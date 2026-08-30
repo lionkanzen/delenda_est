@@ -1,0 +1,26 @@
+{
+	"genericName": "Bindusara",
+	"description": "Bindusara.",
+	"icon": "civ_choices/maur_hero_bindusara.png",
+	"tooltip": "Select Bindusara to lead your civilization.",
+	"requirements": {
+		"civ": "maur"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_chandragupta_infantry -units/{civ}/hero_chanakya -units/{civ}/hero_ashoka_infantry",
+			"affects": "Palace"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "mauryas/hero_bindusara_patron",
+			"affects": "Palace"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}/pillar_ashoka",
+			"affects": "Builder"
+		}
+	]
+}

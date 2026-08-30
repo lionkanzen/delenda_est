@@ -1,0 +1,21 @@
+{
+	"supersedes": "storehouse/gather_lumbering_bowsaw",
+	"genericName": "Two-Man Saw",
+	"description": "A two-man saw halps workers gather wood from trees even faster.",
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "wood_saw_two_man.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +20% lumbering rate for trees.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.20 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

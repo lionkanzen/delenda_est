@@ -1,0 +1,43 @@
+{
+	"supersedes": "shipyard/attack_warship_ramming",
+	"genericName": "Undergirding Cables",
+	"specificName": {
+		"hele": "Hypozomata",
+		"mace": "Hypozomata",
+		"spart": "Hypozomata",
+		"athen": "Hypozomata",
+		"sele": "Hypozomata",
+		"ptol": "Hypozomata",
+		"achae": "Hypozomata",
+		"cart": "Hypozomata",
+		"theb": "Hypozomata",
+		"syrac": "Hypozomata"
+	},
+	"description": "The hypozomata, or undergirding cables, brace the structure of a ship and were invented by the Athenians in the 5th century BC. In the Piraeus naval inventories the “hypozomata” are the first listed and hence they are considered to be the most important hanging-gear of the triremes. A decree lays down the minimum number of men to be employed in fitting them to a ship and that a ship fitted with a pair of them is regarded as being in commission. The secret of this technology was jealously guarded; It was considered a capital offense to export this technology.",
+	"cost": {
+		"metal": 1200,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "cart" },
+					{ "civ": "ptol" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Bronze Ram.”",
+	"icon": "undergirding cables.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Ramming Ships +25% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": ["NavalRam"],
+	"placeBelow": "{AffectedUnit}",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

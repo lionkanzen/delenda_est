@@ -1,0 +1,22 @@
+{
+	"partOfPair": "granary/pair_farming_01",
+	"genericName": "Irrigation Techniques",
+	"description": "Irrigation techniques were essential to many ancient civilizations, especially those farming in dry or seasonally variable environments. Egyptians relied on Nile flood basins, canals, and water-lifting devices; Persians developed extensive qanat systems to carry groundwater across arid landscapes; Mesopotamian and Hellenistic states maintained large canal networks; and Indian and Han Chinese communities used reservoirs, dikes, wells, and carefully managed irrigation channels to expand farmland and stabilize harvests. These systems increased agricultural productivity, supported dense populations and cities, and often required substantial coordination by local communities, temples, or the state.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "irrigation.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Farm Fields −50% cost.\n• Farm Fields −50% build time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.5 }
+	],
+	"affects": ["Field"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

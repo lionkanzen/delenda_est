@@ -6,7 +6,7 @@
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Muskox</GenericName>
+    <GenericName>Muskox</GenericName>
     <SpecificName>Ovibos moschatus</SpecificName>
     <Icon>gaia/fauna_muskox.png</Icon>
   </Identity>
@@ -14,8 +14,7 @@
     <Anchor>pitch</Anchor>
   </Position>
   <ResourceSupply>
-    <Amount>200</Amount>
-    <Type>food.meat</Type>
+    <Max>200</Max>
   </ResourceSupply>
   <VisualActor>
     <Actor>fauna/muskox.xml</Actor>

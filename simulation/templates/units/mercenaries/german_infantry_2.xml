@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_axeman">
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>German Axeman</SpecificName>
+    <VisibleClasses datatype="tokens">Axe Guerilla</VisibleClasses>
+    <Icon>units/merc/german_axeman.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/german_axeman.xml</Actor>
+  </VisualActor>
+</Entity>

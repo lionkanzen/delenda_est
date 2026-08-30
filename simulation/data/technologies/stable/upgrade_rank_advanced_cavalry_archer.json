@@ -1,0 +1,53 @@
+{
+	"genericName": "Advanced Citizen Archer Cavalry",
+	"description": "Promote all of your citizen archer cavalrymen to Advanced rank.",
+	"cost": {
+		"food": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Archer Cavalrymen to Advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks Elite Citizen Archer Cavalry technology.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Archer Cavalry Basic"],
+	"placeBelow": "Archer Cavalry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,59 @@
+{
+	"genericName": "Elite Citizen Axe Cavalry",
+	"description": "Promote all of your Citizen axe cavalrymen to Elite rank.",
+	"cost": {
+		"coin": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Axe Cavalry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "stable/upgrade_rank_advanced_cavalry_axe",
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Axe Cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Axe Cavalry Advanced"],
+	"placeBelow": "Axe Cavalry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

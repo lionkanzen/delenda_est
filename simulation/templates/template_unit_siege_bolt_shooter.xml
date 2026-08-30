@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolt</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>40.0</Pierce>
+        <Crush>10.0</Crush>
+      </Damage>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>8.0</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Hack>0.0</Hack>
+          <Pierce>40.0</Pierce>
+          <Crush>0.0</Crush>
+        </Damage>
+        <Shape>Linear</Shape>
+        <Range>8.0</Range>
+        <FriendlyFire>false</FriendlyFire>
+      </Splash>
+      <Projectile>
+        <Speed>100.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>12.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">Permanent</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Structure !Permanent Human</PreferredClasses>
+      <Bonuses>
+        <BonusOrganic>
+        <Classes>Organic</Classes>
+        <Multiplier>2.0</Multiplier>
+        </BonusOrganic>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <metal>80</metal>
+    </Resources>
+    <Population>3</Population>
+  </Cost>
+  <Footprint replace="">
+    <Square width="6.0" depth="10.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Bolt Shooter</GenericName>
+    <Classes datatype="tokens">
+      CapturableUnit
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Ranged
+      BoltShooter
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Must Pack, Splash Damage (Linear), Capturable.
+Strong Against: Infantry (2x), Cavalry (2x), Buildings (Crush Damage).
+Weak Against: Fast Melee Units.</Tooltip>
+  </Identity>
+  <Pack>
+    <Time>10000</Time>
+  </Pack>
+  <UnitAI>
+    <DefaultStance>standground</DefaultStance>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>52</Range>
+  </Vision>
+</Entity>

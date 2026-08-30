@@ -1,0 +1,27 @@
+{
+	"genericName": "Civil Engineering - Level 2",
+	"specificName": {
+		"han": "Gōngchéng"
+	},
+	"supersedes": "chinese_han/civil_engineering_01",
+	"cost": {
+		"wood": 200,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_engineering_02.png",
+	"researchTime": 90,
+	"tooltip": "[font=\"sans-bold-14\"]• Buildings +10% health.\n• Buildings −10% build time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9},
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

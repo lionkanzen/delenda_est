@@ -1,0 +1,21 @@
+{
+	"partOfPair": "granary/pair_farming_01",
+	"genericName": "Steel Sickles",
+	"description": "",
+	"cost": {
+		"metal": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "sickle.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% grain gather rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.1 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

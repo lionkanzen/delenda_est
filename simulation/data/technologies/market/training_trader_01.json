@@ -1,0 +1,21 @@
+{
+	"genericName": "Trade Caravans",
+	"description": "Decreases train time for Traders by half.",
+	"cost": {
+		"food": 100,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "trade_caravan.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Traders −50% train time.\n• Unlocks “Trade Networks” for most civilizations.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"affects": ["Trader"],
+	"placeBelow": "Citizen Trader",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

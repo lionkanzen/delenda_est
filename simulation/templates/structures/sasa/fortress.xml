@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>sasa</Civ>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/sasanians/fortress.xml</Actor>
+  </VisualActor>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_armored
+      units/{civ}/champion_cavalry
+      units/{civ}/champion_cavalry_archer
+    </Entities>
+  </Trainer>
+  <WallPiece>
+    <Length>16.8</Length>
+    <Indent>5.8</Indent>
+  </WallPiece>
+</Entity>

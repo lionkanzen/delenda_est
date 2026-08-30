@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/library
+  </Auras>
+  <BuildRestrictions>
+    <Category>Library</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>300</stone>
+      <metal>300</metal>
+      <coin>0</coin>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="29.0" depth="34.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+  </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Library</GenericName>
+    <SpecificName>Library</SpecificName>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      CivSpecific
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Library
+      Capturable
+    </VisibleClasses>
+    <Icon>structures/library_scroll.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <glory>200</glory>
+  </Loot>
+  <Minimap>
+    <Icon size="16.0">library.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="25.0" depth="30.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      library/civic_center_metropolis
+      library/special_antikythera_mechanism
+    </Technologies>
+  </Researcher>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_library.xml</select>
+      <constructed>interface/complete/building/complete_library.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/macedonians/library.xml</Actor>
+    <FoundationActor>structures/fndn_7x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_fruit">
+  <Footprint>
+    <Circle radius="2.5"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Apple Tree</SpecificName>
+    <Icon>gaia/flora_bush_berry.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="1.8" depth="1.8"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Max>400</Max>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>flora/trees/apple_bloom.xml</Actor>
+  </VisualActor>
+</Entity>

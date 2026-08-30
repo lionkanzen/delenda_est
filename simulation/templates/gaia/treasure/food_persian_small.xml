@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_food">
+  <Footprint>
+    <Square width="6.0" depth="6.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Food Bin</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="5.0" depth="5.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>props/special/eyecandy/treasure_achaemenid_food_small.xml</Actor>
+  </VisualActor>
+</Entity>

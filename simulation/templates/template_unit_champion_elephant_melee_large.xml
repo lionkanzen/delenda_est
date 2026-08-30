@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_elephant_melee">
+  <Identity>
+    <VisibleClasses datatype="tokens">Large</VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Berserk.
+Strong Against: Horse Cavalry (2x), Gates (3x).
+Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
+  </Identity>
+</Entity>

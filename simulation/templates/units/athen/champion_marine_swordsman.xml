@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/shield_wall
+  </Auras>
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Delian Marine</SpecificName>
+    <VisibleClasses datatype="tokens">Marine</VisibleClasses>
+    <Tooltip>Traits: Fast Speed, Medium Armor, High Attack.
+Strong Against: All Infantry (1.5x), Elephants (1.5x).
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.
+Iphicratean Reforms are researched at a captured Mercenary Camp.</Tooltip>
+    <Icon>units/athen/champion_marine.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_empire
+      </Techs>
+    </Requirements>
+  </Identity>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/athenians/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>

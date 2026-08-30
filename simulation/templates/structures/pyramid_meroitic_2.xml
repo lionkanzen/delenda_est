@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/kush_pyramids_territory
+  </Auras>
+  <BuildRestrictions>
+    <Category>PyramidLarge</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>400</stone>
+      <metal>400</metal>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="22.0" depth="26.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <Max>4000</Max>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Large Pyramid</GenericName>
+    <SpecificName>mr ‘3</SpecificName>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      PyramidLarge
+      CivSpecific
+    </Classes>
+    <VisibleClasses datatype="tokens">-City Town Pyramid</VisibleClasses>
+    <Tooltip>Increase territory radius of Civic Centers for each Meroitic Pyramid captured.</Tooltip>
+    <Icon>structures/kush_pyramid_big.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="24.0"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple_10.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>15.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/kushites/pyramid_large.xml</Actor>
+    <FoundationActor>structures/fndn_5x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

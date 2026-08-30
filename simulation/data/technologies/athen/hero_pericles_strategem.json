@@ -1,0 +1,21 @@
+{
+	"genericName": "Periclean Strategem",
+	"description": "At the outbreak of the Peloponnesian War with Sparta, Pericles instituted a strategy that emphasized Athenian strengths: the city's walls and her mighty fleet.",
+	"cost": {
+		"food": 500,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase after choosing the hero Pericles.",
+	"icon": "political_face.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Pericles' Special Technology.\n• Stone Walls +10% health.\n• Warships +10% health.\n• Soldiers −5% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1, "affects": "StoneWall" },
+		{ "value": "Health/Max", "multiply": 1.1, "affects": "Warship" },
+		{ "value": "Health/Max", "multiply": 0.95, "affects": "Soldier" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

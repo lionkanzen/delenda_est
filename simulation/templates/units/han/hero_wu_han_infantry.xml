@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/han_wu_han|template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_han_xin
+  </Auras>
+  <Identity>
+    <Civ>han</Civ>
+    <Lang>mandarin</Lang>
+    <SpecificName>Emperor Wu of Han</SpecificName>
+    <Icon>units/han/hero_wu_han.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/han/hero_wu_han_mounted</Entity>
+      <Tooltip>This gives Emperor Wu of Han his War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>300</food>
+        <glory>300</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/han/hero_infantry_swordsman_wu.xml</Actor>
+  </VisualActor>
+</Entity>

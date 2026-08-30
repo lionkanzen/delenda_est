@@ -1,0 +1,50 @@
+{
+	"genericName": "Ballistics",
+	"specificName": {
+		"athen": "Ballistiká",
+		"hele" : "Ballistiká",
+		"imp"  : "Ballistica",
+		"mace" : "Ballistiká",
+		"ptol" : "Ballistiká",
+		"rome" : "Ballistica",
+		"sele" : "Ballistiká",
+		"spart": "Ballistiká"
+	},
+	"description": "Ancient societies gradually developed practical knowledge of ballistics by observing how the weight, shape, angle, and force behind a projectile affected its range and impact. This knowledge was applied to bows, slings, javelins, and especially mechanical artillery such as Greek and Roman torsion catapults, ballistae, and stone-throwers, whose construction required increasingly precise calculations of tension, proportions, and projectile weight. Rather than relying on modern mathematical physics, ancient engineers combined geometry, experimentation, and standardized design rules to improve accuracy, range, and destructive power in siege warfare and battlefield support.",
+	"cost": {
+		"metal": 300,
+		"glory": 300
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "celti"},
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth"},
+					{ "notciv": "spart"},
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"icon": "calipers.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Siege Weapons +20% vision range.\n• Unlocks Ranged Siege Weapon technologies.[/font]",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.2 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

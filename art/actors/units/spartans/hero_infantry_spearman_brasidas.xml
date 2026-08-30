@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/helmets/hele_pilos_crested.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_athen_pericles.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/aspis_lambda_agis.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+        <prop actor="particle/simple_rings.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="padded_brasidas_01">
+      <textures>
+        <texture file="skeletal/spart/padded_brasidas_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="padded_brasidas_02">
+      <textures>
+        <texture file="skeletal/spart/padded_brasidas_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_ready.xml" name="Spearman-Shield-Ready" frequency="1"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/formations/phalanx_front.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_mid.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_back.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

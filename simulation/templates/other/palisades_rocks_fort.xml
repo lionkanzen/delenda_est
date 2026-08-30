@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_defense_tower">
-  <Armour>
-    <Hack>5.0</Hack>
-    <Pierce>20.0</Pierce>
-    <Crush>1.0</Crush>
-  </Armour>
+<Entity parent="template_structure_defensive_defense_tower">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>1.0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
-      <Pierce>10.0</Pierce>
-      <Crush>0.0</Crush>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>10.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
       <MaxRange>60.0</MaxRange>
       <MinRange>4.0</MinRange>
     </Ranged>
@@ -34,14 +40,20 @@
     <Classes datatype="tokens">Palisade</Classes>
     <History>A cheap, quick defensive structure constructed with sharpened tree trunks</History>
     <Icon>structures/palisade_fort.png</Icon>
-	<VisibleClasses datatype="tokens">Village DefenseTower</VisibleClasses>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <VisibleClasses datatype="tokens">Village DefenseTower</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="9.0" depth="7.5"/>
   </Obstruction>
   <TerritoryInfluence disable=""/>
+  <Upgrade disable=""/>
   <VisualActor>
     <Actor>props/special/palisade_rocks_fort.xml</Actor>
   </VisualActor>
+  <WallPiece>
+    <Length>8.0</Length>
+  </WallPiece>
 </Entity>

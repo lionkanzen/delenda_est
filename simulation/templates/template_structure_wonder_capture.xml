@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Auras disable=""/>
+  <BuildRestrictions>
+    <Category>Wonder_Capture</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>5000</CapturePoints>
+  </Capturable>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Wonder of the World</GenericName>
+    <Tooltip>Capture this Wonder of the World to win a Wonder Victory or to auto-research Empire Phase.</Tooltip>
+    <Icon>structures/wonder_special.png</Icon>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Loot disable=""/>
+  <Minimap>
+    <Icon size="40.0">wonder.png</Icon>
+  </Minimap>
+  <Resistance replace=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_stonehenge.xml</FoundationActor>
+  </VisualActor>
+  <Wonder/>
+</Entity>

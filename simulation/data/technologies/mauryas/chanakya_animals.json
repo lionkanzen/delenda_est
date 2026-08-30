@@ -1,0 +1,29 @@
+{
+	"genericName": "A Compassion for Animals",
+	"specificName": {
+		"maur": "Ahinsā"
+	},
+	"cost": {
+		"food": 300,
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "extensive_husbandry.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Domestic Animals +10% health.\n• Cavalry +10% health.\n• Elephants +10% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"affects": [
+		"Animal",
+		"Elephant",
+		"Cavalry"
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

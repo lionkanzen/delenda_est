@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/theb_pelopidas|template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/theb_hero_pelopidas_1
+  </Auras>
+  <Cost>
+    <Resources>
+      <coin>0</coin>
+      <glory>250</glory>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>theb</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Pelopidas</SpecificName>
+    <Icon>units/theb/hero_pelopidas.png</Icon>
+  </Identity>
+  <ResourceTrickle>
+    <Rates> 
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>100</coin>
+      <glory>0.0</glory>
+    </Rates> 
+    <Interval>60000</Interval> 
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>units/thebans/hero_pelopidas.xml</Actor>
+  </VisualActor>
+</Entity>

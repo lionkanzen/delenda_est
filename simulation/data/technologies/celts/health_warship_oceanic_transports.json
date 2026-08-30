@@ -1,16 +1,35 @@
 {
-	"genericName": "Oceanic Transport",
+	"supersedes": "celts/unlock_warships",
+	"genericName": "Oceanic Transports",
 	"description": "The Celtic and Indian peoples were known for partaking in long journeys by sea in order to colonize new lands.",
-	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 200},
-	"requirements": {"tech": "phase_city"},
-	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "reinforced_hull.png",
+	"cost": {
+		"wood": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "tech": "celts/unlock_warships" },
+			{
+				"any": [
+					{ "civ": "celti" },
+					{ "civ": "brit" },
+					{ "civ": "gala" },
+					{ "civ": "gaul" },
+					{ "civ": "iber" },
+					{ "civ": "lusi" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Naval Construction.”",
+	"icon": "armor_ship_silver.png",
 	"researchTime": 40,
-	"tooltip": "Medium Warship +10 garrison capacity, +25% health.",
+	"tooltip": "[font=\"sans-bold-14\"]• Arrow Ships +10 garrison capacity.\n• Arrow Ships +25% health.[/font]",
 	"modifications": [
-		{"value": "Health/Max", "multiply": 1.25},
-		{"value": "GarrisonHolder/Max", "add": 10}
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "GarrisonHolder/Max", "add": 10 }
 	],
-	"affects": ["Medium Warship"],
+	"affects": ["ArrowShip"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

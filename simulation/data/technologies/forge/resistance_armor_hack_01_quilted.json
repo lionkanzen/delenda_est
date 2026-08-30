@@ -1,0 +1,31 @@
+{
+	"genericName": "Quilted Body Armor",
+	"specificName": {
+		"generic": "Gambeson"
+	},
+	"description": "In Han China, quilted and padded fabric armor provided a practical form of protection for soldiers who did not wear heavier scale or lamellar defenses. Layers of tightly woven cloth, sometimes combined with felt, leather, or other padding, could help absorb blows, reduce chafing, and serve either as stand-alone protection or as an undergarment beneath armor. Such equipment was comparatively light, inexpensive, and well suited to infantry, archers, and troops operating over long distances, making textile defenses an important part of the broader Han military equipment system.",
+	"cost": {
+		"food": 400,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "han" },
+					{ "civ": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_cuirass_quilted_chinese.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +1 hack armor.\n• Cavalry +1 hack armor.\n• Unlocks “Lacquered Leather Body Armor.”[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

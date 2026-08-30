@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/imp/infantry_swordsman_e">
+  <Attack>
+    <Capture>
+      <Capture>10</Capture>
+    </Capture>
+  </Attack>
+  <Health>
+    <Max op="mul">1.1</Max>
+  </Health>
+  <Identity>
+    <SpecificName>Imperial Roman Centurion</SpecificName>
+    <Icon>units/imp/infantry_swordsman_centurion.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/romans_imperial/infantry_swordsman_centurion.xml</Actor>
+  </VisualActor>
+</Entity>

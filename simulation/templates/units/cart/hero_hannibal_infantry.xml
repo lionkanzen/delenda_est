@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_hannibal
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <Lang>phoenician</Lang>
+    <SpecificName>Hannibal Barca</SpecificName>
+    <Icon>units/cart/hero_hannibal.png</Icon>
+  </Identity>
+  <Upgrade>
+    <MountElephant>
+      <Entity>units/cart/hero_hannibal_mounted_elephant</Entity>
+      <Tooltip>This gives Hannibal his War Elephant, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>400</food>
+        <glory>300</glory>
+      </Cost>
+      <Time>20</Time>
+    </MountElephant>
+    <MountHorse>
+      <Entity>units/cart/hero_hannibal_mounted_horse</Entity>
+      <Tooltip>This gives Hannibal his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </MountHorse>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_infantry_swordsman_hannibal.xml</Actor>
+  </VisualActor>
+</Entity>

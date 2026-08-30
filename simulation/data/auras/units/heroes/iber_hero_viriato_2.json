@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affectedPlayers": ["Player"],
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+	],
+	"auraName": "Resilience",
+	"auraDescription": "\n• Soldiers −20% train time."
+}

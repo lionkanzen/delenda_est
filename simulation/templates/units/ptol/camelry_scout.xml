@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="camel|template_unit_cavalry_melee_scout">
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <coin>120</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Mercenary Camelry Scout</SpecificName>
+    <VisibleClasses datatype="tokens">-Horse Egyptian</VisibleClasses>
+    <Icon>units/kush/merc_cavalry_1.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ptolemies/camelry_scout_m.xml</Actor>
+  </VisualActor>
+</Entity>

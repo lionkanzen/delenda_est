@@ -1,0 +1,51 @@
+{
+	"genericName": "Naval Ballistae",
+	"description": "Mounting stronger catapults onto ships helped give added firepower.",
+	"cost": {
+		"wood": 600,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen"},
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp"  },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth"},
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth"},
+					{ "notciv": "spart"},
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "heavy_shot.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Siege Ships +10% projectile range.\n• Siege Ships +10% vision range.[/font]",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.2 }
+	],
+	"affects": ["NavalSiege"],
+	"placeBelow": "{AffectedUnit}",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

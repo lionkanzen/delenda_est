@@ -1,0 +1,105 @@
+{
+	"Code": "rome",
+	"Culture": [ "Italian", "Roman" ],
+	"Region": [ "Mediterranean", "Europe", "Italy" ],
+	"Music": [
+		{
+			"File": "Juno_Protect_You.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Elysian_Fields.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Governor.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Testudo Formation",
+			"History": "The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries were formed into hollow squares with twelve men on each side, standing so close together that their shields overlapped like fish scales.",
+			"Description": "Roman Legionaries can form a Testudo."
+		},
+		{
+			"Name": "Roman Citizenship",
+			"History": "Roman citizenship was a point of pride for those inhabitants of the Roman state who could attain it. It conferred a set of rights and privileges unavailable to non-citizen inhabitants of the empire.",
+			"Description": "Roman Citizens +30% health when near a Roman civic center."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/rome/marcellus",
+		"civ_choices/rome/maximus",
+		"civ_choices/rome/gracchi",
+		"civ_choices/rome/scipio",
+		"civ_choices/rome/marius"
+	],
+	"WallSets":
+	[
+		"structures/rome/wallset_siege",
+		"structures/rome/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/rome/civil_centre"
+		},
+		{
+			"Template": "units/rome/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/rome/infantry_swordsman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/rome/infantry_swordsman_a",
+			"Count": 1
+		},
+		{
+			"Template": "units/rome/infantry_javelineer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/rome/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"L. Cornelius Scipio Asiaticus",
+		"Marcus Aemilius Lepidus",
+		"Lucius Tarquinius Collatinus",
+		"Gaius Iulius Iullus",
+		"Gaius Servilius Structus",
+		"Publius Cornelius Rufinus",
+		"Lucius Papirius Cursor",
+		"Aulus Manlius Capitolinus",
+		"Publius Sempronius Tuditanus",
+		"Marcus Cornelius Cethegus",
+		"Quintus Caecilius Metellus",
+		"Marcus Licinius Crassus",
+		"Lucius Quinctius Cincinnatus"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/rome/hero_marcellus",
+		"skirmish/units/default_hero_2": "units/rome/hero_maximus",
+		"skirmish/units/default_hero_3": "units/rome/hero_scipio",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/rome/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/rome/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/rome/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/rome/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/rome/champion_cavalry",
+		"skirmish/units/default_infantry_melee_b": "units/rome/infantry_swordsman_e",
+		"skirmish/units/special_starting_unit": "units/rome/infantry_swordsman_a",
+		"skirmish/structures/default_house_10" : "structures/{civ}/house",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

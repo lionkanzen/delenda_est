@@ -1,0 +1,27 @@
+{
+	"genericName": "Siege Range vs. Siege Attack",
+	"pair": ["arsenal/siege_torsion_springs", "arsenal/siege_flaming_munitions"],
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "celti" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	}
+}

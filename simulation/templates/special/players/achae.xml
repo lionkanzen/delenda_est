@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/achae_player_teambonus
+  </Auras>
+  <EntityLimits>
+    <Limits>
+      <ElephantStable>1</ElephantStable>
+    </Limits>
+  </EntityLimits>
+  <Identity>
+    <Civ>achae</Civ>
+    <GenericName>Achaemenid Persians</GenericName>
+    <History>The Achaemenid Empire was founded by Cyrus the Great in the 6th century BC and became the largest empire the ancient world had yet seen, stretching from Egypt and Anatolia to Central Asia and the Indus. Its kings ruled through satrapies, royal roads, tribute, and a powerful army. After repeated wars with the Greeks, the empire endured until Alexander the Great defeated Darius III and conquered Persia in the 330s BC.</History>
+    <Icon>emblems/512x512/achaemenids.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Player>
+</Entity>

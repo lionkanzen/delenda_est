@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Capturable>
+    <CapturePoints>400</CapturePoints>
+    <RegenRate>0.5</RegenRate>
+    <GarrisonRegenRate>1.5</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <Population>5</Population>
+  </Cost>
+  <Decay>
+    <DelayTime>0.0</DelayTime>
+    <SinkProb>1.0</SinkProb>
+    <SinkRate>0.0</SinkRate>
+    <SinkAccel>2.0</SinkAccel>
+  </Decay>
+  <Health>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <GenericName>Siege Engine</GenericName>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <Classes datatype="tokens">SiegeEngine</Classes>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_city
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <glory>50</glory>
+  </Loot>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+    <TurnRate>2</TurnRate>
+  </Position>
+  <Repairable>
+    <RepairTimeRatio>2.0</RepairTimeRatio>
+  </Repairable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>30</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>128x256/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>attack/siege/siege_select.xml</select>
+      <order_walk>attack/siege/ram_move.xml</order_walk>
+      <order_attack_move>attack/siege/ram_move.xml</order_attack_move>
+      <order_attack>attack/siege/ram_attack_order.xml</order_attack>
+      <trained>attack/siege/ram_trained.xml</trained>
+      <constructed>attack/siege/ram_trained.xml</constructed>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <TreasureCollector disable=""/>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+    <Acceleration op="mul">0.5</Acceleration>
+    <Weight op="mul">5</Weight>
+  </UnitMotion>
+</Entity>

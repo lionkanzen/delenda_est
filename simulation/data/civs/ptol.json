@@ -1,0 +1,117 @@
+{
+	"Code": "ptol",
+	"Culture": [ "Egyptian", "Greek", "Hellenistic" ],
+	"Region": [ "Mediterranean", "Africa" ],
+	"Music": [
+		{
+			"File": "Ammon-Ra.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Cleopatra.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Valley_of_the_Nile.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Golden_Scarabs.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Along_the_Nile.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Cleruchy",
+			"History": "",
+			"Description": "This unlocks the Ptolemaic expansion building, the Klēroukhia or Military Colony, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster."
+		},
+		{
+			"Name": "Mercenary Army",
+			"History": "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and foreign mercenaries for the bulk of its military force, mainly because the loyalty of native Egyptian units was often suspect. Indeed, during one native uprising, Upper Egypt was lost to the Ptolemies for decades. Mercenaries were often battle-hardened and their loyalty can be bought, sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt under the Ptolemies was so prosperous as to be the richest of Alexander's successor states.",
+			"Description": "The Ptolemies can hire mercenaries instantly."
+		},
+		{
+			"Name": "Nile Delta",
+			"History": "If Egypt is the breadbasket of the Mediterranean, then the Nile Delta is the breadbasket of Egypt.",
+			"Description": "The Ptolemaic Egyptians receive 2 additional farming technologies."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/ptol/ptolemy_I",
+		"civ_choices/ptol/ptolemy_III",
+		"civ_choices/ptol/ptolemy_IV",
+		"civ_choices/ptol/cleopatra"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/ptol/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/ptol/civil_centre"
+		},
+		{
+			"Template": "units/ptol/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/ptol/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/ptol/infantry_slinger_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/ptol/camelry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Arsinoe II",
+		"Arsinoe IV",
+		"Berenice Epiphaneia",
+		"Berenice Philopater",
+		"Cleopatra Philometora Soteira",
+		"Cleopatra Selene",
+		"Cleopatra Tryphaena",
+		"Ptolemy Alexander",
+		"Ptolemy Epigone",
+		"Ptolemy Epiphanes",
+		"Ptolemy Eupator",
+		"Ptolemy Neos Dionysos",
+		"Ptolemy Neos Philopater",
+		"Ptolemy Philadelphus",
+		"Ptolemy Philometor"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/ptol/hero_ptolemy_I",
+		"skirmish/units/default_hero_2": "units/ptol/hero_ptolemy_IV",
+		"skirmish/units/default_hero_3": "units/ptol/hero_cleopatra",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/ptol/champion_infantry_pikeman",
+		"skirmish/units/default_champion_infantry_2": "units/ptol/champion_infantry_pikeman",
+		"skirmish/units/default_champion_infantry_3": "units/ptol/champion_infantry_pikeman",
+		"skirmish/units/default_champion_infantry_4": "units/ptol/champion_ranged_gastraphetes",
+		"skirmish/units/default_champion_cavalry_1": "units/ptol/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/ptol/champion_cavalry",
+		"skirmish/units/default_cavalry": "units/ptol/camelry_scout_starter",
+		"skirmish/units/default_infantry_melee_b": "units/ptol/infantry_spearman_e",
+		"skirmish/units/default_infantry_ranged_b": "units/ptol/infantry_slinger_e",
+		"skirmish/structures/default_house_5": "structures/ptol/house",
+		"skirmish/structures/special_starting_structure": "structures/ptol/statue",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,103 @@
+{
+	"Code": "sasa",
+	"Culture": "Persian",
+	"Region": [ "Asia", "Middle East" ],
+	"Music": [
+		{
+			"File": "Eastern_Dreams.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Desert_Throne.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sands_of_Time.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Land_Between_Rivers.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[],
+	"CivChoices":
+	[
+		"civ_choices/sasa/ardashir_I",
+		"civ_choices/sasa/shapur_I",
+		"civ_choices/sasa/shapur_II",
+		"civ_choices/sasa/khosrow_I",
+		"civ_choices/sasa/khosrow_II"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/sasa/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/sasa/civil_centre"
+		},
+		{
+			"Template": "units/sasa/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/sasa/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/sasa/infantry_archer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/sasa/camelry_scout_starter",
+			"Count": 2
+		}
+	],
+	"AINames":
+	[
+		"Kartir",
+		"Bahram I",
+		"Bahram II",
+		"Bahram III",
+		"Narseh",
+		"Hormizd II",
+		"Adur Narseh",
+		"Bahram IV",
+		"Yazdegerd I",
+		"Bahram V Beneficent",
+		"Yazdegerd II",
+		"Hormizd III",
+		"Peroz I",
+		"Balash",
+		"Kavad I",
+		"Jamasp",
+		"Azarmidokht",
+		"Boran",
+		"Rostam Farrokhzad"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/sasa/hero_ardashir_I_infantry",
+		"skirmish/units/default_hero_2": "units/sasa/hero_shapur_I_infantry",
+		"skirmish/units/default_hero_3": "units/sasa/hero_shapur_II_infantry",
+		"skirmish/units/default_hero_4": "units/sasa/hero_khosrow_I_infantry",
+		"skirmish/units/default_hero_5": "units/sasa/hero_khosrow_II_infantry",
+		"skirmish/units/default_champion_infantry_1": "units/sasa/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "",
+		"skirmish/units/default_champion_infantry_3": "",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/sasa/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/sasa/champion_cavalry_archer",
+		"skirmish/units/default_cavalry": "units/sasa/camelry_scout_starter",
+		"skirmish/units/default_infantry_ranged_b": "units/sasa/infantry_archer_e",
+		"skirmish/units/special_starting_unit": "units/sasa/camelry_scout_starter",
+		"skirmish/structures/default_house_10" : "structures/sasa/house",
+		"skirmish/structures/special_starting_structure": "",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

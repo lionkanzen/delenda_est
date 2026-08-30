@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna">
   <Identity>
+    <VisibleClasses datatype="tokens">Breed</VisibleClasses>
   </Identity>
   <Vision>
-    <Range>20</Range>
+    <Range>6</Range>
   </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+  </VisualActor>
 </Entity>

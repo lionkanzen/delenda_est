@@ -1,0 +1,29 @@
+{
+	"supersedes": "phase_imperial_generic",
+	"genericName": "Katoikia",
+	"description": "The katoikia of Ptolemaic Egypt referred to the privileged class and settlements of military landholders, especially cavalrymen, who received plots of royal land in return for continued military service. These katoikoi hippeis formed part of the broader cleruchic system, allowing the Ptolemies to maintain a trained reserve army without keeping every soldier permanently on active pay. Their estates also helped extend royal control into the countryside, encouraged agricultural production, and tied Greek and Macedonian military settlers—and later some Egyptians—more closely to the Ptolemaic state.",
+	"cost": {
+		"wood": 500,
+		"stone": 500,
+		"metal": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "ptol" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "architecture.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Military Colony +1000 health.\n• Military Colony +100 seconds build time.\n• Military Colony +50% territory effect.\n• Military Colony +200 wood and stone cost.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "add": 1000 },
+		{ "value": "Cost/BuildTime", "add": 100 },
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.5 },
+		{ "value": "Cost/Resources/wood", "add": 200 },
+		{ "value": "Cost/Resources/stone", "add": 200 }
+	],
+	"affects": ["MilitaryColony"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

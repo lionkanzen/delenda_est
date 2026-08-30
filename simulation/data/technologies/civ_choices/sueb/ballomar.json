@@ -1,0 +1,21 @@
+{
+	"genericName": "Ballomar",
+	"description": "Ballomar.",
+	"icon": "civ_choices/sueb_hero_ballomar.png",
+	"tooltip": "Select Ballomar to lead your civilization.",
+	"requirements": {
+		"civ": "sueb"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_ariovistus_infantry -units/{civ}/hero_maroboduus_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/merc_hero_arminius_infantry",
+			"affects": "Fortress"
+		}
+	]
+}

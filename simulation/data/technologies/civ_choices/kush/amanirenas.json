@@ -1,0 +1,16 @@
+{
+	"genericName": "Amanirenas",
+	"description": "",
+	"icon": "civ_choices/kush_hero_amanirenas.png",
+	"tooltip": "Select Amanirenas to lead your civilization.",
+	"requirements": {
+		"civ": "kush"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_nastasen_infantry -units/{civ}/hero_arakamani_infantry -units/{civ}/hero_amanitore_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

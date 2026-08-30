@@ -1,0 +1,56 @@
+{
+	"genericName": "Emperor Augustus",
+	"description": "Emperor Augustus.",
+	"icon": "civ_choices/imp_hero_augustus.png",
+	"tooltip": "Select Emperor Augustus to lead your civilization.",
+	"requirements": {
+		"civ": "imp"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_titus_infantry -units/{civ}/hero_trajan_infantry -units/{civ}/hero_marcus_aurelius_infantry -units/{civ}/hero_aurelian_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_infantry_sword_gladiator -units/{civ}/champion_infantry_spear_gladiator",
+			"affects": "Wonder"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_infantry_sword_gladiator -units/{civ}/champion_infantry_spear_gladiator",
+			"affects": "Amphitheater"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_unlock_gladiators",
+			"affects": "Wonder"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_unlock_gladiators",
+			"affects": "Amphitheater"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-forge/resistance_armor_cataphract_01",
+			"affects": "Forge"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_aurelian_walls -romans_imperial/hero_flavian_legacy",
+			"affects": "CivicCenter"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_cavalry_cataphract",
+			"affects": "Fortress"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_cavalry_cataphract",
+			"affects": "ArmyCamp"
+		}
+	]
+}

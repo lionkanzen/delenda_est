@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_tower">
+<Entity parent="template_structure_defensive_wall_tower">
   <Footprint replace="">
     <Circle radius="6.2"/>
     <Height>15.0</Height>
@@ -11,7 +11,7 @@
     <Static width="10" depth="10"/>
   </Obstruction>
   <SkirmishReplacer>
-    <general>structures/{civ}_wall_tower</general>
+    <general>structures/{civ}/wall_tower</general>
   </SkirmishReplacer>
   <VisualActor>
     <Actor>structures/hellenes/wall_tower.xml</Actor>

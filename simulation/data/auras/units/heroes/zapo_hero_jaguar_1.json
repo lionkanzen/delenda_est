@@ -1,0 +1,10 @@
+{
+    "type": "range",
+    "radius": 30,
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Attack/Capture/Capture", "multiply": 1.25 }
+	],
+	"auraName": "Monte Albán Expansion",
+	"auraDescription":  "\n• Soldiers +25% capture power."
+}

@@ -1,0 +1,23 @@
+{
+	"genericName": "Mountain Men",
+	"description": "The Agrianian peltasts were elite light infantry recruited from the Agrianes, a Thracian people on Macedon’s northern frontier, and they became some of Alexander the Great’s most trusted skirmish troops. Unlike the heavily armored phalangites, they fought with javelins, small shields, and light equipment, giving them far greater speed and flexibility on rough terrain. They were especially effective in screening the army, attacking enemy skirmishers, storming difficult positions, and supporting cavalry or hypaspists in fast-moving assaults. Their combination of mobility, aggression, and discipline made them distinct from both ordinary light troops and the slower heavy infantry of the Macedonian army.",
+	"cost": {
+		"food": 200,
+		"coin": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "mace" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "leather_boots.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Javelin Infantry +25% speed.[/font]",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 }
+	],
+	"affects": ["Javelin Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

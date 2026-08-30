@@ -1,0 +1,30 @@
+{
+	"partOfPair": "mauryas/pair_ranged",
+	"genericName": "Poison Arrows",
+	"description": "Poisoned arrows were known in ancient India and appear in literary traditions describing warfare, hunting, and assassination. Arrowheads could be treated with toxic substances derived from plants, venomous animals, or compounded poisons so that even a nonfatal wound might become more dangerous through poisoning or infection. Texts such as the Arthashastra discuss the strategic use of poisons more broadly, showing that toxic substances were understood as tools of statecraft as well as war, though the actual battlefield prevalence of poison arrows is difficult to measure archaeologically.",
+	"cost": {
+		"metal": 600,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "gupt" },
+					{ "civ": "maur" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "arrow_poison.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Archery units +15% attack bonus vs. Infantry and Support units.[/font]",
+	"modifications": [
+		{ "value": "Attack/Ranged/Bonuses/BonusInfantry/Multiplier", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Bonuses/BonusSupport/Multiplier", "multiply": 1.15 }
+		],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

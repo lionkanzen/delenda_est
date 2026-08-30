@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_merc_camp">
+  <Identity>
+    <GenericName>Faction Mercenary Camp</GenericName>
+    <SpecificName>Faction Mercenary Camp</SpecificName>
+    <VisibleClasses datatype="tokens">Player</VisibleClasses>
+    <Tooltip>Capture this structure to train up to 30 mercenaries specific to your civilization, who train very fast and cost no population room.</Tooltip>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      mercenaries/celts_woad_warriors
+      mercenaries/imp_face_armor
+      mercenaries/chin_composite_bows
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/merc_infantry_1
+      units/{civ}/merc_infantry_2
+      units/{civ}/merc_infantry_3
+      units/{civ}/merc_cavalry_1
+      units/{civ}/merc_cavalry_2
+      units/{civ}/merc_cavalry_3
+      units/{civ}/merc_camelry_1
+      units/{civ}/merc_camelry_2
+      units/{civ}/merc_camelry_3
+      units/{civ}/merc_elephant_1
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/mercenaries/camp_player.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

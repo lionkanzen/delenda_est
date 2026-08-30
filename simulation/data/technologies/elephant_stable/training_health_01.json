@@ -1,0 +1,35 @@
+{
+	"genericName": "Breeding Herd",
+	"description": "Instead of capturing elephants in the wild, which was a dangerous business, a domestic breeding herd can be established in order to meet the demands of the elephant corps.",
+	"cost": {
+		"food": 500,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "entity": { "class": "Corral", "number": 1 }},
+			{ "any": [
+				{ "civ": "cart" },
+				{ "civ": "gupt" },
+				{ "civ": "maur" },
+				{ "civ": "ptol" },
+				{ "civ": "sasa" },
+				{ "civ": "sele" },
+				{ "civ": "mace" },
+				{ "civ": "kush" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase after building an Animal Corral.",
+	"icon": "breeding_herd.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• War Elephants −20% train time.\n• War Elephants +10% health.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8},
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"affects": ["Elephant"],
+	"placeBelow": "Champion Elephant",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

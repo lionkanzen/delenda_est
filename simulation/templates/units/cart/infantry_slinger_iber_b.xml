@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_slinger">
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <metal>40</metal>
+      <coin>60</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <Rank>Basic</Rank>
+    <SelectionGroupName>units/cart/infantry_slinger_iber_b</SelectionGroupName>
+    <SpecificName>Balearic Slinger</SpecificName>
+    <VisibleClasses datatype="tokens">Iberian</VisibleClasses>
+    <Icon>units/cart/infantry_slinger.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/infantry_slinger_iber_a</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <TrainingRestrictions>
+    <Category>MercIberian</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/iberians/infantry_slinger_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/mace_demetrius|template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_demetrius
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Demetrius the Besieger</SpecificName>
+    <Icon>units/mace/hero_demetrius.png</Icon>
+  </Identity>
+  <Upgrade>
+    <AlexanderMount>
+      <Entity>units/mace/hero_demetrius_mounted</Entity>
+      <Tooltip>This gives Demetrius his War Horse, with trample effects, greater health, and speed.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </AlexanderMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_swordsman_demetrius.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_wagon">
+  <Identity>
+    <Civ>huns</Civ>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      nomads/gather_wicker_baskets
+      nomads/gather_hunting_dogs
+      storehouse/pair_gather_01
+      storehouse/pair_gather_02
+      storehouse/pair_gather_03
+      storehouse/gather_lumbering_bowsaw
+      storehouse/gather_lumbering_twomansaw
+      storehouse/gather_capacity_wheelbarrow
+      storehouse/gather_capacity_handcarts
+    </Technologies>
+  </Researcher>
+  <Upgrade>
+    <UnPackStorehouse>
+      <Entity>structures/huns/storehouse</Entity>
+      <Tooltip>Storehouses can train Slaves, while the Resource Wagon cannot.</Tooltip>
+      <Time>10</Time>
+      <CheckPlacementRestrictions/>
+    </UnPackStorehouse>
+    <UnPackHouse>
+      <Entity>structures/huns/house</Entity>
+      <Time>10</Time>
+      <CheckPlacementRestrictions/>
+    </UnPackHouse>
+  </Upgrade>
+</Entity>

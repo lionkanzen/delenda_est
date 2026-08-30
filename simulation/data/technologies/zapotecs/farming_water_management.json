@@ -1,0 +1,22 @@
+{
+	"genericName": "Water Management",
+	"cost": {
+		"wood": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "zapo" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "alternating_fields.png",
+	"researchTime": 20,
+	"tooltip": "[font=\"sans-bold-14\"]• Corn Fields +200% health.\n• Farmsteads +200% health.\n• Slaves +25% grain gathering rate.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 3, "affects": "Field" },
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.25, "affects": "Slave" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

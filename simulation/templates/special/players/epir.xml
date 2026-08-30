@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/epir_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>epir</Civ>
+    <GenericName>Epirotes</GenericName>
+    <History>Epirus was a rugged kingdom of northwestern Greece whose Molossian rulers united much of the region in the 4th century BC. It reached its greatest fame under King Pyrrhus, who campaigned against Macedon, Rome, and Carthage and became renowned for brilliant but costly victories. After his death, Epirote power declined, and the kingdom eventually became a republic before falling under Roman domination in the 2nd century BC, after repeated conflicts with Macedon.</History>
+    <Icon>emblems/512x512/epirotes.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+      special/formations/syntagma
+    </Formations>
+  </Player>
+</Entity>

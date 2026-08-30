@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_field">
+  <Identity>
+    <GenericName>Cash Crop Field</GenericName>
+    <VisibleClasses datatype="tokens">Cash_Crop -Grain</VisibleClasses>
+    <SelectionGroupName>template_structure_resource_field_cash</SelectionGroupName>
+    <Tooltip>Build in neutral or own territory to harvest cash crops for coin. Build around a Farmstead to gain a +100% farming boost. There is a diminishing return effect where it is more efficient to use fewer gatherers per field. Max gatherers: 5.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+    <Icon>structures/cash_crops.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <coin>100</coin>
+    <glory>10</glory>
+  </Loot>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <Type>coin.crops</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_treasure_coin.xml</select>
+      <constructed>interface/alarm/alarm_create_worker.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/plot_field_temp.xml</Actor>
+    <FoundationActor>structures/plot_field_found.xml</FoundationActor>
+  </VisualActor>
+</Entity>

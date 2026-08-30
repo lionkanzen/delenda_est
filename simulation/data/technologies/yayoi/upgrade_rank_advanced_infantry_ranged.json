@@ -1,0 +1,23 @@
+{
+	"genericName": "Advanced Ranged-Infantry",
+	"specificName": {
+		"yayo": "Masurawo"
+	},
+	"description": "Upgrade all of your ranged Citizen-Soldier infantrymen to Advanced rank.",
+	"cost": {
+		"food": 300,
+		"wood": 300
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen-Soldier ranged infantry to Advanced rank. This increases their military prowess +25%, but decreases their economic ability by −30%. Unlocks “Elite Ranged-Infantry” technology.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Infantry Basic Ranged"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

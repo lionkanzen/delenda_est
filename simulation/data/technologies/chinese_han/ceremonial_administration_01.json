@@ -1,0 +1,22 @@
+{
+	"genericName": "Ceremonial Administration - Level 1",
+	"specificName": {
+		"han": "Yíshì Guǎnlǐ"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "chinese_ceremonial_01.png",
+	"researchTime": 90,
+	"tooltip": "[font=\"sans-bold-14\"]• Ministers −20% train time.\n• Ministers +20% health.\n• Healers −20% train time.\n• Healers +20% health.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8},
+		{ "value": "Health/Max", "multiply": 1.2 }
+	],
+	"affects": ["Minister", "Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

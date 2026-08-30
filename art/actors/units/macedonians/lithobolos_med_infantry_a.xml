@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/tools/siege_lever.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Helmets-Pilos-01">
+      <props>
+        <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Boeotian-01">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Illyrian Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b1_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="epilektoi-7">
+      <textures>
+        <texture file="skeletal/athen/epilektos_07.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-8">
+      <textures>
+        <texture file="skeletal/athen/epilektos_08.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-9">
+      <textures>
+        <texture file="skeletal/athen/epilektos_09.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-10">
+      <textures>
+        <texture file="skeletal/athen/epilektos_10.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml"/>
+    <variant file="biped/attack_ranged_lithobolos_med_01.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

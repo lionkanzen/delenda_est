@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Auras datatype="tokens">
+    structures/workshop_repair
+  </Auras>
+  <BuildRestrictions>
+    <Category>SiegeWorkshop</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="32.0" depth="32.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">
+      Siege
+      Minister
+      Teacher
+    </List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Siege Arsenal</GenericName>
+    <SpecificName>Siege Arsenal</SpecificName>
+    <SelectionGroupName>template_structure_military_arsenal</SelectionGroupName>
+    <Tooltip>Unlock Catapults for most factions. Construct Siege Weapons. Research siege improvements.</Tooltip>
+    <Icon>structures/siege_workshop.png</Icon>
+    <Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <VisibleClasses datatype="tokens">
+      City
+      Arsenal
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      Workshop
+      SiegeWorkshop
+    </Classes>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>300</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      arsenal/siege_buildtime
+      arsenal/unlock_siege_ballistics
+      arsenal/pair_siege_ranged_01
+      arsenal/siege_bolt_accuracy
+      arsenal/siege_packing_01
+      arsenal/siege_packing_02
+      arsenal/siege_movement_speed
+      arsenal/siege_ram_attack
+      arsenal/siege_armor
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>40</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/siege_fireraiser
+      units/{civ}/siege_ram
+      units/{civ}/siege_ram_covered
+      units/{civ}/siege_scorpio_packed
+      units/{civ}/siege_cheiroballista_packed
+      units/{civ}/siege_oxybeles_packed
+      units/{civ}/siege_polybolos_packed
+      units/{civ}/siege_catapult_packed
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/spartans/workshop.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

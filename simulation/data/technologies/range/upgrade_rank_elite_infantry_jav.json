@@ -1,0 +1,48 @@
+{
+	"genericName": "Elite Citizen Javelin Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen skirmishers to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "ptol" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Javelin Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "range/upgrade_rank_advanced_infantry_jav",
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen Javelin Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Javelin Infantry Advanced"],
+	"placeBelow": "Javelin Infantry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

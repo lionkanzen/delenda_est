@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_gate">
+  <Footprint>
+    <Square width="37" depth="8"/>
+    <Height>15.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Pylai</SpecificName>
+    <History>The idea to build a corridor of walls from Athens to the sea was probably first proposed by the politician Themistocles after Athens was partially destroyed during the second Persian invasion. While the curtain walls around the city were constructed right away, the famous Long Walls would not come into being until 20 years later, around 460 BC.
+
+The two Long Walls each measuring 6 kilometers in length, stood parallel, 200 meters apart, protecting the passage to Athens' port, Piraeus. Another wall further to the east was also constructed towards another smaller port called Phaleron, forming a triangle enclosed by the walls and the shore that could be used for agriculture. The entire Athenian wall system was over 25 kilometers long, around 3 meters wide, and 9 meters high, and became a majestic symbol for Athens' power and dominance.
+
+The walls formed a key point in their war strategy; the Athenians could avoid fighting their enemies on land and instead rely on their powerful navy to engage in combat with them on the open sea or to raid the enemy coastline. And in case of a siege, Athens' naval superiority ensured access to grain shipments from the Athenian colonies along the Black Sea, making the city nigh impregnable.
+
+This strategy worked well, however, only as long as Athenian ships were able to provide a constant inflow of food. For example, when the Athenian fleet was annihilated at Aegospotami (405 BC) in the Peloponnesian War, the besieged city of Athens' was cut off from food supplies and had no choice but to surrender.</History>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="10.5" depth="6.5" x="12.75" z="0"/>
+      <Left width="10.5" depth="6.5" x="-12.75" z="0"/>
+      <Door width="15" depth="6.5" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>16.5</HeightOffset>
+  </StatusBars>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>1.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </One>
+      <Two>
+        <X>-1.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Two>
+      <Three>
+        <X>4.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Three>
+      <Four>
+        <X>-4.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Four>
+      <Five>
+        <X>7.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Five>
+      <Six>
+        <X>-7.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Six>
+      <Seven>
+        <X>10.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Seven>
+      <Eight>
+        <X>-10.5</X>
+        <Y>14.5</Y>
+        <Z>0</Z>
+      </Eight>
+    </TurretPoints>
+  </TurretHolder>
+  <VisualActor>
+    <Actor>structures/athenians/wall_gate_door.xml</Actor>
+  </VisualActor>
+</Entity>

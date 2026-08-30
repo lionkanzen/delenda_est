@@ -1,0 +1,24 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": [
+		"Cavalry"
+	],
+	"modifications": [
+		{
+			"value": "UnitMotion/WalkSpeed",
+			"multiply": 1.2
+		},
+		{
+			"value": "UnitMotion/Acceleration",
+			"multiply": 1.2
+		},
+		{
+			"value": "Position/TurnRate",
+			"multiply": 1.2
+		}
+	],
+	"auraName": "Cavalry Maneuvers",
+	"auraDescription": "\n• Cavalry +20% movement speed, turn rate, and acceleration.",
+	"overlayIcon": "art/textures/ui/session/auras/speed_bonus.png"
+}

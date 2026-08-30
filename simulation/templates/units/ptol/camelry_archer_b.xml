@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="camel|template_unit_cavalry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Bonuses>
+        <BonusBuilding>
+          <Classes>Structure</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusBuilding>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Nabataean Camelry Archer</SpecificName>
+    <SelectionGroupName>units/ptol/camelry_archer_b</SelectionGroupName>
+    <VisibleClasses datatype="tokens">-Horse Egyptian</VisibleClasses>
+    <Icon>units/ptol/camelry_archer.png</Icon>
+    <Tooltip>Traits: Long Range, Medium Speed, Light Armor, Harassment.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/ptol/camelry_archer_a</Entity>
+  </Promotion>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ptolemies/camel_archer_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

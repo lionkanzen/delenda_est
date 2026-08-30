@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_crossbowman">
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Macedonian Bellybow</SpecificName>
+    <Icon>units/mace/champion_infantry_ranged_gastraphetes.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/macedonians/infantry_crossbowman.xml</Actor>
+  </VisualActor>
+</Entity>

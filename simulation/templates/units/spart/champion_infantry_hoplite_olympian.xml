@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/spart/champion_infantry_hoplite">
+  <Health>
+    <Max op="add">100</Max>
+  </Health>
+  <Identity>
+    <SpecificName>Spartan Olympic Champion</SpecificName>
+    <Icon>units/spart/champion_infantry_olympian.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <TrainingRestrictions>
+    <Category>Olympian</Category>
+  </TrainingRestrictions>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="add">1</WalkSpeed>
+  </UnitMotion>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>units/spartans/infantry_spearman_c_olympian.xml</Actor>
+  </VisualActor>
+</Entity>

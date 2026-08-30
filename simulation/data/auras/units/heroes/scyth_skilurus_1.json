@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Structure"],
+	"affectedPlayers": ["Player"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"auraName": "Civilizing Influence",
+	"auraDescription": "\n• Structures +25% health."
+}

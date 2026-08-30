@@ -1,0 +1,92 @@
+{
+	"Code": "cimb",
+	"Culture": [ "Germanic" ],
+	"Region": [ "Europe" ],
+	"Music": [
+		{
+			"File": "Northern_Frontier.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "As_Seasons_Change.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Epitaph.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "From_Every_Corner.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Whistler.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Harvest_Moon.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Upstart_King.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Seeresses",
+			"History": "Seeresses accompanied the German armies and envisioned prophecies of victory from sacrifices.",
+			"Description": "The Cimbri can access a Champion Healer unit in City Phase."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/cimb/lugius",
+		"civ_choices/cimb/boiorix",
+		"civ_choices/cimb/teutobod"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/cimb/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/cimb/civil_centre"
+		},
+		{
+			"Template": "units/cimb/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/cimb/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/cimb/infantry_slinger_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/cimb/support_wagon"
+		},
+		{
+			"Template": "units/cimb/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Claodicus",
+		"Divico",
+		"Caesorix"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_infantry_melee_b": "units/cimb/infantry_spearman_e",
+		"skirmish/units/default_infantry_ranged_b": "units/cimb/infantry_slinger_e",
+		"skirmish/units/special_starting_unit": "units/cimb/support_wagon",
+		"skirmish/structures/default_house_10": "structures/cimb/house",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

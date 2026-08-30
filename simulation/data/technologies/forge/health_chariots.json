@@ -1,0 +1,32 @@
+{
+	"genericName": "Reinforced Carriage",
+	"description": "Reinforcement was needed for chariot carts in order to keep them from shaking apart during combat meneuvers.",
+	"cost": {
+		"wood": 1200,
+		"metal": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "han" },
+					{ "civ": "maur" },
+					{ "civ": "achae" },
+					{ "civ": "sele" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "reinforced_carriage.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Chariots +20% health.\n• Chariots +10% movement speed.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.1 }
+	],
+	"affects": ["Chariot"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

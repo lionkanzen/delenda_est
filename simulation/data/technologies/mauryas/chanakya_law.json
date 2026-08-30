@@ -1,0 +1,24 @@
+{
+	"genericName": "A Maintenance of Law and Order",
+	"specificName": {
+		"maur": "Dandaniti"
+	},
+	"cost": {
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "friendship.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Civilian Support units −10% train time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9}
+	],
+	"affects": ["Support"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

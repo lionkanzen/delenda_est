@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Cost>
+    <Resources>
+      <stone>200</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Gymnasieon</SpecificName>
+    <Tooltip>Train Hoplites and Champions.</Tooltip>
+    <VisibleClasses datatype="tokens">
+      CivSpecific
+      Special
+      Gymnasium
+    </VisibleClasses>
+    <History>The gymnasium (derived from “gymnos”, a Greek term for nudity) was a facility for physical exercise. It essentially consisted of a large field functioning as an exercise area, surrounded by changing and practicing rooms. Gymnasia were constructed all over Greece, some smaller, some larger, sometimes even with spectator stands like stadiums. Many young men (it was exclusive to male citizens) spent large portions of their day at the gymnasium practicing all kinds of sports like jumping, wrestling, boxing, javelin and discus throwing. As the name suggests, in the gymnasium, it was customary for athletes to exercise completely naked. Contests in these various sports were also held, often on the occasion of religious rituals and festivals. The most infamous one, of course, being the Olympic Games in Olympia.
+
+Because the Ancient Greeks believed in a strong connection between education and sports, the gymnasium over time also became a place of intellectual endeavor where lectures and speeches were taken and an important center for philosophers. Specific gymnasia were often associated with specific schools of philosophy.</History>
+    <Icon>structures/academy_athen.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_spearman_b
+      units/{civ}/champion_infantry_hoplite
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/athenians/gymnasium.xml</Actor>
+    <FoundationActor>structures/fndn_7x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

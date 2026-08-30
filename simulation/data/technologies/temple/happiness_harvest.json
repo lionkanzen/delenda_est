@@ -1,0 +1,39 @@
+{
+	"genericName": "Harvest Fair",
+	"description": "Harvest festivals among the Celtic, Germanic, Iberian, and Scythian peoples were closely tied to the agricultural calendar, seasonal abundance, and communal feasting, though the evidence is much stronger for some cultures than others. Among Celtic peoples, Lughnasadh was associated with the beginning of the harvest season and included assemblies, games, feasting, and religious observances; Germanic communities likewise marked seasonal turning points with communal sacrifices and feasts connected to fertility, livestock, and the success of crops. Iberian and Scythian societies almost certainly held comparable seasonal rites involving offerings, feasting, and thanksgiving for agricultural or pastoral abundance, but their specific festival names and ceremonies are much less securely preserved in the surviving sources.",
+	"cost": {
+		"food": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "goth" },
+					{ "civ": "han" },
+					{ "civ": "iber" },
+					{ "civ": "kush" },
+					{ "civ": "maur" },
+					{ "civ": "achae" },
+					{ "civ": "ptol" },
+					{ "civ": "scyth" },
+					{ "civ": "sueb" },
+					{ "civ": "xion" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "grain.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]Cultural events are the glue to a society.\n• Capturable Buildings +50% capture resistance.\n• Capturable Units +50% capture resistance.[/font]",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+	],
+	"affects": ["Civic Structure", "Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

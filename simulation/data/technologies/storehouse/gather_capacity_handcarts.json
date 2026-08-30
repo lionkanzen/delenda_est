@@ -1,0 +1,33 @@
+{
+	"supersedes": "storehouse/gather_capacity_wheelbarrow",
+	"genericName": "Hand Carts",
+	"description": "Increases shuttling capacity for all resources.",
+	"cost": {
+		"wood": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "gupt" },
+					{ "notciv": "maur" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Wheelbarrows.”",
+	"icon": "handcart_empty.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10 carry capacity for all resources.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Capacities/food", "add": 10 },
+		{ "value": "ResourceGatherer/Capacities/wood", "add": 10 },
+		{ "value": "ResourceGatherer/Capacities/stone", "add": 10 },
+		{ "value": "ResourceGatherer/Capacities/metal", "add": 10 },
+		{ "value": "ResourceGatherer/Capacities/coin", "add": 10 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

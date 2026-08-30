@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_long">
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>60</wood>
+      <stone>0</stone>
+      <glory>15</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="37" depth="5"/>
+    <Height>6.7</Height>
+  </Footprint>
+  <Health>
+    <Max op="mul">0.5</Max>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SelectionGroupName>structures/imp/wallset_siege</SelectionGroupName>
+    <GenericName>Siege Wall</GenericName>
+    <SpecificName>Mūrus Circummūnītiōnis</SpecificName>
+    <Classes datatype="tokens">SiegeWall</Classes>
+    <Icon>structures/siege_wall.png</Icon>
+    <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
+  </Identity>
+  <Loot>
+    <wood>12</wood>
+    <stone>0</stone>
+  </Loot>
+  <Obstruction>
+    <Static width="36" depth="4"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>7.7</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>0</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </One>
+      <Two>
+        <X>4</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Two>
+      <Three>
+        <X>-4</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Three>
+      <Four>
+        <X>8</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Four>
+      <Five>
+        <X>-8</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Five>
+      <Six>
+        <X>12</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Six>
+      <Seven>
+        <X>-12</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Seven>
+    </TurretPoints>
+  </TurretHolder>
+  <Upgrade>
+    <Gate>
+      <Entity>structures/imp/siege_wall_gate</Entity>
+      <Cost>
+        <wood>80</wood>
+        <stone>0</stone>
+      </Cost>
+      <Variant>upgrading</Variant>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/romans/siege_wall_long.xml</Actor>
+  </VisualActor>
+</Entity>

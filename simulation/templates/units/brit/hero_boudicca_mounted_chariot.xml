@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="chariot|template_unit_hero_cavalry_javelineer">
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_boudicca_1
+    units/heroes/brit_hero_boudicca_2
+  </Auras>
+  <Footprint replace="">
+    <Square width="4.5" depth="9"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>units/brit/hero_boudicca_mounted_chariot_rider</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>brit</Civ>
+    <VisibleClasses datatype="tokens">Female</VisibleClasses>
+    <SpecificName>Boudicca</SpecificName>
+    <Phenotype>female</Phenotype>
+    <Icon>units/brit/hero_boudicca.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>7</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable replace="">
+    <Overlay>
+      <AlwaysVisible/>
+      <Shape>
+        <Circle radius="5"/>
+      </Shape>
+      <Texture>
+        <MainTexture>256x256/star.png</MainTexture>
+        <MainTextureMask>256x256/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <UnitMotion>
+    <WalkSpeed>18.0</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <SwitchToFoot>
+      <Entity>units/brit/hero_boudicca_infantry</Entity>
+      <Tooltip>Unmount Boudicca so she can fight with a sword.</Tooltip>
+      <Time>5</Time>
+    </SwitchToFoot>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/britons/hero_chariot_javelinist_boudicca_m.xml</Actor>
+  </VisualActor>
+</Entity>

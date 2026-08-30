@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_military">
   <BuildRestrictions>
     <Category>Embassy</Category>
+    <Territory>own ally</Territory>
   </BuildRestrictions>
   <Cost>
-    <PopulationBonus>0</PopulationBonus>
     <Resources>
       <wood>100</wood>
       <stone>100</stone>
@@ -16,31 +16,34 @@
   </Footprint>
   <GarrisonHolder disable=""/>
   <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>cart</Civ>
     <VisibleClasses datatype="tokens">
-	  Town
-	  Embassy
-	</VisibleClasses>
+      Town
+      Embassy
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      ConquestCritical
+      CivSpecific
+    </Classes>
     <GenericName>Embassy</GenericName>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Embassy</SpecificName>
+    <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
   </Identity>
   <Loot>
-    <xp>100</xp>
+    <xp>150</xp>
     <food>0</food>
-    <wood>10</wood>
-    <stone>10</stone>
+    <wood>0</wood>
+    <stone>0</stone>
     <metal>0</metal>
+    <glory>150</glory>
   </Loot>
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_gymnasium.xml</select>
@@ -48,13 +51,14 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Radius>25</Radius>
-  </TerritoryInfluence>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>24</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
   </VisualActor>
 </Entity>

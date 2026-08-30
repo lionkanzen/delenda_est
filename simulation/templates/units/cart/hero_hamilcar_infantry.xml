@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_hamilcar
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <Lang>phoenician</Lang>
+    <SpecificName>Hamilcar Barca</SpecificName>
+    <Icon>units/cart/hero_hamilcar.png</Icon>
+  </Identity>
+  <Upgrade>
+    <HamilcarMount>
+      <Entity>units/cart/hero_hamilcar_mounted</Entity>
+      <Tooltip>This gives Hamilcar his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </HamilcarMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_infantry_swordsman_hamilcar.xml</Actor>
+  </VisualActor>
+</Entity>

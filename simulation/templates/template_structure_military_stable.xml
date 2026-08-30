@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Category>Stable</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>100</food>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">
+      Cavalry
+      Minister
+      Teacher
+      Horse
+      Camel
+    </List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Cavalry Stable</GenericName>
+    <SpecificName>Cavalry Stable</SpecificName>
+    <Classes datatype="tokens">Stable</Classes>
+    <VisibleClasses datatype="tokens">Village</VisibleClasses>
+    <Tooltip>Train Citizen Cavalry. Research Cavalry technologies.</Tooltip>
+    <Icon>structures/stable_01.png</Icon>
+    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+  </Identity>
+  <Loot>
+    <glory>300</glory>
+    <xp>300</xp>
+  </Loot>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      stable/training_levy_cavalry
+      stable/tradition_cavalry
+      stable/upgrade_rank_advanced_cavalry
+      stable/upgrade_rank_elite_cavalry
+      stable/upgrade_rank_advanced_cavalry_spear
+      stable/upgrade_rank_elite_cavalry_spear
+      stable/upgrade_rank_advanced_cavalry_axe
+      stable/upgrade_rank_elite_cavalry_axe
+      stable/upgrade_rank_advanced_cavalry_sword
+      stable/upgrade_rank_elite_cavalry_sword
+      stable/upgrade_rank_advanced_cavalry_jav
+      stable/upgrade_rank_elite_cavalry_jav
+      stable/upgrade_rank_advanced_cavalry_archer
+      stable/upgrade_rank_elite_cavalry_archer
+      stable/parthian_tactics
+      unlock_champions
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_stable.xml</select>
+      <constructed>interface/complete/building/complete_stable.xml</constructed>
+      <upgraded>interface/complete/building/complete_stable.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/cavalry_scout
+      units/{civ}/camelry_scout
+      units/{civ}/cavalry_swordsman_b
+      units/{civ}/cavalry_axeman_b
+      units/{civ}/camelry_swordsman_b
+      units/{civ}/cavalry_spearman_b
+      units/{civ}/camelry_spearman_b
+      units/{civ}/cavalry_javelineer_b
+      units/{civ}/camelry_javelineer_b
+      units/{civ}/cavalry_archer_b
+      units/{civ}/camelry_archer_b
+      units/{civ}/cavalry_crossbowman_b
+      units/{civ}/camelry_crossbowman_b
+      units/{civ}/champion_cavalry_stable
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

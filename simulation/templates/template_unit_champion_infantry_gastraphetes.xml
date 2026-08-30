@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_archer">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolt</AttackName>
+      <Damage>
+        <Crush>10.0</Crush>
+      </Damage>
+      <MaxRange>60.0</MaxRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Projectile>
+        <Speed>60.0</Speed>
+        <Spread>4.0</Spread>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max op="mul">1.2</Max>
+  </Health>
+  <Identity>
+    <Lang>greek</Lang>
+    <GenericName>Siege Crossbow</GenericName>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <Tooltip>Traits: Long Range, Medium Armor, Siege.
+Strong Against: Melee Infantry (1.25x), Structures (Crush Damage).
+Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
+    <Requirements>
+      <Techs>phase_empire</Techs>
+    </Requirements>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Gastraphetes</Category>
+  </TrainingRestrictions>
+  <Turretable/>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>52</Range>
+  </Vision>
+</Entity>

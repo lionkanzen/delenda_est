@@ -1,0 +1,62 @@
+{
+	"genericName": "Elite Citizen Pike Infantry",
+	"specificName": {
+		"hele": "ProtostatĂ¨s",
+		"mace": "ProtostatĂ¨s",
+		"epir": "ProtostatĂ¨s",
+		"sele": "ProtostatĂ¨s",
+		"ptol": "ProtostatĂ¨s",
+		"spart": "ProtostatĂ¨s",
+		"athen": "ProtostatĂ¨s"
+	},
+	"description": "Upgrade all of your citizen pikemen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Pike Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_pike",
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Pike Infantry auto-promote to Elite Rank.\n• Elite Pike Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Pike Infantry Advanced"],
+	"placeBelow": "Citizen Infantry Pike",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

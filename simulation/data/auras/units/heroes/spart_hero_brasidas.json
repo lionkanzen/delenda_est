@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Soldier Helot"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 }
+	],
+	"auraName": "Neodamōdeis Helot Emancipation",
+	"auraDescription": "\n• Helot Skirmishers and Helot Slingers +20% attack damage and +1 pierce and hack armor.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

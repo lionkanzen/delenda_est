@@ -1,0 +1,18 @@
+{
+	"genericName": "Gladiatorial Games",
+	"cost": {
+		"glory": 600,
+		"coin": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "imp" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase after choosing Emperor Trajan as your hero.",
+	"icon": "gladiators.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks training Gladiator Champions from the Wonder and Amphitheater.[/font]",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

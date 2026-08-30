@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_archer_gastraphetes_relax.xml">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/gastraphetes.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_01_L"/>
+        <prop actor="props/units/quivers/han_bolt_quiver.xml" attachpoint="back"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/hele/linothorax_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Hele Chalcidean Helmet-a1">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-a2">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-a3">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-a4">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-a5">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a5.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-b1">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-b2">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-b3">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-b4">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-b5">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b5.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="linothorax_01_01">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_02">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_03">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_04">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_05">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_06">
+      <textures>
+        <texture file="skeletal/athen/linothorax_01_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="biped/attack_ranged_gastraphetes_fire.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

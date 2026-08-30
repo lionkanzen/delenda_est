@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="26.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Phrourion</SpecificName>
+    <Tooltip>Train Champions. Garrison up to 20 soldiers inside for stout defense.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      unlock_spies
+      spy_counter
+      macedonians/upgrade_silvershields
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_hoplite
+      units/{civ}/champion_infantry_hoplite_e
+      units/{civ}/champion_cavalry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/macedonians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_elephant_melee">
+  <Auras datatype="tokens">
+    units/heroes/ptol_hero_ptolemy_I
+  </Auras>
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Ptolemy I "Savior"</SpecificName>
+    <Icon>units/ptol/hero_ptolemy_I.png</Icon>
+  </Identity>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>60000</Interval>
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>units/ptolemies/hero_elephantry_ptolemy_I_m.xml</Actor>
+  </VisualActor>
+</Entity>

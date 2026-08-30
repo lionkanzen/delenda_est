@@ -1,0 +1,12 @@
+{
+	"type": "global",
+	"affects": ["Soldier", "Structure"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 }
+	],
+	"auraName": "Shield of Rome",
+	"auraDescription": "\n• Soldiers and Structures +1 all types of armor.",
+	"overlayIcon": "art/textures/ui/session/auras/standground.png"
+}

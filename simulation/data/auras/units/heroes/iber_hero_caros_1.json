@@ -1,0 +1,10 @@
+{
+	"type": "garrison",
+	"affects": ["Structure", "SiegeTower"],
+	"modifications": [
+		{ "value": "BuildingAI/GarrisonArrowMultiplier", "multiply": 1.75 },
+		{ "value": "BuildingAI/MaxArrowCount", "multiply": 1.75 }
+	],
+	"auraDescription": "\n• Buildings +75% more arrows fired per garrisoned soldier while Caros is garrisoned inside.",
+	"auraName": "Valiant Defender"
+}

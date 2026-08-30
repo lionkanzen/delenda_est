@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall_long">
+<Entity parent="template_structure_defensive_wall_long">
   <Footprint>
     <Square width="37" depth="9"/>
     <Height>9.0</Height>
@@ -11,12 +11,12 @@
     <Static width="36.0" depth="8"/>
   </Obstruction>
   <SkirmishReplacer>
-    <general>structures/{civ}_wall_long</general>
+    <general>structures/{civ}/wall_long</general>
   </SkirmishReplacer>
   <VisualActor>
     <Actor>structures/hellenes/wall_long.xml</Actor>
   </VisualActor>
   <WallPiece>
-  	<Length>36.0</Length>
+      <Length>36.0</Length>
   </WallPiece>
 </Entity>

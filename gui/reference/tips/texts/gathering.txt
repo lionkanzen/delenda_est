@@ -1,0 +1,6 @@
+RESOURCE GATHERING
+Citizens can gather, but are best at building. Slaves are good gatherers, but cannot build anything.
+Foraging from berry bushes is the fastest way to gather food, while farming is the slowest. Food is required for most units.
+Wood can be lumbered from trees or forest groves and is used for basic structures and training soldiers.
+Mine stone from rock quarries to build military and defensive structures.
+Mine metal from metal mines to research technologies and train sword-wielding soldiers.

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras disable=""/>
+  <Footprint replace="">
+    <Square width="24.0" depth="6.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>han</Civ>
+    <GenericName>District Gateway</GenericName>
+    <SpecificName>Páifāng</SpecificName>
+    <VisibleClasses datatype="tokens">Village -City</VisibleClasses>
+    <Classes datatype="tokens">
+      CivSpecific
+    </Classes>
+    <Tooltip>This structure grants a free trickle of raw resources (food, wood, stone, metal) as long as it stands. This is a free starting structure and cannot be rebuilt.</Tooltip>
+    <Icon>structures/paifang.png</Icon>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+  </Obstruction>
+  <ResourceDropsite disable=""/>
+  <ResourceSupply disable=""/>
+  <ResourceTrickle>
+    <Rates>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_iber_monument.xml</select>
+      <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/han/shrine.xml</Actor>
+  </VisualActor>
+</Entity>

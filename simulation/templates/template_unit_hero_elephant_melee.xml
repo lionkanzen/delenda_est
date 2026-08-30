@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
-  <Armour>
-    <Hack>10</Hack>
-    <Pierce>10</Pierce>
-    <Crush>12</Crush>
-  </Armour>
-  <Attack>
+  <Attack replace="">
     <Melee>
-      <Hack>25.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>25.0</Crush>
+      <AttackName>Tusks</AttackName>
+      <Damage>
+        <Hack>50.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>20.0</Crush>
+      </Damage>
       <MaxRange>8.0</MaxRange>
-      <RepeatTime>1000</RepeatTime>
-	  <Bonuses>
-		<BonusStructures>
-		  <Classes>Structure</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusStructures>
-		<BonusCav>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusCav>
-		<BonusGates>
-		  <Classes>Gates</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusGates>
-	  </Bonuses>
+      <PrepareTime>750</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+      <Splash>
+        <Damage>
+          <Hack>25.0</Hack>
+          <Crush>10.0</Crush>
+        </Damage>
+        <Shape>Circular</Shape>
+        <Range>5</Range>
+        <FriendlyFire>false</FriendlyFire>
+      </Splash>
+      <Bonuses>
+        <BonusStructures>
+          <Classes>Structure</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusStructures>
+        <BonusCav>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusCav>
+        <BonusGates>
+          <Classes>Gates</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusGates>
+      </Bonuses>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
     </Melee>
   </Attack>
+  <Auras datatype="tokens">
+    units/elephant_fear
+  </Auras>
   <Cost>
-    <Population>3</Population>
-    <BuildTime>60</BuildTime>
+    <BuildTime>45</BuildTime>
     <Resources>
-      <food>500</food>
-      <metal>500</metal>
+      <food>800</food>
     </Resources>
   </Cost>
   <Footprint>
@@ -44,33 +55,55 @@
     <Max>2000</Max>
   </Health>
   <Identity>
+    <GenericName>Hero War Elephant</GenericName>
     <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
-    <Tooltip>
-Counters: 2x vs. All Cavalry, 1.5x vs. All Structures. Extra 1.5x vs. Gates.
-Countered by: Javelin Infantry and Sword Sword Infantry. Can run amok.</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Run Amok.
+Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
   </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>3</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
+        <Crush>12</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable replace="">
+    <Overlay>
+      <AlwaysVisible/>
+      <Shape>
+        <Circle radius="5"/>
+      </Shape>
+      <Texture>
+        <MainTexture>256x256/star.png</MainTexture>
+        <MainTextureMask>256x256/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/elephant_select.xml</select>
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack_move>actor/fauna/animal/elephant_attack_order.xml</order_attack_move>
       <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
       <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
-      <death>actor/fauna/animal/elephant_death.xml</death>
       <trained>actor/fauna/animal/elephant_trained.xml</trained>
     </SoundGroups>
   </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
-    <Run>
-      <Speed>14.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>10.0</RangeMin>
-    </Run>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
+    <Weight op="mul">5</Weight>
   </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
 </Entity>

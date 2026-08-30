@@ -1,80 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_entity_full">
-  <Armour>
-    <Hack>1</Hack>
-    <Pierce>1</Pierce>
-    <Crush>1</Crush>
-    <Foundation>
-      <Hack>1</Hack>
-      <Pierce>1</Pierce>
-      <Crush>1</Crush>
-    </Foundation>
-  </Armour>
+<Entity>
+  <AIProxy/>
+  <BuildRestrictions>
+    <PlacementType>land</PlacementType>
+    <Territory>own</Territory>
+    <Category>Structure</Category>
+  </BuildRestrictions>
   <BuildingAI>
     <DefaultArrowCount>0</DefaultArrowCount>
     <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
     <GarrisonArrowClasses>Ranged Infantry</GarrisonArrowClasses>
   </BuildingAI>
-  <Guard/>
-  <BuildRestrictions>
-    <PlacementType>land</PlacementType>
-    <Territory>own</Territory>
-  </BuildRestrictions>
   <Cost>
     <Population>0</Population>
-    <PopulationBonus>0</PopulationBonus>
     <BuildTime>10</BuildTime>
     <Resources>
       <food>0</food>
-      <wood>0</wood>
-      <stone>0</stone>
-      <metal>0</metal>
     </Resources>
   </Cost>
   <Decay>
     <Active>false</Active>
-	<SinkingAnim>false</SinkingAnim>
+    <SinkingAnim>false</SinkingAnim>
+    <SinkProb>1.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkRate>3.0</SinkRate>
     <SinkAccel>9.8</SinkAccel>
   </Decay>
   <Fogging/>
+  <Guard/>
   <Health>
+    <DamageVariants>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+      <heavydamage>0.35</heavydamage>
+    </DamageVariants>
     <DeathType>corpse</DeathType>
     <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>true</Unhealable>
-    <Repairable>true</Repairable>
   </Health>
   <Identity>
     <GenericName>Structure</GenericName>
+    <Civ>gaia</Civ>
     <Classes datatype="tokens">Structure ConquestCritical NotField</Classes>
+    <Undeletable>false</Undeletable>
   </Identity>
-  <Minimap>
-    <Type>structure</Type>
-  </Minimap>
+  <Looter/>
+  <Minimap/>
   <Obstruction>
     <Active>true</Active>
     <BlockMovement>true</BlockMovement>
     <BlockPathfinding>true</BlockPathfinding>
     <BlockFoundation>true</BlockFoundation>
-    <BlockConstruction>true</BlockConstruction>
+    <BlockConstruction>false</BlockConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <OverlayRenderer/>
+  <Ownership/>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+    <FloatDepth>0.0</FloatDepth>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <ProductionQueue/>
   <RallyPoint/>
   <RallyPointRenderer>
-    <MarkerTemplate>special/rallypoint</MarkerTemplate>
+    <MarkerTemplate>special/rallypoints/{civ}</MarkerTemplate>
     <LineTexture>art/textures/misc/rallypoint_line.png</LineTexture>
     <LineTextureMask>art/textures/misc/rallypoint_line_mask.png</LineTextureMask>
-    <LineThickness>0.2</LineThickness>
-    <LineColour r="35" g="86" b="188"/>
-    <LineDashColour r="158" g="11" b="15"/>
+    <LineThickness>0.25</LineThickness>
+    <LineDashColor r="100" g="100" b="100"/>
     <LineStartCap>square</LineStartCap>
     <LineEndCap>round</LineEndCap>
-    <LineCostClass>default</LineCostClass>
     <LinePassabilityClass>default</LinePassabilityClass>
   </RallyPointRenderer>
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
+  <Repairable>
+    <RepairTimeRatio>2.0</RepairTimeRatio>
+  </Repairable>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
+  <Resistance>
+    <Entity>
+      <ApplyStatus>
+        <Poison>
+          <Duration>0.0</Duration>
+          <BlockChance>1</BlockChance>
+        </Poison>
+      </ApplyStatus>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>40</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <ApplyStatus>
+        <Poison>
+          <Duration>0.0</Duration>
+          <BlockChance>1</BlockChance>
+        </Poison>
+      </ApplyStatus>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>5</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <Selectable>
     <Overlay>
       <Outline>
@@ -90,8 +140,11 @@
       <constructed>interface/complete/building/complete_universal.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
       <attacked>interface/alarm/alarm_attackplayer.xml</attacked>
-      <attack>attack/weapon/arrowfly.xml</attack>
-      <attack_impact>attack/impact/arrow_metal.xml</attack_impact>
+      <attacked_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_gaia>
+      <attacked_capture>interface/alarm/alarm_attackplayer.xml</attacked_capture>
+      <attacked_capture_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_capture_gaia>
+      <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
     </SoundGroups>
   </Sound>
   <StatusBars>
@@ -99,17 +152,26 @@
     <BarHeight>0.6</BarHeight>
     <HeightOffset>12.0</HeightOffset>
   </StatusBars>
+  <StatusEffectsReceiver/>
   <TerritoryDecay>
-    <HealthDecayRate>5</HealthDecayRate>
+    <DecayRate>5</DecayRate>
+    <Territory>neutral enemy</Territory>
   </TerritoryDecay>
+  <Trainer>
+    <BatchTimeModifier>0.65</BatchTimeModifier>
+  </Trainer>
   <Visibility>
-	<RetainInFog>true</RetainInFog>
-	<AlwaysVisible>false</AlwaysVisible>
-	<Preview>false</Preview>
+    <RetainInFog>true</RetainInFog>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
   </Visibility>
   <Vision>
-    <Range>40</Range>
+    <Range>30</Range>
   </Vision>
+  <VisionSharing>
+    <Bribable>false</Bribable>
+  </VisionSharing>
   <VisualActor>
     <ConstructionPreview/>
     <SilhouetteDisplay>false</SilhouetteDisplay>

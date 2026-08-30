@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/rome_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Republican Romans</GenericName>
+    <History>The Roman Republic grew from a city-state in central Italy into the dominant power of the Mediterranean between the 5th and 1st centuries BC. Its citizen armies defeated Italian rivals, Carthage, and the Hellenistic kingdoms, while republican institutions balanced magistrates, Senate, and assemblies. Expansion brought immense wealth but also social conflict and civil wars, culminating in the rise of Augustus and the end of the Republic.</History>
+    <Icon>emblems/512x512/romans_republican.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/testudo
+      special/formations/anti_cavalry
+    </Formations>
+  </Player>
+</Entity>

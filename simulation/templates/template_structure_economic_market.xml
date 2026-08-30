@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic">
+  <AlertRaiser>
+    <List datatype="tokens">Trader+!Ship</List>
+    <RaiseAlertRange>-1</RaiseAlertRange>
+    <EndOfAlertRange>-1</EndOfAlertRange>
+    <SearchRange>100</SearchRange>
+  </AlertRaiser>
+  <Auras datatype="tokens">
+    structures/marketplace
+  </Auras>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{native}/market_stall
+    </Entities>
+  </Builder>
   <BuildRestrictions>
     <Category>Market</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>100</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
       <wood>300</wood>
     </Resources>
@@ -14,62 +34,94 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Market</GenericName>
-    <Tooltip>Create trade units to trade between other markets. Barter resources. Research trading and bartering improvements.</Tooltip>
-    <Classes datatype="tokens">BarterMarket -ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">Town Market</VisibleClasses>
+    <SpecificName>Market</SpecificName>
+    <Tooltip>Unlock training slaves. Create trade units to trade between other markets. Barter resources. Research trading, bartering, and slavery improvements.</Tooltip>
+    <Classes datatype="tokens">
+      Barter
+      -ConquestCritical
+      CaptureResistant
+      Trade
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Town
+      LandTrade
+      Market
+    </VisibleClasses>
     <Icon>structures/market.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <xp>100</xp>
-    <food>25</food>
-    <wood>25</wood>
-    <stone>25</stone>
-    <metal>25</metal>
+    <xp>200</xp>
+    <food>100</food>
+    <wood>100</wood>
+    <stone>100</stone>
+    <metal>100</metal>
+    <coin>500</coin>
+    <glory>200</glory>
   </Loot>
+  <Market>
+    <TradeType>land</TradeType>
+    <InternationalBonus>0.2</InternationalBonus>
+  </Market>
   <Obstruction>
     <Static width="30.0" depth="26.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      market/training_trader_01
+      market/speed_trader_01
+      market/pair_market_01
+      market/unlock_slaves
+      market/market_taxes
+      romans/special_roman_roads
+    </Technologies>
+  </Researcher>
   <ResourceTrickle>
-	<FoodRate>0.0</FoodRate>
-	<WoodRate>0.0</WoodRate>
-	<StoneRate>0.0</StoneRate>
-	<MetalRate>0.0</MetalRate>
-	<Interval>6000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>6000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_market.xml</select>
       <constructed>interface/complete/building/complete_market.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay>
+    <DecayRate>300</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>40</Radius>
-    <Weight>30000</Weight>
+    <Radius>30</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      speed_trader_01
-	  speed_trader_02
-	  market_taxes
-	  gather_slave_markets
-    </Technologies>
     <Entities datatype="tokens">
-      units/{civ}_support_trader
+      units/{native}/support_trader
     </Entities>
-  </ProductionQueue>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
 </Entity>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Auras datatype="tokens">
+    structures/rome_roads
+  </Auras>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Basilica</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="37.0" depth="37.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      romans_imperial/hero_flavian_legacy
+      romans_imperial/hero_aurelian_walls
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_swordsman_urban
+      units/{civ}/hero_augustus_infantry
+      units/{civ}/hero_titus_infantry
+      units/{civ}/hero_trajan_infantry
+      units/{civ}/hero_marcus_aurelius_infantry
+      units/{civ}/hero_aurelian_infantry
+    </Entities>
+  </Trainer>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/romans_imperial/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

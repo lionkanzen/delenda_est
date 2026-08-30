@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["Healer"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
+		{ "value": "Heal/Range", "multiply": 1.2 }
+	],
+	"auraName": "Scythian Chauvanism",
+	"auraDescription": "\n• Scythian Enaree Shamans +20% movement speed and +20% healing range.",
+	"overlayIcon": "art/textures/ui/session/auras/speed_bonus.png"
+}

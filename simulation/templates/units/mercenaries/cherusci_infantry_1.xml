@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_pikeman">
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Cherusci Pikeman</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/merc/chatti_pikeman.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/cherusci_pikeman.xml</Actor>
+  </VisualActor>
+</Entity>

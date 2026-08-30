@@ -1,0 +1,35 @@
+{
+	"supersedes": "spartans/special_agoge",
+	"genericName": "Greek Martial Arts",
+	"specificName": {
+		"hele": "Pankrátion",
+		"mace": "Pankrátion",
+		"spart": "Pankrátion",
+		"athen": "Pankrátion",
+		"sele": "Pankrátion",
+		"ptol": "Pankrátion",
+		"theb": "Pankrátion",
+		"syrac": "Pankrátion"
+	},
+	"description": "The Greeks invented the martial arts for the Western world.",
+	"cost": {
+		"food": 500,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "spart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “The Agoge.”",
+	"icon": "wrestling_04.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +10% health.\n• Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.1 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

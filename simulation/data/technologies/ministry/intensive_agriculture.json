@@ -1,0 +1,25 @@
+{
+	"genericName": "Intensive Agriculture",
+	"description": "Agriculture formed the economic foundation of the Han state, and officials repeatedly encouraged households to concentrate on farming, sericulture, and careful use of the land. Increased cultivation supported population growth, taxation, armies, and cities, while Han political thought commonly treated productive agriculture as the essential basis of prosperity.",
+	"specificName": {
+		"han": "Quàn Nóng"
+	},
+	"cost": {
+		"glory": 250
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "intensive_agriculture.png",
+	"researchTime": 120,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% grain harvesting rate.\n• Unlocks “Sericulture.”[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.10 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

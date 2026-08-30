@@ -1,0 +1,5 @@
+<variant file="biped/gather_meat.xml">
+  <props>
+    <prop actor="props/units/weapons/akinakes.xml" attachpoint="weapon_R"/>
+  </props>
+</variant>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Identity>
+    <Civ>epir</Civ>
+    <SpecificName>Galatian Swordsman</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/merc/gallic_swordsman.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/mercenaries/gallic_swordsman.xml</Actor>
+  </VisualActor>
+</Entity>

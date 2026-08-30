@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Structure", "Unit"],
+	"affectedPlayers": ["Player"],
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+	],
+	"auraName": "Loyalty",
+	"auraDescription": "\n• All capturable Buildings and Units +50% capture resistance."
+}

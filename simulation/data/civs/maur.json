@@ -1,0 +1,90 @@
+{
+	"Code": "maur",
+	"Culture": [ "Hindu" ],
+	"Region": [ "Asia", "India" ],
+	"Music": [
+		{
+			"File": "Land_between_the_two_Seas.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sanskrit.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Karmic_Confluence.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Taj_Mahal.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[],
+	"CivChoices":
+	[
+		"civ_choices/maur/chandragupta",
+		"civ_choices/maur/bindusara",
+		"civ_choices/maur/ashoka"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/maur/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/maur/civil_centre"
+		},
+		{
+			"Template": "units/maur/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/maur/infantry_archer_e",
+			"Count": 4
+		},
+		{
+			"Template": "units/maur/cavalry_scout_starter",
+			"Count": 1
+		},
+		{
+			"Template": "units/maur/support_elephant",
+			"Count": 1
+		}
+	],
+	"AINames":
+	[
+		"Brihadratha Maurya",
+		"Dasharatha Maurya",
+		"Devavarman Maurya",
+		"Kunala Maurya",
+		"Samprati Maurya",
+		"Shalishuka Maurya",
+		"Shatadhanvan Maurya",
+		"Tivala Maurya"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/maur/hero_maurya",
+		"skirmish/units/default_hero_2": "units/maur/hero_ashoka",
+		"skirmish/units/default_hero_3": "units/maur/hero_chanakya",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/maur/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/maur/champion_maiden",
+		"skirmish/units/default_champion_infantry_3": "units/maur/champion_maiden_archer",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/maur/champion_chariot",
+		"skirmish/units/default_champion_cavalry_2": "",
+		"skirmish/units/default_infantry_melee_b": "units/maur/infantry_archer_e",
+		"skirmish/units/default_infantry_ranged_b": "units/maur/infantry_archer_e",
+		"skirmish/units/special_starting_unit": "units/maur/support_elephant",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/structures/special_starting_structure": "structures/maur/palace",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

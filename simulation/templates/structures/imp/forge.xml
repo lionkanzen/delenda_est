@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_forge">
+  <Footprint>
+    <Square width="20.0" depth="20.0"/>
+  </Footprint>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Armamentarium</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="17.0" depth="17.0"/>
+  </Obstruction>
+  <Upgrade>
+    <Foundry>
+      <Entity>structures/{civ}/foundry</Entity>
+      <Tooltip>Foundries give a trickle of 20 metal every 5 seconds, but cannot research technologies while in this state.</Tooltip>
+      <Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+      <Cost>
+        <wood>200</wood>
+        <stone>200</stone>
+        <glory>200</glory>
+      </Cost>
+      <Time>30</Time>
+      <Variant>upgrading</Variant>
+    </Foundry>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/romans_imperial/blacksmith.xml</Actor>
+  </VisualActor>
+</Entity>

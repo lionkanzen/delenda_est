@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/cimb_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>cimb</Civ>
+    <GenericName>Cimbri</GenericName>
+    <History>The Cimbri were a northern European people, probably of Germanic origin, who migrated south with the Teutones in the late 2nd century BC. Their movements brought them into conflict with Rome, and they won several major victories, including the disaster at Arausio in 105 BC. After years of wandering and warfare, the Cimbri invaded Italy but were decisively defeated by Gaius Marius at Vercellae in 101 BC.</History>
+    <Icon>emblems/512x512/cimbri.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/shield_wall
+      special/formations/anti_cavalry
+    </Formations>
+  </Player>
+</Entity>

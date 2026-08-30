@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Council</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>100</stone>
+      <metal>0</metal>
+      <glory>100</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder replace="">
+    <Max>1</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Hero Minister Teacher</List>
+    <BuffHeal>5</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Prytaneion</SpecificName>
+    <GenericName>Council Chamber</GenericName>
+    <VisibleClasses datatype="tokens">
+      Council
+      -City
+      Town
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      ConquestCritical
+      CivSpecific
+    </Classes>
+    <Tooltip>Train Heroes. Research special technologies. Garrison a Hero inside for fast healing.</Tooltip>
+    <Icon>structures/assembly.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+        -phase_city
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="30.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      athen/special_workshop
+      athen/health_citizens_02
+      athen/hero_miltiades_strategos
+      athen/hero_themistocles_fortifications
+      athen/hero_aristides_archon
+      athen/hero_pericles_long_walls
+      athen/hero_iphicrates_reforms
+      unlock_spies
+      spy_counter
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/hero_miltiades_infantry
+      units/{civ}/hero_themistocles_infantry
+      units/{civ}/hero_aristides_infantry
+      units/{civ}/hero_pericles_infantry
+      units/{civ}/hero_iphicrates_infantry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <Actor>structures/athenians/prytaneion.xml</Actor>
+  </VisualActor>
+</Entity>

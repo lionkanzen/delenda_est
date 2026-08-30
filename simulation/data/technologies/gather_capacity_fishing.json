@@ -1,16 +1,20 @@
 {
-	"genericName": "Salt Curing",
-	"description": "Curing fish with salt helps to preserve the fish for market.",
-	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
-	"requirements": {"tech": "phase_town"},
-	"requirementsTooltip": "Unlocked in Town Phase.",
 	"supersedes": "gather_fishing_purse_seine",
+	"genericName": "Salt Curing",
+	"description": "Although fishing ships could sail far out to sea, getting fresh fish back to port was a challenge. Mediterranean and Black Sea shipwrecks filled with Greek amphorae (storage pots) suggest that pickling fish in salt was quite common. Salt itself was often mixed with fish to form a paste called garum that was popular among both Greeks and Romans.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Purse Seine.",
 	"icon": "fish_salt.png",
 	"researchTime": 40,
-	"tooltip": "Fishing Boats +20 food capacity.",
+	"tooltip": "[font=\"sans-bold-14\"]• Fishing Boats +20 food capacity.[/font]",
 	"modifications": [
-		{"value": "ResourceGatherer/Capacities/food", "add": 20}
+		{ "value": "ResourceGatherer/Capacities/food", "add": 20 }
 	],
 	"affects": ["FishingBoat"],
+	"placeBelow": "{AffectedUnit}",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

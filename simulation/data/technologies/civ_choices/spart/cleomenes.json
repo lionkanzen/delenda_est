@@ -1,0 +1,36 @@
+{
+	"genericName": "Cleomenes III",
+	"description": "Cleomenes III.",
+	"icon": "civ_choices/spart_hero_cleomenes.png",
+	"tooltip": "Select Cleomenes III to lead your civilization.",
+	"requirements": {
+		"civ": "spart"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/spart/champion_infantry_hoplite>units/spart/champion_infantry_pikeman units/{civ}/infantry_hoplite_b>units/spart/infantry_pikeman_b -units/spart/hero_leonidas_infantry -units/spart/hero_brasidas_infantry -units/spart/hero_lysander_infantry",
+			"affects": "Barracks"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-barracks/tradition_hoplite barracks/tradition_hoplite_advanced>barracks/upgrade_rank_advanced_infantry_pike barracks/tradition_hoplite_elite>barracks/upgrade_rank_elite_infantry_pike",
+			"affects": "Barracks"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}/infantry_javelineer_b>units/mercenaries/successor_infantry_4",
+			"affects": "Range"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-range/upgrade_rank_advanced_infantry_jav -r/upgrade_rank_elite_infantry_jav",
+			"affects": "Range"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "spartans/attack_sarissa",
+			"affects": "Forge"
+		}
+	]
+}

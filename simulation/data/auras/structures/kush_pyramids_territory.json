@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["CivilCentre"],
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.10 }
+	],
+	"auraName": "Necropolis",
+	"auraDescription": "\n• Civic Centers +10% territory influence for each Pyramid that stands built.",
+	"stackable": true,
+	"overlayIcon": "art/textures/ui/session/auras/laurel.png"
+}

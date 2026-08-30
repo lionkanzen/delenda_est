@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_aristides_2
+    units/heroes/athen_hero_aristides_1
+  </Auras>
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Aristides the Just</SpecificName>
+    <Icon>units/athen/hero_aristides.png</Icon>
+  </Identity>
+  <ResourceTrickle>
+    <Rates> 
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates> 
+    <Interval>10000</Interval> 
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>units/athenians/hero_cavalry_spearman_aristides_m.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,16 @@
+{
+	"TranslatedKeys": ["Title", "Description"],
+	"Data":
+	{
+		"Title": "Annihilation",
+		"Description": "Kill or capture every last enemy unit and building.",
+		"Scripts":
+		[
+			"scripts/TriggerHelper.js",
+			"scripts/ConquestCommon.js",
+			"scripts/Conquest.js"
+		],
+        "DisabledWhenChecked": ["conquest_units", "conquest_structures", "conquest_civiccentres"],
+        "GUIOrder": 1
+	}
+}

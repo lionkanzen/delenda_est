@@ -1,0 +1,28 @@
+{
+	"genericName": "Ashoka's Proselytism",
+	"description": "Ashoka the Great, the Mauryan emperor of the 3rd century BC, actively promoted Buddhist moral teachings after his conversion following the Kalinga War. Through inscriptions, royal patronage, charitable works, and the dispatch of religious emissaries, he encouraged principles such as nonviolence, compassion, respect for parents and teachers, tolerance between religious communities, and humane treatment of subjects and animals. Buddhist tradition also credits Ashoka with supporting missionary activity to regions including Sri Lanka and parts of Central and South Asia, helping Buddhism expand far beyond its original heartland.",
+	"cost": {
+		"coin": 100, 
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase after choosing the hero Ashoka.",
+	"icon": "high_priest.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Temple Technologies are free of resource cost, but still take time to research.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/wood", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/food", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/metal", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/stone", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "replace": 0 }
+	],
+	"affects": ["Temple"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,126 @@
+{
+	"Code": "mace",
+	"Culture": [ "Greek", "Hellenistic" ],
+	"Region": [ "Mediterranean", "Europe", "Greece" ],
+	"Music": [
+		{
+			"File": "Rise_of_Macedon.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "In_the_Shadow_of_Olympus.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "From_Every_Corner.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Hellenic League",
+			"History": "After the unification of Greece, Philip II gathered all the city-states together to form the Hellenic League, with Macedon as the its leader. With this Pan-Hellenic federation he planned to launch an expedition to punish Persia for past wrongs. Although assassinated before he could carry out the invasion, his son Alexander the Great took up the mantle and completed his fathers plans.",
+			"Description": "Macedonian units have +10% attack bonus vs. Persian and Hellenic factions, but -5% attack penalty vs. Romans."
+		},
+		{
+			"Name": "Syntagma",
+			"History": "Based upon the Theban Oblique Order phalanx, the Syntagma was the formation that proved invincible against the armies of Hellas and the East.",
+			"Description": "Infantry pike units can use the slow and powerful Syntagma formation."
+		},
+		{
+			"Name": "Technological Innovators",
+			"History": "The Macedonians were innovators in the area of siege technology and techniques.",
+			"Description": "Macedonians can research ranged siege technologies without the need to research Ballistics first."
+		},
+		{
+			"Name": "Hellenization",
+			"History": "The Greeks were highly successful in Hellenizing various foreigners. During the Hellenistic Age, Greek was the lingua franca of the Ancient World, spoken widely from Spain to India.",
+			"Description": "Buildings +20% territory influence while the Theatron stands."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/mace/philip",
+		"civ_choices/mace/alexander",
+		"civ_choices/mace/craterus",
+		"civ_choices/mace/demetrius"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/mace/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/mace/civil_centre"
+		},
+		{
+			"Template": "units/mace/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/mace/infantry_pikeman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/mace/infantry_javelineer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/mace/infantry_pikeman_a",
+			"Count": 1
+		},
+		{
+			"Template": "units/mace/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Antipater",
+		"Philip IV",
+		"Lysimachus",
+		"Antigonus Gonatas",
+		"Demetrius Aetolicus",
+		"Philip V",
+		"Perseus",
+		"Meleager",
+		"Leonnatus",
+		"Perdiccas",
+		"Polyperchon",
+		"Neoptolemus",
+		"Cassander",
+		"Black Cleitus",
+		"Admetus of Macedon",
+		"Eumenes",
+		"Hephaestion",
+		"Philotas",
+		"Parmenion",
+		"Antigonus Monophthalmus",
+		"Sosthenes"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/mace/hero_philip",
+		"skirmish/units/default_hero_2": "units/mace/hero_alexander",
+		"skirmish/units/default_hero_3": "units/mace/hero_demetrius",
+		"skirmish/units/default_hero_4": "units/mace/hero_craterus",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/mace/champion_infantry_hoplite",
+		"skirmish/units/default_champion_infantry_2": "units/mace/champion_infantry_swordsman",
+		"skirmish/units/default_champion_infantry_3": "",
+		"skirmish/units/default_champion_infantry_4": "units/mace/champion_ranged_gastraphetes",
+		"skirmish/units/default_champion_cavalry_1": "units/mace/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "",
+		"skirmish/units/default_infantry_melee_b": "units/mace/infantry_pikeman_e",
+		"skirmish/units/special_starting_unit": "units/mace/infantry_pikeman_a",
+		"skirmish/structures/default_house_10": "structures/mace/house",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

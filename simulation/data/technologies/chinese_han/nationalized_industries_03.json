@@ -1,0 +1,30 @@
+{
+	"genericName": "Nationalized Industries - Level 3",
+	"specificName": {
+		"han": "Guóyǒu Huà Chǎnyè"
+	},
+	"supersedes": "chinese_han/nationalized_industries_02",
+	"cost": {
+		"metal": 500,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "chinese_nationalized_03.png",
+	"researchTime": 90,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +25% gathering rate for all resources.\n• Bartering −20% profit.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.25, "affects": "Gatherer" },
+		{ "value": "Player/BarterMultiplier/Sell/food", "multiply": 0.8, "affects": "Player" },
+		{ "value": "Player/BarterMultiplier/Sell/wood", "multiply": 0.8, "affects": "Player" },
+		{ "value": "Player/BarterMultiplier/Sell/stone", "multiply": 0.8, "affects": "Player" },
+		{ "value": "Player/BarterMultiplier/Sell/metal", "multiply": 0.8, "affects": "Player" },
+		{ "value": "Player/BarterMultiplier/Sell/coin", "multiply": 0.8, "affects": "Player" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

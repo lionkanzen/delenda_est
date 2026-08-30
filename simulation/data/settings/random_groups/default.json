@@ -1,0 +1,22 @@
+{
+	"Title": "Empires Ascendant",
+	"Code": "default",
+	"GUIOrder": 0,
+	"Tooltip": "\"Empires Ascendant\" civilizations only. No new civilizations.",
+	"Weights": {
+		"achae": 1,
+		"athen": 1,
+		"brit": 1,
+		"cart": 1,
+		"gaul": 1,
+		"han": 1,
+		"iber": 1,
+		"kush": 1,
+		"mace": 1,
+		"maur": 1,
+		"ptol": 1,
+		"rome": 1,
+		"sele": 1,
+		"spart": 1
+	}
+}

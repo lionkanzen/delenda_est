@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/gaul_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>goth</Civ>
+    <GenericName>Gothic Germans</GenericName>
+    <History>The Goths were a Germanic people who emerged as a major power along the Roman frontier in the 3rd and 4th centuries AD. Divided into groups later known as the Visigoths and Ostrogoths, they fought, traded, and served within the Roman world. The Visigoths famously sacked Rome in AD 410, while the Ostrogoths later established a powerful kingdom in Italy after the fall of the Western Roman Empire.</History>
+    <Icon>emblems/512x512/goths.png</Icon>
+  </Identity>
+</Entity>

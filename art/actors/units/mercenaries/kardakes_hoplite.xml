@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <props>
+        <prop actor="props/units/heads/new/head_achae_tiara.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/achae_kidaris_tied.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="m_armor_pants_tunic_long">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+    </variant>
+    <variant frequency="1" name="m_armor_tunic_long">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="aspis_achae_kardakes">
+      <props>
+        <prop actor="props/units/shields/aspis_achae_kardakes.xml" attachpoint="shield_arm"/>
+	  </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="achae_isp_a_linothorax_1a">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_linothorax_1b">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_linothorax_1c">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_linothorax_1d">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_linothorax_1e">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_linothorax_1f">
+      <textures>
+        <texture file="skeletal/achae/linothorax_01_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1a">
+      <textures>
+        <texture file="skeletal/achae/padded_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1b">
+      <textures>
+        <texture file="skeletal/achae/padded_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1c">
+      <textures>
+        <texture file="skeletal/achae/padded_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1d">
+      <textures>
+        <texture file="skeletal/achae/padded_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1e">
+      <textures>
+        <texture file="skeletal/achae/padded_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1f">
+      <textures>
+        <texture file="skeletal/achae/padded_01_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1g">
+      <textures>
+        <texture file="skeletal/achae/padded_01_07.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1h">
+      <textures>
+        <texture file="skeletal/achae/padded_01_08.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="achae_isp_a_padded_1i">
+      <textures>
+        <texture file="skeletal/achae/padded_01_09.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_hoplite.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

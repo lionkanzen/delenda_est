@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <BuildRestrictions>
+    <Category>HouseBig</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>6</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Loot>
+    <xp>150</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>150</glory>
+  </Loot>
+  <Population>
+    <Bonus>15</Bonus>
+  </Population>
+  <TerritoryInfluence>
+    <Radius>24</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

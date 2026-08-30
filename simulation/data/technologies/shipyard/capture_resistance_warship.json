@@ -1,0 +1,31 @@
+{
+	"genericName": "Marines",
+	"specificName": {
+		"hele": "Epibatai",
+		"imp": "Classiarii"
+	},
+	"description": "Marines were a vital part of ship defense and offense.",
+	"cost": {
+		"food": 400,
+		"coin": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "rome" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "marines.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Warships +40% capture resistance.[/font]",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.4 }
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,29 @@
+{
+	"genericName": "Traditional Rituals",
+	"specificName": {
+		"yayo": "Nöritö"
+	},
+	"description": "Increased well-being for civilians.",
+	"cost": {
+		"food": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "high_priest.png",
+	"researchTime": 20,
+	"tooltip": "[font=\"sans-bold-14\"]• Citizens, Priestesses, and Traders +25% health.[/font]",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "yayo" }
+		]
+	},
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": ["Civilian"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

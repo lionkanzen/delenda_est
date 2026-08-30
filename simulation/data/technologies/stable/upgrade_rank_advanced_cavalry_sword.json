@@ -1,0 +1,47 @@
+{
+	"genericName": "Advanced Citizen Sword Cavalry",
+	"description": "Promote all of your citizen sword cavalrymen to Advanced rank.",
+	"cost": {
+		"food": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "iber" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth"},
+					{ "notciv": "sele" },
+					{ "notciv": "spart"},
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Sword Cavalrymen to Advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks Elite Citizen Sword Cavalry technology.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Sword Cavalry Basic"],
+	"placeBelow": "Citizen Sword Cavalry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,29 @@
+{
+	"genericName": "Longer Sarissas",
+	"description": "The sarissa (Greek: σάρισα) was a long spear or pike about 4–6 metres (13–20 ft) in length. It was introduced by Philip II of Macedon and was used in his Macedonian phalanxes as a replacement for the earlier hoplite “dory“, which was considerably shorter. These longer spears improved the strength of the phalanx by extending the rows of overlapping weapons projecting towards the enemy, and the word remained in use throughout the Byzantine years to sometimes describe the long spears of their own infantry.",
+	"cost": {
+		"wood": 300,
+		"metal": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "spart" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "sarissa.png",
+	"researchTime": 50,
+	"tooltip": "[font=\"sans-bold-14\"]• Phalangites +20% attack damage.\n• Phalangites −10% movement speed.[/font]",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.9 }
+	],
+	"affects": ["Infantry Pike"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

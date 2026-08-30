@@ -1,0 +1,92 @@
+{
+	"Code": "goth",
+	"Culture": [ "Germanic", "Nomadic" ],
+	"Region": [ "Europe" ],
+	"Music": [
+		{
+			"File": "The_Fledgling_Kingdom.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Cisalpine_Gaul.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Road_Ahead.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Tavern_in_the_Mist.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/goth/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/goth/civil_centre" 
+		},
+		{
+			"Template": "units/goth/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/goth/infantry_spearman_e",
+			"Count": 2 
+		},
+		{
+			"Template": "units/goth/infantry_axeman_e",
+			"Count": 2 
+		},
+		{
+			"Template": "units/goth/cavalry_scout_starter" 
+		},
+		{
+			"Template": "units/goth/support_wagon" 
+		}
+	],
+	"AINames":
+	[
+		"Divico",
+		"Ambiorix",
+		"Ariovistus",
+		"Cassivellaunus",
+		"Liscus",
+		"Valetiacos",
+		"Asterix",
+		"Acichorius",
+		"Cerethrius",
+		"Bolgios",
+		"Deiotarus"		
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "",
+		"skirmish/units/default_hero_2": "",
+		"skirmish/units/default_hero_3": "",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/goth/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/goth/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/goth/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/goth/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/goth/champion_cavalry",
+		"skirmish/units/default_infantry_melee_b": "units/goth/infantry_axeman_e",
+		"skirmish/units/default_infantry_ranged_b": "units/goth/infantry_spearman_e",
+		"skirmish/units/special_starting_unit": "units/goth/support_wagon",
+		"skirmish/structures/default_house_5": "structures/goth/house",
+		"skirmish/structures/default_defense_tower": "structures/goth/defense_tower"
+	},
+	"SelectableInGameSetup": false
+}

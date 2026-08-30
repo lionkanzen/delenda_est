@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="21.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>huns</Civ>
+    <GenericName>Training Grounds</GenericName>
+    <VisibleClasses datatype="tokens">
+      Range
+    </VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -barracks/training_01
+      -barracks/training_02
+      -barracks/training_03
+      range/training_01
+      range/tradition_archery
+      range/upgrade_rank_advanced_infantry_archer
+      range/upgrade_rank_elite_infantry_archer
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/huns/infantry_archer_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/barracks.xml</Actor>
+    <FoundationActor>structures/xiongnu/barracks_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,28 @@
+{
+	"supersedes": "training_naval_shipwrights",
+	"genericName": "Juggernauts",
+	"specificName": {
+		"ptol": "Tessarakonterēs"
+	},
+	"cost": {
+		"wood": 600,
+		"metal": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "ptol" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Shipwrights.”",
+	"icon": "juggernaut.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Siege Ship +50% health.\n• Siege Ships +25% more projectiles.\n• Siege Ships −25% movement speed.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.75 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.75 }
+	],
+	"affects": ["NavalSiege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

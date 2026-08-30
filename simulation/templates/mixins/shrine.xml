@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="24.0" depth="25.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+  </GarrisonHolder>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Shrine</GenericName>
+    <SpecificName>Shrine</SpecificName>
+    <Classes datatype="tokens">
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Shrine
+      Permanent
+    </VisibleClasses>
+    <Tooltip>Capture to train Elite Healers/Priests and to improve the Loyalty of your Structures.</Tooltip>
+    <Requirements disable=""/>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Obstruction>
+    <Static width="20" depth="21"/>
+  </Obstruction>
+  <Minimap>
+    <Icon size="16.0">other.png</Icon>
+  </Minimap>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -temple/druids_training
+      -temple/temple_tech_cost
+      -temple/trickle_glory_pharaoh
+      -temple/healer_gather_glory
+      -temple/hero_health_state_religion
+      -temple/pair_champs_carthage
+      -temple/seeress_grove_of_fetters
+      -temple/temple_garrison_healing
+      -temple/champions_capture
+      -temple/units_health_regen
+      -temple/happiness_games
+      -temple/happiness_harvest
+    </Technologies>
+  </Researcher>
+  <Resistance replace=""/>
+  <StatusBars>
+    <HeightOffset>15.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_b
+      units/{native}/support_healer_e
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

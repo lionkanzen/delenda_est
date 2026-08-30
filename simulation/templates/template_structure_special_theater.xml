@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/hellenization
+  </Auras>
+  <BuildRestrictions>
+    <Category>Theater</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>500</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>500</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="24.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <BuffHeal>0</BuffHeal>
+  </GarrisonHolder>
+  <Health>
+    <Max>3000</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Greek Theater</GenericName>
+    <SpecificName>Theatron</SpecificName>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      CivSpecific
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Theater
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Build a Theater to increase the territory influence of your Buildings.</Tooltip>
+    <Icon>structures/theater.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <glory>300</glory>
+  </Loot>
+  <Minimap>
+    <Icon size="32.0">theater.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="46.0" depth="46.0"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>80</Radius>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/athenians/theater.xml</Actor>
+    <FoundationActor>structures/fndn_theater.xml</FoundationActor>
+  </VisualActor>
+</Entity>

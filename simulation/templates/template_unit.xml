@@ -1,59 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_entity_full">
-  <Armour>
-    <Hack>1</Hack>
-    <Pierce>1</Pierce>
-    <Crush>1</Crush>
-  </Armour>
+<Entity>
+  <AIProxy/>
   <Cost>
     <Population>1</Population>
-    <PopulationBonus>0</PopulationBonus>
     <BuildTime>1</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
+      <coin>0</coin>
+      <glory>0</glory>
     </Resources>
   </Cost>
   <Decay>
     <Active>false</Active>
-	<SinkingAnim>false</SinkingAnim>
-    <DelayTime>80.0</DelayTime>
-    <SinkRate>0.01</SinkRate>
-    <SinkAccel>0.0</SinkAccel>
+    <SinkingAnim>false</SinkingAnim>
+    <SinkProb>0.05</SinkProb>
+    <DelayTime>10.0</DelayTime>
+    <SinkRate>0.001</SinkRate>
+    <SinkAccel>0.001</SinkAccel>
   </Decay>
   <Footprint>
     <Circle radius="1.5"/>
     <Height>2.5</Height>
   </Footprint>
+  <Garrisonable>
+    <Size>1</Size>
+  </Garrisonable>
+  <Guard/>
   <Health>
     <DeathType>corpse</DeathType>
     <Max>100</Max>
     <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>false</Unhealable>
-    <Repairable>false</Repairable>
   </Health>
   <Identity>
+    <Civ>gaia</Civ>
     <GenericName>Unit</GenericName>
+    <Phenotype datatype="tokens">male</Phenotype>
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
-    <Formations datatype="tokens">
-      formations/null
-      formations/box
-      formations/column_closed
-      formations/line_closed
-      formations/column_open
-      formations/line_open
-      formations/flank
-      formations/battle_line
-    </Formations>
+    <Undeletable>false</Undeletable>
   </Identity>
   <Looter/>
-  <Minimap>
-    <Type>unit</Type>
-  </Minimap>
+  <Minimap/>
   <Obstruction>
-    <Unit radius="0.8"/>
+    <Unit/>
     <Active>true</Active>
     <BlockMovement>true</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
@@ -61,32 +54,61 @@
     <BlockConstruction>true</BlockConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <OverlayRenderer/>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+    <FloatDepth>0</FloatDepth>
+    <TurnRate>8</TurnRate>
+  </Position>
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <treasure>1</treasure>
+      <glory.praise>0.2</glory.praise>
     </Rates>
     <Capacities>
       <food>20</food>
       <wood>20</wood>
       <stone>20</stone>
       <metal>20</metal>
+      <glory>1</glory>
     </Capacities>
   </ResourceGatherer>
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>circle/128x128.png</MainTexture>
-        <MainTextureMask>circle/128x128_mask.png</MainTextureMask>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
   <Sound>
     <SoundGroups>
       <attacked>interface/alarm/alarm_attackplayer.xml</attacked>
+      <attacked_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_gaia>
+      <attacked_capture>interface/alarm/alarm_attackplayer.xml</attacked_capture>
+      <attacked_capture_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_capture_gaia>
+      <attack_slaughter>attack/weapon/sword.xml</attack_slaughter>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_collect_treasure>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_collect_treasure>
+      <build>resource/construction/con_wood.xml</build>
+      <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
     </SoundGroups>
   </Sound>
   <StatusBars>
@@ -94,35 +116,47 @@
     <BarHeight>0.333</BarHeight>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
+  <StatusEffectsReceiver/>
+  <TreasureCollector>
+    <MaxDistance>2</MaxDistance>
+  </TreasureCollector>
   <UnitAI>
-    <AlertReactiveLevel>2</AlertReactiveLevel>
     <DefaultStance>aggressive</DefaultStance>
     <FleeDistance>12.0</FleeDistance>
     <FormationController>false</FormationController>
     <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <PatrolWaitTime>1</PatrolWaitTime>
+    <CheeringTime>4000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/null
+      special/formations/line_closed
+      special/formations/line_open
+      special/formations/box
+      special/formations/column_closed
+    </Formations>
   </UnitAI>
-  <Guard/>
   <UnitMotion>
     <FormationController>false</FormationController>
-    <WalkSpeed>7.5</WalkSpeed>
-    <Run>
-      <Speed>15.0</Speed>
-      <Range>50.0</Range>
-      <RangeMin>0.0</RangeMin>
-      <RegenTime>0.1</RegenTime>
-      <DecayTime>0.2</DecayTime>
-    </Run>
     <PassabilityClass>default</PassabilityClass>
-    <CostClass>default</CostClass>
+    <WalkSpeed>10</WalkSpeed>
+    <RunMultiplier>1.5</RunMultiplier>
+    <InstantTurnAngle>1.5</InstantTurnAngle>
+    <Acceleration>10</Acceleration>
+    <Weight>10</Weight>
   </UnitMotion>
   <Visibility>
-	<RetainInFog>false</RetainInFog>
-	<AlwaysVisible>false</AlwaysVisible>
-	<Preview>false</Preview>
+    <RetainInFog>false</RetainInFog>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
   </Visibility>
   <Vision>
     <Range>10</Range>
   </Vision>
+  <VisionSharing>
+    <Bribable>false</Bribable>
+  </VisionSharing>
   <VisualActor>
     <SilhouetteDisplay>true</SilhouetteDisplay>
     <SilhouetteOccluder>false</SilhouetteOccluder>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/kush_pyramids_territory
+  </Auras>
+  <BuildRestrictions>
+    <Category>PyramidLarge</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>300</stone>
+      <metal>300</metal>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="22.0" depth="26.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Large Pyramid</GenericName>
+    <SpecificName>mr ‘3</SpecificName>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      PyramidLarge
+      CivSpecific
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      -City
+      Town
+      Pyramid
+    </VisibleClasses>
+    <Tooltip>Build 2 to automatically research City Phase. Increase territory radius of Civic Centers for each one built.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+    <Icon>structures/kush_pyramid_big.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="24.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple_10.xml</select>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>15.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/kushites/pyramid_large.xml</Actor>
+    <FoundationActor>structures/fndn_5x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

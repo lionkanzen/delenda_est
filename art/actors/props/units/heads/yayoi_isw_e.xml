@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="h1">
+      <mesh>props/heads/yayoi_isw_e.dae</mesh>
+      <textures>
+        <texture file="props/heads/yayoi_isw_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="h2">
+      <mesh>props/heads/yayoi_isw_e_2.dae</mesh>
+      <textures>
+        <texture file="props/heads/yayoi_isw_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

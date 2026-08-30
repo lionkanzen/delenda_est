@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_spearman">
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Thyreos Spearman</SpecificName>
+    <Icon>units/merc/successor_infantry_1.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/mace_thureophoros_melee.xml</Actor>
+  </VisualActor>
+</Entity>

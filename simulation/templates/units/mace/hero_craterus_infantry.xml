@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/mace_craterus|template_unit_hero_infantry_pikeman">
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_craterus
+  </Auras>
+  <Health>
+    <Max op="mul">1.2</Max>
+  </Health>
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>General Craterus</SpecificName>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack, Massed Pikes, Iron Will.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Icon>units/mace/hero_craterus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <CraterusMount>
+      <Entity>units/mace/hero_craterus_mounted</Entity>
+      <Tooltip>This gives Craterus his War Horse, with trample effects, greater health, and greater speed.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </CraterusMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_pikeman_craterus.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_boudicca_1
+    units/heroes/brit_hero_boudicca_2
+  </Auras>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Boudicca</SpecificName>
+    <Phenotype>female</Phenotype>
+    <VisibleClasses datatype="tokens">Female Guerilla</VisibleClasses>
+    <Icon>units/brit/hero_boudicca.png</Icon>
+  </Identity>
+  <Upgrade>
+    <SwitchToChariot>
+      <Entity>units/brit/hero_boudicca_mounted_chariot</Entity>
+      <Tooltip>This gives Boudicca her War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>300</food>
+        <glory>300</glory>
+      </Cost>
+      <Time>15</Time>
+    </SwitchToChariot>
+    <SwitchToHorse>
+      <Entity>units/brit/hero_boudicca_mounted_horse</Entity>
+      <Tooltip>This gives Boudicca her War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </SwitchToHorse>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/britons/hero_infantry_swordsman_boudicca.xml</Actor>
+  </VisualActor>
+</Entity>

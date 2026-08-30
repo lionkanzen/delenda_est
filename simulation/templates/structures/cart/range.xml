@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_range">
+  <Footprint>
+    <Square width="28.0" depth="26.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Bēt Qašt</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="22.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/cart/infantry_javelineer_iber_b
+      units/cart/infantry_slinger_iber_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/carthaginians/range.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

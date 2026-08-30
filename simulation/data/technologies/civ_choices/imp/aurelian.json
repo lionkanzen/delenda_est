@@ -1,0 +1,41 @@
+{
+	"genericName": "Emperor Aurelian",
+	"description": "Emperor Aurelian.",
+	"icon": "civ_choices/imp_hero_aurelian.png",
+	"tooltip": "Select Emperor Aurelian to lead your civilization.",
+	"requirements": {
+		"civ": "imp"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_augustus_infantry -units/{civ}/hero_titus_infantry -units/{civ}/hero_trajan_infantry -units/{civ}/hero_marcus_aurelius_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_infantry_sword_gladiator -units/{civ}/champion_infantry_spear_gladiator",
+			"affects": "Wonder"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/champion_infantry_sword_gladiator -units/{civ}/champion_infantry_spear_gladiator",
+			"affects": "Amphitheater"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_flavian_legacy",
+			"affects": "CivicCenter"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_unlock_gladiators",
+			"affects": "Wonder"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-romans_imperial/hero_unlock_gladiators",
+			"affects": "Amphitheater"
+		}
+	]
+}

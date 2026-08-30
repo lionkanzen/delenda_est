@@ -1,0 +1,39 @@
+{
+	"supersedes": "forge/attack_ranged_pierce_02",
+	"genericName": "Trilobate Arrowheads",
+	"description": "Arrowheads with three lobes instead of two inflict larger, deeper wounds.",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "mace" },
+					{ "notciv": "rome" },
+					{ "notciv": "spart" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "arrows_trilobate.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Ranged Soldiers +10% attack damage.\n• Warships +10% attack damage.\n• Buildings +10% attack damage.\n• Unlocks “Recurved Composite Bows” for some civilizations.[/font]",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.1 }
+	],
+	"affects": ["Ranged !Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

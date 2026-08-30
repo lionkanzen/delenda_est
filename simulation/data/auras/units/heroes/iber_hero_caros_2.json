@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 }
+	],
+	"auraDescription": "\n• Soldiers +1 hack and pierce armor.",
+	"auraName": "Battle Fervor",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

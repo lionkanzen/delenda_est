@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_fruit">
+  <Obstruction>
+    <Static width="4" depth="4"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Max>200</Max>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/flora/berry_bush_winter_01.xml</Actor>
+  </VisualActor>
+</Entity>

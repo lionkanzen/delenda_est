@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder_capture">
+  <Footprint replace="">
+    <Square width="62.0" depth="62.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Hanging Gardens of Babylon</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="59.0" depth="59.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/achaemenids/gardens_struct.xml</Actor>
+  </VisualActor>
+</Entity>

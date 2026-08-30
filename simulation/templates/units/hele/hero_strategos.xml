@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/hele_strategos|template_unit_champion_infantry_hoplite">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack op="mul">1.25</Hack>
+      </Damage>
+    </Melee>
+    <Capture>
+      <Capture op="mul">1.25</Capture>
+    </Capture>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/hele_hero_strategos_1
+  </Auras>
+  <Health>
+    <Max op="mul">1.50</Max>
+    <IdleRegenRate>1</IdleRegenRate>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Strategos</SpecificName>
+    <GenericName>General</GenericName>
+    <Icon>units/hele/hero_strategos.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Strategos</Category>
+    <MatchLimit>10</MatchLimit>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/hellenes/hero_strategos.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Identity>
+    <Civ>cart</Civ>
+    <Lang>phoenician</Lang>
+    <SpecificName>Veteran African Infantry</SpecificName>
+    <SelectionGroupName>units/cart/champion_infantry_swordsman</SelectionGroupName>
+    <History>These guys are veterans of Hannibal's Italian campaigns and are the deadly core of the expeditionary Carthaginian army. They have the pick of the spoils, so wear Roman chain armor, wield the Gladius sword, and carry the Roman Scutum shields, all the best equipment looted from Roman battlefield dead.</History>
+    <Icon>units/cart/champion_infantry_swordsman.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_empire
+      </Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>units/carthaginians/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>

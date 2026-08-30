@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+    </Resources>
+  </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">Domestic</VisibleClasses>
   </Identity>
+  <ResourceSupply>
+    <Initial>100</Initial>
+    <Max>200</Max>
+    <Change>
+      <Regrowth>
+        <State>alive</State>
+        <Value>1</Value>
+        <Interval>5000</Interval>
+      </Regrowth>
+    </Change>
+  </ResourceSupply>
   <ResourceTrickle>
-	<FoodRate>0</FoodRate>
-	<WoodRate>0</WoodRate>
-	<StoneRate>0</StoneRate>
-	<MetalRate>0</MetalRate>
-	<Interval>2000</Interval>
-  </ResourceTrickle> 
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>8000</Interval>
+  </ResourceTrickle>
   <UnitAI>
-    <NaturalBehaviour>domestic</NaturalBehaviour>
+    <DefaultStance>passive</DefaultStance>
+    <RoamDistance>4.0</RoamDistance>
+    <RoamTimeMin>1000</RoamTimeMin>
+    <RoamTimeMax>2000</RoamTimeMax>
+    <FeedTimeMin>30000</FeedTimeMin>
+    <FeedTimeMax>60000</FeedTimeMax>
   </UnitAI>
-  <Vision>
-    <Range>6</Range>
-  </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+  </VisualActor>
 </Entity>

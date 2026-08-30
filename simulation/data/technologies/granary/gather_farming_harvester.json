@@ -1,0 +1,28 @@
+{
+	"genericName": "Harvesting Machine",
+	"description": "The Gauls invented a harvesting machine, making it much easier to harvest grain.",
+	"cost": {
+		"wood": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "gala" },
+					{ "civ": "gaul" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "gallic_plow.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% grain gather rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.1 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

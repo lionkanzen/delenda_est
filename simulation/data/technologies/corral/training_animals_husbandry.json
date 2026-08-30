@@ -1,0 +1,20 @@
+{
+	"genericName": "Advanced Husbandry",
+	"description": "The breeding and caring of animals for various purposes dates back tens of thousands of years into pre-history.",
+	"cost": {
+		"food": 100,
+		"glory": 50
+	},
+	"requirements": {
+		"tech": "phase_village"
+	},
+	"icon": "husbandry.png",
+	"researchTime": 30,
+	"tooltip": "[font=\"sans-bold-14\"]• Domestic Animals and Cavalry units −10% train time and +10% health.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9},
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"affects": ["Domestic", "Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

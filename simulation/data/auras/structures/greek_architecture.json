@@ -1,0 +1,11 @@
+{
+	"auraName": "Greek Architecture",
+	"auraDescription": "\n• All Structures +20% health as long as this Stoa stands.",
+	"overlayIcon": "art/textures/ui/session/auras/structural.png",
+	"type": "global",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.2 }
+	],
+	"affects": ["Structure"],
+	"stackable": true
+}

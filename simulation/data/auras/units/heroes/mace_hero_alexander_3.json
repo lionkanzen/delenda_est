@@ -1,0 +1,12 @@
+{
+	"type": "global",
+	"requiredTechnology": "phase_town",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20, "affects": "Champion Cavalry" },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.20, "affects": "Champion Cavalry" },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1, "affects": "Pike Infantry" }
+	],
+	"auraName": "Hammer & Anvil Tactics",
+	"auraDescription": "\n• Champion Cavalry +20% attack damage and movement speed.\n• Phalangites +1 hack armor.\n• Requires Town Phase.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

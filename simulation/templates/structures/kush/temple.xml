@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Footprint>
+    <Square width="23.0" depth="33.0"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Temple of Apedemak</GenericName>
+    <SpecificName>Pr-‘Iprmk</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="30.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -temple/hero_health_state_religion
+    </Technologies>
+  </Researcher>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/egyptian/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/egyptian/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_apedemak
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/kushites/temple.xml</Actor>
+    <FoundationActor>structures/fndn_6x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,29 @@
+{
+	"genericName": "A Sound Economy",
+	"specificName": {
+		"maur": "Artha"
+	},
+	"cost": {
+		"coin": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "coinage.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Markets trickle +20 of each resource per minute.[/font]",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 2 },
+		{ "value": "ResourceTrickle/Rates/wood", "add": 2 },
+		{ "value": "ResourceTrickle/Rates/stone", "add": 2 },
+		{ "value": "ResourceTrickle/Rates/metal", "add": 2 },
+		{ "value": "ResourceTrickle/Rates/coin", "add": 2 }
+	],
+	"affects": ["Market"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

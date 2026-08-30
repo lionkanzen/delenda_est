@@ -7,43 +7,67 @@
     <Circle radius="1.5"/>
     <Height>2.25</Height>
   </Footprint>
+  <Guard disable=""/>
   <Identity>
+    <Civ>gaia</Civ>
     <GenericName>Fauna</GenericName>
-    <Classes datatype="tokens">Organic -ConquestCritical</Classes>
-	<VisibleClasses datatype="tokens">Animal</VisibleClasses>
+    <Classes datatype="tokens">Organic Fauna -ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Animal</VisibleClasses>
     <Icon>gaia/fauna_generic.png</Icon>
-    <Formations disable=""/>
   </Identity>
   <Loot>
     <xp>10</xp>
   </Loot>
   <Minimap>
-    <Type>food</Type>
-    <Colour b="30" g="70" r="115"/>
+    <Color b="30" g="70" r="115"/>
   </Minimap>
+  <Position>
+    <TurnRate>4</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <TrainingRestrictions>
+    <Category>Animal</Category>
+  </TrainingRestrictions>
+  <TreasureCollector disable=""/>
   <UnitAI>
-    <AlertReactiveLevel>99</AlertReactiveLevel>
+    <DefaultStance>passive</DefaultStance>
     <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
     <RoamDistance>8.0</RoamDistance>
     <FleeDistance>24.0</FleeDistance>
     <RoamTimeMin>2000</RoamTimeMin>
     <RoamTimeMax>8000</RoamTimeMax>
     <FeedTimeMin>15000</FeedTimeMin>
     <FeedTimeMax>60000</FeedTimeMax>
+    <PatrolWaitTime>0</PatrolWaitTime>
+    <Formations disable=""/>
   </UnitAI>
-  <Guard disable=""/>
   <UnitMotion>
-    <WalkSpeed>6.5</WalkSpeed>
-    <Run>
-      <Speed>15.0</Speed>
-    </Run>
+    <WalkSpeed op="mul">0.5</WalkSpeed>
+    <RunMultiplier>2</RunMultiplier>
   </UnitMotion>
   <Visibility>
     <RetainInFog>true</RetainInFog>
   </Visibility>
   <Vision>
-    <Range>0</Range>
+    <Range>5</Range>
   </Vision>
   <VisualActor>
     <SilhouetteDisplay>false</SilhouetteDisplay>

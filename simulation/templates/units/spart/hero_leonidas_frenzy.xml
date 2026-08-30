@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/spart/hero_leonidas_infantry_4">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack op="mul">2.0</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Health>
+    <RegenRate>-10</RegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <SpecificName>Battle Frenzied Leonidas</SpecificName>
+    <Icon>units/spart/hero_leonidas_upgrade.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitAI>
+    <DefaultStance>violent</DefaultStance>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <Upgrade disable=""/>
+</Entity>

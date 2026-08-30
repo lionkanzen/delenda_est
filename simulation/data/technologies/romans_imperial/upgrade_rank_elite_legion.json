@@ -1,0 +1,24 @@
+{
+	"supersedes": "romans_imperial/upgrade_rank_advanced_legion",
+	"genericName": "Elite Legionnaires",
+	"specificName": {
+		"imp": "Optio"
+	},
+	"description": "Upgrade all of your Roman Legionnaires to Elite rank.",
+	"cost": {
+		"coin": 700,
+		"glory": 600
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Advanced Legionaires.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Legionary Soldiers (Infantry and Cavalry) to Elite rank. This increases their military prowess. Unlocks “First Cohort Centurion.”[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Legion Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

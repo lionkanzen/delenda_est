@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_spearman">
+  <Identity>
+    <Civ>han</Civ>
+    <Lang>mandarin</Lang>
+    <GenericName>Palace Guard Spearman</GenericName>
+    <SpecificName>Qimen</SpecificName>
+    <SelectionGroupName>units/han/champion_infantry_spearman</SelectionGroupName>
+    <History>The Qimen (“Attendants at the Gate”) were an elite imperial guard corps established under Emperor Wu of Han to serve in close attendance upon the emperor. Selected from capable and trusted men, they accompanied the ruler during hunts, processions, inspections, and military movements, combining ceremonial duties with genuine security responsibilities. Their proximity to the emperor made the Qimen a prestigious and politically sensitive formation, distinct from ordinary field troops.</History>
+    <Icon>units/han/champion_infantry_swordsman.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/han/infantry_spearman_c.xml</Actor>
+  </VisualActor>
+</Entity>

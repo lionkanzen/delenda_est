@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion">
-  <Armour>
-    <Hack>5</Hack>
-    <Pierce>15</Pierce>
-    <Crush>5</Crush>
-  </Armour>
+  <Auras datatype="tokens">
+    units/elephant_fear
+  </Auras>
   <Cost>
-    <Population>3</Population>
-    <BuildTime>20</BuildTime>
+    <Population>4</Population>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>200</food>
-      <wood>0</wood>
-      <stone>0</stone>
-      <metal>150</metal>
+      <coin>150</coin>
     </Resources>
   </Cost>
   <Footprint>
@@ -20,59 +16,49 @@
     <Height>6.0</Height>
   </Footprint>
   <Health>
-    <Max>400</Max>
+    <Max>600</Max>
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
     <GenericName>War Elephant</GenericName>
-    <Icon>gaia/fauna_elephant.png</Icon>
-    <History>War elephants were used by many Eastern and African cultures.</History>
+    <Icon>gaia/fauna_elephant_african_bush_1.png</Icon>
   </Identity>
-  <Obstruction>
-    <Unit radius="3.0"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
+    <TurnRate>3</TurnRate>
   </Position>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>arrow/256x256.png</MainTexture>
-        <MainTextureMask>arrow/256x256_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>12</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable=""/>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/elephant_select.xml</select>
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack_move>actor/fauna/animal/elephant_attack_order.xml</order_attack_move>
       <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
       <death>actor/fauna/animal/elephant_death.xml</death>
       <trained>actor/fauna/animal/elephant_trained.xml</trained>
     </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>2500</Max>
-  </Stamina>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
-    <Run>
-      <Speed>14.0</Speed>
-      <Range>1000.0</Range>
-      <RangeMin>10.0</RangeMin>
-    </Run>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
+    <Weight op="mul">5</Weight>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>32</Range>
   </Vision>
-  <VisualActor>
-    <Actor>units/mauryans/champion_elephant.xml</Actor>
-  </VisualActor>
 </Entity>

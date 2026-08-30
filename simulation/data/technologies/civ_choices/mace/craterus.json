@@ -1,0 +1,31 @@
+{
+	"genericName": "General Craterus",
+	"description": "General Craterus.",
+	"icon": "civ_choices/mace_hero_craterus.png",
+	"tooltip": "Select General Craterus to lead your civilization.",
+	"requirements": {
+		"civ": "mace"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_philip_infantry -units/{civ}/hero_alexander_infantry  -units/{civ}/hero_demetrius_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-forge/attack_melee_elephant_01 -forge/resistance_armor_elephant_01",
+			"affects": "Forge"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "macedonians/craterus_phalanx_replenishment",
+			"affects": "Barracks"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}/elephant_stable",
+			"affects": "Builder"
+		}
+	]
+}

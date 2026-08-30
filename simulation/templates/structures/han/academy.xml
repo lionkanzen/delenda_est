@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_academy">
+  <Identity>
+    <Civ>han</Civ>
+    <GenericName>Imperial Academy</GenericName>
+    <SpecificName>Dìguó Xuéyuàn</SpecificName>
+    <SelectionGroupName>structures/han/academy</SelectionGroupName>
+    <Icon>structures/academy_han.png</Icon>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      chinese_han/art_of_war
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/han/academy.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

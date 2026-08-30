@@ -1,0 +1,19 @@
+{
+	"genericName": "Persian Patronage",
+	"cost": {
+		"coin": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "currency.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Warships −50% build time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

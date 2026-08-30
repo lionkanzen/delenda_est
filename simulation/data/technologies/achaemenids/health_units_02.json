@@ -1,0 +1,24 @@
+{
+	"supersedes": "achaemenids/health_units_01",
+	"genericName": "Cisterns",
+	"specificName": {
+		"achae": "Ab-anbar"
+	},
+	"description": "The Achaemenid Persians made extensive use of cisterns and other water-storage systems to collect and preserve water in dry regions. Often built from stone, brick, and waterproof plaster, these reservoirs supplied settlements, palaces, garrisons, and travelers during periods of low rainfall. Used alongside qanats, wells, canals, and carefully engineered drainage systems, cisterns helped support agriculture, urban life, and imperial infrastructure across the varied climates of the Persian Empire.",
+	"cost": {
+		"wood": 300,
+		"stone": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "cistern.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• All Organic Units +5% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.05 }
+	],
+	"affects": ["Organic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

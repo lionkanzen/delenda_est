@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="civ/yayo|template_unit_hero_healer">
+  <Attack>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>8</Capture>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+    </Capture>
+    <Melee>
+      <AttackName context="Name of an attack using a double-edged sword.">Sword</AttackName>
+      <Damage>
+        <Hack>10</Hack>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Phenotype>female</Phenotype>
+    <GenericName>Himiko</GenericName>
+    <SpecificName>Pimiko</SpecificName>
+    <Icon>units/yayo/hero_himiko.png</Icon>
+  </Identity>
+  <ProductionQueue/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/yayo/support_healer_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>units/yayoi/hero_healer_himiko.xml</Actor>
+  </VisualActor>
+</Entity>

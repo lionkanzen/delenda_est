@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>7.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <wood>40</wood>
+    </Resources>
+  </Cost>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/rome/temple_vesta
+      structures/rome/army_camp
+      structures/rome/wallset_siege
+      structures/{civ}/wonder
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <SelectionGroupName>units/rome/infantry_spearman</SelectionGroupName>
+    <GenericName>Militia Spearman</GenericName>
+    <SpecificName>Rorarius</SpecificName>
+    <Icon>units/rome/infantry_spearman_militia.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <TrainingRestrictions>
+    <Category>Rorarius</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/romans/infantry_spearman.xml</Actor>
+  </VisualActor>
+</Entity>

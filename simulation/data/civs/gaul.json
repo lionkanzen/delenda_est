@@ -1,0 +1,105 @@
+{
+	"Code": "gaul",
+	"Culture": [ "Celtic" ],
+	"Region": [ "Europe" ],
+	"Music": [
+		{
+			"File": "Celtica.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Celtic_Pride.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Cisalpine_Gaul.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Road_Ahead.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Great Harvest",
+			"History": "Represents Celtic farming methods. ",
+			"Description": "When building a Rotary Mill, nearby Gatherers +20% farming rate of grain. " 
+		},
+		{
+			"Name": "Deas Celtica",
+			"History": "Celtic religion and druidry inspired their warlike mindset. ",
+			"Description": "Druids increase attack rates of soldiers near them slightly." 
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/gaul/brennus",
+		"civ_choices/gaul/viridomarus",
+		"civ_choices/gaul/vercingetorix"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/gaul/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/gaul/civil_centre" 
+		},
+		{
+			"Template": "units/gaul/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/gaul/infantry_swordsman_e",
+			"Count": 2 
+		},
+		{
+			"Template": "units/gaul/infantry_javelineer_e",
+			"Count": 2 
+		},
+		{
+			"Template": "units/gaul/cavalry_scout_starter" 
+		},
+		{
+			"Template": "units/gaul/champion_infantry_trumpeter" 
+		}
+	],
+	"AINames":
+	[
+		"Divico",
+		"Ambiorix",
+		"Asterix",
+		"Liscus",
+		"Valetiacus",
+		"Viridovix",
+		"Cativolcus",
+		"Cingetorix"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/gaul/hero_brennus",
+		"skirmish/units/default_hero_2": "units/gaul/hero_viridomarus",
+		"skirmish/units/default_hero_3": "units/gaul/hero_vercingetorix",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/gaul/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/gaul/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/gaul/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "units/gaul/champion_infantry_trumpeter",
+		"skirmish/units/default_champion_cavalry_1": "units/gaul/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/gaul/champion_cavalry",
+		"skirmish/units/default_infantry_melee_b": "units/gaul/infantry_swordsman_e",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/units/special_starting_unit": "units/gaul/champion_infantry_trumpeter",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

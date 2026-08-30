@@ -1,0 +1,25 @@
+{
+	"genericName": "Eternal City",
+	"specificName": {
+		"imp": "Romae Aeterna",
+		"rome": "Romae Aeterna"
+	},
+	"icon": "laurel_wreath.png",
+	"description": "While the Colosseum stands, Rome shall stand. When the Colosseum falls, Rome shall fall.",
+	"cost": {
+		"coin": 2000,
+		"glory": 4000
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "imp" },
+				{ "civ": "rome" }]
+			}
+		]
+	},
+	"researchTime": 10,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks the “Eternal City” aura for the Amphitheatrum Flavium wonder.[/font]",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

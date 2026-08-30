@@ -1,0 +1,21 @@
+{
+	"genericName": "Ashoka the Great",
+	"description": "Ashoka the Great.",
+	"icon": "civ_choices/maur_hero_ashoka.png",
+	"tooltip": "Select Ashoka the Great to lead your civilization.",
+	"requirements": {
+		"civ": "maur"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_chandragupta_infantry -units/{civ}/hero_chanakya -units/{civ}/hero_bindusara_infantry",
+			"affects": "Palace"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "mauryas/hero_ashoka_proselytism",
+			"affects": "Palace"
+		}
+	]
+}

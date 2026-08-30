@@ -4,10 +4,12 @@
     <Civ>skirm</Civ>
   </Identity>
   <ProductionQueue disable=""/>
+  <Researcher disable=""/>
   <SkirmishReplacer>
-    <general>structures/{civ}_corral</general>
+    <general>structures/{civ}/corral</general>
   </SkirmishReplacer>
+  <Trainer disable=""/>
   <VisualActor>
-    <Actor>structures/athenians/corral.xml</Actor>
+    <Actor>structures/skirmish/corral.xml</Actor>
   </VisualActor>
 </Entity>

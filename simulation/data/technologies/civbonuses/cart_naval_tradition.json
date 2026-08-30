@@ -1,0 +1,13 @@
+{
+	"genericName": "Phoenician Seafaring Tradition",
+	"autoResearch": true,
+	"description": "Carthage had a seafaring tradition that stretched back to its founding as a Phoenician colony on the Mediterranean Sea in the 9th century B.C.",
+	"requirements": {
+		"civ": "cart"
+	},
+	"tooltip": "[font=\"sans-bold-14\"]• All Carthaginian Ships +10% movement speed.[/font]",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Ship"]
+}

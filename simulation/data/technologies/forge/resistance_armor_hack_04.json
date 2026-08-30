@@ -1,0 +1,62 @@
+{
+	"supersedes": "forge/resistance_armor_hack_03",
+	"genericName": "Bronze Cuirass Body Armor",
+	"specificName": {
+		"hele": "Thorakes",
+		"athen": "Thorakes",
+		"epir": "Thorakes",
+		"mace": "Thorakes",
+		"ptol": "Thorakes",
+		"rome": "Lorica Musculata",
+		"sele": "Thorakes",
+		"spart": "Thorakes",
+		"syrac": "Thorakes",
+		"theb": "Thorakes"
+	},
+	"description": "Body armor forged completely of sheet bronze, fashioned in the shape of the muscled male torso. Only the best or wealthy soldiers were equipped with such body armor, as it was very expensive and time-consuming to fabricate.",
+	"cost": {
+		"metal": 1000,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "celti" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "lusi" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cuirass_muscled_bronze.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Champions +1 hack armor.\n• [color=\"orange\"]Champions +10 coin cost.[/color]\n• Heroes +1 hack armor.\n• [color=\"orange\"]Heroes +20 coin cost.[/color]\n• Does not apply to Elephant units.[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Cost/Resources/coin", "add": 10, "affects": "Hero !Elephant" },
+		{ "value": "Cost/Resources/coin", "add": 10 }
+	],
+	"affects": ["Champion !Elephant", "Hero !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

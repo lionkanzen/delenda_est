@@ -1,0 +1,47 @@
+{
+	"genericName": "Advanced Citizen Javelin Infantry",
+	"specificName": {
+		"hele": "Metikoi",
+		"mace": "Metikoi",
+		"spart": "Metikoi",
+		"athen": "Metikoi"
+	},
+	"description": "Upgrade all of your citizen skirmishers to Advanced rank.",
+	"cost": {
+		"wood": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "ptol" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen Javelin Infantry to advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks Elite Citizen Javelin Infantry technology.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Javelin Infantry Basic"],
+	"placeBelow": "Javelin Infantry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

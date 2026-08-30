@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Auras datatype="tokens">
+    structures/artifact_culture
+  </Auras>
+  <Capturable>
+    <CapturePoints>300</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="8" depth="4"/>
+    <Height>10</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Cultural Artifact</GenericName>
+    <Icon>structures/observatory.png</Icon>
+    <Classes datatype="tokens">
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      -City
+      Artifact
+      Capturable
+      Permanent
+    </VisibleClasses>
+    <Tooltip>Capture to gain a trickle of Glory and to improve the Loyalty of your Units and Structures.</Tooltip>
+    <Requirements disable=""/>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Loot disable=""/>
+  <Minimap>
+    <Icon size="14.0">other.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="8.0" depth="4.0"/>
+  </Obstruction>
+  <Resistance replace=""/>
+  <ResourceTrickle>
+    <Rates>
+      <glory>2</glory>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_iber_monument.xml</select>
+      <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+</Entity>

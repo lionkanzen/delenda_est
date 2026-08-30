@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 }
+	],
+	"auraName": "Lightning General",
+	"auraDescription": "\n• All Units +10% movement speed."
+}

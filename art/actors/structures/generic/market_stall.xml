@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/celt_trader.dae</mesh>
+      <textures>
+        <texture file="null_white.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Stall Small A">
+      <props>
+        <prop actor="structures/ptolemies/stall_small_a.xml" attachpoint="root"/>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Small B">
+      <props>
+        <prop actor="structures/ptolemies/stall_small_b.xml" attachpoint="root"/>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Medium">
+      <props>
+        <prop actor="structures/ptolemies/stall_med.xml" attachpoint="root"/>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Big">
+      <props>
+        <prop actor="structures/ptolemies/stall_big.xml" attachpoint="root"/>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Curved">
+      <props>
+        <prop actor="props/structures/scythians/food_stall.xml" attachpoint="root"/>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

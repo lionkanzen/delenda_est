@@ -1,0 +1,34 @@
+{
+	"genericName": "Greek Martial Arts",
+	"specificName": {
+		"hele": "Pankrátion",
+		"mace": "Pankrátion",
+		"spart": "Pankrátion",
+		"athen": "Pankrátion",
+		"sele": "Pankrátion",
+		"ptol": "Pankrátion",
+		"theb": "Pankrátion",
+		"syrac": "Pankrátion"
+	},
+	"description": "Pankration was a powerful Greek combat sport combining wrestling and striking, traditionally said to have been introduced to the Olympic Games in 648 BC. Competitors could punch, kick, grapple, throw, choke, and apply joint locks, with only a few acts—such as biting and gouging—generally forbidden. Its demanding training made pankration a celebrated test of strength, endurance, courage, and technical skill, and successful pankratiasts became prominent athletic figures across the Greek world. The sport also reinforced the broader Greek ideal of physical excellence, linking athletics, military preparedness, civic prestige, and personal honor.",
+	"cost": {
+		"food": 500,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "theb" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "hoplites.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +15% health.\n• Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.1 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

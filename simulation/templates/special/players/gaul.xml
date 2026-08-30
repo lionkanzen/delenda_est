@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/gaul_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>gaul</Civ>
+    <GenericName>Gauls</GenericName>
+    <History>The Gauls were Celtic peoples who dominated much of modern France, Belgium, and neighboring regions during the Iron Age. Organized into numerous tribes, they developed prosperous settlements, extensive trade networks, and a formidable warrior culture. They famously sacked Rome in the 4th century BC, but centuries later were conquered by Julius Caesar during the Gallic Wars of 58–50 BC.</History>
+    <Icon>emblems/512x512/gauls.png</Icon>
+  </Identity>
+</Entity>

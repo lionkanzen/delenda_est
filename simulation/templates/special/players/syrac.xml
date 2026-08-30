@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+<!--   <Auras datatype="tokens">
+    teambonuses/yayo_player_teambonus
+  </Auras> -->
+  <Identity>
+    <Civ>syrac</Civ>
+    <GenericName>Syracusans</GenericName>
+    <History>Syracuse grew from a Greek colony in Sicily into one of the wealthiest and most powerful cities of the western Mediterranean. Its tyrants and generals fought Carthaginians, rival Greek cities, and Athenian invaders, famously destroying the Athenian expedition of 415–413 BC. Under rulers such as Dionysius I and Hiero II, Syracuse became a major military and cultural power before Roman conquest in 212 BC ended its independence.</History>
+    <Icon>emblems/512x512/syracusans.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Player>
+</Entity>

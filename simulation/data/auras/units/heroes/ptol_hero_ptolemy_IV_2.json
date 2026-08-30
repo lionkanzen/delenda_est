@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Elephant", "ElephantStable"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
+	],
+	"auraName": "Elephant Expeditions",
+	"auraDescription": "\n• War Elephants −25% train time.\n• Elephant Stables −25% build time."
+}

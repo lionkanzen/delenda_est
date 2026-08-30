@@ -1,0 +1,25 @@
+{
+	"genericName": "Tax Collectors",
+	"specificName": {
+		"rome": "Publicani",
+		"imp": "Publicani"
+	},
+	"description": ".",
+	"cost": {
+		"food": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "currency.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Market Vendors +50% coin trickle rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/coin", "multiply": 1.5 }
+	],
+	"affects": ["Vendor"],
+	"placeBelow": "Vendor",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

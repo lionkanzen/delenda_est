@@ -1,0 +1,42 @@
+{
+	"partOfPair": "arsenal/pair_siege_ranged_01",
+	"genericName": "Flaming Munitions",
+	"description": ".",
+	"cost": {
+		"wood": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "celti" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "lusi" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "flaming_munitions.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Ranged Siege Weapons +50% crush attack damage.\n• [color=\"orange\"]Ranged Siege Weapons +20% reload time.[/color][/font]",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.50 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.20 }
+	],
+	"affects": ["Ranged Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

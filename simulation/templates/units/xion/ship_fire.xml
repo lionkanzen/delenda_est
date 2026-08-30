@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fire">
+  <Footprint>
+    <Square depth="16.0" width="8.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>xion</Civ>
+    <Lang>mandarin</Lang>
+    <SpecificName>Huǒ Chuán</SpecificName>
+    <Icon>units/han/ship_fire.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+        celts/unlock_warships
+      </Techs>
+      <Tooltip>Unlocked in Town Phase. Requires “Naval Construction.”</Tooltip>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/han/fireship.xml</Actor>
+  </VisualActor>
+</Entity>

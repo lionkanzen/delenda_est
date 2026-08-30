@@ -1,0 +1,4 @@
+{
+	"genericName": "Steel Sickles vs. Irrigation",
+	"pair": ["granary/gather_farming_sickles", "granary/cost_farms_irrigation"]
+}

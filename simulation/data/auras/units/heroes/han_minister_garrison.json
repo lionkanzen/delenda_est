@@ -1,0 +1,16 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.9 }
+	],
+	"auraName": "Excellency of Works",
+	"auraDescription": "\n• Technologies in a Structure −10% cost and research time for every garrisoned Minister.",
+	"stackable": true
+}

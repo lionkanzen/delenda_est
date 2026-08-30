@@ -1,0 +1,24 @@
+{
+	"genericName": "Martial Expertise",
+	"description": "Mercenaries were very experienced at warfare.",
+	"cost": {
+		"coin": 500,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "champions.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Mercenaries are experienced warriors.\n• Mercenaries +20% attack.\n• Merceneries +10% health.\n• [color=\"orange\"]Mercenaries +100% recruit time.[/color][/font]",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.2 },
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 2.0 }
+	],
+	"affects": ["Mercenary"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

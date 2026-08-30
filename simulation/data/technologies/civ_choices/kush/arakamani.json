@@ -1,0 +1,16 @@
+{
+	"genericName": "Arakamani",
+	"description": "",
+	"icon": "civ_choices/kush_hero_arakamani.png",
+	"tooltip": "Select Arakamani to lead your civilization.",
+	"requirements": {
+		"civ": "kush"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_nastasen_infantry -units/{civ}/hero_amanirenas_infantry -units/{civ}/hero_amanitore_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

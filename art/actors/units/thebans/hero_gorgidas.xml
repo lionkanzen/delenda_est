@@ -2,36 +2,37 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Base">
-      <animations>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="100"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="90"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="85"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="50"/>
-        <animation file="biped/inf_sword_ready_b.dae" name="Idle" speed="110"/>
-        <animation file="biped/walk_spearshield.psa" name="Walk" speed="120"/>
-        <animation file="infantry/sword/move/run/isw_s_def_02.psa" name="Run" speed="40"/>
-        <animation event="0.5" file="infantry/sword/attack/isw_s_def_06.psa" name="attack_melee" speed="85"/>
-        <animation file="infantry/general/death/inf_02.psa" name="Death" speed="700"/>
-        <animation file="infantry/general/death/inf_06.psa" name="Death" speed="500"/>
-        <animation file="infantry/general/death/inf_07.psa" name="Death" speed="400"/>
-      </animations>
-      <mesh>skeletal/m_tunic_short.dae</mesh>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/thespian.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/head_hele_h.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear_lance.xml" attachpoint="r_hand"/>
-        <prop actor="props/units/shields/theb_aspis_gorgidas.xml" attachpoint="shield"/>
-        <prop actor="props/units/cape_long_ragged.xml" attachpoint="shoulders"/>
+        <prop actor="props/units/helmets/hele_boeotian_a2.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_athen_pericles.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
+        <prop actor="props/units/shields/aspis_theb_01.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/armor/greave_10_silver_r.xml" attachpoint="leg_R"/>
+        <prop actor="props/units/armor/greave_10_silver_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
+        <prop actor="particle/simple_rings.xml" attachpoint="root"/>
       </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="Armour: Black Corselet">
       <textures>
-        <texture file="skeletal/thespian_b.dds" name="baseTex"/>
+        <texture file="skeletal/hele/linothorax_03_black_03.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/hele/linothorax_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <group>
+    <variant file="biped/base_hoplite.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/hoplite_death.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

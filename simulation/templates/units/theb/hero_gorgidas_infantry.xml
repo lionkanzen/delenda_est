@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/theb_gorgidas|template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/theb_hero_gorgidas_1
+    units/heroes/theb_hero_gorgidas_2
+  </Auras>
+  <Identity>
+    <Civ>theb</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Gorgidas</SpecificName>
+    <Icon>units/theb/hero_gorgidas.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/thebans/hero_gorgidas.xml</Actor>
+  </VisualActor>
+</Entity>

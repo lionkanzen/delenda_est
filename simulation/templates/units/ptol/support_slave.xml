@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>War Slave</SpecificName>
+    <Icon>units/ptol/support_slave.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/ptolemies/slave_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

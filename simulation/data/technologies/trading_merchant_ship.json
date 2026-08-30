@@ -1,0 +1,21 @@
+{
+	"genericName": "Clay Amphorae",
+	"description": "Amphorae were fired clay jars in which perishable goods can be stored for long journeys. These allowed the great maritime trading empires of the Mediterranean and Black seas to flourish, with some merchant ships ranging thousands of miles between ports, such as from the important grain harbors of Alexandria in Egypt to the port of Ostia in Italy.",
+	"cost": {
+		"wood": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "amphorae.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Merchant Ships +25% trade profit per trip.\n• Unlocks “Merchant Marine.”[/font]",
+	"modifications": [
+		{ "value": "Trader/GainMultiplier", "multiply": 1.25 }
+	],
+	"affects": ["MerchantShip"],
+	"placeBelow": "{AffectedUnit}",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

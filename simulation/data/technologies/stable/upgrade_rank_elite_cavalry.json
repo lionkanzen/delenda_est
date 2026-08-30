@@ -1,0 +1,33 @@
+{
+	"supersedes": "stable/upgrade_rank_advanced_cavalry",
+	"genericName": "Elite Cavalry",
+	"description": "Promote all of your Citizen cavalrymen to Advanced rank.",
+	"cost": {
+		"coin": 1200,
+		"glory": 1000
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "huns" },
+					{ "civ": "parth" },
+					{ "civ": "achae" },
+					{ "civ": "sasa" },
+					{ "civ": "scyth" },
+					{ "civ": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Cavalry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Cavalry auto-promote to Advanced Rank.\n• Advanced Cavalry another +10% train time.\n• Advanced Cavalry another +5 food, wood, and metal costs.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Cavalry Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

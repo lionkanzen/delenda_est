@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_military_stable">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Bæhty Khæbic</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="20.0"/>
+  </Obstruction>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/maiden_cavalry_archer
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/scythians/stable.xml</Actor>
+  </VisualActor>
+</Entity>

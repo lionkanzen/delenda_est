@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_crossbowman">
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Belly Bowman</SpecificName>
+    <Icon>units/athen/champion_crossbow.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/infantry_crossbowman.xml</Actor>
+  </VisualActor>
+</Entity>

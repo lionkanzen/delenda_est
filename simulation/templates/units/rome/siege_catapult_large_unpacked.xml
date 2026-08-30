@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_catapult_stationary">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Crush op="mul">2</Crush>
+      </Damage>
+      <MaxRange>96.0</MaxRange>
+      <MinRange>40.0</MinRange>
+      <PrepareTime>2500</PrepareTime>
+      <RepeatTime>5000</RepeatTime>
+      <Projectile>
+        <LaunchPoint y="5"/>
+        <Spread>7.0</Spread>
+      </Projectile>
+      <Splash>
+        <Damage>
+          <Hack>50.0</Hack>
+          <Pierce>0.0</Pierce>
+          <Crush>50.0</Crush>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <BuildRestrictions>
+    <Category>GreatBallista</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>600</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Population>5</Population>
+    <Resources>
+      <wood>400</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="8" depth="16"/>
+    <Height>8</Height>
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Great Ballista</SpecificName>
+    <Icon>units/rome/great_ballista.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        arsenal/siege_packing_02
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Pack>
+    <Entity>units/rome/siege_catapult_large_packed</Entity>
+    <State>unpacked</State>
+    <Time>15000</Time>
+  </Pack>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/siege/ballist_rome_attack.xml</attack>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>10.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/romans/siege_ballista.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

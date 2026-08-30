@@ -1,0 +1,19 @@
+{
+	"genericName": "Plunderers",
+	"autoResearch": true,
+	"description": "Nomadic tribes augmented their economies through plunder. Every enemy unit killed or building destroyed gives additional resources to the tribal treasury.",
+	"requirements": {
+		"any": [
+			{ "civ": "scyth" },
+			{ "civ": "sarm" },
+			{ "civ": "huns" },
+			{ "civ": "xion" }
+		]
+	},
+	"icon": "coinage.png",
+	"tooltip": "[font=\"sans-bold-14\"]• All Soldiers +10 coin loot for every enemy unit killed or building destroyed.[/font]",
+	"modifications": [
+		{ "value": "Looter/Resource/coin", "add": 10 }
+	],
+	"affects": ["Soldier"]
+}

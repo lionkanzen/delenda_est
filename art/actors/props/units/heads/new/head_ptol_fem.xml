@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="egypt_hair">
+      <mesh>props/new/head_ptol_female.dae</mesh>
+    </variant>
+    <variant frequency="1" name="egypt_long_hair">
+      <mesh>props/new/head_ptol_female_2.dae</mesh>
+    </variant>  
+  </group>
+  <group>
+    <variant frequency="1" name="maur_fem_a">
+      <textures>
+        <texture file="props/head/maur_fem_a.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/head/maur_fem_a_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele_fem_c">
+      <textures>
+        <texture file="props/head/hele_fem_c.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/head/hele_fem_c.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="hair-black">
+      <color>0 0 0</color>
+    </variant>
+  </group>
+  <material>objectcolor_norm_spec.xml</material>
+</actor>

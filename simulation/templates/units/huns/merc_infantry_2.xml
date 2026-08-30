@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_javelineer">
+  <Identity>
+    <Civ>huns</Civ>
+    <SpecificName>Frankish Throwing Axeman</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/athen/merc_peltast.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/mercenaries/thrace_peltast_1.xml</Actor>
+  </VisualActor>
+</Entity>

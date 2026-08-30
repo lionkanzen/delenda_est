@@ -1,0 +1,11 @@
+{
+	"Title": "Americans",
+	"Code": "amer",
+	"GUIOrder": 1,
+	"Tooltip": "Native American civilizations.",
+	"Weights": {
+		"olmec": 1,
+		"maya": 1,
+		"zapo": 1
+	}
+}

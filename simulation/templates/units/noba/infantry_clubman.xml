@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>3.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>5.0</Crush>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+  </Cost>
+  <Identity>
+    <Civ>noba</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Noba Clubman</SpecificName>
+    <GenericName>Club Infantry</GenericName>
+    <Icon>units/noba/infantry_clubman.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/noba_clubman.xml</Actor>
+  </VisualActor>
+</Entity>

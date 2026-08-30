@@ -1,0 +1,30 @@
+{
+	"genericName": "Royal Road",
+	"specificName": {
+		"achae": "Kshāyathiya Rāstā",
+		"sasa": "Kshāyathiya Rāstā"
+	},
+	"description": "The Persian Royal Road was a major imperial route developed under the Achaemenid Empire, especially during the reign of Darius I. Stretching from Susa in Persia to Sardis in western Anatolia, it linked key administrative centers across thousands of kilometers. A network of way stations, messengers, and fresh horses allowed royal dispatches and officials to travel with remarkable speed, helping the empire govern distant provinces, move armies, support trade, and maintain communication across its vast territory.",
+	"cost": {
+		"stone": 1000,
+		"glory": 1000
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "achae" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "royal_road.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• All Civilian Units +20% movement speed.\n• Gatherers +10 capacity for all raw resources.[/font]",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20, "affects":"Unit Support" },
+		{ "value": "ResourceGatherer/Capacities/food", "add": 10, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/wood", "add": 10, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/stone", "add": 10, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/metal", "add": 10, "affects":"Gatherer" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,58 @@
+{
+	"genericName": "Elite Citizen Crossbow Cavalry",
+	"description": "Promote all of your Citizen crossbow cavalrymen to Advanced rank.",
+	"cost": {
+		"coin": 800,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Crossbow Cavalry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "stable/upgrade_rank_advanced_cavalry_crossbow",
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Crossbow Cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Crossbow Cavalry Advanced"],
+	"placeBelow": "Cavalry Crossbow",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

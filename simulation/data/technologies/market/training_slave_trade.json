@@ -1,0 +1,20 @@
+{
+	"genericName": "Slave Trade",
+	"description": "The slave trade was widespread in many ancient societies, supplying labor for agriculture, mining, households, workshops, construction, and military or administrative service. Enslaved people were obtained through warfare, piracy, debt, punishment, birth, and long-distance commerce, then bought and sold in markets across regions such as the Mediterranean, Near East, Africa, and Asia. Although laws and conditions varied greatly between cultures, slavery could involve severe exploitation and loss of personal freedom, while in some societies manumission offered a limited path to freedom and social integration.",
+	"cost": {
+		"coin": 400,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "shackled.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]The slave trade spanned the entire ancient world.\n• Slaves −50% train time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"affects": ["Slave"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

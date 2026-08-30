@@ -1,0 +1,37 @@
+{
+	"genericName": "Cataphract Armor",
+	"specificName": {
+		"sasa": "Zen-Abzar"
+	},
+	"description": "Cataphract armor was designed to turn cavalry into heavily protected shock troops by covering both rider and, often, horse in overlapping defenses of scale, lamellar, mail, or articulated metal plates. Han Chinese heavy cavalry used forms of lamellar and scale armor assembled from small iron or hardened leather plates laced together, while Hellenistic Seleucid cataphracts combined mail, scale, and bronze or iron elements influenced by Iranian traditions. Sasanian Persian cataphracts developed the concept further with extensive mail and lamellar protection, reinforced helmets, armored limbs, and barding for the horse. Though construction varied by culture and period, the principle was the same: maximize protection while retaining enough flexibility for mounted combat, producing cavalry capable of surviving missile fire and delivering powerful charges with long spears or lances.",
+	"cost": {
+		"metal": 1200,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "byza" },
+				{ "civ": "han" },
+				{ "civ": "imp" },
+				{ "civ": "parth" },
+				{ "civ": "sasa" },
+				{ "civ": "scyth" },
+				{ "civ": "sele" },
+				{ "civ": "xion" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cataphract.png",
+	"researchTime": 80,
+	"tooltip": "[font=\"sans-bold-14\"]• Melee Cavalry +1 hack armor.\n• Melee Cavalry +1 pierce armor.\n• [color=\"orange\"]Melee Cavalry −10% movement speed.[/color][/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.90 }
+	],
+	"affects": ["Melee Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

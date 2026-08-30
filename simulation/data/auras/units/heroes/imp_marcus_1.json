@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"auraName": "Frontier Campaigns",
+	"auraDescription": "\n• Siege Walls and Army Camps +150% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 2.5 }
+	],
+	"affects": ["SiegeWall", "ArmyCamp"],
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

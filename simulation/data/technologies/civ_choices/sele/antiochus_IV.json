@@ -1,0 +1,26 @@
+{
+	"genericName": "Antiochus IV the Glorious",
+	"description": "Antiochus IV the Glorious.",
+	"icon": "civ_choices/sele_hero_antiochus_IV.png",
+	"tooltip": "Select Antiochus IV to lead your civilization.",
+	"requirements": {
+		"civ": "sele"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_seleucus_victor_infantry -units/{civ}/hero_antiochus_great_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}/civil_centre",
+			"affects": "Builder !Cavalry"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "seleucids/hero_parade_of_daphne",
+			"affects": "Fortress"
+		}
+	]
+}

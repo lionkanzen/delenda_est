@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_granary">
+  <Footprint replace="">
+    <Circle radius="3.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>800</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>noba</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>snwt</SpecificName>
+    <GenericName>Granary</GenericName>
+    <Classes datatype="tokens">
+      DropsiteWood
+      DropsiteMetal
+      DropsiteStone
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Storehouse
+    </VisibleClasses>
+    <Tooltip>Dropsite for food, wood, stone, and metal resources. Research gathering improvements. Buildable in neutral and own territory.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="4.0" depth="4.0"/>
+  </Obstruction>
+  <Researcher disable=""/>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.1</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>structures/noba/granary.xml</Actor>
+    <FoundationActor>structures/fndn_1x1.xml</FoundationActor>
+  </VisualActor>
+</Entity>

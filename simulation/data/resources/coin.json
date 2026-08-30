@@ -1,0 +1,14 @@
+{
+	"code": "coin",
+	"name": "Coin",
+	"description": "Acquire with Trade, Taxes, Treasures, or Cash Crops. Used for training Champions, hiring Mercenaries, buying Slaves, and purchasing raw materials at the Market.",
+	"order": 5,
+	"subtypes": {
+		"taxes": "Taxes",
+		"trade": "Trade",
+		"crops": "Crops"
+	},
+    "properties": ["barterable", "tradable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "sparse"
+}

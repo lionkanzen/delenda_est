@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/mace_philip|template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Capture>
+      <AttackName>Capturer of Cities</AttackName>
+      <Capture op="mul">4.0</Capture>
+    </Capture>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_philip_1
+    units/heroes/mace_hero_philip_2
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Philip II of Macedon</SpecificName>
+    <Icon>units/mace/hero_philip.png</Icon>
+  </Identity>
+  <Upgrade>
+    <PhilipMount>
+      <Entity>units/mace/hero_philip_mounted</Entity>
+      <Tooltip>This gives Philip his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </PhilipMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_swordsman_philip.xml</Actor>
+  </VisualActor>
+</Entity>

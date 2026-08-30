@@ -1,0 +1,43 @@
+{
+	"genericName": "Spear Training",
+	"specificName": {
+		"hele": "Doratismos",
+		"mace": "Doratismos",
+		"spart": "Doratismos",
+		"athen": "Doratismos",
+		"theb": "Doratismos",
+		"ptol": "Doratismos",
+		"sele": "Doratismos",
+		"epir": "Doratismos"
+	},
+	"description": "Spear fighting training increases damage of spear-wielding infantry units.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "civ": "hele" },
+				{ "civ": "athen" },
+				{ "civ": "mace" },
+				{ "civ": "spart" },
+				{ "civ": "theb" },
+				{ "civ": "ptol" },
+				{ "civ": "sele" },
+				{ "civ": "epir" },
+				{ "civ": "syrac" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_plates_spear.png",
+	"researchTime": 50,
+	"tooltip": "[font=\"sans-bold-14\"]• Spear Infantry +10% attack rate.\n• Pike Infantry +10% attack rate.\n• Hoplites +10% attack rate.[/font]",
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.9 }
+	],
+	"affects": ["Infantry Spear"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

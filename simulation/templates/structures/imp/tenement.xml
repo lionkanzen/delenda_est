@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house_big">
+  <BuildRestrictions>
+    <Category>Tenement</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="34.0" depth="22.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max op="mul">2</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Insula</SpecificName>
+    <GenericName>Tenement Building</GenericName>
+    <VisibleClasses datatype="tokens">
+      -Village
+      Town
+    </VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_village
+        house/pop_house_01
+      </Techs>
+    </Requirements>
+    <Icon>structures/tenement.png</Icon>
+  </Identity>
+  <Loot>
+    <wood>60</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="32.0" depth="20.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <TerritoryDecay>
+    <DecayRate>200</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence>
+    <Radius>30</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/romans_imperial/insula.xml</Actor>
+    <FoundationActor>structures/fndn_9x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

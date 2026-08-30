@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.8 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.8 }
+	],
+	"auraName": "Patriotism",
+	"auraDescription": "\n• Ethnic Egyptian Soldiers +20% attack rate.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

@@ -1,0 +1,13 @@
+{
+	"Title": "Nomads Only",
+	"Code": "nomads",
+	"GUIOrder": 1,
+	"Tooltip": "Nomadic civilizations of the Eurasian Steppe.",
+	"Weights": {
+        "*": 0,
+        "huns": 1,
+        "parth": 1,
+        "scyth": 1,
+        "xion": 1
+	}
+}

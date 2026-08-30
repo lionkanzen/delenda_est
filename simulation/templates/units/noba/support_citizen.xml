@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_citizen">
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+  </Cost>
+  <Identity>
+    <Civ>noba</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Noba Villager</SpecificName>
+    <Icon>units/kush/support_slave.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/noba/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

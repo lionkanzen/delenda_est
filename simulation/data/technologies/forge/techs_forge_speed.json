@@ -1,0 +1,20 @@
+{
+	"partOfPair": "forge/pair_techs_01",
+	"genericName": "Metallurgy",
+	"description": ".",
+	"cost": {
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_village"
+	},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "forging.png",
+	"researchTime": 10,
+	"tooltip": "[font=\"sans-bold-14\"]• Forge technologies −50% research time.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.5 }
+	],
+	"affects": ["Forge"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

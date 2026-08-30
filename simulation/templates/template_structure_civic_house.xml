@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
   <BuildRestrictions>
-    <Category>House</Category>
+    <Category>HouseSmall</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>100</CapturePoints>
+  </Capturable>
   <Cost>
-    <PopulationBonus>5</PopulationBonus>
     <BuildTime>30</BuildTime>
     <Resources>
-      <wood>75</wood>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="18.0" depth="18.0"/>
+    <Square width="16.0" depth="16.0"/>
     <Height>5.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -19,45 +21,58 @@
     <BuffHeal>0</BuffHeal>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support</List>
+    <List datatype="tokens">Support+!Elephant Minister</List>
     <LoadingRange>1</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>600</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+    <Max>300</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>House</GenericName>
-    <Tooltip>Increase the population limit.</Tooltip>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <SpecificName>House</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical CaptureResistant</Classes>
     <VisibleClasses datatype="tokens">Village House</VisibleClasses>
-    <Icon>structures/house.png</Icon>
+    <History>Housing has been an important element for human survival for tens of thousands of years. Little is known about the earliest origin of the house and its interior, however it can be traced back to the simplest form of shelters. An exceptionally well-preserved house dating to the fifth millennium BC and with its contents still preserved was for example excavated at Tell Madhur in Iraq. Roman architect Vitruvius' theories have claimed the first form of architecture as a frame of timber branches finished in mud, also known as the primitive hut. In Ancient Rome, the domus (plural domūs, genitive domūs or domī) was the type of town house occupied by the upper classes and some wealthy freedmen during the Republican and Imperial eras.</History>
+    <Icon>structures/house_generic.png</Icon>
+    <Tooltip>Increase the population limit.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <xp>100</xp>
     <food>0</food>
-    <wood>10</wood>
-    <stone>10</stone>
+    <wood>0</wood>
+    <stone>0</stone>
     <metal>0</metal>
+    <glory>100</glory>
   </Loot>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.9</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}_support_female_citizen_house
-    </Entities>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
     <Technologies datatype="tokens">
-      unlock_females_house
-	  health_females_01
-	  pair_house_01
+      house/health_citizens_01
+      house/pop_house_01
+      house/pop_house_02
+      spartans/spartan_women
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <ResourceTrickle>
+    <Rates>
+      <glory>0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_house.xml</select>
-      <constructed>interface/complete/building/complete_house.xml</constructed>
+      <constructed>interface/select/building/sel_house.xml</constructed>
+      <upgraded>interface/select/building/sel_house.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -66,11 +81,17 @@
     <BarHeight>0.6</BarHeight>
     <HeightOffset>8.0</HeightOffset>
   </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>300</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>20</Radius>
-    <Weight>40000</Weight>
+    <Radius>16</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>20</Range>
   </Vision>

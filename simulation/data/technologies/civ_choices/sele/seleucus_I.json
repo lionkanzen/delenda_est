@@ -1,0 +1,26 @@
+{
+	"genericName": "Seleucus I the Victor",
+	"description": "Seleucus I the Victor.",
+	"icon": "civ_choices/sele_hero_seleucus.png",
+	"tooltip": "Select Seleucus Nikator to lead your civilization.",
+	"requirements": {
+		"civ": "sele"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_antiochus_great_infantry -units/{civ}/hero_antiochus_glorious_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}/theater",
+			"affects": "Builder"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "seleucids/hero_marriage_alliance",
+			"affects": "CivilCentre"
+		}
+	]
+}

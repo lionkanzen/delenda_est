@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee">
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/outpost
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>100</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <GenericName>Scout Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Scout Dagger Hunter Builder</VisibleClasses>
+    <Classes datatype="tokens">IdleWorker</Classes>
+    <SelectionGroupName>units/{civ}/cavalry_scout</SelectionGroupName>
+    <Tooltip>Traits: Scout, Good Hunter, Fast Speed, Trample, Builds Outpost.
+Strong Against: Nothing.
+Weak Against: Everything.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_village
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Pierce>5</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <food.meat>0.8</food.meat>
+    </Rates>
+    <Capacities>
+      <food>40</food>
+    </Capacities>
+  </ResourceGatherer>
+  <TrainingRestrictions>
+    <Category>Scout</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hellenes/cavalry_scout.xml</Actor>
+  </VisualActor>
+</Entity>

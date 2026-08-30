@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/romanization
+  </Auras>
+  <BuildRestrictions>
+    <Category>Amphitheater</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>4000</CapturePoints>
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>800</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>500</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>500</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="66.0" depth="90.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <BuffHeal>0</BuffHeal>
+  </GarrisonHolder>
+  <Health>
+    <Max>4000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Amphitheater</GenericName>
+    <SelectionGroupName>template_structure_special_amphitheater</SelectionGroupName>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      CivSpecific
+      CapturableBuilding
+    </Classes>
+    <VisibleClasses datatype="tokens">
+      Amphitheater
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Build an Amphitheater to increase the territory influence of your Buildings.</Tooltip>
+    <Icon>structures/amphitheater.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <glory>300</glory>
+  </Loot>
+  <Minimap>
+    <Icon size="32.0">theater.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="62" depth="86"/>
+  </Obstruction>
+  <ProductionQueue/>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>80</Radius>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_spear_gladiator
+      units/{civ}/champion_infantry_sword_gladiator
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_theater.xml</FoundationActor>
+  </VisualActor>
+</Entity>

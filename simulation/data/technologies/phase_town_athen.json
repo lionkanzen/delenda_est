@@ -3,9 +3,33 @@
 	"specificName": {
 		"athen": "Komópolis"
 	},
-	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology. This is the Athenian city phase, where metal gathering rates are boosted because of the Silver Owls bonus.",
-	"requirements": {"all": [{"civ": "athen"}, {"any": [{"tech":"phase_town_defensive"}, {"tech":"phase_town_expansionism"}]}]},
-	"autoResearch": true,
-	"modifications": [{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1}],
-	"affects": ["Gatherer"]
+	"supersedes": "phase_village",
+	"replaces": ["phase_town"],
+	"description": "Advances from a quiet village to a large town. This is the Athenian town phase, where metal gathering rates are boosted because of the Silver Owls bonus.",
+	"cost": {
+		"food": 800,
+		"wood": 400
+	},
+	"requirements": {
+		"entity": { "class": "Village", "number": 12 }
+	},
+	"requirementsTooltip": "Requires 12 total Buildings (except Fields).",
+	"icon": "phase_town.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]Expand your settlement and promote civilization.\n• Advance to Town Phase.\n• Unlocks more Structures and Units.\n• Civic Centers +25% territory radius.\n• Heroes +200 health.\n• Units +10 meters vision range.\n• “Silver Owls” bonus gives +20% metal gathering rates.[/font]",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "multiply": 1.2, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "add": 10, "affects": "Unit !Fauna" },
+		{ "value": "Health/Max", "add": 200, "affects": "Hero !Scout" },
+		{ "value": "Cost/BuildTime", "add": 10, "affects": "Hero !Scout" },
+		{ "value": "Cost/Resources/coin", "add": 100, "affects": "Hero !Scout" },
+		{ "value": "Cost/Resources/glory", "add": 100, "affects": "Hero !Scout" },
+		{
+			"value": "ResourceGatherer/Rates/metal.ore",
+			"multiply": 1.20,
+			"affects": "Gatherer"
+		}
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

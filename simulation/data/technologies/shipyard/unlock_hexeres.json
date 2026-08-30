@@ -1,0 +1,20 @@
+{
+	"supersedes": "shipyard/training_naval_shipwrights",
+	"genericName": "Naval Arms Race",
+	"description": "In the 4th and 3rd centuries BC, the powers in the Eastern Mediterranean embarked on a naval arms race that saw capital ships growing larger and more extravagant. They could hold more marines, had more rowers, and were studded with towers and ranged siege weapons.",
+	"cost": {
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "mace" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Shipwrights.”",
+	"icon": "juggernaut.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• The “Hexērēs” Siege Ship unlocked for the Macedonians.[/font]",
+	"placeBelow": "NavalSiege",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

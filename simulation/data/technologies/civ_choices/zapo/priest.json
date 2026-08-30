@@ -1,0 +1,21 @@
+{
+	"genericName": "Battle Priest",
+	"description": "Battle Priest.",
+	"icon": "civ_choices/zapo_hero_priest.png",
+	"tooltip": "Select the Battle Priest to lead your civilization.",
+	"requirements": {
+		"civ": "zapo"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_lord_jaguar -units/{civ}/hero_night_king -units/{civ}/hero_rain_lord",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "zapotecs/special_ritualized_warfare",
+			"affects": "Temple"
+		}
+	]
+}

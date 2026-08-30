@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_hoplite">
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <BonusAchaemenids>
+          <Civ>achae</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusAchaemenids>
+        <BonusCarths>
+          <Civ>cart</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusCarths>
+        <BonusBritons>
+          <Civ>brit</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusBritons>
+        <BonusHan>
+          <Civ>han</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHan>
+        <BonusGauls>
+          <Civ>gaul</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusGauls>
+        <BonusMauryans>
+          <Civ>maur</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusMauryans>
+        <BonusKushites>
+          <Civ>kush</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusKushites>
+        <BonusIberians>
+          <Civ>iber</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusIberians>
+        <BonusRomans>
+          <Civ>rome</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusRomans>
+        <BonusPrincipates>
+          <Civ>imp</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusPrincipates>
+        <BonusSasanians>
+          <Civ>sasa</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusSasanians>
+        <BonusScythians>
+          <Civ>scyth</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusScythians>
+        <BonusHuns>
+          <Civ>huns</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHuns>
+        <BonusXion>
+          <Civ>xion</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusXion>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Spartiate Hoplite</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Spartiates
+    </VisibleClasses>
+    <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack, Shield Wall.
+Strong Against: All Cavalry (1.5x), Non-Greek Units (1.1x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">-phase_city phase_town</Techs>
+    </Requirements>
+    <Icon>units/spart/champion_infantry_spear_300.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <TrainingRestrictions>
+    <Category>Spartiates</Category>
+  </TrainingRestrictions>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="add">2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/spartans/infantry_spearman_c_300.xml</Actor>
+  </VisualActor>
+</Entity>

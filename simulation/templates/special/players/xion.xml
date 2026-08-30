@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/scyth_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Xiongnu</GenericName>
+    <History>The Xiongnu were a powerful nomadic confederation that dominated the eastern Eurasian steppe from the 3rd century BC. Under rulers such as Modu Chanyu, they built a vast network across Mongolia and Central Asia. Their cavalry repeatedly challenged the Han dynasty, prompting warfare, diplomacy, tribute, and frontier defenses. Internal divisions eventually weakened the confederation, which fragmented into rival northern and southern groups.</History>
+    <Icon>emblems/512x512/xiongnu.png</Icon>
+  </Identity>
+</Entity>

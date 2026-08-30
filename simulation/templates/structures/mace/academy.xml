@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/mace/barracks">
+  <Cost>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <stone>400</stone>
+      <glory>300</glory>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max op="mul">1.5</Max>
+  </Health>
+  <Identity>
+    <GenericName>Royal Barracks</GenericName>
+    <SpecificName>Stratopedon Basileios</SpecificName>
+    <Requirements>
+      <Techs datatype="tokens">-phase_village phase_empire</Techs>
+    </Requirements>
+    <Icon>structures/elite.png</Icon>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      macedonians/upgrade_silvershields
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Radius op="mul">1.5</Radius>
+  </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_pikeman_a
+      units/{civ}/infantry_pikeman_e
+      units/{civ}/champion_infantry_hoplite
+      units/{civ}/champion_infantry_swordsman
+    </Entities>
+  </Trainer>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/macedonians/barracks_royal.xml</Actor>
+  </VisualActor>
+</Entity>

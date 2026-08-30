@@ -1,0 +1,28 @@
+{
+	"genericName": "Sun Tzu’s Art of War",
+	"specificName": {
+		"han": "Sūnzǐ BīngFǎ"
+	},
+	"description": "Sun Tzu’s Art of War was already an established military classic by the Han era and formed part of the broader tradition of strategic writing studied by commanders and court officials. Its teachings emphasized deception, intelligence, careful preparation, terrain, discipline, logistics, and defeating an enemy through superior positioning rather than reckless frontal combat. During the Han Dynasty, such principles were especially relevant to campaigns against rival states, frontier peoples, and the Xiongnu, where long-distance movement, supply, reconnaissance, and flexible cavalry operations were often decisive. In a Han context, the work represents the ideal of war conducted through calculation, organization, and strategic foresight.",
+	"cost": {
+		"food": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "art_of_war.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry and Cavalry +10% movement speed.\n• Infantry and Cavalry +10% vision range.\n• Infantry and Cavalry −10% training time.[/font]",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 0.9 }
+	],
+	"affects": ["Infantry", "Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

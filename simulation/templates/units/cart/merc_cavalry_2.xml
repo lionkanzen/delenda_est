@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_melee_swordsman">
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>units/cart/merc_cavalry_2</SelectionGroupName>
+    <SpecificName>Iberian Heavy Cavalry</SpecificName>
+    <Rank>Basic</Rank>
+    <VisibleClasses datatype="tokens">Iberian Guerilla</VisibleClasses>
+    <Icon>units/cart/cavalry_swordsman.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/merc_cavalry_2_a</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/iberians/cavalry_swordsman_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

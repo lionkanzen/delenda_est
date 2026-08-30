@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>structural/merc_slave_market_struct.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+        <prop actor="props/structures/merc_slave_market_props_egypt.xml" attachpoint="root"/>
+        <prop actor="units/romans_imperial/citizen_male.xml" attachpoint="trader"/>
+        <prop actor="units/romans_imperial/slave_male.xml" attachpoint="prisoner"/>
+        <prop actor="units/kushites/slave_female.xml" attachpoint="slave01"/>
+        <prop actor="units/ptolemies/slave_male.xml" attachpoint="slave02"/>
+        <prop actor="units/romans_imperial/slave_female.xml" attachpoint="slave03"/>
+      </props>
+      <textures>
+        <texture file="props/scaffold.png" name="baseTex"/>
+        <texture file="structural/ao/merc_slave_market_ao.png" name="aoTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+  </group>
+  <material>basic_trans_ao_norm_spec.xml</material>
+</actor>

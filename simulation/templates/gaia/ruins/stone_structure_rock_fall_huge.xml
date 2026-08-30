@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_ruins">
+  <Footprint replace="">
+    <Circle radius="44.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Stone Resource</GenericName>
+    <SpecificName>Rock Fall</SpecificName>
+    <Icon>gaia/geology_stone_1.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="75.0" depth="75.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Max>5000</Max>
+    <MaxGatherers>20</MaxGatherers>
+  </ResourceSupply>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>props/structures/scythians/kurgan_foundation.xml</Actor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

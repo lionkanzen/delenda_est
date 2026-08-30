@@ -1,0 +1,30 @@
+{
+	"genericName": "Courtyards",
+	"specificName": {
+		"hele": "Peristylon",
+		"mace": "Peristylon",
+		"spart": "Peristylon",
+		"athen": "Peristylon",
+		"sele": "Peristylon",
+		"ptol": "Peristylon",
+		"rome": "Peristylon",
+		"achae": "Paradeisa"
+	},
+	"description": "Courtyards were a common feature of ancient houses across the Mediterranean and Near East. Usually positioned near the center of the home, they provided light, ventilation, and an open-air space for cooking, household work, dining, storage, and family activities. Courtyards also helped regulate temperature in hot climates and offered privacy by turning daily life inward, away from the street. In wealthier homes, they could include columns, gardens, fountains, or decorative paving.",
+	"cost": {
+		"wood": 300,
+		"stone": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "courtyard.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Houses +20% population cap bonus.[/font]",
+	"modifications": [
+		{ "value": "Population/Bonus", "multiply": 1.2 }
+	],
+	"affects": ["House"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

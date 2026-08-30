@@ -1,0 +1,32 @@
+{
+	"genericName": "Geography",
+	"specificName": {
+		"athen": "Geōgraphia",
+		"epir": "Geōgraphia",
+		"imp": "Exploratio",
+		"mace": "Geōgraphia",
+		"maur": "Alekhya",
+		"ptol": "Geōgraphia",
+		"rome": "Exploratio",
+		"sele": "Geōgraphia",
+		"spart": "Geōgraphia",
+		"syrac": "Geōgraphia",
+		"theb": "Geōgraphia"
+	},
+	"description": "By means of trading and travelling people explored beyond the boundaries of their lands and drew maps of it in order to share and memorize their discoveries.",
+	"cost": {
+		"coin": 200,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "cartography.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks shared vision with Allies.[/font]",
+	"modifications": [
+		{ "value": "Player/sharedLos", "replace": true }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

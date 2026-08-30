@@ -1,0 +1,38 @@
+{
+	"supersedes": "civic_center/health_structures_architecture",
+	"genericName": "Stone Aqueducts",
+	"specificName": {
+		"rome": "Aqueductus",
+		"imp": "Aqueductus"
+	},
+	"description": "Roman aqueducts were advanced engineering systems built between roughly 312 BC and the 3rd century AD to transport water via gravity from distant sources to cities for public baths, fountains, and homes. Using stone, concrete, and brick, these networks spanned thousands of miles across the empire, with iconic arch bridges sometimes crossing entire valleys.",
+	"cost": {
+		"stone": 1200,
+		"glory": 1200
+	},
+	"requirements": {
+		"all": [
+			{
+				"any": [
+					{ "civ": "imp" },
+					{ "civ": "rome" }
+				]
+			},
+			{
+				"all": [
+					{ "tech": "phase_empire" },
+					{ "tech": "civic_center/health_structures_concrete" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Brick-Faced Concrete” and “Monumental Architecture.”",
+	"icon": "aqueducts.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Civilians +5% health.\n• Soldiers +5% health.[/font]",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.05 }
+	],
+	"affects": ["Organic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_outpost">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Pierce>20.0</Pierce>
+      </Damage>
+      <MaxRange>40.0</MaxRange>
+      <MinRange>10.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>9</Y>
+        <Z>0</Z>
+      </Origin>
+    </Ranged>
+  </Attack>
+  <Capturable>
+    <CapturePoints>800</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="9.5" depth="8.5"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <GenericName>Sentry Tower</GenericName>
+    <SpecificName>Sentry Tower</SpecificName>
+    <Icon>structures/sentry_tower.png</Icon>
+    <Classes datatype="tokens">GarrisonTower</Classes>
+    <VisibleClasses datatype="tokens">Village DefenseTower SentryTower</VisibleClasses>
+    <Tooltip>Shoots arrows. Garrison to provide extra defence. Needs the murder holes tech to protect its foot. Upgradeable to stone tower.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="9.0" depth="7.5"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      tower_watch
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>16</Radius>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/defense_tower</Entity>
+      <Tooltip>Reinforce with stone and upgrade to a defense tower.</Tooltip>
+      <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+      <Cost>
+        <wood>50</wood>
+        <stone>100</stone>
+      </Cost>
+      <Time>100</Time>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>props/special/palisade_rocks_fort.xml</Actor>
+  </VisualActor>
+</Entity>

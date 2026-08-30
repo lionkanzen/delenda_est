@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/ptol_hero_ptolemy_IV_1
+    units/heroes/ptol_hero_ptolemy_IV_2
+  </Auras>
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Ptolemy IV "Father Loving"</SpecificName>
+    <Classes datatype="tokens">PtolemyIV</Classes>
+    <Icon>units/ptol/hero_ptolemy_IV.png</Icon>
+  </Identity>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>60000</Interval> 
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>units/ptolemies/hero_cavalry_swordsman_ptolemy_IV_m.xml</Actor>
+  </VisualActor>
+</Entity>

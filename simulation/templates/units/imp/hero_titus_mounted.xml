@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/imp_titus_1
+    units/heroes/imp_titus_2
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+    <Lang>latin</Lang>
+    <SpecificName>Emperor Titus Flavius</SpecificName>
+    <Icon>units/imp/hero_titus.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/hero_cavalry_swordsman_marcellus_m.xml</Actor>
+  </VisualActor>
+</Entity>

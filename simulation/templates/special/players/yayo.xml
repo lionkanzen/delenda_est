@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/yayo_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>yayo</Civ>
+    <GenericName>Yamatai Japanese</GenericName>
+    <History>The Yayoi period in Japan saw the spread of wet-rice agriculture, bronze and iron technology, fortified settlements, and increasingly complex chiefdoms from around 900 BC to AD 250. Chinese records describe the later polity of Yamatai, traditionally associated with Queen Himiko, who ruled through alliances and ritual authority. These developments helped lay the foundations for larger political states that emerged in the succeeding Kofun period.</History>
+    <Icon>emblems/512x512/yamatai.png</Icon>
+  </Identity>
+</Entity>

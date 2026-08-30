@@ -1,0 +1,11 @@
+{
+	"Title": "East Asians",
+	"Code": "east_asia",
+	"GUIOrder": 1,
+	"Tooltip": "East Asian civilizations.",
+	"Weights": {
+		"han": 2,
+		"xion": 1,
+		"yayo": 2
+	}
+}

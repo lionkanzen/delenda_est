@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_brasidas
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Xanthippus of Sparta</SpecificName>
+    <Classes datatype="tokens">Xanthippus</Classes>
+    <Icon>units/cart/hero_xanthippus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/cart/hero_xanthippus_mounted</Entity>
+      <Tooltip>This gives Xanthippus his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_infantry_hoplite_xanthippus.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,21 @@
+{
+	"genericName": "Roman Logistics",
+	"description": "The Romans were masters of the logistics of warfare.",
+	"cost": {
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "romans/special_roman_roads" },
+			{ "any": [
+				{ "civ": "imp" },
+				{ "civ": "rome" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Roman Roads” at the Market.",
+	"icon": "handcart_empty.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks the “Logistics” healing aura for Roman Army Camps.[/font]",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

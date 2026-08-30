@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_melee_swordsman">
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>16</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <metal>50</metal>
+      <coin>60</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>units/cart/cavalry_swordsman_gaul_b</SelectionGroupName>
+    <SpecificName>Gallic Mercenary Cavalry</SpecificName>
+    <Rank>Basic</Rank>
+    <VisibleClasses datatype="tokens">Celt Guerilla</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">phase_village -phase_town</Techs>
+    </Requirements>
+    <Icon>units/cart/cavalry_swordsman_2.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/cavalry_swordsman_gaul_a</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <TrainingRestrictions>
+    <Category>MercCelt</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/gauls/cavalry_swordsman_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

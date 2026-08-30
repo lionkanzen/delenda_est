@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 100,
+	"affects": ["Organic", "Structure", "Siege"],
+	"affectedPlayers": ["MutualAlly", "Ally", "Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "replace": 10},
+		{ "value": "Health/RegenRate", "add": -0.5, "affects": "Organic" },
+		{ "value": "Health/RegenRate", "add": -0.25, "affects": "Siege" },
+		{ "value": "Health/RegenRate", "add": -2.0, "affects": "Field" }
+	],
+	"auraName": "Sandstorm",
+	"auraDescription": "\n• Moves slowly and damages units caught within.\n• Vision is heavily reduced for anything caught within."
+}

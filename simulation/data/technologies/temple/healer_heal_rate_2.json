@@ -1,0 +1,30 @@
+{
+	"partOfPair": "temple/pair_heal_02",
+	"genericName": "Medicinal Teachings",
+	"specificName": {
+		"hele": "Hippocratic Oath",
+		"mace": "Hippocratic Oath",
+		"spart": "Hippocratic Oath",
+		"athen": "Hippocratic Oath",
+		"sele": "Hippocratic Oath",
+		"ptol": "Ancient Rites",
+		"rome": "Works of Galen"
+	},
+	"description": "Medicinal teaching in the ancient world combined practical observation, inherited remedies, philosophy, and increasingly systematic study of the human body. Greek medicine became especially influential through the Hippocratic tradition, which emphasized careful observation, prognosis, diet, and professional conduct; the Hippocratic Oath came to symbolize the ethical responsibilities of physicians. Centuries later, the physician Galen synthesized Greek medical knowledge with his own anatomical and physiological theories, producing works that shaped medical education throughout the Roman world and remained enormously influential in Europe and the Near East for more than a millennium.",
+	"cost": {
+		"food": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "asclepius_rod.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Healers +25% healing rate.[/font]",
+	"modifications": [
+		{ "value": "Heal/Interval", "add": -500.0 }
+	],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

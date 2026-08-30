@@ -1,0 +1,33 @@
+{
+	"genericName": "Land Reforms",
+	"specificName": {
+		"rome": "Latifundia",
+		"imp": "Latifundia"
+	},
+	"description": "Crop Rotation and Land Reform.",
+	"cost": {
+		"coin": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "notciv": "athen" },
+			{ "notciv": "epir" },
+			{ "notciv": "hele" },
+			{ "notciv": "kush" },
+			{ "notciv": "mace" },
+			{ "notciv": "theb" },
+			{ "notciv": "spart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "crop_rotation.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Grain Fields +50 food per minute trickle.[/font]",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 5 }
+	],
+	"affects": ["Grain Field"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

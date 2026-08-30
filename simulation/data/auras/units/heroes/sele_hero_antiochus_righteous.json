@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 70,
+	"affects": ["Structure", "Mechanical"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 0.75 }
+	],
+	"auraName": "Bringer of Victory",
+	"auraDescription": "\n• Capturable enemy Buildings and Siege Engines −25% capture resistance.",
+	"overlayIcon": "art/textures/ui/session/auras/broken_sword.png"
+}

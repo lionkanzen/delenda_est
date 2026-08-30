@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Kush Red Hair 1">
+      <mesh>props/helmet/ptol_quilted.dae</mesh>
+      <textures>
+        <texture file="props/helmet/kush_hair_red_01.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/helmet/kush_hair_red_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

@@ -1,0 +1,15 @@
+{
+	"code": "food",
+	"name": "Food",
+	"description": "Harvest from animals, berry bushes, fish, or farms. Used for training Units and researching some technologies.",
+	"order": 1,
+	"subtypes": {
+		"fish": "Fish",
+		"fruit": "Fruit",
+		"grain": "Grain",
+		"meat": "Meat"
+	},
+    "properties": ["barterable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "ignore"
+}

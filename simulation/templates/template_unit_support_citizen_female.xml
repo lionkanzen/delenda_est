@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_citizen">
+  <Auras datatype="tokens">
+    units/female_inspiration
+  </Auras>
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/{civ}/military_colony
+    </Entities>
+  </Builder>
+  <Capturable>
+    <CapturePoints>40</CapturePoints>
+    <RegenRate>0.5</RegenRate>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+  </Capturable>
+  <Identity>
+    <GenericName>Female Citizen Civilian</GenericName>
+    <Phenotype>female</Phenotype>
+    <VisibleClasses datatype="tokens">Woman</VisibleClasses>
+    <Classes datatype="tokens">FemaleCitizen</Classes>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/romans/citizen_male.xml</Actor>
+  </VisualActor>
+</Entity>

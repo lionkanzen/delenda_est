@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource">
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Domestic</Affects>
-      <Modifications>
-        <ResourceTrickle.FoodRate>
-		  <Add>1</Add>
-		</ResourceTrickle.FoodRate>
-      </Modifications>
-      <AuraName>Ranching and Corralling</AuraName>
-      <AuraDescription>Garrison Domestic Animals within the Corral to enable a slow trickle of Food.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    structures/corral_garrison
+    structures/slaughterhouse
   </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Corral</Category>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
@@ -20,51 +15,46 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="12.0" depth="22.0"/>
-    <Height>5.0</Height>
+    <Square width="19.0" depth="18.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>5</Max>
     <EjectHealth>0.5</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Domestic</List>
+    <List datatype="tokens">Animal Minister Teacher</List>
     <BuffHeal>1</BuffHeal>
     <LoadingRange>4</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_2x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Corral</GenericName>
-    <Tooltip>Raise herd animals for food. Task domestic animals here to gain a trickle of food or other bonus (Not yet implemented).</Tooltip>
+    <GenericName>Animal Corral</GenericName>
+    <SpecificName>Animal Corral</SpecificName>
+    <Tooltip>Raise Domestic Animals for immediate slaughter, or garrison them instead to gain a free trickle of food.</Tooltip>
     <VisibleClasses datatype="tokens">
-	  Village
-	  Corral
-	</VisibleClasses>
+      Village
+      Corral
+    </VisibleClasses>
     <Icon>structures/corral.png</Icon>
   </Identity>
   <Loot>
     <xp>100</xp>
-    <food>0</food>
-    <wood>10</wood>
-    <stone>0</stone>
-    <metal>0</metal>
+    <food>100</food>
+    <glory>100</glory>
   </Loot>
   <Obstruction>
-    <Static width="9.5" depth="19.75"/>
+    <Static width="16.0" depth="15.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-      gaia/fauna_sheep
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
-      training_animals_stockbreeding
-	  training_animals_husbandry
-	  gather_draft_animals
+      corral/training_animals_husbandry
+      corral/training_animals_husbandry_2
+      corral/gather_draft_animals
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_corral.xml</select>
@@ -72,10 +62,19 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      gaia/fauna_pig_trainable
+      gaia/fauna_goat_trainable
+      gaia/fauna_cattle_cow_trainable
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>20</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_2x4.xml</FoundationActor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
   </VisualActor>
 </Entity>

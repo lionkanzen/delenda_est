@@ -1,0 +1,80 @@
+{
+	"Code": "hele",
+	"Culture": [ "Greek" ],
+	"Region": [ "Mediterranean", "Europe", "Greece" ],
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+	],
+	"TeamBonus":
+	[
+	],
+	"CivChoices":
+	[
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/athen/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/hele/civil_centre"
+		},
+		{
+			"Template": "units/hele/support_citizen",
+			"Count": 4
+		}
+	],
+	"CivicCenterNames":
+	[
+		"Amphipolis",
+		"Aphidna",
+		"Athens",
+		"Decelea",
+		"Eleusis",
+		"Marathon",
+		"Oinoi",
+		"Paros",
+		"Phaleron",
+		"Piraeus",
+		"Rhamnous"
+	],
+	"AINames":
+	[
+		"Alcibiades",
+		"Aristotle",
+		"Cimon",
+		"Cleisthenes",
+		"Cleon",
+		"Cleophon",
+		"Demosthenes",
+		"Dracon",
+		"Hippias",
+		"Isocrates",
+		"Peisistratos",
+		"Plato",
+		"Sophocles",
+		"Thrasybulus",
+		"Thucydides",
+		"Xenophon"
+	],
+	"SkirmishReplacements":
+	{
+	},
+	"SelectableInGameSetup": false
+}

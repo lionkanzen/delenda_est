@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_javelineer">
+  <Identity>
+    <Civ>sele</Civ>
+    <Lang>greek</Lang>
+    <Rank>Basic</Rank>
+    <GenericName>Thureos Skirmisher</GenericName>
+    <SelectionGroupName>units/sele/infantry_javelineer_b</SelectionGroupName>
+    <Icon>units/merc/successor_infantry_5.png</Icon>
+  </Identity>
+  <Promotion>
+    <RequiredXp>100</RequiredXp>
+    <Entity>units/sele/infantry_javelineer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/seleucids/infantry_javelinist_b.xml</Actor>
+  </VisualActor>
+</Entity>

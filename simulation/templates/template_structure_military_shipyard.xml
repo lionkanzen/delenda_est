@@ -6,43 +6,72 @@
     <Category>Dock</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>200</BuildTime>
     <Resources>
-      <wood>300</wood>
+      <stone>200</stone>
     </Resources>
   </Cost>
   <Footprint>
     <Square width="18.0" depth="18.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Ship</EjectClassesOnDestroy>
+    <List datatype="tokens">Minister Teacher</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>2500</Max>
-    <SpawnEntityOnDeath>rubble/rubble_4x4_dock</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Shipyard</GenericName>
+    <GenericName>Naval Shipyard</GenericName>
+    <SpecificName>Naval Shipyard</SpecificName>
     <Tooltip>Build upon a shoreline to construct Warships and research naval improvements.</Tooltip>
-    <Classes datatype="tokens">Naval</Classes>
-    <VisibleClasses datatype="tokens">Military Town Shipyard</VisibleClasses>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Classes datatype="tokens">Naval Dock</Classes>
+    <VisibleClasses datatype="tokens">Military Village Shipyard</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
     <Icon>structures/shipyard.png</Icon>
   </Identity>
   <Loot>
-    <xp>100</xp>
-    <food>0</food>
-    <wood>30</wood>
-    <stone>0</stone>
-    <metal>30</metal>
+    <xp>200</xp>
+    <glory>200</glory>
   </Loot>
   <Obstruction>
     <Static width="18.0" depth="18.0"/>
   </Obstruction>
   <Position>
     <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
   </Position>
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
+  <Researcher>
+    <Technologies datatype="tokens">
+      shipyard/vision_ship_lookouts
+      shipyard/vision_exploration
+      shipyard/training_naval_shipwrights
+      shipyard/health_regen_warships
+      shipyard/health_warship_cables
+      shipyard/unlock_hexeres
+      shipyard/unlock_warship_cavalry
+      shipyard/unlock_corvus
+      shipyard/attack_warship_oxybeles
+      shipyard/attack_warship_ramming
+      shipyard/attack_warship_ballistae
+      shipyard/attack_fireship_pitch
+      shipyard/attack_warship_flaming_projectiles
+      shipyard/capture_resistance_warship
+    </Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_dock.xml</select>
@@ -51,15 +80,17 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      training_naval_construction
-	  naval_cost_01
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/ship_scout
+      units/{civ}/ship_arrow
+      units/{civ}/ship_fire
+      units/{civ}/ship_ram
+      units/{civ}/ship_siege
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>

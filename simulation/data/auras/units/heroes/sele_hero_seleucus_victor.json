@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Elephant"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed>", "multiply": 1.2 },
+		{ "value": "Attack/Melee/Damage/Hack>", "multiply": 1.2 },
+		{ "value": "Attack/Melee/Damage/Crush>", "multiply": 1.2 }
+	],
+	"auraName": "Zooiarchos",
+	"auraDescription": "\n• War Elephants +20% attack damage and movement speed.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

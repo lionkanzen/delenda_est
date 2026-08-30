@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre_military_colony">
+  <Footprint>
+    <Square width="31.0" depth="31.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>sele</Civ>
+    <GenericName>Military Colony</GenericName>
+    <SpecificName>Klērouchia</SpecificName>
+    <Tooltip>This is the Seleucid expansion building, similar to Civic Centers for other factions. It is weaker, more prone to capture, and has a smaller territory influence, but is cheaper and builds a lot faster.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="30.0" depth="29.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_hoplite_b
+      units/{civ}/infantry_archer_b
+      units/{civ}/cavalry_spearman_b
+      units/{civ}/cavalry_javelineer
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/seleucids/military_colony.xml</Actor>
+  </VisualActor>
+</Entity>

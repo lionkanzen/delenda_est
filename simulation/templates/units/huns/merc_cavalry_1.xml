@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_melee_swordsman">
+  <Identity>
+    <Civ>huns</Civ>
+    <SelectionGroupName>units/huns/merc_cavalry_1</SelectionGroupName>
+    <SpecificName>Gothic Heavy Cavalry</SpecificName>
+    <Icon>units/sueb/champion_cavalry.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/gothic_heavy_cavalry.xml</Actor>
+  </VisualActor>
+</Entity>

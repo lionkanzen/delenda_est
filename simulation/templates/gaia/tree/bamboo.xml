@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_tree">
+  <Footprint>
+    <Circle radius="3.5"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Bamboo</GenericName>
+    <SpecificName>Zhēng</SpecificName>
+  </Identity>
+  <ResourceSupply>
+    <Max>150</Max>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>flora/trees/bamboo.xml</Actor>
+  </VisualActor>
+</Entity>

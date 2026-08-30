@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_cunobelin
+  </Auras>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Cunobelinos</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/brit/hero_cunobelin.png</Icon>
+  </Identity>
+  <Upgrade>
+    <SwitchToHorse>
+      <Entity>units/brit/hero_cunobelin_mounted</Entity>
+      <Tooltip>This gives Cunobelinos his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </SwitchToHorse>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/britons/hero_infantry_swordsman_cunobelin.xml</Actor>
+  </VisualActor>
+</Entity>

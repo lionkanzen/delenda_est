@@ -1,0 +1,21 @@
+{
+	"genericName": "Demetrius the Besieger",
+	"description": "Demetrius the Besieger.",
+	"icon": "civ_choices/mace_hero_demetrius.png",
+	"tooltip": "Select Demetrius the Besieger to lead your civilization.",
+	"requirements": {
+		"civ": "mace"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_philip_infantry -units/{civ}/hero_alexander_infantry -units/{civ}/hero_craterus_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "macedonians/demetrius_monstrous_engines",
+			"affects": "Arsenal"
+		}
+	]
+}

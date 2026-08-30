@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Cavalry"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Attack/Capture/Capture", "multiply": 1.2 }
+	],
+	"auraName": "Lead from the Front",
+	"auraDescription": "\n• Cavalry +20% attack damage and +20% capture power.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

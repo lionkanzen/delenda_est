@@ -1,0 +1,129 @@
+{
+	"Code": "imp",
+	"Culture": [ "Italian", "Roman" ],
+	"Region": [ "Mediterranean", "Europe", "Italy" ],
+	"Music": [
+		{
+			"File": "The_Governor.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Calm_Before_the_Storm.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Elysian_Fields.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Juno_Protect_You.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Testudo Formation",
+			"History": "The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries were formed into hollow squares with twelve men on each side, standing so close together that their shields overlapped like fish scales.",
+			"Description": "Roman infantry can form a Testudo."
+		},
+		{
+			"Name": "Centurio",
+			"History": "",
+			"Description": "Roman Legionary Swordsmen gain an extra 4th rank, that of Centurion, with champion-level stats and abilities."
+		},
+		{
+			"Name": "Romanization",
+			"History": "",
+			"Description": "Buildings +20% territory influence for every Roman Amphitheater built or captured."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/imp/augustus",
+		"civ_choices/imp/titus",
+		"civ_choices/imp/trajan",
+		"civ_choices/imp/marcus_aurelius",
+		"civ_choices/imp/aurelian"
+	],
+	"WallSets":
+	[
+		"structures/imp/wallset_siege",
+		"structures/imp/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/imp/civil_centre"
+		},
+		{
+			"Template": "units/imp/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/imp/infantry_swordsman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/imp/infantry_swordsman_centurion",
+			"Count": 1
+		},
+		{
+			"Template": "units/imp/infantry_javelineer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/imp/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Agrippina",
+		"Faustina",
+		"Lucilla",
+		"Tiberius",
+		"Claudius",
+		"Nero",
+		"Galba",
+		"Gela",
+		"Vespasian",
+		"Domitian",
+		"Hadrian",
+		"Commodus",
+		"Decimus Meridias Maximus",
+		"Lucius Verus",
+		"Septimius Severus",
+		"Caracalla",
+		"Titus Pullo",
+		"Lucius Vorennus",
+		"Tacitus",
+		"Pliny the Elder",
+		"Pliny the Younger",
+		"Agricola",
+		"Josephus",
+		"Pescennius Niger",
+		"Cassius Dio",
+		"Pertinax"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/imp/hero_augustus",
+		"skirmish/units/default_hero_2": "units/imp/hero_titus",
+		"skirmish/units/default_hero_3": "units/imp/hero_trajan",
+		"skirmish/units/default_hero_4": "units/imp/hero_marcus_aurelius",
+		"skirmish/units/default_hero_5": "units/imp/hero_aurelian",
+		"skirmish/units/default_champion_infantry_1": "units/imp/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/imp/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/imp/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "units/imp/champion_infantry",
+		"skirmish/units/default_champion_cavalry_1": "units/imp/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/imp/champion_cavalry_cataphract",
+		"skirmish/units/default_infantry_ranged_b": "units/imp/infantry_javelineer_e",
+		"skirmish/units/default_infantry_melee_b": "units/imp/infantry_swordsman_e",
+		"skirmish/units/special_starting_unit": "units/imp/infantry_swordsman_centurion",
+		"skirmish/structures/default_house_10" : "structures/{civ}/house",
+		"skirmish/structures/special_starting_structure": "structures/imp/temple_vesta",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

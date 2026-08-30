@@ -1,0 +1,11 @@
+{
+	"auraName": "Eternal Fire",
+	"type": "global",
+	"requiredTechnology": "romans/vestal_virgins",
+	"auraDescription": "\n• All capturable Structures and Units +25% capture points.\n• Requires “The College of Vestal Virgins.”",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.25 }
+	],
+	"affects": ["Structure", "Unit"],
+	"overlayIcon": "art/textures/ui/session/auras/laurel.png"
+}

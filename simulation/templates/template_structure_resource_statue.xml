@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Auras datatype="tokens">
+    structures/statue_costs
+  </Auras>
+  <BuildRestrictions>
+    <Category>CultStatue</Category>
+    <Distance>
+      <FromClass>CultStatue</FromClass>
+      <MinDistance>20</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>80</BuildTime>
+    <Resources>
+      <stone>100</stone>
+      <metal>100</metal>
+      <coin>0</coin>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="5.0"/>
+    <Height>18.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Cult Statue</GenericName>
+    <SpecificName>Cult Statue</SpecificName>
+    <VisibleClasses datatype="tokens">Town CultStatue</VisibleClasses>
+    <Tooltip>Build these to generate the Glory resource over time. Task units to pray at the statue to generate Glory even faster. Can only build 1 at a time, one after another.</Tooltip>
+    <Icon>structures/statue_bronze.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <glory>200</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="9.0" depth="9.0"/>
+  </Obstruction>
+  <RallyPoint disable=""/>
+  <Researcher>
+    <Technologies datatype="tokens">
+      cult_statue/trickle_glory_01
+    </Technologies>
+  </Researcher>
+  <ResourceDropsite>
+    <Types>glory</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Max>Infinity</Max>
+    <Type>glory.praise</Type>
+    <MaxGatherers>5</MaxGatherers>
+    <DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Rates>
+      <glory>1</glory>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_iber_monument.xml</select>
+      <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>20.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
+  <Vision>
+    <Range>24</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>

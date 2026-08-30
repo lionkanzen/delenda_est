@@ -1,0 +1,61 @@
+{
+	"genericName": "Advanced Citizen Pike Infantry",
+	"specificName": {
+		"hele": "ParastatĂ¨s",
+		"mace": "ParastatĂ¨s",
+		"epir": "ParastatĂ¨s",
+		"sele": "ParastatĂ¨s",
+		"ptol": "ParastatĂ¨s",
+		"spart": "ParastatĂ¨s",
+		"athen": "ParastatĂ¨s"
+	},
+	"description": "Upgrade all of your citizen pikemen to Advanced rank.",
+	"cost": {
+		"wood": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Basic Pike Infantry auto-promote to Advance Rank.\n• Advanced Pike Infantry +10% train time.\n• Unlocks “Elite Pike Infantry.”[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Pike Infantry Basic"],
+	"placeBelow": "Citizen Infantry Pike",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

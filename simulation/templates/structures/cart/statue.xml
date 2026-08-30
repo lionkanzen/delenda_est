@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_statue">
+  <BuildRestrictions>
+    <Category>CultStatue</Category>
+    <Distance>
+      <FromClass>CultStatue</FromClass>
+      <MinDistance>40</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="15.0" depth="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max op="mul">2.0</Max>
+  </Health>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Cenotaph</SpecificName>
+  </Identity>
+  <Loot>
+    <xp>400</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>40</stone>
+    <metal>40</metal>
+    <glory>400</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="12.0" depth="12.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <MaxGatherers>10</MaxGatherers>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>structures/carthaginians/cenotaph.xml</Actor>
+    <FoundationActor>structures/carthaginians/fndn_wall_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>

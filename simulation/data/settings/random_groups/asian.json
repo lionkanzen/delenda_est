@@ -1,0 +1,18 @@
+{
+	"Title": "Asians",
+	"Code": "asia",
+	"GUIOrder": 1,
+	"Tooltip": "Civilizations in the Asian continent.",
+	"Weights": {
+		"achae": 3,
+		"gala": 1,
+		"gupt": 4,
+		"han": 5,
+		"maur": 5,
+		"sasa": 3,
+		"scyth": 2,
+		"sele": 1,
+		"xion": 2,
+		"yayo": 4
+	}
+}

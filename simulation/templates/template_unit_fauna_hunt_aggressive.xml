@@ -2,18 +2,25 @@
 <Entity parent="template_unit_fauna_hunt">
   <Attack>
     <Melee>
-      <Hack>1</Hack>
-      <Pierce>1</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.0</MaxRange>
+      <Damage>
+        <Hack>5.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Structure</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">Structure Ship Siege</RestrictedClasses>
     </Melee>
   </Attack>
   <Identity>
+    <VisibleClasses datatype="tokens">Aggressive</VisibleClasses>
   </Identity>
+  <Loot>
+    <xp>20</xp>
+  </Loot>
   <UnitAI>
-    <NaturalBehaviour>aggressive</NaturalBehaviour>
+    <DefaultStance>aggressive</DefaultStance>
   </UnitAI>
   <Vision>
     <Range>10</Range>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house_big">
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Domus</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -house/health_citizens_01
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/romans/house.xml</Actor>
+  </VisualActor>
+</Entity>

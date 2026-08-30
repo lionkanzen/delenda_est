@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Armour>
-    <Hack>1</Hack>
-    <Pierce>1</Pierce>
-    <Crush>1</Crush>
-  </Armour>
   <Cost>
-    <BuildTime>15</BuildTime>
+    <BuildTime>20</BuildTime>
   </Cost>
   <Identity>
     <GenericName>Support</GenericName>
-    <Classes datatype="tokens">Organic</Classes>
-	<VisibleClasses datatype="tokens">Support</VisibleClasses>
+    <Classes datatype="tokens">Organic Human</Classes>
+    <VisibleClasses datatype="tokens">Civilian Support Bribable</VisibleClasses>
   </Identity>
   <Loot>
-    <xp>10</xp>
-    <food>1</food>
-    <wood>1</wood>
-    <stone>1</stone>
-    <metal>1</metal>
+    <xp>20</xp>
+    <glory>5</glory>
   </Loot>
-  <Minimap>
-    <Type>support</Type>
-  </Minimap>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <trained>interface/alarm/alarm_create_worker.xml</trained>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
     </SoundGroups>
   </Sound>
   <UnitAI>
     <DefaultStance>passive</DefaultStance>
   </UnitAI>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+  </UnitMotion>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
 </Entity>

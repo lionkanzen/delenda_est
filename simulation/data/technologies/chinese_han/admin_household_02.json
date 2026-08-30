@@ -1,0 +1,25 @@
+{
+	"genericName": "Household Administration - Level 2",
+	"specificName": {
+		"han": "Jiātíng Guǎnlǐ"
+	},
+	"supersedes": "chinese_han/admin_household_01",
+	"cost": {
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_household_2.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Citizens −20% cost.\n• Houses −20% cost.[/font]",
+	"modifications": [
+		{ "value": "Cost/Resources/food", "multiply": 0.8, "affects": "Civilian Citizen" },
+		{ "value": "Cost/Resources/wood", "multiply": 0.8, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

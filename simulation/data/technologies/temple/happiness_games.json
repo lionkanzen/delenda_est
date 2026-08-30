@@ -1,0 +1,49 @@
+{
+	"genericName": "Religious Festival",
+	"specificName": {
+		"hele": "Olympic Games",
+		"mace": "Olympic Games",
+		"spart": "Olympic Games",
+		"athen": "Panathenaia",
+		"sele": "Apollonian Games",
+		"theb": "Delphic Games"
+	},
+	"description": "Religious and cultural festivals were central to public life among many civilizations, combining worship, feasting, athletics, music, sacrifice, and civic identity. In Athens, the Panathenaia honored Athena with processions, sacrifices, contests, and the presentation of a sacred robe; in Rome, the Ludi Romani celebrated Jupiter with public games, chariot races, and theatrical performances; and among the Persians, Nowruz, the New Year festival, marked seasonal renewal and royal legitimacy with court ceremony, gift-giving, and feasting. Such festivals reinforced religious devotion while also strengthening political authority, community bonds, and cultural identity.",
+	"cost": {
+		"food": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "brit" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "han" },
+					{ "notciv": "iber" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "ptol" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "zapo" },
+					{ "notciv": "rome" },
+					{ "notciv": "imp" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "games.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]Cultural events are the glue to a society.\n• Capturable Buildings +50% capture resistance.\n• Capturable Units +50% capture resistance.[/font]",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+	],
+	"affects": ["Civic Structure", "Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

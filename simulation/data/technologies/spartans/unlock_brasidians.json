@@ -1,0 +1,15 @@
+{
+	"genericName": "Brasidians",
+	"description": "Unlocks the ability of Helot units to upgrade to basic Hoplites.",
+	"cost": {
+		"glory": 500
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase after choosing the hero Brasidas.",
+	"icon": "helmet_corinthian_bronze.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Unlocks the ability of Helot units to upgrade to basic Hoplites.[/font]",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

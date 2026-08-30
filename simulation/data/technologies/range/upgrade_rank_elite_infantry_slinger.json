@@ -1,0 +1,54 @@
+{
+	"genericName": "Elite Citizen Slinger Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen slingers to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "cart" },
+					{ "notciv": "epir" },
+					{ "notciv": "goth" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Slinger Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "range/upgrade_rank_advanced_infantry_slinger",
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen Slinger Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Sling Infantry Advanced"],
+	"placeBelow": "Sling Infantry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

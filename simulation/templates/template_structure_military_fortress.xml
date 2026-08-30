@@ -2,121 +2,135 @@
 <Entity parent="template_structure_military">
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
-      <Pierce>15.0</Pierce>
-      <Crush>0.0</Crush>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
       <MaxRange>50.0</MaxRange>
-      <MinRange>20.0</MinRange>
-      <ProjectileSpeed>60.0</ProjectileSpeed>
-      <PrepareTime>1200</PrepareTime>
+      <MinRange>24.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>1.5</Spread>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="10"/>
+      </Projectile>
       <PreferredClasses datatype="tokens">Organic</PreferredClasses>
-      <Bonuses>
-          <NerfSiege>
-              <Classes>Siege</Classes>
-              <Multiplier>0.5</Multiplier>
-          </NerfSiege>
-      </Bonuses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.15</LineThickness>
+      </RangeOverlay>
     </Ranged>
   </Attack>
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Armour.Pierce> <Add>3</Add> </Armour.Pierce>
-        <Armour.Hack> <Add>3</Add> </Armour.Hack>
-        <Armour.Crush> <Add>3</Add> </Armour.Crush>
-		<Attack.Ranged.MaxRange> <Add>10</Add> </Attack.Ranged.MaxRange>
-        <Vision.Range> <Add>10</Add> </Vision.Range>
-      </Modifications>
-      <AuraName>Battlements</AuraName>
-      <AuraDescription>Units standing on Fortress battlements have 3 extra Armor levels, +10 Range, and +10 Vision.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    structures/wall_battlements
   </Auras>
-  <BuildingAI>
-    <DefaultArrowCount>3</DefaultArrowCount>
-    <GarrisonArrowMultiplier>0.1</GarrisonArrowMultiplier>
-	<GarrisonArrowClasses>Soldier Ranged</GarrisonArrowClasses>
-  </BuildingAI>
   <BuildRestrictions>
     <Category>Fortress</Category>
+    <Territory>own</Territory>
     <Distance>
       <FromClass>Fortress</FromClass>
       <MinDistance>60</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>5</MaxArrowCount>
+    <GarrisonArrowClasses>Soldier+Ranged BoltShooter</GarrisonArrowClasses>
+  </BuildingAI>
   <Cost>
-    <PopulationBonus>10</PopulationBonus>
-    <BuildTime>300</BuildTime>
+    <BuildTime>400</BuildTime>
     <Resources>
       <wood>0</wood>
-      <stone>500</stone>
+      <stone>650</stone>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="30.0" depth="30.0"/>
-    <Height>8.0</Height>
+    <Square width="27.0" depth="27.0"/>
+    <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>20</Max>
     <EjectHealth>0.075</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Siege</List>
+    <List datatype="tokens">Unit !Ship</List>
     <BuffHeal>0</BuffHeal>
     <LoadingRange>6</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>4200</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Fortress</GenericName>
-    <Tooltip>Train heroes, champions, and siege weapons. Research siege weapon improvements. Garrison: 20.</Tooltip>
+    <SpecificName>Fortress</SpecificName>
+    <Tooltip>Train Heroes and Champions. Garrison up to 20 Soldiers for a stout defense of your territory.</Tooltip>
     <Classes datatype="tokens">GarrisonFortress</Classes>
     <VisibleClasses datatype="tokens">
       Defensive
       City
       Fortress
-	  Ranged
+      Ranged
     </VisibleClasses>
     <Icon>structures/fortress.png</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <xp>100</xp>
-    <food>0</food>
-    <wood>0</wood>
-    <stone>65</stone>
-    <metal>0</metal>
+    <xp>500</xp>
+    <glory>500</glory>
   </Loot>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
     <Technologies datatype="tokens">
-      pair_champ_02
+      fortress/pair_champ_01
+      fortress/health_champions
+      fortress/attack_capture_siege_ladders
+      mauryas/health_warrior_caste
+      successors/special_war_horses
+      carthaginians/special_triple_walls
+      gauls/health_champion_cavalry
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_fortress.xml</select>
       <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <attack>attack/weapon/arrowfly.xml</attack>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay disable=""/>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>100</Radius>
+    <Radius>60</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_crossbowman
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>70</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
 </Entity>

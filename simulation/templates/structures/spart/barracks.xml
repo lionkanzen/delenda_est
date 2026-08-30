@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Auras datatype="tokens">
+    structures/spart_barracks_bonus
+  </Auras>
+  <BuildRestrictions>
+    <Category>Syssition</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="18.0" depth="28.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Military Mess Hall</GenericName>
+    <SpecificName>Syssition</SpecificName>
+    <VisibleClasses datatype="tokens">
+      CivSpecific
+      Special
+      Syssition
+    </VisibleClasses>
+    <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
+    <Icon>structures/academy_spart.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="26.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -barracks/upgrade_rank_advanced_infantry_pike
+      -barracks/upgrade_rank_elite_infantry_pike
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_pikeman_b
+      units/spart/champion_infantry_hoplite
+      units/spart/hero_leonidas_infantry
+      units/spart/hero_brasidas_infantry
+      units/spart/hero_lysander_infantry
+      units/spart/hero_cleomenes_infantry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/spartans/syssiton.xml</Actor>
+    <FoundationActor>structures/fndn_5x7_temple.xml</FoundationActor>
+  </VisualActor>
+</Entity>

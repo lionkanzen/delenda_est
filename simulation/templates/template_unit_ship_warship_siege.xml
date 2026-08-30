@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship">
+  <Attack>
+    <Ranged>
+      <AttackName>Rock</AttackName>
+      <Damage>
+        <Pierce>0.0</Pierce>
+        <Crush>100.0</Crush>
+      </Damage>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Bonuses>
+        <BonusStruct>
+          <Classes>Structure</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusStruct>
+        <BonusShips>
+          <Classes>Ship</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusShips>
+      </Bonuses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>5.0</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Hack>25.0</Hack>
+          <Pierce>0.0</Pierce>
+          <Crush>25.0</Crush>
+        </Damage>
+      </Splash>
+      <Projectile>
+        <Speed>45.0</Speed>
+        <Spread>4.0</Spread>
+        <Gravity>18.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+        <ImpactActorName>particle/tower_artillery_impact_smoke_01.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship Structure
+      </PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+  </Capturable>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="12.0" depth="50.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>50</Max>
+    <LoadingRange>14</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>1200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Siege Ship</GenericName>
+    <Tooltip>Traits: Naval Ram, Fast Speed, Light Armor.
+Strong Against: Buildings (1.5x), Arrow Ships.
+Weak Against: Ramming Ships, Fire Ships.</Tooltip>
+    <VisibleClasses datatype="tokens">Heavy Ranged Siege NavalSiege</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        shipyard/training_naval_shipwrights
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>30</wood>
+  </Loot>
+  <Position>
+    <TurnRate>0.75</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>8</Pierce>
+        <Crush>4</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/siegeprojectilehit.xml</attack_impact_ranged>
+      <order_attack>attack/siege/ram_attack_order.xml</order_attack>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+</Entity>

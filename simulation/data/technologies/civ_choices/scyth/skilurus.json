@@ -1,0 +1,26 @@
+{
+	"genericName": "Skilurus",
+	"description": "Skilurus.",
+	"icon": "civ_choices/scyth_hero_skilurus.png",
+	"tooltip": "Select Skilurus to lead your civilization.",
+	"requirements": {
+		"civ": "scyth"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_tomyris_infantry -units/{civ}/hero_ateas_infantry",
+			"affects": "Royal_Yurt"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "scythians/hero_skilurus_catapults",
+			"affects": "Royal_Yurt"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "units/{civ}/hero_siege_catapult_unpacked",
+			"affects": "Builder"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"genericName": "Divine Instruction",
+	"description": "Have your priests instructed by the High Priest himself - may Amun bless him.",
+	"cost": {
+		"metal": 500,
+		"coin": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "kush" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "high_priest.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Promote Kushite Priests to Elite rank.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Basic" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Advanced" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml",
+	"affects": ["Healer"]
+}

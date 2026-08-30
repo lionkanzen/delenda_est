@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_trader">
+  <Identity>
+    <Civ>theb</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Greek Trader</SpecificName>
+    <Icon>units/hele/support_trader.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/trader.xml</Actor>
+  </VisualActor>
+</Entity>

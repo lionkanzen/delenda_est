@@ -1,0 +1,51 @@
+{
+	"genericName": "Elite Citizen Sword Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen swordsmen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "epir" },
+					{ "notciv": "imp" },
+					{ "notciv": "mace" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Sword Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_sword",
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Sword Infantry auto-promote to Elite Rank.\n• Elite Sword Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Sword Infantry Advanced"],
+	"placeBelow": "Citizen Infantry Sword",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

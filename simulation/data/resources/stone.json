@@ -1,0 +1,13 @@
+{
+	"code": "stone",
+	"name": "Stone",
+	"description": "Quarry from rocks or stone quarries. Used primarily for building Military and Defensive Structures and for researching building upgrades.",
+	"order": 3,
+	"subtypes": {
+		"rock": "Rock",
+		"ruins": "Ruins"
+	},
+    "properties": ["barterable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "sparse"
+}

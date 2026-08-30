@@ -1,80 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
-  <Auras>
-    <heal>
-      <Type>range</Type>
-      <Radius>40</Radius>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Health.RegenRate> <Add>1</Add> </Health.RegenRate>
-      </Modifications>
-      <AuraName>Healing Aura</AuraName>
-      <AuraDescription>Heal units at 1 HP per second to a distance of 40 meters.</AuraDescription>
-    </heal>
-    <AuraCivic>
-      <Type>range</Type>
-      <Radius>40</Radius>
-      <Affects>Gatherer</Affects>
-      <Modifications>
-        <ResourceGatherer.Rates.food..grain>
-		  <Multiply>0.5</Multiply>
-		</ResourceGatherer.Rates.food..grain>
-      </Modifications>
-      <AuraName>"Civic Spaces" Farming Penalty</AuraName>
-      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Civic Centers and Temples.</AuraDescription>
-    </AuraCivic>
+  <Auras datatype="tokens">
+    structures/temple_heal
+    structures/temple_public_order
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
   </BuildRestrictions>
   <Cost>
-    <PopulationBonus>5</PopulationBonus>
     <BuildTime>200</BuildTime>
     <Resources>
       <stone>300</stone>
     </Resources>
   </Cost>
-  <Footprint replace="">
-    <Circle radius="40.0"/>
-    <Height>12.0</Height>
+  <Footprint>
+    <Square width="20.5" depth="33.0"/>
+    <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>20</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry</List>
+    <List datatype="tokens">Support Infantry Cavalry Minister Teacher Relic</List>
     <BuffHeal>3</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Temple</GenericName>
-    <Tooltip>Train healers. Garrison up to 20 units to heal them at a quick rate (3 HP per second). Research healing and religious improvements.</Tooltip>
+    <SpecificName>Temple</SpecificName>
     <VisibleClasses datatype="tokens">
       Town
       Temple
     </VisibleClasses>
+    <History>A temple (from the Latin templum) is a building reserved for spiritual rituals and activities such as prayer and sacrifice.</History>
+    <Tooltip>Train Healers. Garrison up to 20 units to heal them at a quick rate (3 health per second). Research healing and religious improvements.</Tooltip>
     <Icon>structures/temple.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <xp>100</xp>
+    <xp>300</xp>
     <food>0</food>
-    <wood>10</wood>
-    <stone>50</stone>
-    <metal>500</metal>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <coin>300</coin>
+    <glory>300</glory>
   </Loot>
   <Obstruction>
     <Static width="17.5" depth="30.0"/>
   </Obstruction>
-  <Selectable>
-    <Overlay replace="">
+  <Researcher>
+    <Technologies datatype="tokens">
+      temple/druids_training
+      temple/temple_tech_cost
+      temple/trickle_glory_pharaoh
+      temple/healer_gather_glory
+      temple/hero_health_state_religion
+      temple/pair_champs_carthage
+      temple/seeress_grove_of_fetters
+      temple/temple_garrison_healing
+      temple/units_health_regen
+      temple/champions_capture
+      temple/happiness_games
+      temple/happiness_harvest
+    </Technologies>
+  </Researcher>
+  <Selectable replace="">
+    <Overlay>
+      <Shape>
+        <Circle radius="40.0"/>
+      </Shape>
       <Texture>
-        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
-        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
+        <MainTexture>auras/temple/hellenic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/hellenic/1024x1024_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -85,24 +89,24 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay>
+    <DecayRate>25</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>40</Radius>
-    <Weight>30000</Weight>
+    <Radius>48</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}_support_healer_b
+      units/{native}/support_healer_b
+      units/{civ}/champion_sacred_hoplite
+      units/{civ}/champion_sacred_cavalry
     </Entities>
-    <Technologies datatype="tokens">
-      pair_heal_01
-      pair_heal_02
-      pair_heal_03
-    </Technologies>
-  </ProductionQueue>
+  </Trainer>
   <Vision>
-    <Range>36</Range>
+    <Range>48</Range>
   </Vision>
   <VisualActor>
     <FoundationActor>structures/fndn_4x6.xml</FoundationActor>

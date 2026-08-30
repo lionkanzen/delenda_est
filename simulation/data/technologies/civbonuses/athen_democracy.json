@@ -1,0 +1,20 @@
+{
+	"genericName": "Democracy",
+	"autoResearch": true,
+	"description": "Democracy in some form, that is the rule of the people, has been with humanity for tens of thousands of years, but the innovation of democracy as a applicable political concept and philosophy can be attributed to the Athenian Greeks.",
+	"tooltip": "[font=\"sans-bold-14\"]• Civic Center technologies −50% research time and −10% cost, but Civic Centers −5% Public Order.[/font]",
+	"requirements": {
+		"civ": "athen"
+	},
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.9 },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.5 },
+		{ "value": "Capturable/CapturePoints", "multiply": 0.95 }
+	],
+	"affects": ["CivilCentre"]
+}

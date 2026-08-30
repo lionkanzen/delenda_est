@@ -1,0 +1,61 @@
+{
+	"supersedes": "range/upgrade_rank_advanced_infantry_archer",
+	"genericName": "Elite Citizen Archer Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen archers to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp"  },
+					{ "notciv": "mace" },
+					{ "notciv": "noba" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "spart"},
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac"},
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" },
+					{ "notciv": "gupt" },
+					{ "notciv": "huns" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "maya" },
+					{ "notciv": "parth"},
+					{ "notciv": "sasa" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Archer Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Advanced Archer Infantry auto-promote to Elite Rank:\n• Archer Infantry +10% health.\n• Archer Infantry +20% attack range.\n• Archer Infantry +10% accuracy and capture power.\n• [color=\"orange\"]Archer Infantry +10% train time and +5 food and wood costs.[/color][/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Archer Infantry Advanced"],
+	"placeBelow": "Archer !Crossbow",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

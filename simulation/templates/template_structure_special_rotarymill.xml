@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/farmstead_60_1
+    structures/farmstead_60_2
+  </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>RotaryMill</Category>
+  </BuildRestrictions>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{native}/field
+      structures/{native}/field_cash_crops
+    </Entities>
+  </Builder>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>200</wood>
+      <stone>100</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health disable=""/>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Farmstead</GenericName>
+    <SpecificName>Rotary Mill</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Farmstead
+      Capturable
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      RotaryMill
+      CapturableBuilding
+    </Classes>
+    <Tooltip>Dropsite for harvested Food and Coin. Capture one of these to increase nearby food production.</Tooltip>
+    <Icon>structures/rotarymill.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>100</food>
+    <glory>100</glory>
+  </Loot>
+  <Minimap>
+    <Icon size="16.0">other.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <Researcher disable=""/>
+  <ResourceDropsite>
+    <Types>food coin</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_ffactri.xml</select>
+      <constructed>interface/complete/building/complete_ffactri.xml</constructed>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{native}/support_slave
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/celts/special.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

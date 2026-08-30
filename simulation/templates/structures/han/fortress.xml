@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Attack>
+    <Ranged>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>34.0</MinRange>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Bǎolěi</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_chariot
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/han/fortress.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>28.0</Length>
+    <Indent>6.4</Indent>
+  </WallPiece>
+</Entity>

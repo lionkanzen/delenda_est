@@ -1,0 +1,8 @@
+{
+	"type": "global",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 1.2, "affects": "Warship"}
+	],
+	"auraName": "Aristocracy",
+	"auraDescription": "\n• [color=\"orange\"]Warships +20% build time.[/color]"
+}

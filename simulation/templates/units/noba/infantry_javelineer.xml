@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_javelineer">
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+  </Cost>
+  <Identity>
+    <Lang>napatan</Lang>
+    <SpecificName>Noba Spear Hunter</SpecificName>
+    <Icon>units/noba/infantry_javelineer.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/noba_hunter.xml</Actor>
+  </VisualActor>
+</Entity>

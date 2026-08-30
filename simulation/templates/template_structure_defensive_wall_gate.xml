@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive">
+  <Auras datatype="tokens">
+    structures/wall_battlements
+  </Auras>
+  <BuildRestrictions>
+    <Category>Walls</Category>
+  </BuildRestrictions>
+  <!-- We don't disable the Cost component, although gates cannot be built directly, as Cost/BuildTime is required to prevent instantaneous repair -->
+  <Cost>
+    <BuildTime>0</BuildTime>
+    <Resources>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="12.0"/>
+    <Height>22.0</Height>
+  </Footprint>
+  <Gate>
+    <PassRange>20</PassRange>
+  </Gate>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>City Gate</GenericName>
+    <SpecificName>City Gate</SpecificName>
+    <Tooltip>Allow units access through a wall. Can be locked to prevent access.</Tooltip>
+    <SelectionGroupName>template_structure_defensive_wall_gate</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Wall StoneWall Gate</VisibleClasses>
+    <Classes datatype="tokens">-ConquestCritical -NotField</Classes>
+    <Icon>structures/gate.png</Icon>
+    <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>10</glory>
+  </Loot>
+  <Obstruction>
+    <Obstructions>
+      <Right width="5" depth="5" x="10" z="0"/>
+      <Left width="5" depth="5" x="-10" z="0"/>
+      <Door width="20.0" depth="6.5" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <RallyPoint/>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gate.xml</select>
+      <constructed>interface/complete/building/complete_gate.xml</constructed>
+      <upgraded>interface/complete/building/complete_gate.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <gate_closing>actor/gate/stonegate_close.xml</gate_closing>
+      <gate_opening>actor/gate/stonegate_open.xml</gate_opening>
+      <gate_locked>interface/select/building/sel_gate.xml</gate_locked>
+      <gate_unlocked>interface/select/building/sel_gate.xml</gate_unlocked>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>20</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <FoundationActor>structures/fndn_9x3_wall.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>36</Length>
+  </WallPiece>
+</Entity>

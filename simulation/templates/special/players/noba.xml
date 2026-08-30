@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/kush_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>noba</Civ>
+    <GenericName>Nobas</GenericName>
+    <History>TThe Nobatai, or Nobades, were a Nubian people who rose to prominence along the Nile in Late Antiquity as Roman and Meroitic power declined. They settled in Lower Nubia, fought neighboring groups such as the Blemmyes, and became important allies and rivals of Rome and Byzantium. By the 5th and 6th centuries AD, Nobatian rulers had established a Christian kingdom that later merged with Makuria and helped shape medieval Nubian civilization.</History>
+    <Icon>emblems/512x512/nobas_01.png</Icon>
+  </Identity>
+</Entity>

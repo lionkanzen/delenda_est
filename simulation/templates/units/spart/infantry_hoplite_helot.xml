@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_hoplite">
+  <Auras datatype="tokens">
+    -units/slave_ownership
+  </Auras>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SelectionGroupName>units/spart/infantry_hoplite_b</SelectionGroupName>
+    <SpecificName>Neodamōdēs Hoplite</SpecificName>
+    <VisibleClasses datatype="tokens">Helot</VisibleClasses>
+    <History>The Neodamodeis were former helots who had been freed, apparently in return for military service, and who served Sparta as heavily armed infantry during the late fifth and early fourth centuries BC. Their name means roughly “new members of the damos,” though they did not possess the full political rights of Spartiates. Equipped and organized as hoplites, they helped compensate for Sparta’s shrinking citizen manpower and were deployed on campaigns far from Laconia, including during the Peloponnesian War and its aftermath. Their existence shows how increasingly dependent Sparta became on non-citizen soldiers to sustain its military power.</History>
+    <Icon>units/spart/infantry_hoplite_helot.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/spartans/infantry_hoplite_helot.xml</Actor>
+  </VisualActor>
+</Entity>

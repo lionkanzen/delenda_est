@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/greek_architecture
+  </Auras>
+  <BuildRestrictions>
+    <Category>Stoa</Category>
+    <MatchLimit>1</MatchLimit>
+  </BuildRestrictions>
+  <Capturable disable=""/>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>200</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28" depth="12.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Greek Stoa</GenericName>
+    <SpecificName>Stoa Hellenikon</SpecificName>
+    <VisibleClasses datatype="tokens">
+      CivBonus
+      Stoa
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      SpecialBuilding
+      CivSpecific
+    </Classes>
+    <Tooltip>The Stoa represents civic virtue and civic pride.</Tooltip>
+    <History>A stoa is a covered walkway or portico, commonly for public use. Early stoas were open at the entrance with columns, usually of the Doric order, lining the side of the building; they created a safe, enveloping, protective atmosphere.</History>
+    <Icon>structures/stoa.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <glory>200</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="10.5"/>
+  </Obstruction>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>special/greek_stoa.xml</Actor>
+    <FoundationActor>structures/fndn_6x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

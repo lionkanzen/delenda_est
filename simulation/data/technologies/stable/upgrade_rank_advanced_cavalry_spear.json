@@ -1,0 +1,44 @@
+{
+	"genericName": "Advanced Citizen Spear Cavalry",
+	"description": "Promote all of your citizen spear cavalrymen to Advanced rank.",
+	"cost": {
+		"food": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "gupt" },
+					{ "notciv": "imp" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "parth" },
+					{ "notciv": "sasa" },
+					{ "notciv": "scyth" },
+					{ "notciv": "syrac" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Promote all of your Citizen Spear Cavalrymen to Advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks Elite Citizen Spear Cavalry technology.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Spear Cavalry Basic"],
+	"placeBelow": "Citizen Spear Cavalry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

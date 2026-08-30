@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Category>ArcheryRange</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="24.0" depth="19.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">
+      Infantry+Ranged
+      Minister
+      Teacher
+    </List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Archery Range</GenericName>
+    <SpecificName>Archery Range</SpecificName>
+    <Tooltip>Train Ranged Citizen-Infantry. Research training improvements for ranged infantry.</Tooltip>
+    <Icon>structures/range.png</Icon>
+    <Classes datatype="tokens">ArcheryRange</Classes>
+    <VisibleClasses datatype="tokens">
+      Village
+      Range
+    </VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <glory>300</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="20.0" depth="15.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      range/training_01
+      range/tradition_archery
+      range/upgrade_rank_advanced_infantry_ranged
+      range/upgrade_rank_elite_infantry_ranged
+      range/upgrade_rank_advanced_infantry_jav
+      range/upgrade_rank_elite_infantry_jav
+      range/upgrade_rank_advanced_infantry_slinger
+      range/upgrade_rank_elite_infantry_slinger
+      range/upgrade_rank_advanced_infantry_archer
+      range/upgrade_rank_elite_infantry_archer
+      range/tradition_archery_advanced
+      range/tradition_archery_elite
+      range/upgrade_rank_advanced_infantry_crossbow
+      range/upgrade_rank_elite_infantry_crossbow
+      macedonians/speed_agrianians
+      mauryas/pair_ranged
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_range.xml</constructed>
+      <upgraded>interface/complete/building/complete_range.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_javelineer_b
+      units/{civ}/infantry_slinger_b
+      units/{civ}/infantry_archer_b
+      units/{civ}/infantry_crossbowman_b
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/spartans/range.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="popbonus_2|template_structure_civic_house">
+  <Footprint>
+    <Square width="10.0" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Griham</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="10.0" depth="10.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/mauryas/house.xml</Actor>
+  </VisualActor>
+</Entity>

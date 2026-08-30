@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship">
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="8.0" depth="24.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Fire Ship</GenericName>
+    <Tooltip>Unrepairable. Gradually loses health after ignition. Can only attack Ships.</Tooltip>
+    <VisibleClasses datatype="tokens">Warship Fireship Melee Fire</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <Loot disable=""/>
+  <Repairable disable=""/>
+  <TreasureCollector disable=""/>
+  <UnitMotion>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed>10</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Ignition>
+      <Entity>units/{civ}/ship_fire_fire</Entity>
+      <Tooltip>Ignite the Fire Ship to damage nearby enemy Ships.</Tooltip>
+      <Time>10</Time>
+    </Ignition>
+  </Upgrade>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

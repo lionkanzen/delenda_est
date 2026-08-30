@@ -1,0 +1,13 @@
+{
+	"type": "global",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Builder/Rate", "multiply": 1.1 }
+	],
+	"auraName": "Monumental Builder",
+	"auraDescription": "\n• Structures −10% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9 }
+	],
+	"overlayIcon": "art/textures/ui/session/auras/build_bonus.png"
+}

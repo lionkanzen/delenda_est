@@ -1,0 +1,11 @@
+{
+	"Title": "Celtic Confederations",
+	"Code": "celt",
+	"GUIOrder": 1,
+	"Tooltip": "Celtic civilizations.",
+	"Weights": {
+		"brit": 1,
+		"gala": 1,
+		"gaul": 1
+	}
+}

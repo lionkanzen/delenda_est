@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="1.03107" b="1.03107"/>
+		<SunElevation angle="0.885898"/>
+		<SunRotation angle="-0.61562"/>
+		<AmbientColor r="0.368627" g="0.376471" b="0.419608"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.957031</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="428.133" y="72.8496" z="321.963"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "Name": "POGs - Proof of Concept",
+  "Description": "Give an interesting description of your map.",
+  "Keywords": [
+    "demo"
+  ],
+  "PlayerData": [
+    null,
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    },
+    {
+      "Civ": "kush"
+    }
+  ],
+  "CircularMap": true,
+  "VictoryConditions": [
+    "conquest_structures"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="15">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="313.14765" z="369.70798"/>
+			<Orientation y="2.75431"/>
+			<Actor seed="51784"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="281.47718" z="373.53095"/>
+			<Orientation y="4.78774"/>
+			<Actor seed="52488"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>gaia/ruins/unfinished_greek_temple</Template>
+			<Player>0</Player>
+			<Position x="310.24747" z="392.30652"/>
+			<Orientation y="-2.54122"/>
+			<Actor seed="50902"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>gaia/ruins/stone_statues_roman</Template>
+			<Player>0</Player>
+			<Position x="281.75745" z="383.0409"/>
+			<Orientation y="-2.72448"/>
+			<Actor seed="12318"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>gaia/treasure/stone</Template>
+			<Player>0</Player>
+			<Position x="292.10425" z="379.22529"/>
+			<Orientation y="-2.80945"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>actor|structures/destruct_rome_cc.xml</Template>
+			<Position x="309.84675" z="393.23676"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24024"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="285.53425" z="392.40342"/>
+			<Orientation y="-1.14925"/>
+			<Actor seed="41680"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="323.54361" z="378.27405"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59770"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="328.8924" z="384.02582"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21124"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>gaia/tree/cedar_atlas_4_dead</Template>
+			<Player>0</Player>
+			<Position x="290.10572" z="399.9604"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3342"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>gaia/tree/oak_dead</Template>
+			<Player>0</Player>
+			<Position x="328.80173" z="407.14625"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="43650"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="297.50162" z="377.37989"/>
+			<Orientation y="-2.47916"/>
+			<Actor seed="30070"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="292.01078" z="373.01413"/>
+			<Orientation y="1.12687"/>
+			<Actor seed="10638"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="285.1844" z="370.03418"/>
+			<Orientation y="-2.10744"/>
+			<Actor seed="60702"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>actor|particle/flame_firepit_1.xml</Template>
+			<Position x="290.08982" z="391.38465"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44324"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>actor|particle/flame_firepit_2.xml</Template>
+			<Position x="283.53309" z="373.32798"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18064"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>actor|props/structures/xiongnu/firepit.xml</Template>
+			<Position x="321.6967" z="371.34607"/>
+			<Orientation y="-2.56615"/>
+			<Actor seed="14284"/>
+		</Entity>
+		<Entity uid="37">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="419.37385" z="390.072"/>
+			<Orientation y="-2.23372"/>
+			<Actor seed="55954"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="410.14017" z="395.97077"/>
+			<Orientation y="-0.97017"/>
+			<Actor seed="12786"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="447.7014" z="394.2334"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="51952"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="429.4185" z="399.35285"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="43170"/>
+		</Entity>
+		<Entity uid="41">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="389.77958" z="384.45847"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="7728"/>
+		</Entity>
+		<Entity uid="42">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="387.46958" z="388.9235"/>
+			<Orientation y="2.20272"/>
+			<Actor seed="9452"/>
+		</Entity>
+		<Entity uid="43">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="396.47931" z="383.45728"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="3996"/>
+		</Entity>
+		<Entity uid="44">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="391.33896" z="372.77054"/>
+			<Orientation y="-1.90578"/>
+			<Actor seed="44130"/>
+		</Entity>
+		<Entity uid="45">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="426.35074" z="405.64994"/>
+			<Orientation y="-2.26444"/>
+			<Actor seed="62988"/>
+		</Entity>
+		<Entity uid="46">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="432.96628" z="412.82627"/>
+			<Orientation y="0.88985"/>
+			<Actor seed="46670"/>
+		</Entity>
+		<Entity uid="47">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="441.74183" z="405.7039"/>
+			<Orientation y="-1.70238"/>
+			<Actor seed="29730"/>
+		</Entity>
+		<Entity uid="48">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="416.06788" z="396.81006"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="16216"/>
+		</Entity>
+		<Entity uid="49">
+			<Template>actor|structures/destruct_stone_3x3.xml</Template>
+			<Position x="401.4022" z="370.57685"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="54116"/>
+		</Entity>
+		<Entity uid="50">
+			<Template>actor|particle/smoke_catapult.xml</Template>
+			<Position x="433.19083" z="412.53965"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48844"/>
+		</Entity>
+		<Entity uid="51">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="415.41752" z="382.16202"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="10092"/>
+		</Entity>
+		<Entity uid="52">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="405.16865" z="379.53183"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="8750"/>
+		</Entity>
+		<Entity uid="53">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="405.85813" z="373.7916"/>
+			<Orientation y="-0.13437"/>
+			<Actor seed="56352"/>
+		</Entity>
+		<Entity uid="54">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="405.61347" z="368.22666"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="550"/>
+		</Entity>
+		<Entity uid="55">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="403.14048" z="366.16654"/>
+			<Orientation y="1.38758"/>
+			<Actor seed="32040"/>
+		</Entity>
+		<Entity uid="56">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="400.99466" z="368.60587"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="62292"/>
+		</Entity>
+		<Entity uid="57">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="392.27659" z="373.99216"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="34532"/>
+		</Entity>
+		<Entity uid="58">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="391.36579" z="372.41459"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="59538"/>
+		</Entity>
+		<Entity uid="59">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="443.47928" z="399.88151"/>
+			<Orientation y="-2.74834"/>
+			<Actor seed="29316"/>
+		</Entity>
+		<Entity uid="60">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="444.79368" z="402.95047"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="2472"/>
+		</Entity>
+		<Entity uid="61">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="440.69657" z="411.83799"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="27540"/>
+		</Entity>
+		<Entity uid="62">
+			<Template>actor|particle/smoke_small_light.xml</Template>
+			<Position x="419.10901" z="403.49549"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="4044"/>
+		</Entity>
+		<Entity uid="63">
+			<Template>actor|particle/smoke_light.xml</Template>
+			<Position x="449.83341" z="397.64655"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="7306"/>
+		</Entity>
+		<Entity uid="64">
+			<Template>actor|props/structures/decals/destruct_6x4.xml</Template>
+			<Position x="401.55485" z="380.51972"/>
+			<Orientation y="1.96521"/>
+			<Actor seed="62866"/>
+		</Entity>
+		<Entity uid="65">
+			<Template>actor|particle/destruction_dust_small_gray.xml</Template>
+			<Position x="401.57471" z="383.4126"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="46108"/>
+		</Entity>
+		<Entity uid="66">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="395.44504" z="382.70707"/>
+			<Orientation y="-2.88344"/>
+			<Actor seed="31850"/>
+		</Entity>
+		<Entity uid="67">
+			<Template>actor|structures/carthaginians/fndn_defense_tower.xml</Template>
+			<Position x="395.72413" z="386.88318"/>
+			<Orientation y="-2.82691"/>
+			<Actor seed="63092"/>
+		</Entity>
+		<Entity uid="68">
+			<Template>actor|structures/carthaginians/fndn_farmstead.xml</Template>
+			<Position x="401.41517" z="400.564"/>
+			<Orientation y="-2.61893"/>
+			<Actor seed="58520"/>
+		</Entity>
+		<Entity uid="69">
+			<Template>actor|structures/carthaginians/fndn_wooden_tower.xml</Template>
+			<Position x="449.2552" z="396.24735"/>
+			<Orientation y="-7.12775"/>
+			<Actor seed="6262"/>
+		</Entity>
+		<Entity uid="70">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="402.44367" z="368.15912"/>
+			<Orientation y="-4.45185"/>
+			<Actor seed="44908"/>
+		</Entity>
+		<Entity uid="71">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="391.86356" z="371.51398"/>
+			<Orientation y="9.66477"/>
+			<Actor seed="4508"/>
+		</Entity>
+		<Entity uid="72">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="441.02851" z="404.38584"/>
+			<Orientation y="3.79981"/>
+			<Actor seed="41190"/>
+		</Entity>
+		<Entity uid="73">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="434.14277" z="412.90992"/>
+			<Orientation y="-2.49837"/>
+			<Actor seed="15838"/>
+		</Entity>
+		<Entity uid="74">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="425.78754" z="404.20142"/>
+			<Orientation y="2.23011"/>
+			<Actor seed="4974"/>
+		</Entity>
+		<Entity uid="75">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="415.89664" z="396.0406"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="4726"/>
+		</Entity>
+		<Entity uid="76">
+			<Template>actor|structures/carthaginians/fndn_house.xml</Template>
+			<Position x="403.78144" z="379.45484"/>
+			<Orientation y="0.3115"/>
+			<Actor seed="15602"/>
+		</Entity>
+		<Entity uid="77">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="393.03321" z="388.2334"/>
+			<Orientation y="-1.39713"/>
+			<Actor seed="23508"/>
+		</Entity>
+		<Entity uid="78">
+			<Template>actor|props/structures/decals/destruct_4x6.xml</Template>
+			<Position x="443.07117" z="406.20072"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61928"/>
+		</Entity>
+		<Entity uid="79">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="404.14219" z="400.66944"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="25968"/>
+		</Entity>
+		<Entity uid="80">
+			<Template>actor|props/structures/decals/destruct_6x4.xml</Template>
+			<Position x="425.61106" z="404.29752"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="2254"/>
+		</Entity>
+		<Entity uid="81">
+			<Template>actor|structures/destruct_stone_2x2.xml</Template>
+			<Position x="403.26874" z="379.9516"/>
+			<Orientation y="0.52283"/>
+			<Actor seed="7836"/>
+		</Entity>
+		<Entity uid="83">
+			<Template>gaia/tree/oak_dead</Template>
+			<Player>0</Player>
+			<Position x="435.0116" z="378.77332"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1522"/>
+		</Entity>
+		<Entity uid="84">
+			<Template>gaia/tree/oak_dead</Template>
+			<Player>0</Player>
+			<Position x="385.82749" z="403.89713"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16124"/>
+		</Entity>
+		<Entity uid="85">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="412.87082" z="368.32609"/>
+			<Orientation y="-0.42154"/>
+			<Actor seed="37890"/>
+		</Entity>
+		<Entity uid="86">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="412.093" z="410.22675"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63496"/>
+		</Entity>
+		<Entity uid="87">
+			<Template>gaia/tree/date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="417.80546" z="418.90464"/>
+			<Orientation y="-1.46653"/>
+			<Actor seed="48330"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

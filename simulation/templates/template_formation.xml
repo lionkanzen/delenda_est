@@ -1,47 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
   <!--
-  <VisualActor>
-    <Actor>props/special/common/waypoint_flag.xml</Actor>
-  </VisualActor>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/rectangle.png</MainTexture>
+        <MainTextureMask>256x256/rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   -->
   <Formation>
-    <RequiredMemberCount>1</RequiredMemberCount>
-    <DisabledTooltip></DisabledTooltip>
+    <RequiredMemberCount>2</RequiredMemberCount>
+    <DisabledTooltip>Requires at least 2 Soldiers or Siege engines.</DisabledTooltip>
     <SpeedMultiplier>1</SpeedMultiplier>
     <FormationShape>square</FormationShape>
-    <SortingClasses>Hero Champion Cavalry Melee Ranged</SortingClasses>
+    <MaxTurningAngle>1</MaxTurningAngle>
+    <SortingClasses>Melee Ranged Hero | Elephant Infantry Cavalry | Javelineer Slinger Crossbowman Archer|
+     Champion Mercenary Citizen | Elite Advanced Basic</SortingClasses>
     <ShiftRows>false</ShiftRows>
     <UnitSeparationWidthMultiplier>1</UnitSeparationWidthMultiplier>
     <UnitSeparationDepthMultiplier>1</UnitSeparationDepthMultiplier>
+    <MinColumns>1</MinColumns>
+    <MaxColumns>20</MaxColumns>
+    <MaxRows>20</MaxRows>
     <WidthDepthRatio>1</WidthDepthRatio>
-    <Sloppyness>0</Sloppyness>
-    <Animations/>
+    <Sloppiness>0</Sloppiness>
+    <AnimationVariants/>
   </Formation>
   <FormationAttack>
     <CanAttackAsFormation>false</CanAttackAsFormation>
   </FormationAttack>
+  <Identity>
+    <Civ/> <!-- Unused -->
+    <Classes datatype="tokens">Formation</Classes>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Obstruction>
+    <Unit/>
+    <Active>true</Active>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <BlockFoundation>false</BlockFoundation>
+    <BlockConstruction>false</BlockConstruction>
+    <DisableBlockMovement>false</DisableBlockMovement>
+    <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
+  </Obstruction>
   <Ownership/>
   <Position>
     <Altitude>0</Altitude>
     <Anchor>upright</Anchor>
     <Floating>false</Floating>
-    <TurnRate>3.0</TurnRate>
+    <FloatDepth>0</FloatDepth>
+    <TurnRate>9</TurnRate>
   </Position>
+  <Trader>
+    <GainMultiplier>0.75</GainMultiplier>
+  </Trader>
   <UnitAI>
-    <AlertReactiveLevel>2</AlertReactiveLevel>
     <DefaultStance>aggressive</DefaultStance>
     <FleeDistance>12.0</FleeDistance>
     <FormationController>true</FormationController>
     <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <PatrolWaitTime>1</PatrolWaitTime>
   </UnitAI>
   <UnitMotion>
     <FormationController>true</FormationController>
     <WalkSpeed>1.0</WalkSpeed>
-    <PassabilityClass>default</PassabilityClass>
-    <CostClass>default</CostClass>
+    <RunMultiplier>50</RunMultiplier> <!-- = Max formation speed -->
+    <InstantTurnAngle>10</InstantTurnAngle>
+    <Acceleration>100</Acceleration> <!-- Unused -->
+    <PassabilityClass>large</PassabilityClass>
+    <Weight>100</Weight>
   </UnitMotion>
-  <Trader>
-    <GainMultiplier>1.0</GainMultiplier>
-  </Trader>
+  <VisualActor>
+    <Actor>props/units/standards/formation.xml</Actor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+    <SilhouetteOccluder>false</SilhouetteOccluder>
+    <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
+  </VisualActor>
 </Entity>

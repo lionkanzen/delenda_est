@@ -1,0 +1,16 @@
+{
+	"genericName": "Pyrrhus of Epirus",
+	"description": "Pyrrhus of Epirus.",
+	"icon": "civ_choices/epir_hero_pyrrhus.png",
+	"tooltip": "Select Pyrrhus of Epirus to lead your civilization.",
+	"requirements": {
+		"civ": "epir"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_alexander_I_infantry -units/{civ}/hero_alexander_II_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

@@ -10,23 +10,28 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="shield-c-dolphin">
-      <textures><texture file="props/shield/hele_round_c.dds" name="baseTex"/>
+    <variant frequency="1" name="shield-08-dolphin">
+      <textures><texture file="props/shield/aspis_athen_08.png" name="baseTex"/>
         <texture file="props/shield/aspis_smooth_a_norm.png" name="normTex"/>
         <texture file="props/shield/aspis_smooth_a_spec.png" name="specTex"/></textures>
     </variant>
-    <variant frequency="1" name="shield-d-dog">
-      <textures><texture file="props/shield/hele_round_d.dds" name="baseTex"/>
+    <variant frequency="1" name="shield-07-bull">
+      <textures><texture file="props/shield/aspis_athen_07.png" name="baseTex"/>
         <texture file="props/shield/aspis_smooth_a_norm.png" name="normTex"/>
         <texture file="props/shield/aspis_smooth_a_spec.png" name="specTex"/></textures>
     </variant>
-    <variant frequency="1" name="shield-g-trident">
-      <textures><texture file="props/shield/hele_round_g.dds" name="baseTex"/>
+    <variant frequency="1" name="shield-06-trident">
+      <textures><texture file="props/shield/aspis_athen_06.png" name="baseTex"/>
         <texture file="props/shield/aspis_smooth_a_norm.png" name="normTex"/>
         <texture file="props/shield/aspis_smooth_a_spec.png" name="specTex"/></textures>
     </variant>
-    <variant frequency="1" name="shield-i-lion">
-      <textures><texture file="props/shield/hele_round_i.dds" name="baseTex"/>
+    <variant frequency="1" name="shield-09-lion">
+      <textures><texture file="props/shield/aspis_athen_09.png" name="baseTex"/>
+        <texture file="props/shield/aspis_smooth_a_norm.png" name="normTex"/>
+        <texture file="props/shield/aspis_smooth_a_spec.png" name="specTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shield-09-lion">
+      <textures><texture file="props/shield/aspis_athen_09.png" name="baseTex"/>
         <texture file="props/shield/aspis_smooth_a_norm.png" name="normTex"/>
         <texture file="props/shield/aspis_smooth_a_spec.png" name="specTex"/></textures>
     </variant>

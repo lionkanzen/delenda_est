@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/mace_demetrius|template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_demetrius
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Demetrius the Besieger</SpecificName>
+    <Icon>units/mace/hero_demetrius.png</Icon>
+  </Identity>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>units/macedonians/hero_cavalry_swordsman_demetrius_m.xml</Actor>
+  </VisualActor>
+</Entity>

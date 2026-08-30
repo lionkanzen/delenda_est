@@ -8,20 +8,19 @@
         <animation file="mechanical/waypoint_flag_idle.dae" name="Idle" speed="30"/>
       </animations>
       <mesh>props/waypoint_flag.dae</mesh>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
-    <variant name="hele">
+    <variant name="athen">
       <textures>
-        <texture file="props/banner_greek.png" name="baseTex"/>
+        <texture file="props/banner_athenians.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="pers">
-      <textures>
-        <texture file="props/banner_persian.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="celt">
+    <variant name="brit">
       <textures>
         <texture file="props/banner_celt.png" name="baseTex"/>
       </textures>
@@ -31,32 +30,22 @@
         <texture file="props/banner_carthage.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="iber">
+    <variant name="celti">
       <textures>
-        <texture file="props/banner_iberians.png" name="baseTex"/>
+        <texture file="props/banner_celt.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="rome">
+    <variant name="cimb">
       <textures>
-        <texture file="props/banner_romans.png" name="baseTex"/>
+	    <texture file="props/banner_germans.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="epir">
+      <textures>
+        <texture file="props/banner_epirotes.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="spart">
-      <textures>
-        <texture file="props/banner_spartans.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="mace">
-      <textures>
-        <texture file="props/banner_macedonians.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="athen">
-      <textures>
-        <texture file="props/banner_greek.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="brit">
+    <variant name="gala">
       <textures>
         <texture file="props/banner_celt.png" name="baseTex"/>
       </textures>
@@ -66,9 +55,59 @@
         <texture file="props/banner_celt.png" name="baseTex"/>
       </textures>
     </variant>
+    <variant name="germ">
+      <textures>
+	    <texture file="props/banner_germans.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="goth">
+      <textures>
+	    <texture file="props/banner_norse.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="han">
+      <textures>
+	    <texture file="props/banner_han.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="hele">
+      <textures>
+        <texture file="props/banner_greek.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="iber">
+      <textures>
+        <texture file="props/banner_iberians.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="imp">
+      <textures>
+        <texture file="props/banner_romans.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="kush">
+      <textures>
+	    <texture file="props/banner_kushites.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="mace">
+      <textures>
+        <texture file="props/banner_macedonians.png" name="baseTex"/>
+      </textures>
+    </variant>
     <variant name="maur">
       <textures>
-        <texture file="props/banner_mauryans.png" name="baseTex"/>
+        <texture file="props/banner_mauryas.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="noba">
+      <textures>
+	    <texture file="props/banner_kushites.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="pers">
+      <textures>
+        <texture file="props/banner_persian.png" name="baseTex"/>
       </textures>
     </variant>
     <variant name="ptol">
@@ -76,9 +115,34 @@
         <texture file="props/banner_ptolemies.png" name="baseTex"/>
       </textures>
     </variant>
+    <variant name="rome">
+      <textures>
+        <texture file="props/banner_romans.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="scyth">
+      <textures>
+        <texture file="props/banner_scythians.png" name="baseTex"/>
+      </textures>
+    </variant>
     <variant name="sele">
       <textures>
         <texture file="props/banner_seleucids.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="spart">
+      <textures>
+        <texture file="props/banner_spartans.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="sueb">
+      <textures>
+	    <texture file="props/banner_germans.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="syrac">
+      <textures>
+        <texture file="props/banner_greek.png" name="baseTex"/>
       </textures>
     </variant>
     <variant name="theb">
@@ -86,6 +150,21 @@
         <texture file="props/banner_thebans.png" name="baseTex"/>
       </textures>
     </variant>
+    <variant name="xion">
+      <textures>
+        <texture file="props/banner_scythians.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="yayo">
+      <textures>
+	    <texture file="props/banner_yayo.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant name="zapo">
+      <textures>
+	    <texture file="props/banner_maya.png" name="baseTex"/>
+	  </textures>
+    </variant>
   </group>
-  <material>basic_trans.xml</material>
+  <material>basic_trans_norm_spec.xml</material>
 </actor>

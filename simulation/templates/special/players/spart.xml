@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">teambonuses/spart_player_teambonus</Auras>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Spartans</GenericName>
+    <History>Sparta was the leading military power of the Peloponnese, famous for its disciplined citizen army and domination of Laconia and Messenia. It led the Peloponnesian League and defeated Athens in the Peloponnesian War, briefly becoming the strongest state in Greece. Its supremacy declined after defeat by Thebes at Leuctra in 371 BC, and despite later efforts at revival, Sparta never regained its former dominance.</History>
+    <Icon>emblems/512x512/spartans.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+      special/formations/syntagma
+    </Formations>
+  </Player>
+</Entity>

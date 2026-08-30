@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_javelineer">
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/{civ}/range
+      -structures/{civ}/stable
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>40</wood>
+      <metal>0</metal>
+      <coin>60</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>units/cart/infantry_javelineer_iber_b</SelectionGroupName>
+    <SpecificName>Celt-Iberian Caetratus</SpecificName>
+    <Rank>Basic</Rank>
+    <VisibleClasses datatype="tokens">Iberian</VisibleClasses>
+    <Icon>units/cart/infantry_javelinist.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/infantry_javelineer_iber_a</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <TrainingRestrictions>
+    <Category>MercIberian</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/iberians/infantry_javelinist_b.xml</Actor>
+  </VisualActor>
+</Entity>

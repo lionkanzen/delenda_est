@@ -6,7 +6,7 @@
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Zebra</GenericName>
+    <GenericName>Zebra</GenericName>
     <SpecificName>Equus quagga</SpecificName>
     <Icon>gaia/fauna_zebra.png</Icon>
   </Identity>
@@ -14,16 +14,10 @@
     <Anchor>pitch</Anchor>
   </Position>
   <ResourceSupply>
-    <Amount>150</Amount>
-    <Type>food.meat</Type>
+    <Max>150</Max>
   </ResourceSupply>
   <UnitMotion>
     <WalkSpeed>6.0</WalkSpeed>
-    <Run>
-      <Speed>15.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
-    </Run>
   </UnitMotion>
   <VisualActor>
     <Actor>fauna/zebra.xml</Actor>

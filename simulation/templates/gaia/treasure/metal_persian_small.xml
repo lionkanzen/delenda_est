@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_metal">
+  <Footprint>
+    <Square width="5.5" depth="3.5"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Persian Rugs</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="5.0" depth="3.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>props/special/eyecandy/treasure_achaemenid_metal_small.xml</Actor>
+  </VisualActor>
+</Entity>

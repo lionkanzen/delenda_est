@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_aggressive">
+  <Attack>
+    <Melee>
+      <AttackName>Jaws</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Square width="4" depth="8"/>
+    <Height>1.0</Height>
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+    <IdleRegenRate>0.25</IdleRegenRate>
+  </Health>
+  <Identity>
+    <SpecificName>Crocodylus niloticus</SpecificName>
+    <GenericName>Nile Crocodile</GenericName>
+    <Icon>gaia/fauna_crocodile.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack_melee>actor/fauna/attack/lion.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>2.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/crocodile.xml</Actor>
+  </VisualActor>
+</Entity>

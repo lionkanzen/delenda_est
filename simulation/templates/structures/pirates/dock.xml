@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_dock">
+  <Footprint>
+    <Square width="26.0" depth="26.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Pirate Port</SpecificName>
+    <Icon>structures/shipyard_merc.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{native}/ship_fishing
+      -units/{native}/ship_merchant
+      units/{civ}/ship_fishing
+      units/{civ}/ship_merchant
+      units/pirates/ship_scout
+      units/pirates/ship_arrow
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/pirates/dock.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/imp_marcus_1
+    units/heroes/imp_marcus_2
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+    <Lang>latin</Lang>
+    <SpecificName>Emperor Marcus Aurelius</SpecificName>
+    <Icon>units/imp/hero_marcus_aurelius.png</Icon>
+  </Identity>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      romans_imperial/hero_meditations
+    </Technologies>
+  </Researcher>
+  <Upgrade>
+    <Mount>
+      <Entity>units/imp/hero_marcus_aurelius_mounted</Entity>
+      <Tooltip>This gives Marcus Aurelius his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/romans_imperial/hero_infantry_swordsman_aurelian.xml</Actor>
+  </VisualActor>
+</Entity>

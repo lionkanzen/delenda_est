@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/theb_epaminondas|template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/theb_hero_epaminondas_1
+    units/heroes/theb_hero_epaminondas_2
+  </Auras>
+  <Identity>
+    <Civ>theb</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Epaminondas</SpecificName>
+    <Icon>units/theb/hero_epaminondas.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/thebans/hero_epaminondas.xml</Actor>
+  </VisualActor>
+</Entity>

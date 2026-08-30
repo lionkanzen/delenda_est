@@ -1,0 +1,102 @@
+{
+	"Code": "iber",
+	"Culture": [ "Iberian" ],
+	"Region": [ "Europe", "Spain" ],
+	"Music": [
+		{
+			"File": "An_old_Warhorse_goes_to_Pasture.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Tale_of_Warriors.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Harsh_Lands_Rugged_People.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Harritsu Leku",
+			"History": "With exception to alluvial plains and river valleys, stone is abundant in the Iberian Peninsula and was greatly used in construction of structures of all types.",
+			"Description": "Iberians start with a powerful prefabricated circuit of stone walls."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/iber/caros",
+		"civ_choices/iber/indibil",
+		"civ_choices/iber/viriato"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/iber/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/iber/civil_centre"
+		},
+		{
+			"Template": "units/iber/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/iber/infantry_swordsman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/iber/infantry_javelineer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/iber/cavalry_scout_starter"
+		},
+		{
+			"Template": "gaia/fauna_sheep"
+		}
+	],
+	"AINames":
+	[
+		"Audax",
+		"Calcus",
+		"Ditalcus",
+		"Minurus",
+		"Olyndicus",
+		"Orison",
+		"Tanginus",
+		"Tautalus"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/iber/hero_caros",
+		"skirmish/units/default_hero_2": "units/iber/hero_indibil",
+		"skirmish/units/default_hero_3": "units/iber/hero_viriato",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/iber/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/iber/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/iber/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/iber/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/iber/champion_cavalry",
+		"skirmish/units/default_infantry_melee_b": "units/iber/infantry_swordsman_e",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/structures/iber_wall_short": "structures/iber/wall_short",
+		"skirmish/structures/iber_wall_medium": "structures/iber/wall_medium",
+		"skirmish/structures/iber_wall_long": "structures/iber/wall_long",
+		"skirmish/structures/iber_wall_gate": "structures/iber/wall_gate",
+		"skirmish/structures/iber_wall_tower": "structures/iber/wall_tower",
+		"skirmish/units/special_starting_unit": "gaia/fauna_sheep",
+		"skirmish/structures/special_starting_structure": "structures/iber/statue",
+		"skirmish/structures/default_defense_tower": ""
+	},
+	"SelectableInGameSetup": true
+}

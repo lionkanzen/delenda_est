@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_pericles_1
+    units/heroes/athen_hero_pericles_2
+  </Auras>
+  <Identity>
+    <Civ>syrac</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Gelon</SpecificName>
+    <Icon>units/syrac/hero_gelon.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/syrac/hero_gelon_mounted</Entity>
+      <Tooltip>This gives Gelon his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/athenians/hero_infantry_hoplite_pericles.xml</Actor>
+  </VisualActor>
+</Entity>

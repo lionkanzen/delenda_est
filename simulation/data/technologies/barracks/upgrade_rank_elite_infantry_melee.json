@@ -1,0 +1,35 @@
+{
+	"genericName": "Elite Melee-Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your melee Citizen infantrymen to Elite rank.",
+	"cost": {
+		"coin": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "yayo" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Melee Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_melee",
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Melee Infantry auto-promote to Elite Rank.\n• Elite Melee Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Infantry Advanced Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

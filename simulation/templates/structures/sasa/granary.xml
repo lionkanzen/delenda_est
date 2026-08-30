@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_granary">
+  <Footprint>
+    <Square width="17.0" depth="17.0"/>
+  </Footprint>
+  <Identity>
+    <Civ>sasa</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="15.0" depth="15.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/sasanians/granary.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

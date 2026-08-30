@@ -1,0 +1,9 @@
+{
+	"Name": "the check is in the mail",
+	"Data": {
+		"Action": "addresource",
+		"Type": "coin",
+		"DefaultParameter": 1000,
+		"isNumeric": true
+	}
+}

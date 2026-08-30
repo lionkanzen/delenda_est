@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_military_barracks">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="21.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Kazarmætæ</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Range
+    </VisibleClasses>
+    <Tooltip>Train melee and ranged infantry. Research training improvements for infantry.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -barracks/training_01
+      -barracks/training_02
+      -barracks/training_03
+      range/training_01
+      range/tradition_archery
+      range/upgrade_rank_advanced_infantry_archer
+      range/upgrade_rank_elite_infantry_archer
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/scyth/infantry_archer_b
+      units/{civ}/maiden_infantry_archer
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/scythians/barracks.xml</Actor>
+    <FoundationActor>structures/scythians/barracks_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure">
+  <Footprint>
+    <Square width="8.0" depth="8.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Coin Treasure</GenericName>
+    <Tooltip>A valuable Coin treasure that can be quickly gathered. Coin is used to hire Mercenaries, pay Champions, and recruit Heroes, as well acting as a means of exchange for trade, barter, and tribute.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="7.0" depth="7.0"/>
+  </Obstruction>
+  <Treasure>
+    <Resources>
+      <coin>100</coin>
+    </Resources>
+  </Treasure>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_treasure_coin.xml</select>
+    </SoundGroups>
+  </Sound>
+</Entity>

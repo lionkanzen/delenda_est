@@ -1,12 +1,37 @@
 {
-	"genericName": "Signal Fires",
-	"description": "Outposts gain longer vision for scouting.",
-	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 0},
-	"requirements": {"tech": "phase_village"},
+	"genericName": "Signal Fire Network",
+	"specificName": {
+		"imp": "Signum Ignis",
+		"rome": "Signum Ignis",
+		"spart": "Phryctoria",
+		"athen": "Phryctoria",
+		"sele": "Phryctoria",
+		"ptol": "Phryctoria",
+		"hele": "Phryctoria",
+		"brit": "Arwydd tân"
+	},
+	"description": "Phryctoria (Greek: φρυκτωρία) was a semaphore system used in Ancient Greece. The phryctoriae were towers built on selected mountaintops so that one tower (phryctoria) would be visible to the next tower (usually 20 miles away). The towers were used for the transmission of a specific prearranged message. One tower would light its flame, the next tower would see the fire, and light its own.",
+	"cost": {
+		"wood": 100,
+		"glory": 100
+	},
+	"requirements": { "all": 
+		[
+			{ "tech": "phase_village" },
+			{ "all": [
+				{ "notciv": "scyth" },
+				{ "notciv": "xion" },
+				{ "notciv": "huns" },
+				{ "notciv": "parth" }]
+			}
+		]
+	},
 	"icon": "signal_fires.png",
 	"researchTime": 40,
-	"tooltip": "Outposts +50% Vision Range.",
-	"modifications": [{"value": "Vision/Range", "multiply": 1.5}],
+	"tooltip": "[font=\"sans-bold-14\"]• Outposts +33% vision range.[/font]",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.33 }
+	],
 	"affects": ["Outpost"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

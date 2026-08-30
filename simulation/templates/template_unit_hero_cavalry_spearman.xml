@@ -1,71 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_cavalry">
-  <Armour>
-    <Hack>6</Hack>
-    <Pierce>8</Pierce>
-    <Crush>8</Crush>
-  </Armour>
   <Attack>
     <Melee>
-      <Hack>16.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>5.0</MaxRange>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>7.0</MaxRange>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <Bonuses>
-		<BonusPrimary>
-		  <Classes>Infantry Ranged</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusPrimary>
-		<BonusSiege>
-		  <Classes>Siege</Classes>
-		  <Multiplier>2.0</Multiplier>
-		</BonusSiege>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
-	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Infantry Ranged</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusPrimary>
+        <BonusSiege>
+          <Classes>Siege</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusSiege>
+        <ElephantStench>
+          <Classes>Elephant</Classes>
+          <Multiplier>0.5</Multiplier>
+        </ElephantStench>
+        <CamelStench>
+          <Classes>Camel</Classes>
+          <Multiplier>0.5</Multiplier>
+        </CamelStench>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Ranged+Unit Siege</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
     </Melee>
-    <Charge>
-      <Hack>64.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>5.0</MaxRange>
-      <MinRange>0.0</MinRange>
-	  <Bonuses>
-		<BonusPrimary>
-		  <Classes>Infantry Ranged</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusPrimary>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
-	  </Bonuses>
-      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
-    </Charge>
   </Attack>
   <Identity>
     <VisibleClasses datatype="tokens">Melee Spear</VisibleClasses>
-    <GenericName>Hero Cavalry Spearman</GenericName>
-    <Tooltip>Counters: 2x vs. Siege Weapons and Ranged Infantry.
-Countered by: Spear Infantry, Elephants, and Camels.</Tooltip>
+    <GenericName>Hero Spear Cavalry</GenericName>
+    <Tooltip>Traits: Fast Speed, Heavy Charge, Trample.
+Strong Against: Ranged Infantry (2x), Siege Weapons (2x).
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Camels.</Tooltip>
   </Identity>
-  <Loot>
-    <xp>500</xp>
-    <food>10</food>
-    <wood>20</wood>
-    <stone>0</stone>
-    <metal>5</metal>
-  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>8</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="add">0.9</WalkSpeed>
+  </UnitMotion>
 </Entity>

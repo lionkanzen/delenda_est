@@ -1,0 +1,118 @@
+{
+	"Code": "sele",
+	"Culture": [ "Greek", "Hellenistic" ],
+	"Region": [ "Mediterranean", "Asia", "Middle East" ],
+	"Music": [
+		{
+			"File": "Silver_Shields.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "On_The_Tigris.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Land_Between_Rivers.ogg",
+			"Type": "peace"
+		}
+	],
+	"Music": [
+			{"File": "Silver_Shields.ogg", "Type": "peace"},
+			{"File": "On_The_Tigris.ogg", "Type": "peace"},
+			{"File": "In_the_Shadow_of_Olympus.ogg", "Type": "peace"},
+			{"File": "The_Hellespont.ogg", "Type": "peace"}
+		],
+	"CivBonuses":
+	[
+		{
+			"Name": "Cleruchy",
+			"History": ".",
+			"Description": "This unlocks the Seleucid expansion building, the Klēroukhia or Military Colony, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/sele/seleucus_I",
+		"civ_choices/sele/antiochus_III",
+		"civ_choices/sele/antiochus_IV"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/sele/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/sele/civil_centre"
+		},
+		{
+			"Template": "units/sele/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/sele/infantry_spearman_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/sele/infantry_archer_e",
+			"Count": 2
+		},
+		{
+			"Template": "units/sele/cavalry_scout_starter"
+		}
+	],
+	"AINames":
+	[
+		"Antiochus I Soter",
+		"Antiochus II Theos",
+		"Seleucus II Callinicus",
+		"Seleucus III Ceraunus",
+		"Seleucus IV Philopator",
+		"Antiochus V Eupator",
+		"Demetrius I Soter",
+		"Alexander I Balas",
+		"Demetrius II Nicator",
+		"Antiochus VI Dionysus",
+		"Diodotus Tryphon",
+		"Antiochus VII Sidetes",
+		"Demetrius II Nicator",
+		"Alexander II Zabinas",
+		"Cleopatra Thea",
+		"Seleucus V Philometor",
+		"Antiochus VIII Grypus",
+		"Antiochus IX Cyzicenus",
+		"Seleucus VI Epiphanes",
+		"Antiochus X Eusebes",
+		"Demetrius III Eucaerus",
+		"Antiochus XI Epiphanes",
+		"Philip Philadelphus",
+		"Antiochus XII Dionysus",
+		"Seleucus VII Kybiosaktes",
+		"Antiochus XIII Asiaticus",
+		"Philip Philoromaeus",
+		"Achaeus the Elder"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/sele/hero_seleucus_victor",
+		"skirmish/units/default_hero_2": "units/sele/hero_antiochus_great",
+		"skirmish/units/default_hero_3": "units/sele/hero_antiochus_righteous",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/sele/champion_infantry_pikeman",
+		"skirmish/units/default_champion_infantry_2": "units/sele/champion_infantry_swordsman",
+		"skirmish/units/default_champion_infantry_3": "units/sele/champion_infantry_pikeman",
+		"skirmish/units/default_champion_infantry_4": "units/sele/champion_ranged_gastraphetes",
+		"skirmish/units/default_champion_cavalry_1": "units/sele/champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "units/sele/champion_chariot",
+		"skirmish/structures/default_house_10" : "structures/sele/house",
+		"skirmish/units/default_infantry_ranged_b": "units/sele/infantry_archer_e",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

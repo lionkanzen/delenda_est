@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Cost>
+    <BuildTime>7.5</BuildTime>
+    <Resources>
+      <food>45</food>
+      <coin>45</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>xion</Civ>
+    <Lang>mandarin</Lang>
+    <SpecificName>Yuezhi Hostage</SpecificName>
+    <Icon>units/hele/support_slave.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/scythians/slave_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

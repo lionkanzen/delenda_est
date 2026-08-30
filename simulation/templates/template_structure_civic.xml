@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure">
-  <Armour>
-    <Hack>10</Hack>
-    <Pierce>25</Pierce>
-    <Crush>2</Crush>
-    <Foundation>
-      <Hack>3</Hack>
-      <Pierce>10</Pierce>
-      <Crush>3</Crush>
-    </Foundation>
-  </Armour>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Identity>
     <GenericName>Civic Structure</GenericName>
-    <VisibleClasses datatype="tokens">Civic</VisibleClasses>
+    <VisibleClasses datatype="tokens">
+      Civic
+      Capturable
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      Civic
+      CapturableBuilding
+    </Classes>
   </Identity>
 </Entity>

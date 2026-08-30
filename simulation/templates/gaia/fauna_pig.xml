@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd_domestic">
+  <Footprint replace="">
+    <Square width="2.0" depth="4.0"/>
+    <Height>1.5</Height>
+  </Footprint>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Domestic Pig</GenericName>
+    <GenericName>Domestic Pig</GenericName>
     <SpecificName>Sus scrofa domesticus</SpecificName>
+    <Tooltip>Slaughter for food or set afire to frighten enemy war elephants.</Tooltip>
     <Icon>gaia/fauna_pig.png</Icon>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/pig_select.xml</select>
+      <order_walk>actor/fauna/animal/pig_order.xml</order_walk>
+      <order_garrison>actor/fauna/animal/pig_order.xml</order_garrison>
+      <death>actor/fauna/animal/pig.xml</death>
+      <trained>actor/fauna/animal/pig_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
   <StatusBars>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>fauna/pig1.xml</Actor>
   </VisualActor>

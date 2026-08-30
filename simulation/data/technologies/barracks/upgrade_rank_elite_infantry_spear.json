@@ -1,0 +1,47 @@
+{
+	"genericName": "Elite Citizen Spear Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Mothakes",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen spearmen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "epir" },
+					{ "notciv": "huns" },
+					{ "notciv": "imp" },
+					{ "notciv": "mace" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "spart" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Spear Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_spear",
+	"tooltip": "[font=\"sans-bold-14\"]• Advanced Spear Infantry auto-promote to Elite Rank.\n• Elite Spear Infantry +10% train time.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Spear !Pike Infantry Advanced"],
+	"placeBelow": "Citizen Infantry Spear !Pike",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

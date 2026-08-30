@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_glory">
+  <Footprint>
+    <Square width="4" depth="6"/>
+    <Height>7.5</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Pegasus</SpecificName>
+  </Identity>
+  <Treasure>
+    <Resources>
+      <glory>500</glory>
+    </Resources>
+  </Treasure>
+  <Selectable replace="">
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Visibility>
+    <RetainInFog>false</RetainInFog>
+  </Visibility>
+  <VisualActor>
+    <Actor>special/pegasus.xml</Actor>
+  </VisualActor>
+</Entity>

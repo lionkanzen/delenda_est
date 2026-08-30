@@ -1,0 +1,44 @@
+{
+	"TranslatedKeys": ["Title"],
+	"TranslationContext": "startingResources",
+	"Data":
+	[
+		{
+			"Resources": 0,
+			"Title": "None (0)"
+		},
+		{
+			"Resources": 100,
+			"Title": "Very Low (100)"
+		},
+		{
+			"Resources": 300,
+			"Title": "Low (300)"
+		},
+		{
+			"Resources": 500,
+			"Title": "Default (500)",
+			"Default": true
+		},
+		{
+			"Resources": 1000,
+			"Title": "High (1k)"
+		},
+		{
+			"Resources": 5000,
+			"Title": "Very High (5k)"
+		},
+		{
+			"Resources": 10000,
+			"Title": "Extremely High (10k)"
+		},
+		{
+			"Resources": 35000,
+			"Title": "Insanely High (35k)"
+		},
+		{
+			"Resources": 80000,
+			"Title": "Deathmatch (80k)"
+		}
+	]
+}

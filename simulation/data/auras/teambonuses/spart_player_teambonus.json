@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Melee Infantry"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraName": "Peloponnesian League",
+	"auraDescription": "\n• Melee Infantry +10% health."
+}

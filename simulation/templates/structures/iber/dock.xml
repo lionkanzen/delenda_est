@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_dock">
+  <Footprint>
+    <Square width="16.0" depth="26.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_iber_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Kai</SpecificName>
+    <VisibleClasses datatype="tokens">Military Shipyard</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="14.0" depth="24.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/ship_scout
+      units/{civ}/ship_arrow
+      units/{civ}/ship_fire
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/iberians/dock.xml</Actor>
+    <FoundationActor>structures/fndn_dock_iber.xml</FoundationActor>
+  </VisualActor>
+</Entity>

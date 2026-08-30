@@ -1,0 +1,12 @@
+{
+	"type": "global",
+	"affects": ["Warship"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
+		{ "value": "Attack/melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Attack/melee/Damage/Crush", "multiply": 1.2 }
+	],
+	"auraName": "Navarch",
+	"auraDescription": "\n• Warships +20% attack damage.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

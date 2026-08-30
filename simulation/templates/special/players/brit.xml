@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/brit_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>brit</Civ>
+    <GenericName>Britons</GenericName>
+    <History>The ancient Britons were Celtic-speaking peoples who inhabited Britain before and during the Roman conquest. Organized into numerous tribes and kingdoms, they practiced agriculture, trade, warfare, and distinctive religious traditions. Leaders such as Cassivellaunus and Boudica resisted Roman expansion, but much of Britain was conquered after AD 43. Beyond Roman control, northern peoples retained their independence and traditions.</History>
+    <Icon>emblems/512x512/britons.png</Icon>
+  </Identity>
+</Entity>

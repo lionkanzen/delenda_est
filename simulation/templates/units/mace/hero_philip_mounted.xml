@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/heroes/mace_philip|template_unit_hero_cavalry_spearman">
+  <Attack>
+    <Capture>
+      <AttackName>Capturer of Cities</AttackName>
+      <Capture op="mul">4.0</Capture>
+    </Capture>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_philip_1
+    units/heroes/mace_hero_philip_2
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Philip II of Macedon</SpecificName>
+    <Icon>units/mace/hero_philip.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/macedonians/hero_cavalry_spearman_philip_m.xml</Actor>
+  </VisualActor>
+</Entity>

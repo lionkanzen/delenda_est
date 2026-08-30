@@ -1,0 +1,14 @@
+{
+	"type": "global",
+	"affects": ["Trader"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Cost/Resources/food", "multiply": 0.5 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.5 },
+		{ "value": "Cost/Resources/metal", "multiply": 0.5 },
+		{ "value": "Cost/Resources/stone", "multiply": 0.5 },
+		{ "value": "Cost/Resources/coin", "multiply": 0.5 }
+	],
+	"auraName": "\n• The Silk Road",
+	"auraDescription": "Traders −50% cost."
+}

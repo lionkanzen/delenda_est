@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/mace_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+    <GenericName>Macedonians</GenericName>
+    <History>Macedon rose from a northern Greek kingdom to dominate the eastern Mediterranean under Philip II, who reformed its army and defeated the Greek city-states. His son Alexander the Great conquered the Persian Empire and carried Macedonian power as far as India. After Alexander’s death, his empire fragmented among rival successor kingdoms, but Macedonian military traditions and Hellenistic culture endured for centuries.</History>
+    <Icon>emblems/512x512/macedonians_04.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+      special/formations/syntagma
+    </Formations>
+  </Player>
+</Entity>

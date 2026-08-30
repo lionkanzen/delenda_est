@@ -1,62 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Armour>
-    <Hack>10.0</Hack>
-    <Pierce>20.0</Pierce>
-    <Crush>15.0</Crush>
-  </Armour>
+  <Attack>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>20</Capture>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
+    <Slaughter>
+      <AttackName>Slaughter</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
+    </Slaughter>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/hero_garrison
+    units/heroes/hero_building
+    units/heroes/hero_gathering
+  </Auras>
   <Cost>
-    <Population>2</Population>
-    <BuildTime>40</BuildTime>
+    <Population>0</Population>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>100</food>
-      <metal>250</metal>
+      <coin>200</coin>
+      <glory>200</glory>
     </Resources>
   </Cost>
   <Health>
-    <Max>600</Max>
+    <Max>400</Max>
+    <IdleRegenRate>1</IdleRegenRate>
   </Health>
   <Identity>
     <GenericName>Hero</GenericName>
-    <Classes datatype="tokens">Organic</Classes>
+    <Classes datatype="tokens">Organic Human</Classes>
     <VisibleClasses datatype="tokens">Hero Soldier</VisibleClasses>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
+    <Undeletable>true</Undeletable>
   </Identity>
   <Loot>
-    <xp>400</xp>
-    <food>100</food>
-    <wood>100</wood>
-    <stone>100</stone>
-    <metal>100</metal>
+    <xp>500</xp>
+    <glory>300</glory>
   </Loot>
   <Minimap>
-    <Type>hero</Type>
+    <Icon size="16.0">star.png</Icon>
   </Minimap>
-  <Selectable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>15.0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <glory.praise>0.2</glory.praise>
+    </Rates>
+  </ResourceGatherer>
+  <Selectable replace="">
     <Overlay>
       <AlwaysVisible/>
+      <Shape>
+        <Circle radius="2"/>
+      </Shape>
       <Texture>
-        <MainTexture>star/256x256.png</MainTexture>
-        <MainTextureMask>star/256x256_mask.png</MainTextureMask>
+        <MainTexture>128x128/star.png</MainTexture>
+        <MainTextureMask>128x128/star_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
   <Sound>
     <SoundGroups>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/death.xml</death>
+      <trained>interface/alarm/alarm_create_hero_{phenotype}.xml</trained>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack_move>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack_move>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+      <upgraded>interface/alarm/alarm_create_hero_{phenotype}.xml</upgraded>
+      <death>actor/human/death/hero_{phenotype}.xml</death>
     </SoundGroups>
   </Sound>
   <TrainingRestrictions>
     <Category>Hero</Category>
+    <MatchLimit>5</MatchLimit>
   </TrainingRestrictions>
-  <UnitMotion>
-    <WalkSpeed>9.0</WalkSpeed>
-    <Run>
-      <Speed>22.5</Speed>
-    </Run>
-  </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>40</Range>
   </Vision>
 </Entity>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_pikeman">
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <BonusBuilding>
+          <Classes>Structure</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusBuilding>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>ptol</Civ>
+    <Lang>greek</Lang>
+    <SelectionGroupName>units/ptol/infantry_pikeman_mace_b</SelectionGroupName>
+    <SpecificName>Macedonian Phalangite</SpecificName>
+    <Icon>units/mace/infantry_pikeman_e.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/ptol/infantry_pikeman_mace_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/macedonians/infantry_pikeman_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Hoplite Champion"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"auraDescription": "\n• Sacred Band Champions −50% train time.",
+	"auraName": "Hieros Lochos"
+}

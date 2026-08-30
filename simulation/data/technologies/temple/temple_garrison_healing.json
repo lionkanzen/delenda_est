@@ -1,0 +1,28 @@
+{
+	"genericName": "Mystery Cult",
+	"specificName": {
+		"athen": "Eleusinian Mysteries",
+		"imp": "Mithraic Mysteries",
+		"mace": "Apollo Farseer",
+		"achae": "Zoroastrian Riddles",
+		"rome": "Dedication to Juno",
+		"sele": "The Cult of Syrian Apollo"
+	},
+	"description": "Mystery cults were religious traditions in the ancient Mediterranean that offered initiates access to secret rites, teachings, and sacred experiences unavailable to outsiders. Cults such as the Eleusinian Mysteries, the rites of Dionysus, Isis, Mithras, and the Samothracian gods promised benefits that could include divine protection, purification, fellowship, or a more hopeful fate after death. Initiation was usually voluntary and involved ceremonies, oaths of secrecy, symbolic objects, processions, sacrifices, and dramatic ritual experiences, allowing these cults to coexist alongside the public civic religions of Greece, Rome, and the wider ancient world.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "cauldron.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Temples +100% garrisoned healing rate.[/font]",
+	"modifications": [
+		{ "value": "GarrisonHolder/BuffHeal", "multiply": 2 }
+	],
+	"affects": ["Temple"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

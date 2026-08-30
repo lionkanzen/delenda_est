@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Category>AuxiliaryBarracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <stone>200</stone>
+      <coin>100</coin>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">
+      Infantry+Range
+      Cavalry
+    </List>
+  </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Castra Auxiliorum</SpecificName>
+    <GenericName>Auxiliary Barracks</GenericName>
+    <VisibleClasses datatype="tokens">
+      AuxiliaryBarracks
+    </VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
+    <Tooltip>Train Auxiliary mercenary soldiers here and research their improvements.</Tooltip>
+    <Icon>structures/barracks_aux.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="22.0" depth="22.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens" replace="">
+      romans_imperial/cavalry_tournaments
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <Entities datatype="tokens" replace="">
+      units/{civ}/cavalry_scout
+      units/{civ}/merc_infantry_1
+      units/{civ}/merc_infantry_2
+      units/{civ}/merc_cavalry_1
+      units/{civ}/merc_cavalry_2
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/romans_imperial/barracks_02.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

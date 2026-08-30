@@ -1,55 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry">
-  <Armour>
-    <Hack>15</Hack>
-    <Pierce>10</Pierce>
-    <Crush>10</Crush>
-  </Armour>
   <Attack>
     <Melee>
-      <Hack>15.0</Hack>
-      <Pierce>0.0</Pierce>
-      <MaxRange>8.0</MaxRange>
-	  <Bonuses>
-		<BonusCavMelee>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>4.0</Multiplier>
-		</BonusCavMelee>
-	  </Bonuses>
+      <AttackName>Pike</AttackName>
+      <Damage>
+        <Hack>30.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>7</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Melee>
-    <Charge>
-      <Hack>30.0</Hack>
-      <Pierce>0.0</Pierce>
-      <MaxRange>8.0</MaxRange>
-	  <Bonuses>
-		<BonusCharge>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>4.0</Multiplier>
-		</BonusCharge>
-	  </Bonuses>
-    </Charge>
   </Attack>
+  <Auras datatype="tokens">
+    units/massed_pikes
+  </Auras>
   <Identity>
     <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
     <GenericName>Hero Pikeman</GenericName>
-    <Tooltip>Counters: 4x vs. All Cavalry.
-Countered by: Ranged Units and Sword Infantry.</Tooltip>
-    <Formations datatype="tokens">
-      formations/phalanx
-      formations/syntagma
-    </Formations>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Strong Attack.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
   </Identity>
-  <Loot>
-    <wood>100</wood>
-    <metal>100</metal>
-  </Loot>
-  <Stamina>
-    <Max>1200</Max>
-  </Stamina>
+  <Position>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>10</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/syntagma
+    </Formations>
+  </UnitAI>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
-    <Run>
-      <Speed>13</Speed>
-    </Run>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>
 </Entity>

@@ -1,0 +1,15 @@
+{
+	"type": "global",
+	"affects": ["Pyramid"],
+	"modifications": [
+		{ "value": "Cost/Resources/food", "multiply": 1.50 },
+		{ "value": "Cost/Resources/wood", "multiply": 1.50 },
+		{ "value": "Cost/Resources/stone", "multiply": 1.50 },
+		{ "value": "Cost/Resources/metal", "multiply": 1.50 },
+		{ "value": "Cost/Resources/coin", "multiply": 1.50 },
+		{ "value": "Cost/BuildTime", "multiply": 1.25 }
+	],
+	"auraDescription": "\n• Pyramids +50% cost and +25% build time for each new Pyramid built.",
+	"auraName": "The Cost of Splendor",
+	"stackable": true
+}

@@ -1,0 +1,16 @@
+{
+	"genericName": "Chanyu Touman",
+	"description": "Chanyu Touman.",
+	"icon": "civ_choices/xion_hero_touman.png",
+	"tooltip": "Select Chanyu Touman to lead your civilization.",
+	"requirements": {
+		"civ": "xion"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_laoshang -units/{civ}/hero_modu",
+			"affects": "Royal_Yurt"
+		}
+	]
+}

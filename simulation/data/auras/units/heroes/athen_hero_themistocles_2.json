@@ -1,0 +1,12 @@
+{
+	"type": "global",
+	"affects": ["Warship"],
+	"modifications": [
+	  { "value": "Cost/Resources/food", "multiply": 0.8 },
+	  { "value": "Cost/Resources/wood", "multiply": 0.8 },
+	  { "value": "Cost/Resources/stone", "multiply": 0.8 },
+	  { "value": "Cost/Resources/metal", "multiply": 0.8 }
+	],
+	"auraName": "Naval Architect",
+	"auraDescription": "\n• Warships −20% cost."
+}

@@ -1,0 +1,21 @@
+{
+	"Title": "Mediterranean Cultures",
+	"Code": "med",
+	"GUIOrder": 1,
+	"Tooltip": "Civilizations based around the Mediterranean Sea.",
+	"Weights": {
+		"achae": 1,
+		"athen": 2,
+		"epir": 2,
+		"cart": 2,
+		"iber": 1,
+		"imp": 5,
+		"mace": 2,
+		"ptol": 2,
+		"rome": 2,
+		"sele": 1,
+		"spart": 2,
+		"syrac": 3,
+		"theb": 2
+	}
+}

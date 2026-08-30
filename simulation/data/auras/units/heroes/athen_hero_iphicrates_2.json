@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Soldier !Hoplite"],
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "multiply": 0.75 }
+	],
+	"auraName": "Drill and Discpline",
+	"auraDescription": "\n• All Citizen Soldiers (except Hoplites) −20% experience required to gain higher rank."
+}

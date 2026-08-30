@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Mǎ hào</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="21.0" depth="21.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{civ}/cavalry_crossbowman_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/han/stable.xml</Actor>
+  </VisualActor>
+</Entity>

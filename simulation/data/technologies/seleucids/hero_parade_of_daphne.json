@@ -1,0 +1,23 @@
+{
+	"genericName": "Parade of Daphne",
+	"description": "The Parade of Daphne was a spectacular Seleucid royal procession held near Antioch, most famously under Antiochus IV Epiphanes in the 2nd century BC. It displayed the wealth, military strength, and cultural diversity of the Seleucid Empire through marching soldiers, cavalry, war elephants, chariots, priests, musicians, athletes, and lavishly decorated participants carrying gold and silver objects. More than simple entertainment, the parade was a carefully staged demonstration of royal power and legitimacy, showing subjects and foreign observers that the Seleucid king commanded immense resources and stood at the center of a prosperous, cosmopolitan empire.",
+	"cost": {
+		"coin": 500,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "sele" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "parade_of_daphne.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]A military procession.\n• Champions −50% train time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"affects": ["Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

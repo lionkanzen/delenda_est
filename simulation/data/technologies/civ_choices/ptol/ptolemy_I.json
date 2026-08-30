@@ -1,0 +1,26 @@
+{
+	"genericName": "Ptolemy I the Victor",
+	"description": "Ptolemy I the Victor.",
+	"icon": "civ_choices/ptol_hero_ptolemy_I.png",
+	"tooltip": "Select Ptolemy I to lead your civilization.",
+	"requirements": {
+		"civ": "ptol"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_ptolemy_III_infantry -units/{civ}/hero_ptolemy_IV_infantry -units/{civ}/hero_cleopatra_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "ptolemies/hero_euclidean_geometry",
+			"affects": "Library"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/infantry_pikeman_b",
+			"affects": "Barracks"
+		}
+	]
+}

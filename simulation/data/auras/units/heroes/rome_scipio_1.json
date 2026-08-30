@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Promotion/TrickleRate", "add": 0.2 }
+	],
+	"auraName": "Rigorous Discipline",
+	"auraDescription": "\n• Soldiers gain free experience over time.",
+	"overlayIcon": "art/textures/ui/session/auras/xp.png"
+}

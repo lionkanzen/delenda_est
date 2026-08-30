@@ -6,30 +6,28 @@
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Giraffe</GenericName>
+    <GenericName>Giraffe</GenericName>
     <SpecificName>Giraffa camelopardalis</SpecificName>
     <Icon>gaia/fauna_giraffe.png</Icon>
   </Identity>
-  <Obstruction>
-    <Unit radius="1.5"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
   <ResourceSupply>
-    <Amount>150</Amount>
-    <Type>food.meat</Type>
+    <Max>150</Max>
   </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
   <StatusBars>
     <HeightOffset>7.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
     <WalkSpeed>4.0</WalkSpeed>
-    <Run>
-      <Speed>10.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
-    </Run>
   </UnitMotion>
   <VisualActor>
     <Actor>fauna/giraffe_baby.xml</Actor>

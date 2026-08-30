@@ -1,0 +1,22 @@
+{
+	"genericName": "Civic Festival",
+	"icon": "wives_festival_african.png",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"researchTime": 40,
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" }
+		]
+	},
+	"tooltip": "[font=\"sans-bold-14\"]• Civilian Citizens −25% training time.[/font]",
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
+	],
+	"affects": ["Villager"],
+	"placeBelow": "Citizen Civilian",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

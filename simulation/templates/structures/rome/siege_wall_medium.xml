@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_medium">
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>40</wood>
+      <stone>0</stone>
+      <glory>10</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25" depth="5"/>
+    <Height>6.7</Height>
+  </Footprint>
+  <Health>
+    <Max op="mul">0.5</Max>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <SelectionGroupName>structures/rome/wallset_siege</SelectionGroupName>
+    <GenericName>Siege Wall</GenericName>
+    <SpecificName>Mūrus Circummūnītiōnis</SpecificName>
+    <Classes datatype="tokens">SiegeWall</Classes>
+    <Icon>structures/siege_wall.png</Icon>
+    <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
+  </Identity>
+  <Loot>
+    <wood>8</wood>
+    <stone>0</stone>
+  </Loot>
+  <Obstruction>
+    <Static width="24" depth="4"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>7.7</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>2</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </One>
+      <Two>
+        <X>-2</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Two>
+      <Three>
+        <X>6</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Three>
+      <Four>
+        <X>-6</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Four>
+    </TurretPoints>
+  </TurretHolder>
+  <VisualActor>
+    <Actor>structures/romans/siege_wall_medium.xml</Actor>
+  </VisualActor>
+</Entity>

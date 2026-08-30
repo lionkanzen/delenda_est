@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/imp_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+    <GenericName>Imperial Romans</GenericName>
+    <History>The Roman Empire emerged from the late Republic under Augustus and grew into the dominant power of the Mediterranean. Roman armies secured vast territories across Europe, North Africa, and the Near East, while roads, cities, law, taxation, and trade bound them together. The empire reached its greatest extent in the 2nd century AD before political instability, invasions, and internal division gradually weakened Roman power.</History>
+    <Icon>emblems/512x512/romans_imperial.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </Player>
+</Entity>

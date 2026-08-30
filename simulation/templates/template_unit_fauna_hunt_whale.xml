@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna">
-  <Footprint>
-    <Circle radius="10.0"/>
+  <Footprint replace="">
+    <Square width="7.0" depth="28.0"/>
     <Height>2.5</Height>
   </Footprint>
   <Health>
     <Max>200</Max>
-    <DeathType>remain</DeathType>
     <Unhealable>true</Unhealable>
-    <Repairable>false</Repairable>
   </Health>
   <Identity>
-    <Classes datatype="tokens">SeaCreature</Classes>
-    <Civ>gaia</Civ>
     <GenericName>Cetacean</GenericName>
-	<Tooltip>Kill, then collect food from this bountiful oceanic resource.</Tooltip>
-    <Icon>gaia/fauna_fish.png</Icon>
+    <Classes datatype="tokens">SeaCreature</Classes>
+    <VisibleClasses datatype="tokens">Whale</VisibleClasses>
+    <Tooltip>Kill, then collect food from this bountiful oceanic resource.</Tooltip>
+    <Icon>gaia/fauna_whale.png</Icon>
   </Identity>
   <Obstruction>
-    <Unit radius="4.0"/>
+    <BlockMovement>false</BlockMovement>
   </Obstruction>
   <Position>
-	<Floating>true</Floating>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
   </Position>
   <ResourceSupply>
     <KillBeforeGather>true</KillBeforeGather>
-    <Amount>2000</Amount>
+    <Max>5000</Max>
     <Type>food.fish</Type>
-	<MaxGatherers>5</MaxGatherers>
+    <MaxGatherers>5</MaxGatherers>
   </ResourceSupply>
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>circle/512x512.png</MainTexture>
-        <MainTextureMask>circle/512x512_mask.png</MainTextureMask>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -43,7 +42,7 @@
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
   <UnitAI>
-    <NaturalBehaviour>skittish</NaturalBehaviour>
+    <DefaultStance>skittish</DefaultStance>
     <RoamDistance>60.0</RoamDistance>
     <FleeDistance>60.0</FleeDistance>
     <RoamTimeMin>100000</RoamTimeMin>
@@ -52,10 +51,8 @@
     <FeedTimeMax>2</FeedTimeMax>
   </UnitAI>
   <UnitMotion>
-    <PassabilityClass>ship</PassabilityClass>
-    <WalkSpeed>11.5</WalkSpeed>
-    <Run>
-      <Speed>15.0</Speed>
-    </Run>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed>5.0</WalkSpeed>
+    <Weight op="mul">5</Weight>
   </UnitMotion>
 </Entity>

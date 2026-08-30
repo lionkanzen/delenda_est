@@ -1,0 +1,27 @@
+{
+	"supersedes": "shipyard/training_naval_shipwrights",
+	"genericName": "Arsenal of Philon",
+	"specificName": {
+		"generic": "Skeuotheke ton Philo"
+	},
+	"description": "The Arsenal of Philon, or Skeuotheke of Philo, was a major naval storehouse built at Piraeus in the 4th century BC for the Athenian fleet. Designed by the architect Philo of Eleusis, it housed essential ship equipment such as rigging, sails, ropes, and other naval gear in a carefully organized, well-ventilated building. The arsenal reflected Athens’ highly developed naval administration, allowing expensive equipment to be stored, inspected, and rapidly issued to warships, and it stands as one of the clearest examples of Greek military architecture designed around logistics rather than combat.",
+	"cost": {
+		"stone": 500,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "athen" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Shipwrights.”",
+	"icon": "arsenal_of_philon.png",
+	"researchTime": 50,
+	"tooltip": "[font=\"sans-bold-14\"]• Warships +1 health/second self-repair rate.[/font]",
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 1 }
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

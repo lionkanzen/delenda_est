@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure">
-  <Armour>
-    <Hack>5</Hack>
-    <Pierce>25</Pierce>
-    <Crush>5</Crush>
-    <Foundation>
-      <Hack>2</Hack>
-      <Pierce>10</Pierce>
-      <Crush>2</Crush>
-    </Foundation>
-  </Armour>
+  <Auras datatype="tokens">
+    structures/wonder_pop_1
+  </Auras>
   <BuildRestrictions>
     <Category>Wonder</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>3000</CapturePoints>
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Cost>
     <BuildTime>1000</BuildTime>
     <Resources>
-      <food>0</food>
-      <wood>1000</wood>
-      <stone>1000</stone>
-      <metal>1000</metal>
+      <stone>2000</stone>
+      <glory>1000</glory>
     </Resources>
   </Cost>
   <Footprint>
@@ -29,59 +25,75 @@
   <GarrisonHolder disable=""/>
   <Health>
     <Max>5000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Wonder</GenericName>
-    <Tooltip>Bring glory to your civilization and unlock Imperial Phase.</Tooltip>
+    <SpecificName>Wonder</SpecificName>
+    <Classes datatype="tokens">
+      CapturableBuilding
+    </Classes>
     <VisibleClasses datatype="tokens">
-	  City
-	  Wonder
-	</VisibleClasses>
+      City
+      Wonder
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Bring glory to your civilization and unlock Empire Phase.</Tooltip>
     <Icon>structures/wonder.png</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <xp>200</xp>
-    <food>0</food>
-    <wood>1000</wood>
-    <stone>1000</stone>
-    <metal>1000</metal>
+    <xp>1000</xp>
+    <glory>1000</glory>
   </Loot>
+  <Minimap>
+    <Icon size="32.0">wonder.png</Icon>
+  </Minimap>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-	  pop_wonder
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable=""/>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_wonder.xml</select>
-      <constructed>interface/complete/building/complete_wonder.xml</constructed>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
+      <captured>interface/complete/building/complete_wonder.xml</captured>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.6</BarHeight>
-    <HeightOffset>12.0</HeightOffset>
+    <HeightOffset>20.0</HeightOffset>
   </StatusBars>
   <TerritoryInfluence>
     <Root>true</Root>
-    <Radius>100</Radius>
-    <Weight>65536</Weight>
+    <Radius>79</Radius>
+    <Weight>65535</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>72</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+    <FoundationActor>structures/fndn_stonehenge.xml</FoundationActor>
   </VisualActor>
-  <Wonder>
-    <TimeTillVictory>300</TimeTillVictory>
-  </Wonder>
+  <Wonder/>
 </Entity>

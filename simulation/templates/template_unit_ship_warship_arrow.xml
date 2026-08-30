@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Pierce>10.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Bonuses>
+        <BonusShips>
+          <Classes>Ship</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusShips>
+      </Bonuses>
+      <Projectile>
+        <Count>3</Count>
+        <Speed>50.0</Speed>
+        <Spread>3.0</Spread>
+        <Gravity>28.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship
+      </PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Capturable>
+    <CapturePoints>300</CapturePoints>
+  </Capturable>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>120</food>
+      <wood>120</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="10.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <EjectClassesOnDestroy datatype="tokens">Civilian Infantry Dog</EjectClassesOnDestroy>
+  </GarrisonHolder>
+  <Health>
+    <Max>800</Max>
+  </Health>
+  <Identity>
+    <GenericName>Arrow Ship</GenericName>
+    <VisibleClasses datatype="tokens">ArrowShip Ranged Bow</VisibleClasses>
+    <Tooltip>Traits: Arrow Shooter, Medium Speed, Medium Armor.
+Strong Against: Ramming Ships.
+Weak Against: Siege Ships, Catapults.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>20</wood>
+  </Loot>
+  <Position>
+    <TurnRate>0.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>6</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+</Entity>

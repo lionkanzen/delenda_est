@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Looter/Resource/coin", "add": 10 }
+	],
+	"auraName": "Sacker of Rome",
+	"auraDescription": "\n• Units gain +10 coin loot for every enemy unit killed or building destroyed."
+}

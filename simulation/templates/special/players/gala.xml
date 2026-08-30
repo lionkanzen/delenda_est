@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/gaul_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>gala</Civ>
+    <GenericName>Galatians</GenericName>
+    <History>The Galatians were Celtic peoples who migrated into the Balkans and Anatolia in the 3rd century BC, eventually establishing themselves in central Asia Minor. They became renowned as fierce warriors and mercenaries, fighting for and against the Hellenistic kingdoms. Though repeatedly defeated by Pergamon and other powers, they retained a distinct identity until their territory was absorbed into the Roman Empire.</History>
+    <Icon>emblems/512x512/celts.png</Icon>
+  </Identity>
+</Entity>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">
+      Infantry+Range
+      Cavalry
+    </List>
+  </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Castra Militum</SpecificName>
+    <GenericName>Legionary Barracks</GenericName>
+    <VisibleClasses datatype="tokens">
+      LegionaryBarracks
+    </VisibleClasses>
+    <Tooltip>Train Legionary Soldiers here and research their improvements.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="22.0" depth="22.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -barracks/training_01
+      -barracks/training_02
+      -barracks/training_03
+      romans_imperial/training_01
+      romans_imperial/training_02
+      romans_imperial/upgrade_rank_advanced_legion
+      romans_imperial/upgrade_rank_elite_legion
+      romans_imperial/upgrade_rank_cent_legion
+      romans_imperial/health_legions_eagles
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_javelineer_b
+      units/{civ}/cavalry_swordsman_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/romans_imperial/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

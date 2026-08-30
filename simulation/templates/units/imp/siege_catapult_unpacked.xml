@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_catapult_stationary">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>40.0</Crush>
+      </Damage>
+      <Projectile>
+        <LaunchPoint y="4"/>
+        <Count>3</Count>
+        <Spread>15.0</Spread>
+      </Projectile>
+      <Splash>
+        <Damage>
+          <Hack>10.0</Hack>
+          <Crush>10.0</Crush>
+        </Damage>
+        <Shape>Circular</Shape>
+        <Range>8</Range>
+        <FriendlyFire>true</FriendlyFire>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Square width="8" depth="14"/>
+  </Footprint>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Onager</SpecificName>
+    <Icon>units/imp/siege_onager.png</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/imp/siege_catapult_packed</Entity>
+    <State>unpacked</State>
+  </Pack>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/siege/ballist_rome_attack.xml</attack>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/romans_imperial/siege_onager_pivot.xml</Actor>
+    <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
+  </VisualActor>
+</Entity>

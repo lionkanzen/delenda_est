@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/athen_player_teambonus
+  </Auras>
+  <EntityLimits>
+    <Limits>
+      <Stoa>2</Stoa>
+      <Strategos>10</Strategos>
+    </Limits>
+  </EntityLimits>
+  <Identity>
+    <Civ>athen</Civ>
+    <GenericName>Athenians</GenericName>
+    <History>Athens became one of the leading city-states of classical Greece, renowned for democracy, naval power, trade, philosophy, and the arts. After helping defeat Persia in the Greco-Persian Wars, it built the Delian League into a maritime empire. Rivalry with Sparta led to the Peloponnesian War and eventual defeat in 404 BC. Athens later recovered influence, but never regained the dominance of its 5th-century golden age.</History>
+    <Icon>emblems/512x512/athenians.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Player>
+</Entity>

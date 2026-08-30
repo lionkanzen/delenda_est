@@ -1,0 +1,21 @@
+{
+	"partOfPair": "granary/pair_farming_02",
+	"genericName": "Steel Plows",
+	"description": "A horse drawn instrument to turn the sod.",
+	"cost": {
+		"metal": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "plow.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +15% grain gather rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

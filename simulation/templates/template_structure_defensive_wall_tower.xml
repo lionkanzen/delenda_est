@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>40.0</MaxRange>
+      <MinRange>16.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>12</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <Bonuses>
+        <NerfSiege>
+          <Classes>Siege</Classes>
+          <Multiplier>0.75</Multiplier>
+        </NerfSiege>
+      </Bonuses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.15</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>3</MaxArrowCount>
+    <GarrisonArrowClasses>Infantry+Ranged</GarrisonArrowClasses>
+  </BuildingAI>
+  <BuildRestrictions>
+    <PlacementType>land-shore</PlacementType>
+    <Category>Walls</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <stone>25</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="6.0" depth="6.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_wall_tower</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Wall Turret</GenericName>
+    <SpecificName>Wall Turret</SpecificName>
+    <Tooltip>Garrison ranged infantry safely inside to fire arrows at nearby enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">StoneWall Tower WallTower Ranged</VisibleClasses>
+    <SelectionGroupName>template_structure_defensive_wall_tower</SelectionGroupName>
+    <Icon>structures/tower.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="6.0" depth="6.0"/>
+    <ControlPersist/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tower.xml</select>
+      <constructed>interface/complete/building/complete_tower.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>20.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>20</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_3x3_tower.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>7.5</Length>
+  </WallPiece>
+</Entity>

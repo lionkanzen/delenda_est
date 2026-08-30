@@ -1,0 +1,11 @@
+{
+	"genericName": "Brigandry",
+	"autoResearch": true,
+	"description": ".",
+	"icon": "coinage.png",
+	"tooltip": "[font=\"sans-bold-14\"]• All Pirate units (Warships and Brigands) +20 coin loot for every unit killed or building destroyed.[/font]",
+	"modifications": [
+		{ "value": "Looter/Resource/coin", "add": 20 }
+	],
+	"affects": ["Pirate"]
+}

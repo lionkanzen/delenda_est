@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/goth/ship_fishing">
+  <Identity>
+    <Civ>huns</Civ>
+    <SpecificName>Hunnic Fishing Boat</SpecificName>
+  </Identity>
+</Entity>

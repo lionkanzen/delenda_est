@@ -1,0 +1,12 @@
+{
+	"Title": "Africans",
+	"Code": "afr",
+	"GUIOrder": 1,
+	"Tooltip": "Civilizations in Africa.",
+	"Weights": {
+		"cart": 3,
+		"kush": 4,
+		"noba": 1,
+		"ptol": 3
+	}
+}

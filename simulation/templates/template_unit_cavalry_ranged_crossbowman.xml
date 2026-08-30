@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Pierce op="mul">1.5</Pierce>
+      </Damage>
+      <MaxRange op="mul">1.2</MaxRange>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>60.0</Speed>
+        <Spread>1.8</Spread>
+        <Gravity>30.0</Gravity>
+      </Projectile>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>50</food>
+      <wood>70</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Crossbow</VisibleClasses>
+    <GenericName>Crossbow Cavalry</GenericName>
+    <Tooltip>Traits: Long Range, Fast Speed, Light Armor, Harassment, Fast Training.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+  </Identity>
+</Entity>

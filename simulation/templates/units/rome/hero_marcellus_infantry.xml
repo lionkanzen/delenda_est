@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <BonusHero>
+          <Classes>Hero</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusHero>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/rome_hero_marcellus
+  </Auras>
+  <Cost>
+    <BuildTime>0</BuildTime>
+  </Cost>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <SpecificName>Marcus Claudius Marcellus</SpecificName>
+    <Icon>units/rome/hero_marcellus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/rome/hero_marcellus_mounted</Entity>
+      <Tooltip>This gives Marcellus his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>0</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/romans/hero_infantry_swordsman_marcellus.xml</Actor>
+  </VisualActor>
+</Entity>

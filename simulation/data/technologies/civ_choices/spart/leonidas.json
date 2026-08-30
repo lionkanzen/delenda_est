@@ -1,0 +1,26 @@
+{
+	"genericName": "Leonidas",
+	"description": "Leonidas.",
+	"icon": "civ_choices/spart_hero_leonidas.png",
+	"tooltip": "Select Leonidas to lead your civilization.",
+	"requirements": {
+		"civ": "spart"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/spart/hero_brasidas_infantry -units/spart/hero_lysander_infantry -units/spart/hero_cleomenes_infantry",
+			"affects": "Syssition"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}/hero_gorgo",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}/wallset_stone",
+			"affects": "Builder"
+		}
+	]
+}

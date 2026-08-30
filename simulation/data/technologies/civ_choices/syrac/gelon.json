@@ -1,0 +1,16 @@
+{
+	"genericName": "Gelon",
+	"description": "Gelon son of Deinomenes.",
+	"icon": "civ_choices/syrac_hero_gelon.png",
+	"tooltip": "Select Gelon son of Deinomenes to lead your civilization.",
+	"requirements": {
+		"civ": "syrac"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_agathocles_infantry -units/{civ}/hero_dionysius_infantry -units/{civ}/hero_hieron_infantry -units/{civ}/hero_timoleon_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

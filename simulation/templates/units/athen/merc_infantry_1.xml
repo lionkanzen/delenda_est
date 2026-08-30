@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_hoplite">
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Plataean Hoplite</SpecificName>
+    <SelectionGroupName>units/mercenaries/greek_infantry_1</SelectionGroupName>
+    <Icon>units/merc/plataean_hoplite.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/plataean_hoplite.xml</Actor>
+  </VisualActor>
+</Entity>

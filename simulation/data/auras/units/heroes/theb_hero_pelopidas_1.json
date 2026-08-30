@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Soldier", "Military Structure"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraDescription": "\n• Soldiers and Military structures +10% health.",
+	"auraName": "Generalship",
+	"overlayIcon": "art/textures/ui/session/auras/health_bonus.png"
+}

@@ -3,34 +3,55 @@
   <Cost>
     <Resources>
       <food>100</food>
-      <metal>50</metal>
+      <wood>100</wood>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Square width="4.0" depth="8.0"/>
+    <Height>3.0</Height>
+  </Footprint>
   <Health>
     <Max>100</Max>
   </Health>
   <Identity>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
-	<VisibleClasses datatype="tokens">Citizen Trader</VisibleClasses>
+    <Classes datatype="tokens">-ConquestCritical IdleWorker</Classes>
+    <VisibleClasses datatype="tokens">Citizen Trader TaxPayer</VisibleClasses>
     <GenericName>Trader</GenericName>
-    <History>Trade was a very important part of ancient civilization - effective trading and control of trade routes equaled wealth. Trade took place by many forms from foot to caravans to merchant ships. One of the most notorious examples of the power of trade was the Silk Road.</History>
     <Tooltip>Trade resources between your own markets and those of your allies.</Tooltip>
-    <Formations disable=""/>
   </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>1.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/hellenes/civ/civ_male_select.xml</select>
-      <order_trade>voice/hellenes/civ/civ_male_ack.xml</order_trade>
-      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
-      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
-      <order_repair>voice/hellenes/civ/civ_male_ack.xml</order_repair>
-      <walk>actor/human/movement/walk.xml</walk>
-      <run>actor/human/movement/run.xml</run>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_trade>voice/{lang}/civ/civ_{phenotype}_trade.xml</order_trade>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
       <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/death.xml</death>
-      <build>resource/construction/con_wood.xml</build>
-      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <death>actor/human/death/{phenotype}_death.xml</death>
       <gather_grain>resource/farming/farm.xml</gather_grain>
       <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
       <gather_rock>resource/mining/pickaxe.xml</gather_rock>
@@ -40,13 +61,15 @@
   <Trader>
     <GainMultiplier>1.0</GainMultiplier>
   </Trader>
+  <TrainingRestrictions>
+    <Category>Trader</Category>
+  </TrainingRestrictions>
   <UnitAI>
     <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
-    <WalkSpeed>7.0</WalkSpeed>
+    <WalkSpeed op="mul">0.7</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>60</Range>
-  </Vision>
 </Entity>

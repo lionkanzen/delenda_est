@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_slinger">
+  <Auras datatype="tokens">
+    -units/slave_ownership
+  </Auras>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SelectionGroupName>units/spart/infantry_slinger_b</SelectionGroupName>
+    <SpecificName>Helot Levy Slinger</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Helot
+      Gatherer
+    </VisibleClasses>
+    <History>The largest part of the Lacedaemonian population consisted of Helots. Helots formed the lowest level in Spartan society and were slaves owned by the Spartan state, usually working as peasants or servants. The Spartans were in constant fear of a helot revolt and heavily suppressed them. Every Fall, the Ephors (Spartan chancellors) would declare war on them, allowing all Spartans to murder any Helot they encountered without getting punished.
+
+In wartime, they were forced to fight for Sparta and made up a large part of the Spartan army, with some sources claiming seven out of eight soldiers were Helots. Every soldier had to provide his own equipment, and helots couldn't afford a hoplite's expensive equipment. Instead, they fought as skirmishers, armed with different kinds of missile weapons, such as slings, bows, or javelins, and wearing hardly any armor.</History>
+    <Icon>units/spart/infantry_slinger.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/spart/infantry_slinger_a</Entity>
+  </Promotion>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
+      <coin>20</coin>
+      <glory>1</glory>
+    </Capacities>
+    <Rates>
+      <food.fruit>0.4</food.fruit>
+      <food.grain>0.20</food.grain>
+      <food.meat>0.4</food.meat>
+      <wood.tree>0.4</wood.tree>
+      <wood.ruins>4.0</wood.ruins>
+      <stone.rock>0.4</stone.rock>
+      <stone.ruins>1.6</stone.ruins>
+      <metal.ruins>1.6</metal.ruins>
+      <metal.ore>0.4</metal.ore>
+      <coin.crops>0.20</coin.crops>
+    </Rates>
+  </ResourceGatherer>
+  <Upgrade>
+    <Mount>
+      <Entity>units/spart/infantry_hoplite_helot</Entity>
+      <Tooltip>Helots are given their freedom in exchange for military service.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">spartans/unlock_brasidians</Techs>
+      </Requirements>
+      <Cost>
+        <wood>40</wood>
+        <glory>20</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/spartans/infantry_slinger_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/mercenaries/greek/infantry_1">
+  <Identity>
+    <Civ>spart</Civ>
+    <SpecificName>Peloponnesian League Hoplite</SpecificName>
+  </Identity>
+</Entity>

@@ -1,0 +1,27 @@
+{
+	"partOfPair": "temple/pair_champs_carthage",
+	"genericName": "State-Issued Armor",
+	"description": "Carthage’s Sacred Band was an elite corps of citizen infantry drawn from wealthy Carthaginian families, and ancient accounts suggest that its members were exceptionally well equipped compared with ordinary troops. Because they represented the city’s aristocratic core, their armor and weapons were likely standardized and supplied or heavily supported by the state, including helmets, shields, spears, and substantial body armor influenced by contemporary Greek and Punic styles. This state-backed equipment helped ensure that the Sacred Band fought as a cohesive heavy infantry formation and visibly embodied the wealth, prestige, and civic identity of Carthage.",
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "cart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "shields_hellenes.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Temple Champions +1 all armor types.\n• [color=\"orange\"]Temple Champions +10% coin cost.[/color][/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0 },
+		{ "value": "Cost/Resources/coin", "multiply": 1.1 }
+	],
+	"affects": ["Champion Infantry", "Champion Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

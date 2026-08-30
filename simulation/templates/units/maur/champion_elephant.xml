@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_elephant_melee_large">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Cost>
+    <Resources>
+      <coin op="add">50</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>maur</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Indian War Elephant</SpecificName>
+    <Icon>units/maur/champion_elephant.png</Icon>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mauryas/elephantry_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

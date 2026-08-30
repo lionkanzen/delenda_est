@@ -1,19 +1,32 @@
 {
 	"genericName": "Nisean War Horses",
 	"specificName": {
+		"achae": "Nisioi",
 		"sele": "Nisioi"
 	},
-	"description": "The now-extinct Nisian breed of horse was one of the largest and robust horses of ancient times. They were highly sought after by the Seleucids and Persians as both rider and mount gained heavier armor as time progressed.",
-	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"all": [{"tech": "phase_city"}, {"any": [{"civ": "sele"},{"civ": "pers"}]}]},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"description": "The Nisean horses were a celebrated breed associated with the Median highlands around Nisaea in western Iran and were prized by the Achaemenid Persians for their size, strength, endurance, and impressive appearance. They were especially valued as mounts for elite cavalry and royal use, and ancient writers regarded them as among the finest horses of the Iranian world. After Alexander’s conquests, the Seleucids inherited access to these breeding regions and continued to value powerful Iranian horses for heavy cavalry, including armored lancer formations. Their reputation made Nisean stock an important symbol of prestige as well as a practical military resource.",
+	"cost": {
+		"food": 400,
+		"coin": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "sele" },
+				{ "civ": "achae" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "nisean_war_horses.png",
-	"researchTime": 60,
-	"tooltip": "All cavalry +20% health, but also +10% train time.",
+	"researchTime": 30,
+	"tooltip": "[font=\"sans-bold-14\"]• Champion Cataphract +10% health and +10% speed.\n• Elite Cavalry +10% health and +10% speed.\n• [color=\"orange\"]Both +20% train time.[/color][/font]",
 	"modifications": [
-		{"value": "Health/Max", "multiply": 1.20},
-		{"value": "Cost/BuildTime", "multiply": 1.1}
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.2 }
 	],
-	"affects": ["Cavalry"],
+	"affects": ["Champion Cavalry Spear", "Elite Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

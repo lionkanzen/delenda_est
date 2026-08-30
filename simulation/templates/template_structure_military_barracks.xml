@@ -4,9 +4,9 @@
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
-      <wood>300</wood>
+      <stone>300</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -17,58 +17,98 @@
     <Max>10</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Infantry Cavalry</List>
+    <List datatype="tokens">
+      Infantry+Melee
+      Minister
+      Teacher
+    </List>
     <BuffHeal>0</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Barracks</GenericName>
-    <Tooltip>Train citizen-soldiers. Research training improvements. Garrison: 10.</Tooltip>
+    <GenericName>Infantry Barracks</GenericName>
+    <SpecificName>Infantry Barracks</SpecificName>
     <VisibleClasses datatype="tokens">
-	  Village
-	  Barracks
-	</VisibleClasses>
+      Village
+      Barracks
+    </VisibleClasses>
+    <Tooltip>Train Melee Citizen-infantry. Research training improvements for melee infantry.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
     <Icon>structures/barracks.png</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
-    <xp>100</xp>
+    <xp>300</xp>
     <food>0</food>
-    <wood>30</wood>
-    <stone>10</stone>
+    <wood>0</wood>
+    <stone>0</stone>
     <metal>0</metal>
+    <glory>300</glory>
   </Loot>
   <Obstruction>
     <Static width="17.0" depth="17.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+  <Researcher>
     <Technologies datatype="tokens">
-	  pair_levy_01
-	  training_mobilization
-	  training_total_war
+      barracks/training_01
+      barracks/training_02
+      barracks/training_03
+      barracks/tradition_hoplite
+      barracks/tradition_hoplite_advanced
+      barracks/tradition_hoplite_elite
+      barracks/upgrade_rank_advanced_hoplites
+      barracks/upgrade_rank_elite_hoplites
+      barracks/upgrade_rank_advanced_infantry_melee
+      barracks/upgrade_rank_elite_infantry_melee
+      barracks/upgrade_rank_advanced_infantry_spear
+      barracks/upgrade_rank_elite_infantry_spear
+      barracks/upgrade_rank_advanced_infantry_pike
+      barracks/upgrade_rank_elite_infantry_pike
+      barracks/upgrade_rank_advanced_infantry_sword
+      barracks/upgrade_rank_elite_infantry_sword
+      barracks/upgrade_rank_advanced_infantry_axe
+      barracks/upgrade_rank_elite_infantry_axe
+      unlock_champions
+      spartans/speed_tyrtean_paeans
+      spartans/special_agoge
+      spartans/special_krypteia
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_barracks.xml</select>
       <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <upgraded>interface/complete/building/complete_barracks.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>50</Radius>
-    <Weight>40000</Weight>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_scout
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_hoplite_b
+      units/{civ}/infantry_pikeman_b
+      units/{civ}/infantry_pikeman_mace_b
+      units/{civ}/infantry_swordsman_b
+      units/{civ}/infantry_axeman_b
+      units/{civ}/champion_infantry_hoplite_barracks
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>30</Range>
   </Vision>
   <VisualActor>
-    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+    <Actor>structures/spartans/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

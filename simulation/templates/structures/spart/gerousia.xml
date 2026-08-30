@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>100</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="12.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Spartan Senate</GenericName>
+    <SpecificName>Gerousia</SpecificName>
+    <Tooltip>Train Heroes.</Tooltip>
+    <Icon>structures/assembly.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/spart/hero_leonidas_infantry
+      units/spart/hero_brasidas_infantry
+      units/spart/hero_lysander_infantry
+      units/spart/hero_cleomenes_infantry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/spartans/gerousia.xml</Actor>
+  </VisualActor>
+</Entity>

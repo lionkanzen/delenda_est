@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_wild_aggressive">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>4</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Melee>
+      <AttackName>Jaws</AttackName>
+      <Damage>
+        <Hack>20</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>2</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <PrepareTime>0</PrepareTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Square width="3.5" depth="6.5"/>
+    <Height>2</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hippopotamus</GenericName>
+    <SpecificName>Hippopotamus amphibius</SpecificName>
+    <Icon>gaia/fauna_hippopotamus.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>400</Max>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>8</MaxGatherers>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack_melee>actor/fauna/attack/lion.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>fauna/hippopotamus.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <BuildRestrictions>
+    <Category>Nike</Category>
+    <MatchLimit>1</MatchLimit>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="13.5" depth="18.5"/>
+  </Footprint>
+  <Identity>
+    <Civ>athen</Civ>
+    <GenericName>Temple of Athena Nike</GenericName>
+    <SpecificName>Naós tês Athinâs Níkēs</SpecificName>
+    <Icon>structures/temple_epic.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="11.5" depth="16.5"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/athenians/temple_athena_nike.xml</Actor>
+    <FoundationActor>structures/fndn_4x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

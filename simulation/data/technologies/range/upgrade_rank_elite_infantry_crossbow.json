@@ -1,0 +1,32 @@
+{
+	"genericName": "Elite Citizen Crossbow Infantry",
+	"specificName": {
+		"han": "Jīngyīng nǔ"
+	},
+	"description": "Upgrade all of your citizen crossbowmen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "han" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Crossbow Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "range/upgrade_rank_advanced_infantry_crossbow",
+	"tooltip": "[font=\"sans-bold-14\"]• Upgrade all of your Citizen Crossbow Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Crossbow Infantry Advanced"],
+	"placeBelow": "Crossbow Infantry",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia">
+  <Footprint>
+    <Circle radius="10.0"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Food Resource</GenericName>
+    <SpecificName>Fish</SpecificName>
+    <Classes datatype="tokens">SeaCreature</Classes>
+    <Tooltip>Catch fish for food.</Tooltip>
+    <Icon>gaia/fauna_fish.png</Icon>
+  </Identity>
+  <Minimap>
+    <Color b="30" g="70" r="115"/>
+  </Minimap>
+  <Obstruction>
+    <Unit/>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <BlockFoundation>false</BlockFoundation>
+    <DeleteUponConstruction>true</DeleteUponConstruction>
+  </Obstruction>
+  <Position>
+    <Altitude>-2.0</Altitude>
+    <Floating>true</Floating>
+  </Position>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Initial>1200</Initial>
+    <Max>2400</Max>
+    <Type>food.fish</Type>
+    <MaxGatherers>5</MaxGatherers>
+    <Change>
+      <Spawn>
+        <Value>5</Value>
+        <Interval>5000</Interval>
+        <State>notGathered</State>
+      </Spawn>
+    </Change>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineThickness>0.2</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>4.0</BarWidth>
+    <BarHeight>0.666</BarHeight>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>fauna/tuna_shoal.xml</Actor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

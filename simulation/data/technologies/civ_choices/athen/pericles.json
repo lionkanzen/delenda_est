@@ -1,0 +1,26 @@
+{
+	"genericName": "Pericles",
+	"description": "Pericles.",
+	"icon": "civ_choices/athen_hero_pericles.png",
+	"tooltip": "Select Pericles to lead your civilization.",
+	"requirements": {
+		"civ": "athen"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_aristides_infantry -units/{civ}/hero_themistocles_infantry -units/{civ}/hero_iphicrates_infantry -units/{civ}/hero_miltiades_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_aristides_infantry -units/{civ}/hero_themistocles_infantry -units/{civ}/hero_iphicrates_infantry -units/{civ}/hero_miltiades_infantry",
+			"affects": "Council"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-athen/hero_aristides_archon -athen/hero_iphicrates_reforms -athen/hero_miltiades_strategos -athen/hero_themistocles_fortifications",
+			"affects": "Council"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_army_camp">
+  <Auras datatype="tokens">
+    structures/rome_heal_logistics
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+    <GenericName>Entrenched Army Camp</GenericName>
+    <SpecificName>Castrum Vallum</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      romans/unlock_logistics
+      romans_imperial/heal_hospitals
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/merc_infantry_1
+      units/{civ}/merc_infantry_2
+      units/{civ}/merc_infantry_3
+      units/{civ}/merc_cavalry_1
+      units/{civ}/merc_cavalry_2
+      units/{civ}/champion_cavalry_cataphract
+    </Entities>
+  </Trainer>
+  <Upgrade>
+    <Colonia>
+      <Entity>structures/imp/civil_centre</Entity>
+      <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_empire</Techs>
+      </Requirements>
+      <Cost>
+        <stone>2000</stone>
+        <glory>2000</glory>
+      </Cost>
+      <Time>100</Time>
+      <Variant>upgrading</Variant>
+    </Colonia>
+  </Upgrade>
+</Entity>

@@ -1,0 +1,10 @@
+{
+	"type": "player",
+	"affects": ["Player"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/metal", "add": 0.5 }
+	],
+	"auraName": "Iron Exports",
+	"auraDescription": "\n• Players allied with Kush gain a slow free trickle of the metal resource."
+}

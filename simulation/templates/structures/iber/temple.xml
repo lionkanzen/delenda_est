@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Footprint>
+    <Square width="23.0" depth="23.0"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Loki</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/celtic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/celtic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>structures/iberians/temple.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

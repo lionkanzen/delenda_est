@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Devotio Strike Infantry</SpecificName>
+    <Icon>units/iber/champion_infantry.png</Icon>
+    <SelectionGroupName>units/iber/champion_infantry</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/iberians/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>
